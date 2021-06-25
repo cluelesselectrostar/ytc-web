@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/ytc-web/static/css/main.e5407d4a.chunk.css",
+    "main.js": "/ytc-web/static/js/main.9bd47a6e.chunk.js",
+    "main.js.map": "/ytc-web/static/js/main.9bd47a6e.chunk.js.map",
+    "runtime-main.js": "/ytc-web/static/js/runtime-main.94a75ca2.js",
+    "runtime-main.js.map": "/ytc-web/static/js/runtime-main.94a75ca2.js.map",
+    "static/css/2.d45d6843.chunk.css": "/ytc-web/static/css/2.d45d6843.chunk.css",
+    "static/js/2.d96aca51.chunk.js": "/ytc-web/static/js/2.d96aca51.chunk.js",
+    "static/js/2.d96aca51.chunk.js.map": "/ytc-web/static/js/2.d96aca51.chunk.js.map",
+    "static/js/3.d5c93e4e.chunk.js": "/ytc-web/static/js/3.d5c93e4e.chunk.js",
+    "static/js/3.d5c93e4e.chunk.js.map": "/ytc-web/static/js/3.d5c93e4e.chunk.js.map",
+    "index.html": "/ytc-web/index.html",
+    "static/css/2.d45d6843.chunk.css.map": "/ytc-web/static/css/2.d45d6843.chunk.css.map",
+    "static/css/main.e5407d4a.chunk.css.map": "/ytc-web/static/css/main.e5407d4a.chunk.css.map",
+    "static/js/2.d96aca51.chunk.js.LICENSE.txt": "/ytc-web/static/js/2.d96aca51.chunk.js.LICENSE.txt",
+    "static/media/ICRA.da05d4ad.jpeg": "/ytc-web/static/media/ICRA.da05d4ad.jpeg",
+    "static/media/circuit.6ce60173.jpeg": "/ytc-web/static/media/circuit.6ce60173.jpeg",
+    "static/media/edited-1054475.b597817b.jpg": "/ytc-web/static/media/edited-1054475.b597817b.jpg",
+    "static/media/oldoakcommon.a96f2cf9.JPG": "/ytc-web/static/media/oldoakcommon.a96f2cf9.JPG",
+    "static/media/About.css": "/ytc-web/static/media/tram.91004d5a.jpg",
+    "static/media/wales.ee507d0c.JPEG": "/ytc-web/static/media/wales.ee507d0c.JPEG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.94a75ca2.js",
+    "static/css/2.d45d6843.chunk.css",
+    "static/js/2.d96aca51.chunk.js",
+    "static/css/main.e5407d4a.chunk.css",
+    "static/js/main.9bd47a6e.chunk.js"
+  ]
+}
