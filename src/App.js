@@ -1,24 +1,72 @@
-import logo from './logo.svg';
+import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
+import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
+
 import './App.css';
+import HomePage from './pages/Home';
+import ProjectsPage from './pages/Projects';
+import AboutPage from './pages/About';
+import TrainsPage from './pages/Trains';
+import JaywalkingPage from './pages/Jaywalking';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar collapseOnSelect fixed='top' expand='sm' variant='dark' bg='dark'>
+        <Container>
+          <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+          <Navbar.Collapse id='responsive-navbar-nav'>
+            <Nav>
+              <Row className="justify-content-around align-items-center py-12">
+                <div class='sm-12 md-4 col-lg-auto'>
+                  <Nav.Link><Link to="/" class="text-decoration-none fw-bold" style={{ color: 'rgb(153,230,179)', }}> Yan To Chau</Link></Nav.Link>
+                </div>
+                <div class='sm-12 md-1 col-lg-auto'>
+                  <Nav.Link><Link to="/about" class="text-decoration-none text-light"> About</Link></Nav.Link>
+                </div>
+                <div class='sm-12 md-1 col-lg-auto'>
+                  <Nav.Link><Link to="/projects" class="text-decoration-none text-light"> Projects</Link></Nav.Link>
+                </div>
+                <div class='sm-12 md-1 col-lg-auto'>
+                  <Nav.Link><Link to="/trains" class="text-decoration-none text-light"> Trains</Link></Nav.Link>
+                </div>
+                <div class='sm-12 md-1 col-lg-auto'>
+                  <Nav.Link><Link to="/jaywalking" class="text-decoration-none text-light"> Jaywalking</Link></Nav.Link>
+                </div>
+              </Row>
+
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+
+      <Switch>
+        <Route path="/about">
+          <AboutPage />
+        </Route>
+        <Route path="/projects">
+          <ProjectsPage />
+        </Route>
+        <Route path="/trains">
+          <TrainsPage />
+        </Route>
+        <Route path="/jaywalking">
+          <JaywalkingPage />
+        </Route>
+
+        {/* Home page goes last */}
+        <Route path="/">
+          <HomePage />
+        </Route>
+      </Switch>
+
+      <footer class="footer mt-auto py-3 text-center bg-light mb-auto">
+        <div class="container">
+          <span class="text-muted">Built with HTML, CSS, Bootstrap and React.JS. © Yan To Chau 2021.</span>
+        </div>
+      </footer>
+
+    </BrowserRouter>
   );
 }
 
