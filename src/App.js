@@ -5,7 +5,7 @@ import './App.css';
 import HomePage from './pages/Home';
 import ProjectsPage from './pages/Projects';
 import AboutPage from './pages/About';
-import TrainsPage from './pages/Trains';
+import LifePage from './pages/Life';
 import JaywalkingPage from './pages/Jaywalking';
 
 
@@ -28,7 +28,7 @@ function App() {
                   <Nav.Link><Link to="/projects" class="text-decoration-none text-light"> Projects</Link></Nav.Link>
                 </div>
                 <div class='sm-12 md-1 col-lg-auto'>
-                  <Nav.Link><Link to="/trains" class="text-decoration-none text-light"> Trains</Link></Nav.Link>
+                  <Nav.Link><Link to="/life" class="text-decoration-none text-light"> Life</Link></Nav.Link>
                 </div>
                 <div class='sm-12 md-1 col-lg-auto'>
                   <Nav.Link><Link to="/jaywalking" class="text-decoration-none text-light"> Jaywalking</Link></Nav.Link>
@@ -47,8 +47,8 @@ function App() {
         <Route path="/projects">
           <ProjectsPage />
         </Route>
-        <Route path="/trains">
-          <TrainsPage />
+        <Route path="/life">
+          <LifePage />
         </Route>
         <Route path="/jaywalking">
           <JaywalkingPage />
@@ -60,7 +60,9 @@ function App() {
         </Route>
       </Switch>
 
-      <footer class="footer mt-auto py-3 text-center bg-light mb-auto">
+      <br class=" mb-4"></br>
+
+      <footer class="footer mt-auto py-3 text-center bg-dark mb-auto">
         <div class="container">
           <span class="text-muted">Built with HTML, CSS, Bootstrap and React.JS. © Yan To Chau 2021.</span>
         </div>

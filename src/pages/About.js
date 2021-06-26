@@ -1,8 +1,9 @@
+import Image from 'react-bootstrap/Image';
+
 import circuit_image from '../images/circuit.jpeg';
-import wales_image from '../images/wales.JPEG';
+import profile_image from '../images/brighton.jpg';
 import icra_image from '../images/ICRA.jpeg';
 import train_image from '../images/oldoakcommon.JPG';
-import Image from 'react-bootstrap/Image';
 import './About.css';
 
 function AboutPage() {
@@ -30,7 +31,7 @@ function AboutPage() {
                     </p>
                 </div>
                 <div class="col-md-4 align-content-center align-items-center">
-                    <Image src={wales_image} alt="Wales Ffestiniog and Heritage Railway." fluid rounded />
+                    <Image src={profile_image} alt="Brighton." fluid roundedCircle />
                 </div>
             </div>
         </div>
@@ -80,8 +81,8 @@ function AboutPage() {
                         <p>
                             While amending the installation manuals and floorpans construction project with respect to the clients' requirements.
                             I grasped the importance of effectively communicating with various stakeholders of project.
-                            The maint takeaway of this internship was the interactive process of iterating through design and specifications,
-                            and working with compliance and regulations, ensuring that the project is compeleted safely and effectively.
+                            The main takeaway of this internship was the interactive process of iterating through design and specifications,
+                            and working with compliance, ensuring safe and effective completion of the project.
                         </p>
                         <h5 class="mt-4">Origami Labs (Local Startup)</h5>
                         <p>
