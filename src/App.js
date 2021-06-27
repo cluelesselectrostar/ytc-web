@@ -12,33 +12,36 @@ import JaywalkingPage from './pages/Jaywalking';
 function App() {
   return (
     <BrowserRouter>
-      <Navbar collapseOnSelect fixed='top' expand='sm' variant='dark' bg='dark'>
-        <Container>
-          <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-          <Navbar.Collapse id='responsive-navbar-nav'>
-            <Nav>
-              <Row className="justify-content-around align-items-center py-12">
-                <div class='sm-12 md-4 col-lg-auto'>
-                  <Nav.Link><Link to="/" class="text-decoration-none fw-bold" style={{ color: 'rgb(153,230,179)', }}> Yan To Chau</Link></Nav.Link>
-                </div>
-                <div class='sm-12 md-1 col-lg-auto'>
-                  <Nav.Link><Link to="/about" class="text-decoration-none text-light"> About</Link></Nav.Link>
-                </div>
-                <div class='sm-12 md-1 col-lg-auto'>
-                  <Nav.Link><Link to="/projects" class="text-decoration-none text-light"> Projects</Link></Nav.Link>
-                </div>
-                <div class='sm-12 md-1 col-lg-auto'>
-                  <Nav.Link><Link to="/life" class="text-decoration-none text-light"> Life</Link></Nav.Link>
-                </div>
-                <div class='sm-12 md-1 col-lg-auto'>
-                  <Nav.Link><Link to="/jaywalking" class="text-decoration-none text-light"> Jaywalking</Link></Nav.Link>
-                </div>
-              </Row>
+      <div>
+        <Navbar collapseOnSelect fixed='top' expand='sm' variant='dark' bg='dark'>
+          <Container>
+            <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+            <Navbar.Collapse id='responsive-navbar-nav'>
+              <Nav>
+                <Row className="justify-content-around align-items-center py-12">
+                  <div class='sm-12 md-4 col-lg-auto'>
+                    <Nav.Link><Link to="/" class="text-decoration-none fw-bold" style={{ color: 'rgb(153,230,179)', }}> Yan To Chau</Link></Nav.Link>
+                  </div>
+                  <div class='sm-12 md-1 col-lg-auto'>
+                    <Nav.Link><Link to="/about" class="text-decoration-none text-light"> About</Link></Nav.Link>
+                  </div>
+                  <div class='sm-12 md-1 col-lg-auto'>
+                    <Nav.Link><Link to="/projects" class="text-decoration-none text-light"> Projects</Link></Nav.Link>
+                  </div>
+                  <div class='sm-12 md-1 col-lg-auto'>
+                    <Nav.Link><Link to="/life" class="text-decoration-none text-light"> Life</Link></Nav.Link>
+                  </div>
+                  <div class='sm-12 md-1 col-lg-auto'>
+                    <Nav.Link><Link to="/jaywalking" class="text-decoration-none text-light"> Jaywalking</Link></Nav.Link>
+                  </div>
+                </Row>
 
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </div>
+      <br class=" mb-4"></br>
 
       <Switch>
         <Route path="/about">
