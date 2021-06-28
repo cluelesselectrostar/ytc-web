@@ -1,9 +1,0 @@
-.bg-image {
-    background-image: url("../images/tram.jpg");
-    background-size:cover;
-    background-position: center;
-    min-height: 30vh;
-    margin-bottom: 4px;
-    padding:5px;
-    
-}

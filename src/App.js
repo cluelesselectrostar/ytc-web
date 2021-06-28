@@ -6,10 +6,17 @@ import HomePage from './pages/Home';
 import ProjectsPage from './pages/Projects';
 import AboutPage from './pages/About';
 import LifePage from './pages/Life';
-import JaywalkingPage from './pages/Jaywalking';
+import ContactPage from './pages/Contact';
 
 
 function App() {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
   return (
     <BrowserRouter>
       <div>
@@ -19,20 +26,20 @@ function App() {
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav>
                 <Row className="justify-content-around align-items-center py-12">
-                  <div class='sm-12 md-4 col-lg-auto'>
-                    <Nav.Link><Link to="/" class="text-decoration-none fw-bold" style={{ color: 'rgb(153,230,179)', }}> Yan To Chau</Link></Nav.Link>
+                  <div class='sm-12 md-4 col-lg-auto' >
+                    <Nav.Link onClick={scrollToTop}><Link to="/" class="text-decoration-none fw-bold" style={{ color: 'rgb(153,230,179)', }}> Yan To Chau</Link></Nav.Link>
                   </div>
                   <div class='sm-12 md-1 col-lg-auto'>
-                    <Nav.Link><Link to="/about" class="text-decoration-none text-light"> About</Link></Nav.Link>
+                    <Nav.Link onClick={scrollToTop}><Link to="/about" class="text-decoration-none text-light"> About</Link></Nav.Link>
                   </div>
                   <div class='sm-12 md-1 col-lg-auto'>
-                    <Nav.Link><Link to="/projects" class="text-decoration-none text-light"> Projects</Link></Nav.Link>
+                    <Nav.Link onClick={scrollToTop}><Link to="/projects" class="text-decoration-none text-light"> Projects</Link></Nav.Link>
                   </div>
                   <div class='sm-12 md-1 col-lg-auto'>
-                    <Nav.Link><Link to="/life" class="text-decoration-none text-light"> Life</Link></Nav.Link>
+                    <Nav.Link onClick={scrollToTop}><Link to="/life" class="text-decoration-none text-light"> Passions</Link></Nav.Link>
                   </div>
                   <div class='sm-12 md-1 col-lg-auto'>
-                    <Nav.Link><Link to="/jaywalking" class="text-decoration-none text-light"> Jaywalking</Link></Nav.Link>
+                    <Nav.Link onClick={scrollToTop}><Link to="/contact" class="text-decoration-none text-light"> Contact</Link></Nav.Link>
                   </div>
                 </Row>
 
@@ -53,8 +60,8 @@ function App() {
         <Route path="/life">
           <LifePage />
         </Route>
-        <Route path="/jaywalking">
-          <JaywalkingPage />
+        <Route path="/contact">
+          <ContactPage />
         </Route>
 
         {/* Home page goes last */}

@@ -6,6 +6,16 @@ import Image from 'react-bootstrap/Image';
 import wales_image from '../images/wales.JPG';
 import tibet_image from '../images/tibet.jpg';
 import bakerloo_image from '../images/bakerlootutorial.png';
+import skatepark_image from '../images/skatepark.jpg';
+import streetskate_image from '../images/streetskate.jpg';
+
+import image_1 from "../images/jaywalking/edited-1054311.jpg";
+import image_2 from "../images/jaywalking/edited-1054329.jpg";
+import image_3 from "../images/jaywalking/edited-1054347.jpg";
+import image_4 from "../images/jaywalking/edited-1054516.jpg";
+import image_5 from "../images/jaywalking/edited-1054537.jpg";
+import image_6 from "../images/jaywalking/edited-1054607.jpg";
+import image_7 from "../images/jaywalking/edited-1054755.jpg";
 
 import './Life.css';
 
@@ -13,7 +23,7 @@ function LifePage() {
 
     return (<main>
 
-        <div class="align-items-md-stretch h-100 p-5 mb-4 bg-light rounded-3">
+        <div class="align-items-md-stretch h-100 p-5 bg-light rounded-3">
             <div class="col-md-8">
                 <h1 class="display-5 fw-bold">Living my passions ❤️‍🔥</h1>
                 <p class="lead">
@@ -25,16 +35,15 @@ function LifePage() {
         <div class="container py-4">
             <ParallaxProvider>
                 <Parallax className="custom-class" x={[200, -200]} tagOuter="figure">
-                    <Image src={bakerloo_image} height="300px"/>
+                    <Image src={bakerloo_image} height="300px" />
                 </Parallax>
             </ParallaxProvider>
-        </div>
 
-        <div class="container py-4">
-            <div class="row align-items-md-stretch mb-4">
+            <div class="row align-items-md-stretch">
+
                 <div class="h-100 p-5 text-white rounded-3" style={{ backgroundColor: 'teal', }}>
                     <div class="row align-items-center align-content-center">
-                        <div class="col-md-7">
+                        <div class="col-md-7 mt-4">
 
                             <h2>Training my mind to mind the trains 🚅</h2>
                             <p>
@@ -53,7 +62,7 @@ function LifePage() {
                             </p>
                             <button class="btn btn-outline-light" type="button">Yanni Chau on Medium</button>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-5 mt-4">
                             <div class="mb-4">
                                 <Figure>
                                     <Figure.Image
@@ -79,15 +88,104 @@ function LifePage() {
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row align-items-md-stretch mb-4">
-                <div class="h-100 p-5 text-white rounded-3" style={{ backgroundColor: 'rgb(51,51,51)', }}>
-                    <h2>Rolling with my feet 🛼</h2>
-                    <p></p>
+                <div class="h-100 p-5 text-white rounded-3 mt-4" style={{ backgroundColor: 'rgb(51,51,51)', }}>
+                    <div class="row align-items-center align-content-center">
+                        <div class="col-md-5 mt-4">
+                            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <Image src={skatepark_image} fluid height="30%" rounded />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <Image src={streetskate_image} fluid height="30%" rounded />
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-7 mt-4">
+                            <h2>Rolling with my feet 🛼</h2>
+                            <p>
+                                I started rolling skating 2 years ago when I first joined the college Skate society in Autumn 2019. Thanks to the coronavirus pandemic, I've actually spent more time street-skating and aggressive skating in skateparks.
+                            </p>
+                            <p>
+                                Today, I skate several times a month, and I cannot imagine my life without rolling on skates!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-100 p-5 bg-light border rounded-3 mt-4">
+                    <div class="row align-items-center align-content-center">
+                        <div class="col-md-7 mt-4">
+                            <h2>Jaywalking 🚶‍♂️</h2>
+                            <p>
+                                I love travelling and taking photographs, but I like to call it "jaywalking" because half the time I don't even have any idea what I'm looking for. In addition, I tend to capture my best shots at familiar locations, but during the most unexpected moments.
+                            </p>
+                            <p>
+                                Similar to what I've done for trainspotting, I have written a couple blogs on Medium, and several Tibet Travel blogs on Exposure. That said, I am aware of the implications of publishing on a commercialised site, so I am planning to upload the blogs to this site. Fingers crossed for that!
+                            </p>
+                            <button class="btn btn-outline-secondary" type="button">Yanni Chau on Medium</button>
+                        </div>
+                        <div class="col-md-5 mt-4">
+                            <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <Image src={image_1} fluid height="30%" rounded />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <Image src={image_2}  fluid height="30%" rounded />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <Image src={image_3} fluid height="30%" rounded />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <Image src={image_4}   fluid height="30%" rounded />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <Image src={image_5}   fluid height="30%" rounded />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <Image src={image_6}   fluid height="30%" rounded />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <Image src={image_7}   fluid height="30%" rounded />
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
 
         </div>
 

@@ -1,19 +1,21 @@
 import Image from 'react-bootstrap/Image';
 import Figure from 'react-bootstrap/Figure'
+import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
 
 import circuit_image from '../images/circuit.jpeg';
 import profile_image from '../images/brighton.jpg';
 import icra_image from '../images/ICRA.jpeg';
 import train_image from '../images/oldoakcommon.JPG';
-import './About.css';
+
+import LinkModules from './Links_Module';
 
 function AboutPage() {
 
     return (<main>
 
-        <div class="align-items-md-stretch h-100 p-5 mb-4 bg-light rounded-3">
+        <div class="align-items-md-stretch h-100 p-5 bg-light rounded-3">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-9">
                     <h1 class="display-5 fw-bold">Where I am currently at.</h1>
                     <p class="lead">
                         I am Yan To, raised in Hong Kong
@@ -23,15 +25,15 @@ function AboutPage() {
                         bringing exciting extra-curricular experiences to Imperial students.
                     </p>
                 </div>
-                <div class="col-md-4 align-content-center align-items-center">
+                <div class="col-md-3 align-content-center align-items-center">
                     <Image src={profile_image} alt="Brighton." fluid roundedCircle />
                 </div>
             </div>
         </div>
 
         <div class="container py-4">
-            <div class="row align-items-md-stretch mb-4">
-                <div class="col-md-8">
+            <div class="row align-items-md-stretch">
+                <div class="col-md-8 mt-4">
                     <div class="h-100 p-5 text-white rounded-3" style={{ backgroundColor: 'teal', }}>
                         <h2>Inspired by EEE 🔌</h2>
                         <p>
@@ -48,7 +50,7 @@ function AboutPage() {
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4 align-content-center align-items-center">
+                <div class="col-md-4 align-content-center align-items-center mt-4">
                     <div class="h-100 p-2 bg-white border rounded-3 align-content-center align-items-center">
                         <Figure>
                             <Figure.Image
@@ -63,8 +65,8 @@ function AboutPage() {
                 </div>
             </div>
 
-            <div class="row align-items-md-stretch mb-4">
-                <div class="col-md-4">
+            <div class="row align-items-md-stretch">
+                <div class="col-md-4 mt-4">
                     <div class="h-100 p-5 bg-light border rounded-3">
                         <h2>Computing for engineering 💻</h2>
                         <p>
@@ -75,7 +77,7 @@ function AboutPage() {
                         <button class="btn btn-outline-secondary" type="button">Projects</button>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 mt-4">
                     <div class="h-100 p-5 text-white rounded-3" style={{ backgroundColor: 'rgb(51,51,51)', }}>
                         <h2>Internship Experiences 💼</h2>
                         <h5 class=" mt-4">Majestic Engineering (Construction Project Subcontractor)</h5>
@@ -97,8 +99,8 @@ function AboutPage() {
                 </div>
             </div>
 
-            <div class="row align-items-md-stretch mb-4">
-                <div class="col-md-7">
+            <div class="row align-items-md-stretch">
+                <div class="col-md-7 mt-4">
                     <div class="h-100 p-5 text-white rounded-3" style={{ backgroundColor: 'teal', }}>
                         <h2>Trains for life 🚂</h2>
                         <p>
@@ -112,10 +114,15 @@ function AboutPage() {
                             Check out our Medium blog page "RailPub", where we document our exciting experiences,
                             and random railfan trivia!
                         </p>
-                        <button class="btn btn-outline-light" type="button">RailPub on Medium</button>
+                        <p>
+                            <button type="button" class="btn btn-outline-light" style={{width:"200px"}}>RailPub on Medium</button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-outline-light" style={{width:"200px"}}>Yanni Chau on Medium</button>
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-5 align-content-center align-items-center">
+                <div class="col-md-5 align-content-center align-items-center mt-4">
                     <div class="h-100 p-2 bg-white border rounded-3 align-content-center align-items-center">
                         <Figure>
                             <Figure.Image
@@ -130,10 +137,10 @@ function AboutPage() {
                 </div>
             </div>
 
-            <div class="row align-items-md-stretch mb-4">
-                <div class="col-md-4 align-content-center align-items-center">
+            <div class="row align-items-md-stretch">
+                <div class="col-md-4 align-content-center align-items-center mt-4">
                     <div class="h-100 p-2 bg-white border rounded-3 align-content-center align-items-center">
-                    <Figure>
+                        <Figure>
                             <Figure.Image
                                 src={icra_image}
                                 fluid rounded
@@ -144,7 +151,7 @@ function AboutPage() {
                         </Figure>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 mt-4">
                     <div class="h-100 p-5 bg-light rounded-3">
                         <h2>Volunteering 🏫</h2>
                         <p>
@@ -163,46 +170,7 @@ function AboutPage() {
                 </div>
             </div>
 
-            <div class="row align-items-md-stretch mb-4">
-                <div class="col-md-3">
-                    <div class="h-100 p-5 text-white bg-dark rounded-3">
-                        <h2>CV 📃</h2>
-                        <p>
-                            A PDF version of my CV is available below.
-                            Alternatively, my experiences are also documented on LinkedIn.
-                        </p>
-                        <button class="btn btn-outline-light" type="button">CV PDF</button>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="h-100 p-5 bg-light rounded-3">
-                        <h2>GitHub 💻</h2>
-                        <p>
-                            Check out my repositories on GitHub!
-                        </p>
-                        <button class="btn btn-outline-secondary" type="button">GitHub</button>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="h-100 p-5 rounded-3 text-light" style={{ backgroundColor: 'teal', }}>
-                        <h2>Blogs ✏️</h2>
-                        <p>
-                            This is where I blog my jaywalking and train-spotting journeys. Have a read!
-                        </p>
-                        <button class="btn btn-outline-light" type="button">Medium</button>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="h-100 p-5 bg-light border rounded-3">
-                        <h2>Email ✉️</h2>
-                        <p>
-                            Let's have a chat the traditional way!
-                        </p>
-                        <button class="btn btn-outline-secondary" type="button">Let's chat</button>
-                    </div>
-                </div>
-            </div>
-
+            <LinkModules />
 
         </div>
     </main>);
