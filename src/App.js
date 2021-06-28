@@ -1,5 +1,6 @@
 import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
-import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
+import { Navbar, Nav, Container, Row} from 'react-bootstrap';
+import { useState, useEffect } from 'react';
 
 import './App.css';
 import HomePage from './pages/Home';
@@ -12,40 +13,29 @@ import ContactPage from './pages/Contact';
 function App() {
 
   const scrollToTop = () => {
+    setExpanded(false);
     window.scrollTo({
       top: 0,
     });
   };
 
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <BrowserRouter>
       <div>
-        <Navbar collapseOnSelect fixed='top' expand='sm' variant='dark' bg='dark'>
-          <Container>
-            <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+        <Navbar collapseOnSelect fixed='top' expand='sm' variant='dark' bg='dark' expanded={expanded}>
+            <Navbar.Toggle aria-controls='responsive-navbar-nav' onClick={() => setExpanded(expanded ? false : "expanded")}/>
             <Navbar.Collapse id='responsive-navbar-nav'>
-              <Nav>
-                <Row className="justify-content-around align-items-center py-12">
-                  <div class='sm-12 md-4 col-lg-auto' >
+              <Nav className="mr-auto">
                     <Nav.Link onClick={scrollToTop}><Link to="/" class="text-decoration-none fw-bold" style={{ color: 'rgb(153,230,179)', }}> Yan To Chau</Link></Nav.Link>
-                  </div>
-                  <div class='sm-12 md-1 col-lg-auto'>
                     <Nav.Link onClick={scrollToTop}><Link to="/about" class="text-decoration-none text-light"> About</Link></Nav.Link>
-                  </div>
-                  <div class='sm-12 md-1 col-lg-auto'>
                     <Nav.Link onClick={scrollToTop}><Link to="/projects" class="text-decoration-none text-light"> Projects</Link></Nav.Link>
-                  </div>
-                  <div class='sm-12 md-1 col-lg-auto'>
                     <Nav.Link onClick={scrollToTop}><Link to="/life" class="text-decoration-none text-light"> Passions</Link></Nav.Link>
-                  </div>
-                  <div class='sm-12 md-1 col-lg-auto'>
                     <Nav.Link onClick={scrollToTop}><Link to="/contact" class="text-decoration-none text-light"> Contact</Link></Nav.Link>
-                  </div>
-                </Row>
-
               </Nav>
             </Navbar.Collapse>
-          </Container>
+          
         </Navbar>
       </div>
       <br class=" mb-4"></br>
