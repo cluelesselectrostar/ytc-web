@@ -1,15 +1,28 @@
 import Image from 'react-bootstrap/Image';
 import Figure from 'react-bootstrap/Figure'
-import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
 
 import circuit_image from '../images/circuit.jpeg';
 import profile_image from '../images/brighton.jpg';
 import icra_image from '../images/ICRA.jpeg';
 import train_image from '../images/oldoakcommon.JPG';
+import review_pdf from '../docs/End of Internship Review - Yanni.pdf';
 
 import LinkModules from './Links_Module';
 
+import { ytc_links } from './Links';
+import {Link} from 'react-router-dom';
+import { useState} from 'react';
+
 function AboutPage() {
+
+    const scrollToTop = () => {
+        setExpanded(false);
+        window.scrollTo({
+            top: 0,
+        });
+    };
+
+    const [expanded, setExpanded] = useState(false);
 
     return (<main>
 
@@ -74,7 +87,11 @@ function AboutPage() {
                             to C/C++/Arduino for hardware projects. I also have experience in Verilog HDL,
                             for FPGA laboratory work. More details in the Projects page and GitHub.
                         </p>
-                        <button class="btn btn-outline-secondary" type="button">Projects</button>
+                        <button class="btn btn-outline-secondary" type="button">
+                            <Link to="/projects" class="text-decoration-none btn-outline-secondary" onClick={scrollToTop}>
+                                Projects
+                            </Link>
+                        </button>
                     </div>
                 </div>
                 <div class="col-md-8 mt-4">
@@ -94,7 +111,7 @@ function AboutPage() {
                             This gave me an exclusive outlook into the process of crafting a seamless solution,
                             truly tailored to its customers, and delivered reliably to a high standard.
                         </p>
-                        <button class="btn btn-outline-light" type="button">Employer Review</button>
+                        <a class="btn btn-outline-light" href={review_pdf}>Employer Review</a>
                     </div>
                 </div>
             </div>
@@ -115,10 +132,10 @@ function AboutPage() {
                             and random railfan trivia!
                         </p>
                         <p>
-                            <button type="button" class="btn btn-outline-light" style={{width:"200px"}}>RailPub on Medium</button>
+                            <a class="btn btn-outline-light" style={{ width: "200px"}} href={ytc_links.ICRTSMedium}>RailPub on Medium</a>
                         </p>
                         <p>
-                            <button type="button" class="btn btn-outline-light" style={{width:"200px"}}>Yanni Chau on Medium</button>
+                            <a class="btn btn-outline-light" style={{ width: "200px"}} href={ytc_links.myMedium}>Yanni Chau on Medium</a>
                         </p>
                     </div>
                 </div>

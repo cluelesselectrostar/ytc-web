@@ -1,3 +1,6 @@
+import CV_PDF from '../docs/cv_updated.pdf';
+import { ytc_links } from './Links';
+
 function LinkModules() {
 
     return (
@@ -9,7 +12,10 @@ function LinkModules() {
                         A PDF version of my CV is available below.
                         Alternatively, my experiences are also documented on LinkedIn.
                     </p>
-                    <button class="btn btn-outline-light" type="button">CV PDF</button>
+                    <div class="btn-group">
+                        <a class="btn btn-outline-light" href={CV_PDF}>CV</a>
+                        <a class="btn btn-outline-light" href={ytc_links.linkedin}>LinkedIn</a>
+                    </div>
                 </div>
             </div>
             <div class="col-md-3 mt-4">
@@ -18,7 +24,7 @@ function LinkModules() {
                     <p>
                         Check out my repositories on GitHub!
                     </p>
-                    <button class="btn btn-outline-secondary" type="button">GitHub</button>
+                    <a class="btn btn-outline-secondary" href={ytc_links.github}>GitHub</a>
                 </div>
             </div>
             <div class="col-md-3 mt-4">
@@ -27,7 +33,7 @@ function LinkModules() {
                     <p>
                         This is where I blog my jaywalking and train-spotting journeys. Have a read!
                     </p>
-                    <button class="btn btn-outline-light" type="button">Medium</button>
+                    <a class="btn btn-outline-light" href={ytc_links.myMedium}>Medium</a>
                 </div>
             </div>
             <div class="col-md-3 mt-4">
@@ -36,7 +42,7 @@ function LinkModules() {
                     <p>
                         Let's have a chat the traditional way!
                     </p>
-                    <button class="btn btn-outline-secondary" type="button">Let's chat</button>
+                    <a class="btn btn-outline-secondary" href="mailto:chauyanniyanto@gmail.com">Let's chat</a>
                 </div>
             </div>
         </div>

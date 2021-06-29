@@ -10,7 +10,7 @@ function ContactPage() {
                 </p>
             </div>
 
-            <div class="container py-4 mt-4">
+            <div class="container">
                 <LinkModules />
             </div>
         </main>

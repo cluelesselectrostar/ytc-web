@@ -26,7 +26,7 @@ function ProjectsPage() {
                 </div>
             </div>
 
-            <div class="album py-5">
+            <div class="album py-4">
                 <div class="container">
                     <GetLocalProjects />
                 </div>

@@ -3,6 +3,10 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-scroll-parallax';
 import Image from 'react-bootstrap/Image';
 
+import { ytc_links } from './Links';
+import {Link} from 'react-router-dom';
+import { useState} from 'react';
+
 import wales_image from '../images/wales.JPG';
 import tibet_image from '../images/tibet.jpg';
 import bakerloo_image from '../images/bakerlootutorial.png';
@@ -60,7 +64,7 @@ function LifePage() {
                             <p>
                                 There are so many more journeys I would like to make post-coronavirus, and I very much look forward to them. Meanwhile, have a read at my (hopefully decently written) blogs on medium!
                             </p>
-                            <button class="btn btn-outline-light" type="button">Yanni Chau on Medium</button>
+                            <a class="btn btn-outline-light" style={{ width: "200px"}} href={ytc_links.myMedium}>Yanni Chau on Medium</a>
                         </div>
                         <div class="col-md-5 mt-4">
                             <div class="mb-4">
@@ -137,7 +141,7 @@ function LifePage() {
                             <p>
                                 Similar to what I've done for trainspotting, I have written a couple blogs on Medium, and several Tibet Travel blogs on Exposure. That said, I am aware of the implications of publishing on a commercialised site, so I am planning to upload the blogs to this site. Fingers crossed for that!
                             </p>
-                            <button class="btn btn-outline-secondary" type="button">Yanni Chau on Medium</button>
+                            <a class="btn btn-outline-secondary" style={{ width: "200px"}} href={ytc_links.myMedium}>Yanni Chau on Medium</a>
                         </div>
                         <div class="col-md-5 mt-4">
                             <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
