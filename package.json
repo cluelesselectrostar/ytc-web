@@ -10,6 +10,7 @@
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
     "react-dom": "^17.0.2",
+    "react-markdown": "^6.0.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-scroll-parallax": "^2.4.0",
@@ -44,5 +45,5 @@
   "devDependencies": {
     "gh-pages": "^3.2.3"
   },
-  "homepage": "http://cluelesselectrostar.github.io/ytc-web"
+  "homepage": "http://cluelesselectrostar.github.io/"
 }
