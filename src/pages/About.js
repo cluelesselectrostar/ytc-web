@@ -1,5 +1,7 @@
 import Image from 'react-bootstrap/Image';
 import Figure from 'react-bootstrap/Figure'
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 import circuit_image from '../images/circuit.jpeg';
 import profile_image from '../images/brighton.jpg';
@@ -7,11 +9,9 @@ import icra_image from '../images/ICRA.jpeg';
 import train_image from '../images/oldoakcommon.JPG';
 import review_pdf from '../docs/End of Internship Review - Yanni.pdf';
 
-import LinkModules from './Links_Module';
-
-import { ytc_links } from './Links';
-import {Link} from 'react-router-dom';
-import { useState} from 'react';
+import LinkModules from '../components/Links_Module';
+import { ytc_links } from '../components/Links';
+import FramedFigure from '../components/FramedFigure';
 
 function AboutPage() {
 
@@ -64,17 +64,10 @@ function AboutPage() {
                     </div>
                 </div>
                 <div class="col-md-4 align-content-center align-items-center mt-4">
-                    <div class="h-100 p-2 bg-white border rounded-3 align-content-center align-items-center">
-                        <Figure>
-                            <Figure.Image
-                                src={circuit_image}
-                                fluid rounded
-                            />
-                            <Figure.Caption>
-                                Year 2 Circuits and Systems Lab Breadboard, labelled.
-                            </Figure.Caption>
-                        </Figure>
-                    </div>
+                    <FramedFigure
+                        image={circuit_image}
+                        caption="Year 2 Circuits and Systems Lab Breadboard, labelled."
+                    />
                 </div>
             </div>
 
@@ -88,7 +81,7 @@ function AboutPage() {
                             for FPGA laboratory work. More details in the Projects page and GitHub.
                         </p>
                         <button class="btn btn-outline-secondary" type="button">
-                            <Link to="/ytc-web/projects" class="text-decoration-none btn-outline-secondary" onClick={scrollToTop}>
+                            <Link to="/projects" class="text-decoration-none btn-outline-secondary" onClick={scrollToTop}>
                                 Projects
                             </Link>
                         </button>
@@ -132,41 +125,27 @@ function AboutPage() {
                             and random railfan trivia!
                         </p>
                         <p>
-                            <a class="btn btn-outline-light" style={{ width: "200px"}} href={ytc_links.ICRTSMedium}>RailPub on Medium</a>
+                            <a class="btn btn-outline-light" style={{ width: "200px" }} href={ytc_links.ICRTSMedium}>RailPub on Medium</a>
                         </p>
                         <p>
-                            <a class="btn btn-outline-light" style={{ width: "200px"}} href={ytc_links.myMedium}>Yanni Chau on Medium</a>
+                            <a class="btn btn-outline-light" style={{ width: "200px" }} href={ytc_links.myMedium}>Yanni Chau on Medium</a>
                         </p>
                     </div>
                 </div>
                 <div class="col-md-5 align-content-center align-items-center mt-4">
-                    <div class="h-100 p-2 bg-white border rounded-3 align-content-center align-items-center">
-                        <Figure>
-                            <Figure.Image
-                                src={train_image}
-                                fluid rounded
-                            />
-                            <Figure.Caption>
-                                ICRTS trip to the Crossrail Old Oak Common depot. (Spring 2020)
-                            </Figure.Caption>
-                        </Figure>
-                    </div>
+                    <FramedFigure
+                        image={train_image}
+                        caption="ICRTS trip to the Crossrail Old Oak Common depot. (Spring 2020)"
+                    />
                 </div>
             </div>
 
             <div class="row align-items-md-stretch">
                 <div class="col-md-4 align-content-center align-items-center mt-4">
-                    <div class="h-100 p-2 bg-white border rounded-3 align-content-center align-items-center">
-                        <Figure>
-                            <Figure.Image
-                                src={icra_image}
-                                fluid rounded
-                            />
-                            <Figure.Caption>
-                                Imperial College Robotics Academy Lego Mindstorms Workshop. (Autumn 2019)
-                            </Figure.Caption>
-                        </Figure>
-                    </div>
+                    <FramedFigure
+                        image={icra_image}
+                        caption="Imperial College Robotics Academy Lego Mindstorms Workshop. (Autumn 2019)"
+                    />
                 </div>
                 <div class="col-md-8 mt-4">
                     <div class="h-100 p-5 bg-light rounded-3">

@@ -1,7 +1,6 @@
 import my_cover from '../images/edited-1054475.jpg'
 import Image from 'react-bootstrap/Image'
 
-import { ytc_links } from './Links';
 import {Link} from 'react-router-dom';
 import { useState} from 'react';
 
@@ -29,7 +28,7 @@ function HomePage() {
             </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
                 <button class="btn btn-outline-secondary" type="button">
-                    <Link to="/ytc-web/about" class="text-decoration-none btn-outline-secondary" onClick={scrollToTop}>
+                    <Link to="/about" class="text-decoration-none btn-outline-secondary" onClick={scrollToTop}>
                         About Me
                     </Link>
                 </button>

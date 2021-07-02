@@ -1,14 +1,13 @@
-import LinkModules from './Links_Module';
+import LinkModules from '../components/Links_Module';
+import TitleBanner from '../components/TitleBanner';
 
 function ContactPage() {
     return (
         <main>
-            <div class="align-items-md-stretch h-100 p-5 bg-light rounded-3">
-                <h1 class="display-5 fw-bold">Contact Me 🤙</h1>
-                <p class="lead">
-                    Contact me whichever method you desire!
-                </p>
-            </div>
+            <TitleBanner
+                title = "Contact Me"
+                description = "Let's get in touch via whichever method you desire!"
+            />
 
             <div class="container">
                 <LinkModules />

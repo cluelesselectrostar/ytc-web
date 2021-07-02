@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Link, Switch, Route } from 'react-router-dom';
 import { Navbar, Nav, Container, Row} from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 
@@ -8,6 +8,7 @@ import ProjectsPage from './pages/Projects';
 import AboutPage from './pages/About';
 import LifePage from './pages/Life';
 import ContactPage from './pages/Contact';
+import BlogsPage from './pages/Blogs';
 
 
 function App() {
@@ -22,17 +23,18 @@ function App() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div>
         <Navbar collapseOnSelect fixed='top' expand='sm' variant='dark' bg='dark' expanded={expanded}>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' onClick={() => setExpanded(expanded ? false : "expanded")} style={{marginLeft:10}}/>
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className="mr-auto" style={{marginLeft:10}}>
-                    <Nav.Link onClick={scrollToTop}><Link to="/ytc-web/" class="text-decoration-none fw-bold" style={{ color: 'rgb(153,230,179)', }}> Yan To Chau</Link></Nav.Link>
-                    <Nav.Link onClick={scrollToTop}><Link to="/ytc-web/about" class="text-decoration-none text-light"> About</Link></Nav.Link>
-                    <Nav.Link onClick={scrollToTop}><Link to="/ytc-web/projects" class="text-decoration-none text-light"> Projects</Link></Nav.Link>
-                    <Nav.Link onClick={scrollToTop}><Link to="/ytc-web/life" class="text-decoration-none text-light"> Passions</Link></Nav.Link>
-                    <Nav.Link onClick={scrollToTop}><Link to="/ytc-web/contact" class="text-decoration-none text-light"> Contact</Link></Nav.Link>
+                    <Nav.Link onClick={scrollToTop}><Link to="/" class="text-decoration-none fw-bold" style={{ color: 'rgb(153,230,179)', }}> Yan To Chau</Link></Nav.Link>
+                    <Nav.Link onClick={scrollToTop}><Link to="/about" class="text-decoration-none text-light"> About</Link></Nav.Link>
+                    <Nav.Link onClick={scrollToTop}><Link to="/projects" class="text-decoration-none text-light"> Projects</Link></Nav.Link>
+                    <Nav.Link onClick={scrollToTop}><Link to="/life" class="text-decoration-none text-light"> Passions</Link></Nav.Link>
+                    <Nav.Link onClick={scrollToTop}><Link to="/contact" class="text-decoration-none text-light"> Contact</Link></Nav.Link>
+                    <Nav.Link onClick={scrollToTop}><Link to="/blogs" class="text-decoration-none text-light"> Blogs</Link></Nav.Link>
               </Nav>
             </Navbar.Collapse>
           
@@ -41,21 +43,25 @@ function App() {
       <br class=" mb-4"></br>
 
       <Switch>
-        <Route path="/ytc-web/about">
+        <Route path="/about">
           <AboutPage />
         </Route>
-        <Route path="/ytc-web/projects">
+        <Route path="/projects">
           <ProjectsPage />
         </Route>
-        <Route path="/ytc-web/life">
+        <Route path="/life">
           <LifePage />
         </Route>
-        <Route path="/ytc-web/contact">
+        <Route path="/contact">
           <ContactPage />
         </Route>
+        <Route path="/blogs">
+          <BlogsPage />
+        </Route>
+
 
         {/* Home page goes last */}
-        <Route path="/ytc-web/">
+        <Route path="/">
           <HomePage />
         </Route>
       </Switch>
@@ -68,7 +74,7 @@ function App() {
         </div>
       </footer>
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
