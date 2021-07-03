@@ -33,11 +33,11 @@ function BlogsPage() {
                 description="My personal space for everything!"
             />
 
+            <BlogImport />
+
             <div class="align-items-md-stretch h-100 p-5">
                 <ReactMarkdown remarkPlugins={[gfm]} children={post} />
             </div> 
-
-            {/* <BlogImport /> */}
 
         </main>
     );

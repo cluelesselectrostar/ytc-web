@@ -30,7 +30,7 @@ class BlogImport extends Component {
             <div>
                 {
                     posts.map((post) => (
-                        <div class="card shadow-sm" style={{ height: 600 }}>
+                        <div class="card shadow-sm" style={{ height: 200 }}>
                             <div class="card-body">
                                 <ReactMarkdown source={post} />
                             </div>
