@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
+import { HashRouter, Link, Switch, Route } from 'react-router-dom';
 import { Navbar, Nav, Container, Row} from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 
@@ -7,6 +7,7 @@ import HomePage from './pages/Home';
 import ProjectsPage from './pages/Projects';
 import AboutPage from './pages/About';
 import LifePage from './pages/Life';
+import BlogsPage from './pages/Blogs';
 import ContactPage from './pages/Contact';
 
 
@@ -22,7 +23,7 @@ function App() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div>
         <Navbar collapseOnSelect fixed='top' expand='sm' variant='dark' bg='dark' expanded={expanded}>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' onClick={() => setExpanded(expanded ? false : "expanded")} style={{marginLeft:10}}/>
@@ -32,6 +33,7 @@ function App() {
                     <Nav.Link onClick={scrollToTop}><Link to="/ytc-web/about" class="text-decoration-none text-light"> About</Link></Nav.Link>
                     <Nav.Link onClick={scrollToTop}><Link to="/ytc-web/projects" class="text-decoration-none text-light"> Projects</Link></Nav.Link>
                     <Nav.Link onClick={scrollToTop}><Link to="/ytc-web/life" class="text-decoration-none text-light"> Passions</Link></Nav.Link>
+                    <Nav.Link onClick={scrollToTop}><Link to="/ytc-web/blogs" class="text-decoration-none text-light"> Blogs</Link></Nav.Link>
                     <Nav.Link onClick={scrollToTop}><Link to="/ytc-web/contact" class="text-decoration-none text-light"> Contact</Link></Nav.Link>
               </Nav>
             </Navbar.Collapse>
@@ -49,6 +51,9 @@ function App() {
         </Route>
         <Route path="/ytc-web/life">
           <LifePage />
+        </Route>
+        <Route path="/ytc-web/blogs">
+          <BlogsPage />
         </Route>
         <Route path="/ytc-web/contact">
           <ContactPage />
@@ -68,7 +73,7 @@ function App() {
         </div>
       </footer>
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
