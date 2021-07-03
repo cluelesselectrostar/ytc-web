@@ -10,6 +10,12 @@ import LifePage from './pages/Life';
 import ContactPage from './pages/Contact';
 import BlogsPage from './pages/Blogs';
 
+/* 
+This file contains:
+- The navigation bar
+- Routing to individual pages (home, about, projects.....)
+- Footer
+*/
 
 function App() {
 
