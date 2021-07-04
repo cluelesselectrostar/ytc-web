@@ -52,8 +52,8 @@ class GetBlogs extends Component {
             //         ))
             //     }
             // </div>
-            //<BlogImport path="./ffestiniog-blog/ffestiniog.md"/>
-            <div></div>
+            <BlogImport path="./ffestiniog-blog/ffestiniog.md"/>
+            //<div></div>
         );
     }
 }

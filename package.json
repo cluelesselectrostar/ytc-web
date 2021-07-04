@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.0.2",
+    "markdown": "^0.5.0",
     "marked": "^2.1.3",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
@@ -15,15 +16,17 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-scroll-parallax": "^2.4.0",
+    "typescript": "^4.3.5",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start && webpack-dev-server --config ./webpack.config.js --mode development",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "webpack --mode development"
   },
   "eslintConfig": {
     "extends": [
@@ -44,7 +47,14 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "css-loader": "^5.2.6",
+    "gh-pages": "^3.2.3",
+    "highlight.js": "^11.0.1",
+    "html-loader": "^2.1.2",
+    "markdown-loader": "^6.0.0",
+    "raw-loader": "^4.0.2",
+    "style-loader": "^3.0.0",
+    "webpack-cli": "^4.7.2"
   },
   "homepage": "http://cluelesselectrostar.github.io/ytc-web/"
 }
