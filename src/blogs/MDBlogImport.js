@@ -22,7 +22,6 @@ class BlogImport extends Component {
     return <ReactMarkdown source={markdown} />;
   }
 }
-*/
 
 function MDImport(require_name) {
 
@@ -49,6 +48,47 @@ function MDImport(require_name) {
     
     //return{ __html: 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello'};
 
+}*/
+
+
+class MDImport extends Component {
+
+  constructor() {
+    super();
+    this.state = { markdown: null };
+  }
+
+  /*
+  componentWillMount() {
+    // Get the contents from the Markdown file and put them in the React state, so we can reference it in render() below.
+    fetch(require(`${this.props.filename}`)).then(res => res.text()).then(text => this.setState({ markdown: text }));
+  }
+
+  componentDidMount() {
+    const readmePath = require(`${this.props.filename}`);
+  
+    fetch(readmePath)
+      .then(response => {
+        return response.text()
+      })
+      .then(text => {
+        this.setState({
+          markdown: text
+        })
+      })
+  }
+  */
+
+  componentDidMount() {
+    fetch(`${this.props.filename}`)
+      .then(res => res.text())
+      .then(markdown => this.setState((state) => ({ ...state, markdown })))
+      .catch((err) => console.error(err));
+  }
+
+  render() {
+    return <ReactMarkdown source={this.state.markdown} />;
+  }
 }
 
 export default MDImport;

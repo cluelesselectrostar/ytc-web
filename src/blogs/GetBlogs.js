@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { HashRouter, Link, Switch, Route } from 'react-router-dom';
 import { Navbar, Nav, Container, Row } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
-import MDImport from './BlogImport.js';
+import MDImport from './MDBlogImport.js';
 import HTMLBlogImport from './HTMLBlogImport.js';
 
 import projects from './Blogs_List.js';
@@ -53,7 +53,7 @@ class GetBlogs extends Component {
             //         ))
             //     }
             // </div>
-            //<MDImport require_name='./archive/ffestiniog.md'/>
+            //<MDImport filename="./archive/ffestiniog.md"/>
             <HTMLBlogImport filename = "./posts/2020-03-03_Ffestiniog-and-Welsh-Highlands-Heritage-Railways-Winter-Volunteering-Trip-dc2db75ab144.html"/>
             //<div></div>
         );

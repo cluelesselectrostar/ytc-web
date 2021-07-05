@@ -551,7 +551,6 @@ module.exports = function (webpackEnv) {
                   loader: 'markdown-loader',
                   options: {
                     pedantic: true,
-                    renderer: markdownRenderer
                   }
                 }
               ]
