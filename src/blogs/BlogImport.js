@@ -1,8 +1,9 @@
 
 
 import React, { Component, useState, useEffect } from 'react';
-import AppMarkdown from '!!html-loader!./ffestiniog.md';
+//import AppMarkdown from '!!html-loader!./ffestiniog.md';
 import ReactMarkdown from 'react-markdown';
+import gfm from 'remark-gfm';
 
 /*
 class BlogImport extends Component {
@@ -23,9 +24,9 @@ class BlogImport extends Component {
 }
 */
 
-function BlogImport() {
+function MDImport(require_name) {
 
-    // const file_name = './Blogging/blogs/example-blog/template.md';
+    const file_name = require_name;
     const [post, setPost] = useState('');
 
     
@@ -46,9 +47,8 @@ function BlogImport() {
         </div>
     );
     
-
     //return{ __html: 'Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello'};
 
 }
 
-export default BlogImport;
+export default MDImport;
