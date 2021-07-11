@@ -30,24 +30,22 @@ class HTMLBlogImport extends Component {
                     }
                     if (attribs.class === "imageCaption") {
                         return (
-                            <p style={{ fontStyle: 'italic', fontSize: "0.9em" }} style={{display: 'flex', justifyContent: 'center'}}>
+                            <p style={{ fontStyle: 'italic', fontSize: "0.9em" }} style={{ display: 'flex', justifyContent: 'center' }}>
                                 {domToReact(children, options)}
                             </p>
                         );
                     } else if (String(attribs.class).includes("section-inner")) {
                         return (
-                            <div class="row align-items-md-stretch" style={{display: 'flex', justifyContent: 'center'}}>
+                            <div class="row align-items-md-stretch" style={{ display: 'flex', justifyContent: 'center' }}>
                                 {domToReact(children, options)}
                             </div>
                         );
                     } else if (attribs.class === "graf-image") {
                         return (
-                            <div class="align-content-center align-items-center" style={{display: 'flex', justifyContent: 'center'}}>
+                            <div class="align-content-center align-items-center" style={{ display: 'flex', justifyContent: 'center' }}>
                                 <Image src={attribs.src} alt="Photo" fluid rounded />
                             </div >
                         );
-                    } else if (attribs.class === "p-name" || attribs.class === "p-summary") {
-                        return <div></div>;
                     } else if (attribs.class === "p-name" || attribs.class === "p-summary") {
                         return <div></div>;
                     }
