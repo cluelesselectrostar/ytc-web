@@ -16,37 +16,42 @@ class HTMLBlogImport extends Component {
     }
 
     render() {
-        const cleanHTML = DOMPurify.sanitize(require(`${this.props.filename}`), {
-            USE_PROFILES: { html: true },
-        });
+        if (`${this.props.filename}` === "") {
+            return <br></br>
+        } else {
+            const cleanHTML = DOMPurify.sanitize(require(`${this.props.filename}`), {
+                USE_PROFILES: { html: true },
+            });
 
-        // PARSER        
-        const replace = ({ attribs, children }) => {
-            if (attribs && attribs.class === "graf-image") {
-                return (
-                    <div class="align-items-center align-content-center m-auto col-md-8 col-sm-12">
-                        <Image src={attribs.src} alt="Photo" fluid rounded />
-                    </div >
-                );
-            }
-            if (attribs && (attribs.class === "p-name" || attribs.class === "p-summary")) {
-                return <div></div>;
-            }
-            else if (attribs && (attribs.class === "p-name" || attribs.class === "p-summary")) {
-                return <div></div>;
-            }
-            else if (attribs && attribs.class === "imageCaption") {
-                return (
-                    <p style={{ fontStyle: 'italic', fontSize: "0.9em" }} class="align-items-center align-content-center m-auto col-md-8 col-sm-12">
-                        {domToReact(children)}
-                    </p>
-                );
-            }
-        };
+            // PARSER        
+            const replace = ({ attribs, children }) => {
+                if (attribs && attribs.class === "graf-image") {
+                    return (
+                        <div class="align-items-center align-content-center m-auto col-md-8 col-sm-12">
+                            <Image src={attribs.src} alt="Photo" fluid rounded />
+                        </div >
+                    );
+                }
+                if (attribs && (attribs.class === "p-name" || attribs.class === "p-summary")) {
+                    return <div></div>;
+                }
+                else if (attribs && (attribs.class === "p-name" || attribs.class === "p-summary")) {
+                    return <div></div>;
+                }
+                else if (attribs && attribs.class === "imageCaption") {
+                    return (
+                        <p style={{ fontStyle: 'italic', fontSize: "0.9em" }} class="align-items-center align-content-center m-auto col-md-8 col-sm-12">
+                            {domToReact(children)}
+                        </p>
+                    );
+                }
+            };
 
-        return (
-            <div>{parse(cleanHTML, { replace })}</div>
-        );
+            return (
+                <div>{parse(cleanHTML, { replace })}</div>
+            );
+        }
+
     }
 
 }
