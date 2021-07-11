@@ -1,0 +1,39 @@
+import React, { useState, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
+import TitleBanner from '../components/TitleBanner';
+//import BlogImport from './Blogging/BlogImport';
+
+//const gfm = require('remark-gfm')
+//remarkPlugins={[gfm]}
+
+function BlogImport() {
+
+    const file_name = './ffestiniog.md';
+    const [post, setPost] = useState('');
+
+    useEffect(() => {
+        import(`${file_name}`)
+            .then(res => {
+                fetch(res.default)
+                    .then(res => res.text())
+                    .then(res => setPost(res))
+                    .catch(err => console.log(err));
+            })
+            .catch(err => console.log(err));
+    });
+
+    return (
+        <main>
+            <div class="align-items-md-stretch h-100 p-5">
+                <ReactMarkdown children={post} />
+            </div> 
+
+            {/* <BlogImport /> */}
+
+        </main>
+    );
+
+
+}
+
+export default BlogImport;
