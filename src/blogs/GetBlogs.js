@@ -63,19 +63,16 @@ class GetBlogs extends Component {
                                                     <div class="card-body">
                                                         <h3> {post.title}</h3>
                                                         <p class="card-text">{post.description}</p>
-                                                        <div class="d-flex justify-content-between" style={{ position: "absolute", bottom: 20 }}>
-                                                            <div class="row justify-content-between">
-                                                                <div class="btn-group col-md-5">
-                                                                    <a class="btn btn-sm btn-outline-secondary" onClick={() => this.btnClicked(`${post.read}`)}>
-                                                                        Read
-                                                                    </a>
-                                                                    <a class="btn btn-sm btn-outline-secondary" href={post.medium}>Medium</a>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <p>
-                                                                        <small class="text-muted">{post.date}</small>
-                                                                    </p>
-                                                                </div>
+
+                                                        <div class="row d-flex justify-content-between align-items-center" style={{ position: "absolute", bottom: 20, justifyContent: 'center' }}>
+                                                            <div class="btn-group col-md-6">
+                                                            <a class="btn btn-sm btn-outline-secondary" onClick={() => this.btnClicked(`${post.read}`)}>
+                                                                    Read
+                                                                </a>
+                                                                <a class="btn btn-sm btn-outline-secondary" href={post.medium}>Medium</a>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <small class="text-muted">Published on {post.date}</small>
                                                             </div>
                                                         </div>
                                                     </div>

@@ -13,3 +13,10 @@ https://www.newline.co/@dmitryrogozhny/how-to-render-markdown-in-react-with-reac
 https://reactgo.com/react-sticky-footer/
 
 https://stackoverflow.com/questions/54142051/scroll-to-a-particular-div-using-id-in-reactjs-without-using-any-other-library
+
+https://upmostly.com/tutorials/pass-a-parameter-through-onclick-in-react
+
+https://www.npmjs.com/package/react-collapsible
+
+https://www.npmjs.com/package/html-react-parser
+

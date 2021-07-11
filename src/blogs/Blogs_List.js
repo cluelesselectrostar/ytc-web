@@ -1,9 +1,10 @@
-import p1 from "./blog_thumbnails/rover.jpg"
-// import p2 from "./blog_thumbnails/cookhack.png"
-// import p3 from "./blog_thumbnails/panxcel.png"
-// import p4 from "./blog_thumbnails/reversal_new_interface.png"
-// import p5 from "./blog_thumbnails/wheels.png"
-// import p6 from "./blog_thumbnails/circuitsim.png"
+import p1 from "./blog_thumbnails/pulses.JPG"
+import p2 from "./blog_thumbnails/training.JPG"
+import p3 from "./blog_thumbnails/ffestiniog19.jpg"
+import p4 from "./blog_thumbnails/chasing.jpg"
+import p5 from "./blog_thumbnails/gcr.jpg"
+import p6 from "./blog_thumbnails/hkdiesel.jpg"
+import p7 from "./blog_thumbnails/hktrains.jpg"
 
 const blogs = [
     {
@@ -22,7 +23,7 @@ const blogs = [
         "read":"./posts/2020-01-18_Training-my-mind-to-mind-the-trains---7e783899d98d.html",
         "medium":"",
         "tags": ["trains", "urban", "uk", "TfL", "underground"],
-        "image":p1
+        "image":p2
     },
     {
         "title": "Ffestiniog Heritage Railways Volunteering Trip",
@@ -31,7 +32,7 @@ const blogs = [
         "read":"./posts/2020-03-03_Ffestiniog-and-Welsh-Highlands-Heritage-Railways-Winter-Volunteering-Trip-dc2db75ab144.html",
         "medium":"",
         "tags": ["trains", "imperial", "uk", "avanti west coast"],
-        "image":p1
+        "image":p3
     },
     {
         "title": "Chasing trains chasing by",
@@ -40,7 +41,7 @@ const blogs = [
         "read":"./posts/2020-03-21_Chasing-trains-chasing-by-47688c148194.html",
         "medium":"",
         "tags": ["trains", "southern", "uk", "TfL"],
-        "image":p1
+        "image":p4
     },
     {
         "title": "GCB? GCR!",
@@ -49,7 +50,7 @@ const blogs = [
         "read":"./posts/2020-04-03_GCB--GCR--f80a9ec2f49f.html",
         "medium":"",
         "tags": ["trains", "steam", "uk", "loughborough", "leicester"],
-        "image":p1
+        "image":p5
     },
     {
         "title": "追柴記",
@@ -58,7 +59,7 @@ const blogs = [
         "read":"./posts/2021-03-03_----ed9613909dfa.html",
         "medium":"",
         "tags": ["trains", "hk", "diesel", "retirement"],
-        "image":p1
+        "image":p6
     },
     {
         "title": "A quick guide to Hong Kong's trains",
@@ -67,7 +68,7 @@ const blogs = [
         "read":"./posts/2021-04-16_A-quick-guide-to-Hong-Kong-s-trains-6fc0dc8f660f.html",
         "medium":"",
         "tags": ["trains", "hk", "mtr", "travel"],
-        "image":p1
+        "image":p7
     },
 ];
 

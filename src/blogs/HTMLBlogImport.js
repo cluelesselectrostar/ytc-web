@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import Image from 'react-bootstrap/Image'
 import DOMPurify from "dompurify";
-import parse from "html-react-parser";
-import domToReact from 'html-react-parser/lib/dom-to-react';
+import parse, { domToReact } from 'html-react-parser';
 
 class HTMLBlogImport extends Component {
 
@@ -24,31 +23,39 @@ class HTMLBlogImport extends Component {
             });
 
             // PARSER        
-            const replace = ({ attribs, children }) => {
-                if (attribs && attribs.class === "graf-image") {
-                    return (
-                        <div class="align-items-center align-content-center m-auto col-md-8 col-sm-12">
-                            <Image src={attribs.src} alt="Photo" fluid rounded/>
-                        </div >
-                    );
-                }
-                if (attribs && (attribs.class === "p-name" || attribs.class === "p-summary")) {
-                    return <div></div>;
-                }
-                else if (attribs && (attribs.class === "p-name" || attribs.class === "p-summary")) {
-                    return <div></div>;
-                }
-                else if (attribs && attribs.class === "imageCaption") {
-                    return (
-                        <p style={{ fontStyle: 'italic', fontSize: "0.9em" }} class="align-items-center align-content-center m-auto col-md-8 col-sm-12">
-                            {domToReact(children)}
-                        </p>
-                    );
+            const options = {
+                replace: ({ attribs, children }) => {
+                    if (!attribs) {
+                        return;
+                    }
+                    if (attribs.class === "imageCaption") {
+                        return (
+                            <p style={{ fontStyle: 'italic', fontSize: "0.9em" }} style={{display: 'flex', justifyContent: 'center'}}>
+                                {domToReact(children, options)}
+                            </p>
+                        );
+                    } else if (String(attribs.class).includes("section-inner")) {
+                        return (
+                            <div class="row align-items-md-stretch" style={{display: 'flex', justifyContent: 'center'}}>
+                                {domToReact(children, options)}
+                            </div>
+                        );
+                    } else if (attribs.class === "graf-image") {
+                        return (
+                            <div class="align-content-center align-items-center" style={{display: 'flex', justifyContent: 'center'}}>
+                                <Image src={attribs.src} alt="Photo" fluid rounded />
+                            </div >
+                        );
+                    } else if (attribs.class === "p-name" || attribs.class === "p-summary") {
+                        return <div></div>;
+                    } else if (attribs.class === "p-name" || attribs.class === "p-summary") {
+                        return <div></div>;
+                    }
                 }
             };
 
             return (
-                <div>{parse(cleanHTML, { replace })}</div>
+                <div>{parse(cleanHTML, options)}</div>
             );
         }
 
