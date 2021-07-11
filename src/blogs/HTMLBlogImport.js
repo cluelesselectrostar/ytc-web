@@ -28,7 +28,7 @@ class HTMLBlogImport extends Component {
                 if (attribs && attribs.class === "graf-image") {
                     return (
                         <div class="align-items-center align-content-center m-auto col-md-8 col-sm-12">
-                            <Image src={attribs.src} alt="Photo" fluid rounded />
+                            <Image src={attribs.src} alt="Photo" fluid rounded/>
                         </div >
                     );
                 }

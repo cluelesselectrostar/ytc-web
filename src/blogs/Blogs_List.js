@@ -63,7 +63,8 @@ const blogs = [
     {
         "title": "A quick guide to Hong Kong's trains",
         "description":"An quick look into trains, from the other side of the globe!",
-        "date": "./posts/2021-04-16_A-quick-guide-to-Hong-Kong-s-trains-6fc0dc8f660f.html",
+        "date": "2021-04-16",
+        "read":"./posts/2021-04-16_A-quick-guide-to-Hong-Kong-s-trains-6fc0dc8f660f.html",
         "medium":"",
         "tags": ["trains", "hk", "mtr", "travel"],
         "image":p1
