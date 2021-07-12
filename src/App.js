@@ -43,24 +43,24 @@ function App() {
       <br class=" mb-4"></br>
 
       <Switch>
-        <Route path="/ytc-web/about">
+        <Route path="/about">
           <AboutPage />
         </Route>
-        <Route path="/ytc-web/projects">
+        <Route path="/projects">
           <ProjectsPage />
         </Route>
-        <Route path="/ytc-web/life">
+        <Route path="/life">
           <LifePage />
         </Route>
-        <Route path="/ytc-web/blogs">
+        <Route path="/blogs">
           <BlogsPage />
         </Route>
-        <Route path="/ytc-web/contact">
+        <Route path="/contact">
           <ContactPage />
         </Route>
 
         {/* Home page goes last */}
-        <Route path="/ytc-web/">
+        <Route path="/">
           <HomePage />
         </Route>
       </Switch>

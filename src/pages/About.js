@@ -91,7 +91,7 @@ function AboutPage() {
                                     for FPGA laboratory work. More details in the Projects page and GitHub.
                                 </p>
                                 <button class="btn btn-outline-secondary" type="button">
-                                    <Link to="/ytc-web/projects" class="text-decoration-none btn-outline-secondary" onClick={scrollToTop}>
+                                    <Link to="/projects" class="text-decoration-none btn-outline-secondary" onClick={scrollToTop}>
                                         Projects
                                     </Link>
                                 </button>

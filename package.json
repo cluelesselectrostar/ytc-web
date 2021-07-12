@@ -118,7 +118,7 @@
     "style-loader": "^3.0.0",
     "webpack-cli": "^4.7.2"
   },
-  "homepage": "http://cluelesselectrostar.github.io/#/ytc-web/",
+  "homepage": "http://cluelesselectrostar.github.io/ytc-web/",
   "jest": {
     "roots": [
       "<rootDir>/src"

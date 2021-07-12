@@ -29,7 +29,7 @@ function HomePage() {
             </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
                 <button class="btn btn-outline-secondary" type="button">
-                    <Link to="/ytc-web/about" class="text-decoration-none btn-outline-secondary" onClick={scrollToTop}>
+                    <Link to="/about" class="text-decoration-none btn-outline-secondary" onClick={scrollToTop}>
                         About Me
                     </Link>
                 </button>
