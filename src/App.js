@@ -1,5 +1,5 @@
 import { HashRouter, Link, Switch, Route } from 'react-router-dom';
-import { Navbar, Nav, Container, Row} from 'react-bootstrap';
+import { Navbar, Nav, Container, Row } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 
 import './App.css';
@@ -17,6 +17,7 @@ function App() {
     setExpanded(false);
     window.scrollTo({
       top: 0,
+      behavior: "smooth"
     });
   };
 
@@ -26,18 +27,18 @@ function App() {
     <HashRouter>
       <div>
         <Navbar collapseOnSelect fixed='top' expand='sm' variant='dark' bg='dark' expanded={expanded}>
-            <Navbar.Toggle aria-controls='responsive-navbar-nav' onClick={() => setExpanded(expanded ? false : "expanded")} style={{marginLeft:10}}/>
-            <Navbar.Collapse id='responsive-navbar-nav'>
-              <Nav className="mr-auto" style={{marginLeft:10}}>
-                    <Nav.Link onClick={scrollToTop}><Link to="/" class="text-decoration-none fw-bold" style={{ color: 'rgb(153,230,179)', }}> Yan To Chau</Link></Nav.Link>
-                    <Nav.Link onClick={scrollToTop}><Link to="/about" class="text-decoration-none text-light"> About</Link></Nav.Link>
-                    <Nav.Link onClick={scrollToTop}><Link to="/projects" class="text-decoration-none text-light"> Projects</Link></Nav.Link>
-                    <Nav.Link onClick={scrollToTop}><Link to="/life" class="text-decoration-none text-light"> Passions</Link></Nav.Link>
-                    <Nav.Link onClick={scrollToTop}><Link to="/blogs" class="text-decoration-none text-light"> Blogs</Link></Nav.Link>
-                    <Nav.Link onClick={scrollToTop}><Link to="/contact" class="text-decoration-none text-light"> Contact</Link></Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          
+          <Navbar.Toggle aria-controls='responsive-navbar-nav' onClick={() => setExpanded(expanded ? false : "expanded")} style={{ marginLeft: 10 }} />
+          <Navbar.Collapse id='responsive-navbar-nav'>
+            <Nav className="mr-auto" style={{ marginLeft: 10 }}>
+              <Nav.Link onClick={scrollToTop}><Link to="/" class="text-decoration-none fw-bold" style={{ color: 'rgb(153,230,179)', }}> Yan To Chau</Link></Nav.Link>
+              <Nav.Link onClick={scrollToTop}><Link to="/about" class="text-decoration-none text-light"> About</Link></Nav.Link>
+              <Nav.Link onClick={scrollToTop}><Link to="/projects" class="text-decoration-none text-light"> Projects</Link></Nav.Link>
+              <Nav.Link onClick={scrollToTop}><Link to="/life" class="text-decoration-none text-light"> Passions</Link></Nav.Link>
+              <Nav.Link onClick={scrollToTop}><Link to="/blogs" class="text-decoration-none text-light"> Blogs</Link></Nav.Link>
+              <Nav.Link onClick={scrollToTop}><Link to="/contact" class="text-decoration-none text-light"> Contact</Link></Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+
         </Navbar>
       </div>
       <br class=" mb-4"></br>
