@@ -41,16 +41,10 @@ class HTMLBlogImport extends Component {
                                 {domToReact(children, options)}
                             </div>
                         );
-                    } else if (attribs.class === "graf--layoutFillWidth") {
-                        return (
-                            <div class="align-content-center align-items-center mt-3" style={{ display: 'flex', justifyContent: 'center' }}>
-                                <Image src={attribs.src} alt="Photo"/>
-                            </div >
-                        );
                     } else if (attribs.class === "graf-image") {
                         return (
                             <div class="align-content-center align-items-center mt-3" style={{ display: 'flex', justifyContent: 'center' }}>
-                                <Image src={attribs.src} alt="Photo" fluid rounded />
+                                <Image src={attribs.src} alt="Photo" fluid/>
                             </div >
                         );
                     } else if (attribs.class === "p-name" || attribs.class === "p-summary") {
