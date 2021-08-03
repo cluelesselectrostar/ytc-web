@@ -20,3 +20,9 @@ https://www.npmjs.com/package/react-collapsible
 
 https://www.npmjs.com/package/html-react-parser
 
+https://stackoverflow.com/questions/48259512/how-to-check-if-a-pariticular-fileexists-in-reactjs/48264153
+
+https://stackoverflow.com/questions/66311307/render-a-new-page-on-react-routing-but-it-renders-it-inside-the-current-page
+
+
+

@@ -9,6 +9,7 @@ import AboutPage from './pages/About';
 import LifePage from './pages/Life';
 import BlogsPage from './pages/Blogs';
 import ContactPage from './pages/Contact';
+import HTMLBlogImport from './blogs/HTMLBlogImport';
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
         <Route path="/life">
           <LifePage />
         </Route>
+        <Route path="/blogs/:title" component={HTMLBlogImport}/>
         <Route path="/blogs">
           <BlogsPage />
         </Route>
