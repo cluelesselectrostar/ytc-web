@@ -1,10 +1,10 @@
-import p1 from "./blog_thumbnails/pulses.JPG"
-import p2 from "./blog_thumbnails/training.JPG"
-import p3 from "./blog_thumbnails/ffestiniog19.jpg"
-import p4 from "./blog_thumbnails/chasing.jpg"
-import p5 from "./blog_thumbnails/gcr.jpg"
-import p6 from "./blog_thumbnails/hkdiesel.jpg"
-import p7 from "./blog_thumbnails/hktrains.jpg"
+import p1 from "./blog_thumbnails/pulses.webp"
+import p2 from "./blog_thumbnails/training.webp"
+import p3 from "./blog_thumbnails/ffestiniog19.webp"
+import p4 from "./blog_thumbnails/chasing.webp"
+import p5 from "./blog_thumbnails/gcr.webp"
+import p6 from "./blog_thumbnails/hkdiesel.webp"
+import p7 from "./blog_thumbnails/hktrains.webp"
 
 const blogs = [
     {

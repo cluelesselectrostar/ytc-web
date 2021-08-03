@@ -61,6 +61,8 @@ class HTMLBlogImport extends Component {
                             );
                         } else if (attribs.class === "p-name" || attribs.class === "p-summary") {
                             return <div></div>;
+                        } else if (attribs.class ==="section-divider") {
+                            return <br></br>;
                         } else if (String(attribs.class).includes("graf--p")) {
                             return (
                                 <div class="col-md-10 col-lg-8 cust mt-3 mb-3">

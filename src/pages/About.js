@@ -1,10 +1,10 @@
 import Image from 'react-bootstrap/Image';
 import Figure from 'react-bootstrap/Figure'
 
-import circuit_image from '../images/circuit.jpeg';
-import profile_image from '../images/brighton.jpg';
-import icra_image from '../images/ICRA.jpeg';
-import train_image from '../images/oldoakcommon.JPG';
+import circuit_image from '../images/circuit.webp';
+import profile_image from '../images/brighton.webp';
+import icra_image from '../images/ICRA.webp';
+import train_image from '../images/oldoakcommon.webp';
 import review_pdf from '../docs/End of Internship Review - Yanni.pdf';
 
 import LinkModules from '../components/Links_Module';

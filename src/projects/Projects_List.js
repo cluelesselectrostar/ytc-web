@@ -1,9 +1,9 @@
-import p1 from "./project_thumbnails/rover.jpg"
-import p2 from "./project_thumbnails/cookhack.png"
-import p3 from "./project_thumbnails/panxcel.png"
-import p4 from "./project_thumbnails/reversal_new_interface.png"
-import p5 from "./project_thumbnails/wheels.png"
-import p6 from "./project_thumbnails/circuitsim.png"
+import p1 from "./project_thumbnails/rover.webp"
+import p2 from "./project_thumbnails/cookhack.webp"
+import p3 from "./project_thumbnails/panxcel.webp"
+import p4 from "./project_thumbnails/reversal_new_interface.webp"
+import p5 from "./project_thumbnails/wheels.webp"
+import p6 from "./project_thumbnails/circuitsim.webp"
 
 const projects = [
     {

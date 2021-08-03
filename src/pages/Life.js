@@ -9,19 +9,19 @@ import { useState } from 'react';
 import TitleBanner from '../components/TitleBanner';
 import SquircleBox from '../components/SquircleBox';
 
-import wales_image from '../images/wales.JPG';
-import tibet_image from '../images/tibet.jpg';
-import bakerloo_image from '../images/bakerlootutorial.png';
-import skatepark_image from '../images/skatepark.jpg';
-import streetskate_image from '../images/streetskate.jpg';
+import wales_image from '../images/wales.webp';
+import tibet_image from '../images/tibet.webp';
+import bakerloo_image from '../images/bakerlootutorial.webp';
+import skatepark_image from '../images/skatepark.webp';
+import streetskate_image from '../images/streetskate.webp';
 
-import image_1 from "../images/jaywalking/edited-1054311.jpg";
-import image_2 from "../images/jaywalking/edited-1054329.jpg";
-import image_3 from "../images/jaywalking/edited-1054347.jpg";
-import image_4 from "../images/jaywalking/edited-1054516.jpg";
-import image_5 from "../images/jaywalking/edited-1054537.jpg";
-import image_6 from "../images/jaywalking/edited-1054607.jpg";
-import image_7 from "../images/jaywalking/edited-1054755.jpg";
+import image_1 from "../images/jaywalking/edited-1054311.webp";
+import image_2 from "../images/jaywalking/edited-1054329.webp";
+import image_3 from "../images/jaywalking/edited-1054347.webp";
+import image_4 from "../images/jaywalking/edited-1054516.webp";
+import image_5 from "../images/jaywalking/edited-1054537.webp";
+import image_6 from "../images/jaywalking/edited-1054607.webp";
+import image_7 from "../images/jaywalking/edited-1054755.webp";
 
 import './Life.css';
 

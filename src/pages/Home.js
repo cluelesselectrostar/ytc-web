@@ -1,7 +1,7 @@
 import { HashRouter, Link, Switch, Route } from 'react-router-dom';
-import { useState} from 'react';
+import { useState } from 'react';
 
-import my_cover from '../images/edited-1054475.jpg'
+import my_cover from '../images/edited-1054475.webp'
 import Image from 'react-bootstrap/Image'
 
 import { ytc_links } from '../components/Links';
@@ -12,7 +12,7 @@ function HomePage() {
     const scrollToTop = () => {
         setExpanded(false);
         window.scrollTo({
-            top: 0, behavior: 'smooth' 
+            top: 0, behavior: 'smooth'
         });
     };
     const [expanded, setExpanded] = useState(false);
