@@ -4,6 +4,29 @@ import DOMPurify from "dompurify";
 import parse, { domToReact } from 'html-react-parser';
 import './HTMLBlogImport.css';
 
+import PageTitle from "../components/PageTitle";
+
+import {
+    FacebookShareButton,
+    LinkedinShareButton,
+    TwitterShareButton,
+    PinterestShareButton,
+    RedditShareButton,
+    EmailShareButton,
+} from 'react-share';
+
+import {
+    FacebookIcon,
+    TwitterIcon,
+    LinkedinIcon,
+    PinterestIcon,
+    RedditIcon,
+    EmailIcon,
+} from 'react-share';
+
+
+
+
 class HTMLBlogImport extends Component {
 
     constructor(props) {
@@ -17,12 +40,12 @@ class HTMLBlogImport extends Component {
 
     tryRequire = (path) => {
         try {
-         return require(`${path}`);
+            return require(`${path}`);
         } catch (err) {
-         return null;
+            return null;
         }
     };
-      
+
 
     render() {
         const title = decodeURIComponent(this.props.match.params.title);
@@ -59,9 +82,11 @@ class HTMLBlogImport extends Component {
                                     <Image src={attribs.src} alt="Photo" fluid />
                                 </div >
                             );
-                        } else if (attribs.class === "p-name" || attribs.class === "p-summary") {
+                        } else if (attribs.class === "p-name") {
                             return <div></div>;
-                        } else if (attribs.class ==="section-divider") {
+                        } else if (attribs.class === "p-summary") {
+                            return <div></div>;
+                        } else if (attribs.class === "section-divider") {
                             return <br></br>;
                         } else if (String(attribs.class).includes("graf--p")) {
                             return (
@@ -104,7 +129,60 @@ class HTMLBlogImport extends Component {
                         }
                     }
                 };
-                return (<div> {parse(cleanHTML, options)} </div>);
+                return (
+                    <div>
+                        <PageTitle title="Blog | " />
+                        <br></br>
+                        <div class="container">
+                            <div class="row align-items-md-stretch align-items-center align-content-center">
+                                <div class="col-md-1">
+                                    <FacebookShareButton
+                                        children={<FacebookIcon size={48} round={true} />}
+                                        url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.location.pathname}`}
+                                    />
+                                </div>
+                                <div class="col-md-1">
+                                    <TwitterShareButton
+                                        children={<TwitterIcon size={48} round={true} />}
+                                        url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.location.pathname}`}
+                                        class="col-md-2"
+                                    />
+                                </div>
+                                <div class="col-md-1">
+                                    <LinkedinShareButton
+                                        children={<LinkedinIcon size={48} round={true} />}
+                                        url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.location.pathname}`}
+                                        class="col-md-2"
+                                    />
+                                </div>
+                                <div class="col-md-1">
+                                    <PinterestShareButton
+                                        children={<PinterestIcon size={48} round={true} />}
+                                        url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.location.pathname}`}
+                                        class="col-md-2"
+                                    />
+                                </div>
+                                <div class="col-md-1">
+                                    <RedditShareButton
+                                        children={<RedditIcon size={48} round={true} />}
+                                        url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.location.pathname}`}
+                                        class="col-md-2"
+                                    />
+                                </div>
+                                <div class="col-md-1">
+                                    <EmailShareButton
+                                        children={<EmailIcon size={48} round={true} />}
+                                        url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.location.pathname}`}
+                                        class="col-md-2"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            {parse(cleanHTML, options)}
+                        </div>
+                    </div >
+                );
             } else {
                 return (<h1 class="px-10 py-0 my-5 text-center">This blog post does not seem to exist.</h1>);
             }

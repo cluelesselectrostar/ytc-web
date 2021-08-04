@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import GetLocalProjects from '../projects/GetProjects';
 import TitleBanner from '../components/TitleBanner';
+import PageTitle from '../components/PageTitle';
 
 function ProjectsPage() {
     return (
         <main>
-
+            <PageTitle title="Projects"/>
             <TitleBanner
                 title="Getting my hands dirty!"
                 description={

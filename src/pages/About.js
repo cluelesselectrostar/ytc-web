@@ -12,6 +12,7 @@ import FramedFigure from '../components/FramedFigure';
 import SquircleBox from '../components/SquircleBox';
 
 import { ytc_links } from '../components/Links';
+import PageTitle from '../components/PageTitle';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -29,6 +30,7 @@ function AboutPage() {
     return (<main>
 
         <div class="align-items-md-stretch h-100 p-5 bg-light rounded-3">
+            <PageTitle title="About"/>
             <div class="row">
                 <div class="col-md-9">
                     <h1 class="display-5 fw-bold">Where I am currently at.</h1>

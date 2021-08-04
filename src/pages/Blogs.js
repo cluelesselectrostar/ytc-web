@@ -1,9 +1,11 @@
 import GetBlogs from '../blogs/GetBlogs';
 import TitleBanner from '../components/TitleBanner';
+import PageTitle from '../components/PageTitle';
 
 function BlogsPage() {
     return (
         <main>
+            <PageTitle title="Blogs"/>
             <TitleBanner
                 title = "Blogs ✍️"
                 description = "All my content on Medium, backed up with Markdown!"

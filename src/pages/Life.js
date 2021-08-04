@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import TitleBanner from '../components/TitleBanner';
 import SquircleBox from '../components/SquircleBox';
+import PageTitle from '../components/PageTitle';
 
 import wales_image from '../images/wales.webp';
 import tibet_image from '../images/tibet.webp';
@@ -29,6 +30,7 @@ function LifePage() {
 
     return (<main>
 
+        <PageTitle title="Passions" />
         <TitleBanner
             title="Living my passions ❤️‍🔥"
             description="My life beyond engineering!"

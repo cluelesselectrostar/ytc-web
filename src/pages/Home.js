@@ -5,6 +5,7 @@ import my_cover from '../images/edited-1054475.webp'
 import Image from 'react-bootstrap/Image'
 
 import { ytc_links } from '../components/Links';
+import PageTitle from '../components/PageTitle';
 
 
 function HomePage() {
@@ -18,6 +19,7 @@ function HomePage() {
     const [expanded, setExpanded] = useState(false);
 
     return (<div class="px-10 py-0 my-5 text-center">
+        <PageTitle title="Home"/>
         <div class="container py-4">
             <div class="align-items-center align-content-center">
                 <Image src={my_cover} alt="Photo taken at North Point." fluid rounded />
