@@ -5,26 +5,7 @@ import parse, { domToReact } from 'html-react-parser';
 import './HTMLBlogImport.css';
 
 import PageTitle from "../components/PageTitle";
-
-import {
-    FacebookShareButton,
-    LinkedinShareButton,
-    TwitterShareButton,
-    PinterestShareButton,
-    RedditShareButton,
-    EmailShareButton,
-} from 'react-share';
-
-import {
-    FacebookIcon,
-    TwitterIcon,
-    LinkedinIcon,
-    PinterestIcon,
-    RedditIcon,
-    EmailIcon,
-} from 'react-share';
-
-
+import SocialMediaShare from "../components/SocialMediaShare";
 
 
 class HTMLBlogImport extends Component {
@@ -49,6 +30,7 @@ class HTMLBlogImport extends Component {
 
     render() {
         const title = decodeURIComponent(this.props.match.params.title);
+        const post = decodeURIComponent(this.props.match.params.post);
         if (title === "") {
             return <br></br>
         } else {
@@ -101,11 +83,12 @@ class HTMLBlogImport extends Component {
                                 </div>
                             );
                         } else if (String(attribs.class).includes("graf--title")) {
-                            return (
+                            /* return (
                                 <div class="col-md-10 col-lg-8  cust-title mt-3 mb-3 display-4">
                                     {domToReact(children, options)}
                                 </div>
-                            );
+                            ); */
+                            return (<div></div>);
                         } else if (String(attribs.class).includes("graf--h3")) {
                             return (
                                 <div class="col-md-10 col-lg-8  cust-h3 mt-3 mb-6 display-5">
@@ -131,60 +114,24 @@ class HTMLBlogImport extends Component {
                 };
                 return (
                     <div>
-                        <PageTitle title="Blog | " />
+                        <PageTitle title={`Blog | ${post}`} />
                         <br></br>
-                        <div class="container">
-                            <div class="row align-items-md-stretch align-items-center align-content-center">
-                                <div class="col-md-1">
-                                    <FacebookShareButton
-                                        children={<FacebookIcon size={48} round={true} />}
-                                        url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.location.pathname}`}
-                                    />
-                                </div>
-                                <div class="col-md-1">
-                                    <TwitterShareButton
-                                        children={<TwitterIcon size={48} round={true} />}
-                                        url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.location.pathname}`}
-                                        class="col-md-2"
-                                    />
-                                </div>
-                                <div class="col-md-1">
-                                    <LinkedinShareButton
-                                        children={<LinkedinIcon size={48} round={true} />}
-                                        url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.location.pathname}`}
-                                        class="col-md-2"
-                                    />
-                                </div>
-                                <div class="col-md-1">
-                                    <PinterestShareButton
-                                        children={<PinterestIcon size={48} round={true} />}
-                                        url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.location.pathname}`}
-                                        class="col-md-2"
-                                    />
-                                </div>
-                                <div class="col-md-1">
-                                    <RedditShareButton
-                                        children={<RedditIcon size={48} round={true} />}
-                                        url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.location.pathname}`}
-                                        class="col-md-2"
-                                    />
-                                </div>
-                                <div class="col-md-1">
-                                    <EmailShareButton
-                                        children={<EmailIcon size={48} round={true} />}
-                                        url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.location.pathname}`}
-                                        class="col-md-2"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div>
+                        <div class="container col-md-10 col-lg-6 cust-title mt-3 mb-3 display-4">
+                            <div>{post}</div>
+                            <SocialMediaShare link={this.props.location.pathname} />
+                        </div> 
+                        <div class="container col-md-10 col-lg-8">
                             {parse(cleanHTML, options)}
                         </div>
                     </div >
                 );
             } else {
-                return (<h1 class="px-10 py-0 my-5 text-center">This blog post does not seem to exist.</h1>);
+                return (
+                    <div>
+                        <PageTitle title={`Blog | Error`} />
+                        <h1 class="px-10 py-0 my-5 text-center">This blog post does not seem to exist.</h1>
+                    </div>
+                );
             }
         }
 
