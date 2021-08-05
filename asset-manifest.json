@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/ytc-web/static/css/main.4c851fb1.chunk.css",
-    "main.js": "/ytc-web/static/js/main.ae90d720.chunk.js",
-    "main.js.map": "/ytc-web/static/js/main.ae90d720.chunk.js.map",
-    "runtime-main.js": "/ytc-web/static/js/runtime-main.a62145d5.js",
-    "runtime-main.js.map": "/ytc-web/static/js/runtime-main.a62145d5.js.map",
+    "main.js": "/ytc-web/static/js/main.bb67d701.chunk.js",
+    "main.js.map": "/ytc-web/static/js/main.bb67d701.chunk.js.map",
+    "runtime-main.js": "/ytc-web/static/js/runtime-main.a280c570.js",
+    "runtime-main.js.map": "/ytc-web/static/js/runtime-main.a280c570.js.map",
     "static/css/2.4be38407.chunk.css": "/ytc-web/static/css/2.4be38407.chunk.css",
-    "static/js/2.c3d68fb5.chunk.js": "/ytc-web/static/js/2.c3d68fb5.chunk.js",
-    "static/js/2.c3d68fb5.chunk.js.map": "/ytc-web/static/js/2.c3d68fb5.chunk.js.map",
-    "static/js/3.85b04c80.chunk.js": "/ytc-web/static/js/3.85b04c80.chunk.js",
-    "static/js/3.85b04c80.chunk.js.map": "/ytc-web/static/js/3.85b04c80.chunk.js.map",
+    "static/js/2.d071ee3d.chunk.js": "/ytc-web/static/js/2.d071ee3d.chunk.js",
+    "static/js/2.d071ee3d.chunk.js.map": "/ytc-web/static/js/2.d071ee3d.chunk.js.map",
+    "static/js/3.11037521.chunk.js": "/ytc-web/static/js/3.11037521.chunk.js",
+    "static/js/3.11037521.chunk.js.map": "/ytc-web/static/js/3.11037521.chunk.js.map",
     "index.html": "/ytc-web/index.html",
     "static/css/2.4be38407.chunk.css.map": "/ytc-web/static/css/2.4be38407.chunk.css.map",
     "static/css/main.4c851fb1.chunk.css.map": "/ytc-web/static/css/main.4c851fb1.chunk.css.map",
-    "static/js/2.c3d68fb5.chunk.js.LICENSE.txt": "/ytc-web/static/js/2.c3d68fb5.chunk.js.LICENSE.txt",
+    "static/js/2.d071ee3d.chunk.js.LICENSE.txt": "/ytc-web/static/js/2.d071ee3d.chunk.js.LICENSE.txt",
     "static/media/BlogImport_Func.txt": "/ytc-web/static/media/BlogImport_Func.174ea77f.txt",
     "static/media/BlogPost.txt": "/ytc-web/static/media/BlogPost.011affe6.txt",
     "static/media/EBGaramond-Initials.ttf": "/ytc-web/static/media/EBGaramond-Initials.e30b376b.ttf",
@@ -112,10 +112,10 @@
     "static/media/wheels.22fede71.webp": "/ytc-web/static/media/wheels.22fede71.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.a62145d5.js",
+    "static/js/runtime-main.a280c570.js",
     "static/css/2.4be38407.chunk.css",
-    "static/js/2.c3d68fb5.chunk.js",
+    "static/js/2.d071ee3d.chunk.js",
     "static/css/main.4c851fb1.chunk.css",
-    "static/js/main.ae90d720.chunk.js"
+    "static/js/main.bb67d701.chunk.js"
   ]
 }
