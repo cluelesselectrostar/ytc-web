@@ -23,7 +23,7 @@ function HomePage() {
             <PageTitle title="Home" />
             <div class="container py-4">
                 <div class="align-items-center align-content-center">
-                    <Image src={my_cover} alt="Photo taken at North Point." fluid rounded />
+                    <Image style={{ width: "100%", height: 350, maxHeight: 500, overflow: "hidden", objectFit: "cover" }} src={my_cover} alt="Photo taken at North Point." fluid rounded/>
                 </div>
             </div>
 
