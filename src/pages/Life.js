@@ -4,8 +4,6 @@ import { Parallax } from 'react-scroll-parallax';
 import Image from 'react-bootstrap/Image';
 
 import { ytc_links } from '../components/Links';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import TitleBanner from '../components/TitleBanner';
 import SquircleBox from '../components/SquircleBox';
 import PageTitle from '../components/PageTitle';

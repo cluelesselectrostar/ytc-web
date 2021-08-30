@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import GetLocalProjects from '../projects/GetProjects';
 import TitleBanner from '../components/TitleBanner';
 import PageTitle from '../components/PageTitle';

@@ -107,7 +107,7 @@ class HTMLBlogImport extends Component {
                                     {domToReact(children, options)}
                                 </div>
                             );
-                        } else if (attribs.name == "footer") {
+                        } else if (attribs.name === "footer") {
                             return (<div></div>);
                         }
                     }

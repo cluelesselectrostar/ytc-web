@@ -1,6 +1,6 @@
 import { HashRouter, Link, Switch, Route } from 'react-router-dom';
-import { Navbar, Nav, Container, Row } from 'react-bootstrap';
-import { useState, useEffect } from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import { useState } from 'react';
 
 import './App.css';
 import HomePage from './pages/Home';
@@ -9,8 +9,9 @@ import AboutPage from './pages/About';
 import LifePage from './pages/Life';
 import BlogsPage from './pages/Blogs';
 import ContactPage from './pages/Contact';
-import HTMLBlogImport from './blogs/HTMLBlogImport';
+import CovidPage from './pages/Covid-Tracker';
 
+import HTMLBlogImport from './blogs/HTMLBlogImport';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
                 <Nav.Link onClick={scrollToTop}><Link to="/life" class="text-decoration-none text-dark"> Passions</Link></Nav.Link>
                 <Nav.Link onClick={scrollToTop}><Link to="/blogs" class="text-decoration-none text-dark"> Blogs</Link></Nav.Link>
                 <Nav.Link onClick={scrollToTop}><Link to="/contact" class="text-decoration-none text-dark"> Contact</Link></Nav.Link>
+                <Nav.Link onClick={scrollToTop}><Link to="/covid-tracker" class="text-decoration-none text-dark"> Coronavirus Tracker (Beta) </Link></Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -63,6 +65,10 @@ function App() {
         </Route>
         <Route path="/contact">
           <ContactPage />
+        </Route>
+        
+        <Route path="/covid-tracker">
+          <CovidPage />
         </Route>
 
         {/* Home page goes last */}

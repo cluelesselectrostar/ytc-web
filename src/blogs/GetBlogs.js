@@ -3,11 +3,8 @@ import { Link } from 'react-router-dom';
 //import { useState, useEffect } from 'react';
 import Image from 'react-bootstrap/Image'
 
-import Collapsible from 'react-collapsible';
-
 //import MDImport from './MDBlogImport.js';
 //import HTMLBlogImport from './HTMLBlogImport.js';
-import SquircleBox from '../components/SquircleBox.js';
 import projects from './Blogs_List.js';
 
 import './GetProjects.css'

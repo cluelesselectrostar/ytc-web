@@ -12,21 +12,21 @@ class SquircleBox extends Component {
     }
 
     render() {
-        if (this.props.appearance == "teal") {
+        if (this.props.appearance === "teal") {
             return (
                 <div class="h-100 p-5 text-white rounded-3 " style={{ backgroundColor:'teal'}}>
                     <h2>{this.props.title}</h2>
                     <div>{this.props.content}</div>
                 </div>
             );
-        } else if (this.props.appearance == "dark") {
+        } else if (this.props.appearance === "dark") {
             return (
                 <div class="h-100 p-5 text-white rounded-3" style={{ backgroundColor: 'rgb(51,51,51)'}}>
                     <h2>{this.props.title}</h2>
                     <div>{this.props.content}</div>
                 </div>
             );
-        } else if (this.props.appearance == "bordered-grey") {
+        } else if (this.props.appearance === "bordered-grey") {
             return (
                 <div class="h-100 p-5 bg-light border rounded-3">
                     <h2>{this.props.title}</h2>

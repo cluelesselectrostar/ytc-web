@@ -1,10 +1,8 @@
-import { HashRouter, Link, Switch, Route } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { useState } from 'react';
 
 import my_cover from '../images/edited-1054475.webp'
 import Image from 'react-bootstrap/Image'
-
-import { ytc_links } from '../components/Links';
 import PageTitle from '../components/PageTitle';
 
 

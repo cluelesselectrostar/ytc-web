@@ -1,9 +1,9 @@
 
 
-import React, { Component, useState, useEffect } from 'react';
+import React, { Component } from 'react';
 //import AppMarkdown from '!!html-loader!./ffestiniog.md';
 import ReactMarkdown from 'react-markdown';
-import gfm from 'remark-gfm';
+// import gfm from 'remark-gfm';
 
 /*
 class BlogImport extends Component {
