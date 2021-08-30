@@ -27,8 +27,8 @@ class CovidPage extends Component {
                 </div>
 
                 <div class="container py-4">
-                    <div class="row align-items-md-stretch justify-content-center mt-4">
-                        <div class="col-md-6">
+                    <div class="row align-items-md-stretch justify-content-center">
+                        <div class="col-md-6 mt-4">
                             <SquircleBox
                                 title="The Indicators"
                                 appearance="teal"
@@ -47,7 +47,7 @@ class CovidPage extends Component {
                                 }
                             />
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 mt-4">
                             <SquircleBox
                                 title="About Coronavirus Tracker"
                                 appearance="dark"

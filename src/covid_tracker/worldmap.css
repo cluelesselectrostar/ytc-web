@@ -1,8 +1,19 @@
-svg {
-    height:100vh;
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  svg {
+    width:100%;
   }
+}
 
-  svg .country {
+@media screen and (min-width: 540px) {
+  svg {
+    width:100%;
+    height: 100vh;
+  }
+}
+
+
+svg .country {
     stroke: black;
     stroke-width: 1px;
   }

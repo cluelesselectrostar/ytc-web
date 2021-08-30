@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './Squirclebox.css';
 
 class SquircleBox extends Component {
 

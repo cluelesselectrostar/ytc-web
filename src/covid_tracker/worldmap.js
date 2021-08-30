@@ -43,7 +43,7 @@ class WorldMap extends Component {
     render() {
         return (
             <div>
-                <div class="container">
+                <div>
                     <GeoChart
                         data={data}
                         coviddata={
