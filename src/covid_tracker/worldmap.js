@@ -23,6 +23,7 @@ class WorldMap extends Component {
 
         this.state = {
             property: "total_cases",
+            today: date_string,
             date: date_string,
             coviddata: []
         }
@@ -42,14 +43,16 @@ class WorldMap extends Component {
     render() {
         return (
             <div>
-                <GeoChart
-                    data={data}
-                    coviddata={
-                        (this.props.import_covid === null) ? this.state.coviddata : this.props.import_covid
-                    }
-                    property={this.state.property}
-                    date={this.state.date}
-                />
+                <div class="container">
+                    <GeoChart
+                        data={data}
+                        coviddata={
+                            (this.props.import_covid === null) ? this.state.coviddata : this.props.import_covid
+                        }
+                        property={this.state.property}
+                        date={this.state.date}
+                    />
+                </div>
 
                 <h3>Specify your search</h3>
 
@@ -59,7 +62,7 @@ class WorldMap extends Component {
                         <select
                             value={this.state.property}
                             onChange={event => this.setState({ property: event.target.value })}
-                            style={{width:"100%"}}
+                            style={{ width: "100%" }}
                         >
                             {/* <option value="pop_est">Population</option>
                     <option value="name_len">Name length</option>
@@ -95,8 +98,8 @@ class WorldMap extends Component {
                             name="trip-start"
                             value={this.state.date}
                             min="2020-01-01"
-                            max= {this.state.date}
-                            style={{width:"100%"}}
+                            max={this.state.today}
+                            style={{ width: "100%" }}
                             onChange={event => this.setState({ date: event.target.value })}
                         ></input>
                     </div>
