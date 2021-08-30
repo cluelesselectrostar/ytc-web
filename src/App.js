@@ -9,6 +9,8 @@ import AboutPage from './pages/About';
 import LifePage from './pages/Life';
 import BlogsPage from './pages/Blogs';
 import ContactPage from './pages/Contact';
+import CovidPage from './pages/CovidTracker';
+
 import HTMLBlogImport from './blogs/HTMLBlogImport';
 
 
@@ -23,6 +25,16 @@ function App() {
   };
 
   const [expanded, setExpanded] = useState(false);
+  const [coviddata, setCovidData] = useState(null);
+
+  useEffect(() => {
+    fetch('https://covid.ourworldindata.org/data/owid-covid-data.json')
+      .then(response => response.json())
+      .then(data => {
+        setCovidData(data);
+        console.log(data);
+      })
+  }, []);  
 
   // style={{ color: 'rgb(153,230,179)', }} (teal colour)
 
@@ -31,15 +43,16 @@ function App() {
       <Container>
         <Navbar collapseOnSelect sticky="top" expand='sm' variant='light' bg='white' expanded={expanded}>
           <Container class="align-items-center">
-            <Navbar.Toggle aria-controls='responsive-navbar-nav' onClick={() => setExpanded(expanded ? false : "expanded")}/>
+            <Navbar.Toggle aria-controls='responsive-navbar-nav' onClick={() => setExpanded(expanded ? false : "expanded")} />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className="mr-auto">
-                <Nav.Link onClick={scrollToTop}><Link to="/" class="text-decoration-none fw-bold" style={{ color: 'teal'}} > Yan To Chau</Link></Nav.Link>
+                <Nav.Link onClick={scrollToTop}><Link to="/" class="text-decoration-none fw-bold" style={{ color: 'teal' }} > Yan To Chau</Link></Nav.Link>
                 <Nav.Link onClick={scrollToTop}><Link to="/about" class="text-decoration-none text-dark"> About</Link></Nav.Link>
                 <Nav.Link onClick={scrollToTop}><Link to="/projects" class="text-decoration-none text-dark"> Projects</Link></Nav.Link>
                 <Nav.Link onClick={scrollToTop}><Link to="/life" class="text-decoration-none text-dark"> Passions</Link></Nav.Link>
                 <Nav.Link onClick={scrollToTop}><Link to="/blogs" class="text-decoration-none text-dark"> Blogs</Link></Nav.Link>
                 <Nav.Link onClick={scrollToTop}><Link to="/contact" class="text-decoration-none text-dark"> Contact</Link></Nav.Link>
+                <Nav.Link onClick={scrollToTop}><Link to="/covid" class="text-decoration-none text-dark"> Covid Tracker Beta</Link></Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -63,6 +76,9 @@ function App() {
         </Route>
         <Route path="/contact">
           <ContactPage />
+        </Route>
+        <Route path="/covid">
+          <CovidPage coviddata={coviddata}/>
         </Route>
 
         {/* Home page goes last */}
