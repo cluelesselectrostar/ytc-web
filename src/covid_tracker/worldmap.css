@@ -1,14 +1,14 @@
 /* For Mobile */
 @media screen and (max-width: 540px) {
-  svg {
+  .geochart {
     width:100%;
   }
 }
 
 @media screen and (min-width: 540px) {
-  svg {
+  .geochart {
     width:100%;
-    height: 100vh;
+    height: 60vh;
   }
 }
 
@@ -22,10 +22,4 @@ svg .country {
     cursor: pointer;
     stroke-width: 2px;
     fill:yellowgreen;
-  }
-  
-  button {
-    width: 100px;
-    border: 1px solid black;
-    margin: 0 auto 5px;
   }

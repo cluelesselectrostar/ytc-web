@@ -52,7 +52,7 @@ function App() {
                 <Nav.Link onClick={scrollToTop}><Link to="/life" class="text-decoration-none text-dark"> Passions</Link></Nav.Link>
                 <Nav.Link onClick={scrollToTop}><Link to="/blogs" class="text-decoration-none text-dark"> Blogs</Link></Nav.Link>
                 <Nav.Link onClick={scrollToTop}><Link to="/contact" class="text-decoration-none text-dark"> Contact</Link></Nav.Link>
-                <Nav.Link onClick={scrollToTop}><Link to="/covid" class="text-decoration-none text-dark"> Covid Tracker Beta</Link></Nav.Link>
+                <Nav.Link onClick={scrollToTop}><Link to="/covid" class="text-decoration-none text-dark"> Covid Tracker (Beta)</Link></Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

@@ -118,8 +118,8 @@ class HTMLBlogImport extends Component {
                         <br></br>
                         <div class="container col-md-10 col-lg-6 cust-title mt-3 mb-3 display-4">
                             <div>{post}</div>
-                            <SocialMediaShare link={this.props.location.pathname} />
-                        </div> 
+                            <SocialMediaShare link={this.props.location.pathname}/>
+                        </div>
                         <div class="container col-md-10 col-lg-8">
                             {parse(cleanHTML, options)}
                         </div>

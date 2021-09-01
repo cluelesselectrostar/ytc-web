@@ -51,6 +51,7 @@ class WorldMap extends Component {
                         }
                         property={this.state.property}
                         date={this.state.date}
+                        className = "geochart"
                     />
                 </div>
 

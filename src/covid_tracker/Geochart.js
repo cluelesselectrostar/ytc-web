@@ -119,7 +119,7 @@ function GeoChart({ data, coviddata, property, date }) {
 
     return (
         <div ref={wrapperRef} style={{ marginBottom: "2rem" }}>
-            <svg ref={svgRef}></svg>
+            <svg ref={svgRef} className="geochart"></svg>
         </div>
     )
 }
