@@ -1,0 +1,28 @@
+function BlogPost() {
+
+  constructor(props) {
+    super(props);
+    this.scrollDiv = createRef();
+    this.state = {
+      projects: projects,
+      article: "",
+    };
+  }
+
+  // get the title from the URL
+  // is automatically encoded and needs to be decoded
+  const title = decodeURIComponent(props.match.params.title);
+  // find the book object from your data source
+  const book = ???;
+  // from a JSON array: BOOKS.find(book => book.title.toLowerCase() === title.toLowerCase() );
+
+  // redirect to error page if no matching book
+  if (!book) {
+    return <Redirect to="/404" />
+  }
+
+  // can render your Content component, but only after we get the book
+  return (
+    <Content {...book} />
+  )
+}
