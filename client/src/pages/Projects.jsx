@@ -1,12 +1,30 @@
-import React, { Component } from 'react';
-import GetLocalProjects from '../projects/GetProjects';
+import React from 'react';
+// import { Component } from 'react';
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router";
+
+// import GetLocalProjects from '../projects/GetProjects';
+import ProjectPostList from '../components/ProjectPostList';
 import TitleBanner from '../components/TitleBanner';
 import PageTitle from '../components/PageTitle';
 
 function ProjectsPage() {
+    const [posts, setPosts] = useState([]);
+    const { search } = useLocation();
+
+    useEffect(() => {
+        const fetchPosts = async () => {
+            const res = await axios.get("/projectposts" + search);
+            setPosts(res.data);
+            console.log("List fetching")
+        };
+        fetchPosts();
+    }, [search]);
+
     return (
         <main>
-            <PageTitle title="Projects"/>
+            <PageTitle title="Projects" />
             <TitleBanner
                 title="Getting my hands dirty!"
                 description={
@@ -30,9 +48,15 @@ function ProjectsPage() {
                 }
             />
 
-            <div class="album py-4">
+            {/* <div class="album py-4">
                 <div class="container">
                     <GetLocalProjects />
+                </div>
+            </div> */}
+
+            <div class="album py-4">
+                <div class="container">
+                    <ProjectPostList posts={posts} />
                 </div>
             </div>
 
