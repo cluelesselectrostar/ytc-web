@@ -11,6 +11,10 @@
   "name": "api",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "14.17.5",
+    "npm": "6.14.14"
+},
   "devDependencies": {},
   "scripts": {
     "start": "nodemon index.js"
