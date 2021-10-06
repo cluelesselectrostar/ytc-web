@@ -179,6 +179,5 @@
     "presets": [
       "react-app"
     ]
-  },
-  "proxy": "https://ytc-web.herokuapp.com/api/"
+  }
 }

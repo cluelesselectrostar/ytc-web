@@ -15,7 +15,7 @@ function ProjectsPage() {
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const res = await axios.get("https://ytc-web.herokuapp.com/projectposts" + search);
+            const res = await axios.get("https://ytc-web.herokuapp.com/api/projectposts" + search);
             setPosts(res.data);
             console.log("List fetching")
         };
