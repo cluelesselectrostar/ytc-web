@@ -48,13 +48,13 @@ function ProjectsPage() {
                 }
             />
 
-            {/* <div class="album py-4">
-                <div class="container">
-                    <GetLocalProjects />
+            <div class="container py-4">
+                <div class="alert alert-warning" role="alert">
+                    Currrently deploying the backend on Mongo DB. Apologies if this does not load properly!
                 </div>
-            </div> */}
+            </div>
 
-            <div class="album py-4">
+            <div class="album">
                 <div class="container">
                     <ProjectPostList posts={posts} />
                 </div>
