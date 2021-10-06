@@ -16,8 +16,8 @@ dotenv.config();
 app.use(express.json());
 app.use(cors());
 
-const mongodbUri = process.env.MONGODB_URI || 'mongodb://localhost/5000';
-const PORT  = 3000;
+// const mongodbUri = process.env.MONGODB_URI || 'https://localhost:5000/';
+// const PORT  = 3000;
 
 mongoose
   .connect(process.env.MONGO_URL, {
