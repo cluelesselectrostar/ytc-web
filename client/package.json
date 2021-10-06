@@ -180,5 +180,5 @@
       "react-app"
     ]
   },
-  "proxy": "http://localhost:5000/api/"
+  "proxy": "https://ytc-web.herokuapp.com/api/"
 }
