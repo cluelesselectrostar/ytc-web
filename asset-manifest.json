@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ytc-web/static/css/main.74ba1a1d.chunk.css",
-    "main.js": "/ytc-web/static/js/main.c520ca9f.chunk.js",
-    "main.js.map": "/ytc-web/static/js/main.c520ca9f.chunk.js.map",
+    "main.js": "/ytc-web/static/js/main.d751fe4b.chunk.js",
+    "main.js.map": "/ytc-web/static/js/main.d751fe4b.chunk.js.map",
     "runtime-main.js": "/ytc-web/static/js/runtime-main.a34bf69e.js",
     "runtime-main.js.map": "/ytc-web/static/js/runtime-main.a34bf69e.js.map",
     "static/css/2.f2512455.chunk.css": "/ytc-web/static/css/2.f2512455.chunk.css",
-    "static/js/2.617d8875.chunk.js": "/ytc-web/static/js/2.617d8875.chunk.js",
-    "static/js/2.617d8875.chunk.js.map": "/ytc-web/static/js/2.617d8875.chunk.js.map",
+    "static/js/2.0ccbf4cd.chunk.js": "/ytc-web/static/js/2.0ccbf4cd.chunk.js",
+    "static/js/2.0ccbf4cd.chunk.js.map": "/ytc-web/static/js/2.0ccbf4cd.chunk.js.map",
     "index.html": "/ytc-web/index.html",
     "static/css/2.f2512455.chunk.css.map": "/ytc-web/static/css/2.f2512455.chunk.css.map",
     "static/css/main.74ba1a1d.chunk.css.map": "/ytc-web/static/css/main.74ba1a1d.chunk.css.map",
-    "static/js/2.617d8875.chunk.js.LICENSE.txt": "/ytc-web/static/js/2.617d8875.chunk.js.LICENSE.txt",
+    "static/js/2.0ccbf4cd.chunk.js.LICENSE.txt": "/ytc-web/static/js/2.0ccbf4cd.chunk.js.LICENSE.txt",
     "static/media/BlogImport_Func.txt": "/ytc-web/static/media/BlogImport_Func.351d6b8a.txt",
     "static/media/BlogPost.txt": "/ytc-web/static/media/BlogPost.63e1d841.txt",
     "static/media/EBGaramond-Initials.ttf": "/ytc-web/static/media/EBGaramond-Initials.e30b376b.ttf",
@@ -75,7 +75,7 @@
     "static/media/chasing.jpg": "/ytc-web/static/media/chasing.054fed12.jpg",
     "static/media/chasing.webp": "/ytc-web/static/media/chasing.a877998b.webp",
     "static/media/circuit.df34b718.webp": "/ytc-web/static/media/circuit.df34b718.webp",
-    "static/media/cv_updated.b10d14c9.pdf": "/ytc-web/static/media/cv_updated.b10d14c9.pdf",
+    "static/media/cv_updated.f41abfe4.pdf": "/ytc-web/static/media/cv_updated.f41abfe4.pdf",
     "static/media/edited-1054311.48633c38.webp": "/ytc-web/static/media/edited-1054311.48633c38.webp",
     "static/media/edited-1054329.5a20db4d.webp": "/ytc-web/static/media/edited-1054329.5a20db4d.webp",
     "static/media/edited-1054347.72473b18.webp": "/ytc-web/static/media/edited-1054347.72473b18.webp",
@@ -107,8 +107,8 @@
   "entrypoints": [
     "static/js/runtime-main.a34bf69e.js",
     "static/css/2.f2512455.chunk.css",
-    "static/js/2.617d8875.chunk.js",
+    "static/js/2.0ccbf4cd.chunk.js",
     "static/css/main.74ba1a1d.chunk.css",
-    "static/js/main.c520ca9f.chunk.js"
+    "static/js/main.d751fe4b.chunk.js"
   ]
 }
