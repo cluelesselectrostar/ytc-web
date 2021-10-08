@@ -3,6 +3,7 @@ import React from 'react';
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
+import Image from 'react-bootstrap/Image';
 
 // import GetLocalProjects from '../projects/GetProjects';
 import ProjectPostList from '../components/ProjectPostList';
@@ -12,14 +13,17 @@ import PageTitle from '../components/PageTitle';
 function ProjectsPage() {
     const [posts, setPosts] = useState([]);
     const { search } = useLocation();
+    const [loaded, setLoaded] = useState([]);
 
     useEffect(() => {
+        setLoaded(false);
         const fetchPosts = async () => {
             const res = await axios.get("https://ytc-web.herokuapp.com/api/projectposts" + search);
             setPosts(res.data);
             console.log("List fetching")
         };
         fetchPosts();
+        setLoaded(true);
     }, [search]);
 
     return (
@@ -54,11 +58,22 @@ function ProjectsPage() {
                 </div>
             </div>
 
-            <div class="album">
-                <div class="container">
-                    <ProjectPostList posts={posts} />
+            {loaded &&
+                <div class="album">
+                    <div class="container">
+                        <ProjectPostList posts={posts} />
+                    </div>
                 </div>
-            </div>
+            }
+
+            {!loaded &&
+                <div>
+                    <div class="px-10 py-0 text-center">
+                        <Image src={"https://cdn.dribbble.com/users/1698559/screenshots/3790348/media/818ced5ec3b128124fdf7fefc24e49e5.gif"} alt="Photo" fluid />
+                        <div>Cute image courtesy of <a href="https://dribbble.com/shots/3790348-game-loading">yuanzi0410</a>.</div>
+                    </div >
+                </div>
+            }
 
         </main>
     );

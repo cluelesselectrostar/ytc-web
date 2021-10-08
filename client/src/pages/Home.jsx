@@ -8,8 +8,6 @@ import Image from 'react-bootstrap/Image'
 // import { ytc_links } from '../components/Links';
 import PageTitle from '../components/PageTitle';
 
-import './Home.css'
-
 
 function HomePage() {
 

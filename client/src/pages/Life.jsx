@@ -25,8 +25,6 @@ import image_5 from "../images/jaywalking/edited-1054537.webp";
 import image_6 from "../images/jaywalking/edited-1054607.webp";
 import image_7 from "../images/jaywalking/edited-1054755.webp";
 
-import './Life.css';
-
 function LifePage() {
 
     return (<main>
