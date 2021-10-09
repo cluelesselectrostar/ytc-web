@@ -13,7 +13,7 @@ import PageTitle from '../components/PageTitle';
 function ProjectsPage() {
     const [posts, setPosts] = useState([]);
     const { search } = useLocation();
-    const [loaded, setLoaded] = useState([]);
+    const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
         setLoaded(false);
@@ -23,8 +23,10 @@ function ProjectsPage() {
             console.log("List fetching")
         };
         fetchPosts();
-        setLoaded(true);
-    }, [search]);
+        if (posts !== []) {
+            setLoaded(true);
+        }
+    }, [search, posts]);
 
     return (
         <main>
