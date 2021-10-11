@@ -38,7 +38,8 @@ class WorldMap extends Component {
                     coviddata: data
                 });
                 console.log(data);
-            });
+            })
+            .catch((err) => console.error(err));
     }
 
     render() {

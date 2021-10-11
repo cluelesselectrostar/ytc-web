@@ -9,6 +9,7 @@ import Image from 'react-bootstrap/Image';
 import ProjectPostList from '../components/ProjectPostList';
 import TitleBanner from '../components/TitleBanner';
 import PageTitle from '../components/PageTitle';
+import load_image from '../images/loading.gif';
 
 function ProjectsPage() {
     const [posts, setPosts] = useState([]);
@@ -16,13 +17,14 @@ function ProjectsPage() {
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
-        if (loaded == false) {
-            const fetchPosts = async () => {
-                const res = await axios.get("https://ytc-web.herokuapp.com/api/projectposts" + search);
-                setPosts(res.data);
-                console.log("List fetching")
-            };
-            fetchPosts();
+        setLoaded(false);
+        const fetchPosts = async () => {
+            const res = await axios.get("https://ytc-web.herokuapp.com/api/projectposts" + search);
+            setPosts(res.data);
+            console.log("List fetching")
+        }
+        fetchPosts();
+        if (posts !== []) {
             setLoaded(true);
         }
     }, [search, posts]);
@@ -59,7 +61,7 @@ function ProjectsPage() {
                 </div>
             </div>
 
-            {loaded &&
+            {(loaded === true) &&
                 <div class="album">
                     <div class="container">
                         <ProjectPostList posts={posts} />
@@ -67,10 +69,10 @@ function ProjectsPage() {
                 </div>
             }
 
-            {!loaded &&
+            {(loaded === false) &&
                 <div>
                     <div class="px-10 py-0 text-center">
-                        <Image src={"https://cdn.dribbble.com/users/1698559/screenshots/3790348/media/818ced5ec3b128124fdf7fefc24e49e5.gif"} alt="Photo" fluid />
+                        <Image src={load_image} alt="Photo" fluid />
                         <div>Cute image courtesy of <a href="https://dribbble.com/shots/3790348-game-loading">yuanzi0410</a>.</div>
                     </div >
                 </div>
