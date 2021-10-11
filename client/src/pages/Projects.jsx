@@ -16,14 +16,13 @@ function ProjectsPage() {
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
-        setLoaded(false);
-        const fetchPosts = async () => {
-            const res = await axios.get("https://ytc-web.herokuapp.com/api/projectposts" + search);
-            setPosts(res.data);
-            console.log("List fetching")
-        };
-        fetchPosts();
-        if (posts !== []) {
+        if (loaded == false) {
+            const fetchPosts = async () => {
+                const res = await axios.get("https://ytc-web.herokuapp.com/api/projectposts" + search);
+                setPosts(res.data);
+                console.log("List fetching")
+            };
+            fetchPosts();
             setLoaded(true);
         }
     }, [search, posts]);
