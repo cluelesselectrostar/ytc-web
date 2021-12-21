@@ -7,7 +7,6 @@ import icra_image from '../images/ICRA.webp';
 import train_image from '../images/oldoakcommon.webp';
 import review_pdf from '../docs/End of Internship Review - Yanni.pdf';
 
-import LinkModules from '../components/Links_Module';
 import FramedFigure from '../components/FramedFigure';
 import SquircleBox from '../components/SquircleBox';
 
@@ -204,9 +203,6 @@ function AboutPage() {
 
                 </div>
             </div>
-
-            <LinkModules />
-
         </div>
     </main>);
 }

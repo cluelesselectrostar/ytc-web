@@ -11,8 +11,6 @@ function GeoChart({ data, coviddata, property, date }) {
 
     useEffect(() => {
 
-        console.log(date);
-
         const svg = select(svgRef.current);
 
         // Use resized dimensions, but fall back to get bounding client rect if no dimensions yet
@@ -28,20 +26,6 @@ function GeoChart({ data, coviddata, property, date }) {
 
         // Create path element for every country in the world
         // NOTE: Merge data into copy of GEO JSON
-        
-        //var coviddata_res = Object.entries(coviddata);
-        //console.log(coviddata_res);
-
-        /*
-        var cov_res = [];
-        for (const country of coviddata_res) {
-            const name = country[0];
-            console.log(name);
-            const Datum = country[1].data[5][property];
-            console.log(Datum);
-        }
-        */
-
 
         var cov_res = Object.entries(coviddata).map(([k, v]) => (
             {
@@ -50,7 +34,9 @@ function GeoChart({ data, coviddata, property, date }) {
                     for (const day of v.data) {
                         var search_date = day.date;
                         if (search_date === date) {
-                            return day[property];
+                            var res = day[property];
+                            //console.log(res);
+                            return res;
                         }
                     }
                     return -100;
@@ -58,8 +44,16 @@ function GeoChart({ data, coviddata, property, date }) {
             }
         ));
 
+        //console.log("data")
+        //console.log(data);
+        console.log("coviddata")
+        console.log(coviddata);
+        //console.log("cov_res")
+        //console.log(cov_res);
 
         var copy = data;
+        const maxProp = max(copy.features, feature => feature.properties.num);
+        var minProp = maxProp;
 
         for (const i of Object.entries(copy.features)) {
             //console.log(i[1].properties.adm0_a3);
@@ -73,15 +67,15 @@ function GeoChart({ data, coviddata, property, date }) {
                     //console.log(name)
                     if (j.Datum) {
                         num = j.Datum;
+                        if (num < minProp && num !== -100) {
+                            minProp = num;
+                        }
                     }
                     break;
                 }
             }
             i[1].properties.num = num;
         }
-
-        const minProp = min(data.features, feature => feature.properties.num);
-        const maxProp = max(data.features, feature => feature.properties.num);
 
         // Input, then output
         const colorScale = scaleLinear()
@@ -113,6 +107,39 @@ function GeoChart({ data, coviddata, property, date }) {
             )
             .attr("x", 10)
             .attr("y", 25);
+
+        ////////////////////// Line Graph for time evolution of property in selected country //////////////////////
+        var timeline = [];
+        var country_res = null;
+        var prop_res = null;
+
+        // Render line graph if a country has been selected
+        var cont = "CHN";
+        if (cont) {
+            for (const country of Object.entries(coviddata)) {
+                //console.log(country);
+                if (country[0] === cont) {
+                    country_res = country[1].data;
+                }
+            }
+            console.log("country_res");
+            console.log(country_res); // Should be an array of statistics collected on each day.
+
+            if (country_res !== null) {
+                prop_res = Object.entries(country_res).map(([k, v]) => (
+                    {
+                        Label: v.date,
+                        Datum: (function () {
+                            const res = v[property];
+                            return res;
+                        })()
+                    }
+                ));
+                console.log("prop_res");
+                console.log(prop_res);
+            }
+
+        }
 
 
     }, [data, dimensions, property, selectedCountry, date]);

@@ -4,6 +4,7 @@ import GeoChart from './Geochart';
 import React, { Component } from "react";
 import data from './custom.geo.json';
 import './worldmap.css';
+import TimeChart from './TimeChart';
 
 class WorldMap extends Component {
 
@@ -53,7 +54,7 @@ class WorldMap extends Component {
                         }
                         property={this.state.property}
                         date={this.state.date}
-                        className = "geochart"
+                        className="geochart"
                     />
                 </div>
 
@@ -108,6 +109,16 @@ class WorldMap extends Component {
                     </div>
 
                 </div>
+
+                {/* <div>
+                    <TimeChart
+                        data={data}
+                        coviddata={
+                            (this.props.import_covid === null) ? this.state.coviddata : this.props.import_covid
+                        }
+                        property={this.state.property}
+                    />
+                </div> */}
             </div>
         );
     }
