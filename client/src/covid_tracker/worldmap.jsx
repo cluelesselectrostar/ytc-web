@@ -11,10 +11,10 @@ class WorldMap extends Component {
     constructor(props) {
         super(props);
 
-        const today = new Date()
-        const yesterday = new Date(today)
-        yesterday.setDate(yesterday.getDate() - 1) // just to be safe, limit data to 1 days ago
-        yesterday.toDateString()
+        const today = new Date();
+        const yesterday = new Date(today);
+        yesterday.setDate(yesterday.getDate() - 1); // just to be safe, limit data to 1 days ago
+        yesterday.toDateString();
         console.log(yesterday);
 
         var dd = String(yesterday.getDate()).padStart(2, '0');
@@ -110,7 +110,7 @@ class WorldMap extends Component {
 
                 </div>
 
-                {/* <div>
+                <div>
                     <TimeChart
                         data={data}
                         coviddata={
@@ -118,7 +118,7 @@ class WorldMap extends Component {
                         }
                         property={this.state.property}
                     />
-                </div> */}
+                </div>
             </div>
         );
     }

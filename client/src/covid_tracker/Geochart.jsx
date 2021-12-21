@@ -46,8 +46,8 @@ function GeoChart({ data, coviddata, property, date }) {
 
         //console.log("data")
         //console.log(data);
-        console.log("coviddata")
-        console.log(coviddata);
+        //console.log("coviddata")
+        //console.log(coviddata);
         //console.log("cov_res")
         //console.log(cov_res);
 
@@ -107,40 +107,6 @@ function GeoChart({ data, coviddata, property, date }) {
             )
             .attr("x", 10)
             .attr("y", 25);
-
-        ////////////////////// Line Graph for time evolution of property in selected country //////////////////////
-        var timeline = [];
-        var country_res = null;
-        var prop_res = null;
-
-        // Render line graph if a country has been selected
-        var cont = "CHN";
-        if (cont) {
-            for (const country of Object.entries(coviddata)) {
-                //console.log(country);
-                if (country[0] === cont) {
-                    country_res = country[1].data;
-                }
-            }
-            console.log("country_res");
-            console.log(country_res); // Should be an array of statistics collected on each day.
-
-            if (country_res !== null) {
-                prop_res = Object.entries(country_res).map(([k, v]) => (
-                    {
-                        Label: v.date,
-                        Datum: (function () {
-                            const res = v[property];
-                            return res;
-                        })()
-                    }
-                ));
-                console.log("prop_res");
-                console.log(prop_res);
-            }
-
-        }
-
 
     }, [data, dimensions, property, selectedCountry, date]);
 
