@@ -7,25 +7,24 @@ import icra_image from '../images/ICRA.webp';
 import train_image from '../images/oldoakcommon.webp';
 import review_pdf from '../docs/End of Internship Review - Yanni.pdf';
 
-import LinkModules from '../components/Links_Module';
 import FramedFigure from '../components/FramedFigure';
 import SquircleBox from '../components/SquircleBox';
 
 import { ytc_links } from '../components/Links';
 import PageTitle from '../components/PageTitle';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+//import { useState } from 'react';
 
 function AboutPage() {
 
     const scrollToTop = () => {
-        setExpanded(false);
+        //setExpanded(false);
         window.scrollTo({
             top: 0, behavior: 'smooth' 
         });
     };
 
-    const [expanded, setExpanded] = useState(false);
+    //const [expanded, setExpanded] = useState(false);
 
     return (<main>
 
@@ -204,9 +203,6 @@ function AboutPage() {
 
                 </div>
             </div>
-
-            <LinkModules />
-
         </div>
     </main>);
 }

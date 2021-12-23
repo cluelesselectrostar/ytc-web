@@ -14,19 +14,19 @@ import load_image from '../images/loading.gif';
 function ProjectsPage() {
     const [posts, setPosts] = useState([]);
     const { search } = useLocation();
-    const [loaded, setLoaded] = useState(false);
+    //const [loading, setLoading] = useState(false);
+
+    const fetchPosts = async () => {
+        //setLoading(true);
+        console.log(posts);
+        const res = await axios.get("https://ytc-web.herokuapp.com/api/projectposts" + search);
+        setPosts(res.data);
+        console.log(posts);
+        //setLoading(false);
+    }
 
     useEffect(() => {
-        setLoaded(false);
-        const fetchPosts = async () => {
-            const res = await axios.get("https://ytc-web.herokuapp.com/api/projectposts" + search);
-            setPosts(res.data);
-            console.log("List fetching")
-        }
         fetchPosts();
-        if (posts !== []) {
-            setLoaded(true);
-        }
     }, [search, posts]);
 
     return (
@@ -49,7 +49,7 @@ function ProjectsPage() {
                             </ul>
                         </p>
                         <p>
-                            Of course, I am currently working with HTML/CSS/Bootstrap/React to complete this website!
+                            Of course, I am currently working with MERN to complete this website!
                         </p>
                     </div>
                 }
@@ -61,21 +61,20 @@ function ProjectsPage() {
                 </div>
             </div>
 
-            {(loaded === true) &&
+            {posts.length<4 ? (
+                <div>
+                    <div class="px-10 py-0 text-center">
+                        <Image src={load_image} alt="Photo" fluid />
+                        <div>Cute image courtesy of <a href="https://dribbble.com/shots/3790348-game-loading" style={{color:"black", textDecoration:"none"}}>yuanzi0410</a>.</div>
+                    </div >
+                </div>
+            ) : (
                 <div class="album">
                     <div class="container">
                         <ProjectPostList posts={posts} />
                     </div>
                 </div>
-            }
-
-            {(loaded === false) &&
-                <div>
-                    <div class="px-10 py-0 text-center">
-                        <Image src={load_image} alt="Photo" fluid />
-                        <div>Cute image courtesy of <a href="https://dribbble.com/shots/3790348-game-loading">yuanzi0410</a>.</div>
-                    </div >
-                </div>
+            )
             }
 
         </main>

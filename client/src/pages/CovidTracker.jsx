@@ -3,7 +3,8 @@ import { Component } from 'react';
 import TitleBanner from '../components/TitleBanner';
 import PageTitle from '../components/PageTitle';
 import SquircleBox from '../components/SquircleBox';
-import WorldMap from '../covid_tracker/worldmap';
+import GeoChartWrapper from '../covid_tracker/worldmap';
+import LineChartWrapper from '../covid_tracker/LineChart';
 
 import './CovidTracker.css';
 
@@ -22,8 +23,13 @@ class CovidPage extends Component {
                     title="Coronavirus Tracker 😷"
                     description="My newest weekend project: the latest data for coronavirus, grabbed from Our World in Data."
                 />
+                
                 <div class="container align-items-md-stretch mt-4">
-                    <WorldMap import_covid={this.props.coviddata} />
+                    <GeoChartWrapper import_covid={this.props.coviddata} />
+                </div>
+
+                <div class="container align-items-md-stretch mt-4">
+                    <LineChartWrapper import_covid={this.props.coviddata} />
                 </div>
 
                 <div class="container py-4">

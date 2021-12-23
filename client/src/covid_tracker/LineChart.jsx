@@ -1,11 +1,9 @@
-import GeoChart from './Geochart';
 // import coviddata from './covid.json';
 // import React, { useEffect, useRef, useState } from "react";
 import React, { Component } from "react";
-import data from './custom.geo.json';
-import './worldmap.css';
+import TimeChart from './TimeChart';
 
-class GeoChartWrapper extends Component {
+class LineChartWrapper extends Component {
 
     constructor(props) {
         super(props);
@@ -26,38 +24,51 @@ class GeoChartWrapper extends Component {
             property: "total_cases",
             today: date_string,
             date: date_string,
-            coviddata: []
+            coviddata: [],
+            countries: null,
+            country: "GBR",
         }
     }
 
     async componentWillMount() {
         fetch('https://covid.ourworldindata.org/data/owid-covid-data.json')
             .then(response => response.json())
-            .then(data => {
+            .then(response => {
                 this.setState({
-                    coviddata: data
+                    coviddata: response
                 });
-                console.log(data);
+                //console.log(response);
             })
             .catch((err) => console.error(err));
+        
+            if (this.props.import_covid) {
+                const data_keys = Object.entries(this.props.import_covid);
+                this.setState({countries:data_keys});
+            } else {
+                const data_keys = Object.entries(this.state.coviddata);
+                this.setState({countries:data_keys});
+            }
+    
     }
 
     render() {
+        const { countries } = this.state;
+
         return (
-            <div>
-                <GeoChart
-                    data={data}
-                    coviddata={
-                        (this.props.import_covid === null) ? this.state.coviddata : this.props.import_covid
-                    }
-                    property={this.state.property}
-                    date={this.state.date}
-                    className="geochart"
-                />
+            <div class="mt-4">
+                <div class="container">
+                    <TimeChart
+                        coviddata={
+                            (this.props.import_covid === null) ?
+                                this.state.coviddata : this.props.import_covid
+                        }
+                        property={this.state.property}
+                        selectedCountry = {this.state.country}
+                    />
+                </div>
 
-                <h3 style={{ textAlign: "center" }}>Geo-Search</h3>
+                <h3 style={{ textAlign: "center" }}>Time Evolution</h3>
                 <div class="row align-items-center justify-content-center ">
-
                     <div class="col-md-3"><h5>Coronavirus Property</h5></div>
                     <div class="col-md-3">
                         <select
@@ -87,26 +98,32 @@ class GeoChartWrapper extends Component {
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-center mt-2">
-                    <div class="col-md-3"><h5>Data collection date</h5></div>
+                    <div class="col-md-3"><h5>Country</h5></div>
                     <div class="col-md-3">
-                        <input
-                            class="mt-2"
-                            type="date"
-                            id="start"
-                            name="trip-start"
-                            value={this.state.date}
-                            min="2020-01-01"
-                            max={this.state.today}
+                        <select
+                            value={this.state.country}
+                            onChange={event => {
+                                this.setState({ country: event.target.value })
+                            }}
                             style={{ width: "100%" }}
-                            onChange={event => this.setState({ date: event.target.value })}
-                        ></input>
+                        >
+                            {
+                                countries.map(
+                                    country => (
+                                        <option value={country[0]}>{country[1].location}</option>
+                                    )
+                                )
+                            }
+                        </select>
                     </div>
 
                 </div>
+
+
             </div>
         );
     }
 
 }
 
-export default GeoChartWrapper;
+export default LineChartWrapper;

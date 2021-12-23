@@ -9,10 +9,10 @@ import ProjectsPage from './pages/Projects';
 import AboutPage from './pages/About';
 import LifePage from './pages/Life';
 import BlogsPage from './pages/Blogs';
-import ContactPage from './pages/Contact';
 import CovidPage from './pages/CovidTracker';
 
 import HTMLBlogImport from './blogs/HTMLBlogImport';
+import LinkModules from './components/Links_Module';
 
 
 function App() {
@@ -33,9 +33,9 @@ function App() {
       .then(response => response.json())
       .then(data => {
         setCovidData(data);
-        console.log(data);
+        //console.log(data);
       })
-  }, []);  
+  }, []);
 
   // style={{ color: 'rgb(153,230,179)', }} (teal colour)
 
@@ -52,7 +52,6 @@ function App() {
                 <Nav.Link onClick={scrollToTop}><Link to="/projects" class="text-decoration-none text-dark"> Projects</Link></Nav.Link>
                 <Nav.Link onClick={scrollToTop}><Link to="/life" class="text-decoration-none text-dark"> Passions</Link></Nav.Link>
                 <Nav.Link onClick={scrollToTop}><Link to="/blogs" class="text-decoration-none text-dark"> Blogs</Link></Nav.Link>
-                <Nav.Link onClick={scrollToTop}><Link to="/contact" class="text-decoration-none text-dark"> Contact</Link></Nav.Link>
                 <Nav.Link onClick={scrollToTop}><Link to="/covid" class="text-decoration-none text-dark"> Covid Tracker (Beta)</Link></Nav.Link>
               </Nav>
             </Navbar.Collapse>
@@ -75,11 +74,8 @@ function App() {
         <Route path="/blogs">
           <BlogsPage />
         </Route>
-        <Route path="/contact">
-          <ContactPage />
-        </Route>
         <Route path="/covid">
-          <CovidPage coviddata={coviddata}/>
+          <CovidPage coviddata={coviddata} />
         </Route>
 
         {/* Home page goes last */}
@@ -90,11 +86,9 @@ function App() {
 
       <br class=" mb-4"></br>
 
-      <footer class="footer mt-auto py-3 text-center mb-auto">
-        <div class="container">
-          <span class="text-muted">A full stack web app proudly built with MERN (MongoDB, Express, React, Node)! © Yan To Chau 2021.</span>
-        </div>
-      </footer>
+      <div class="mt-4">
+        <LinkModules />
+      </div>
 
     </HashRouter>
   );
