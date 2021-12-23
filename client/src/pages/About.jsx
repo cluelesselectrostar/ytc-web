@@ -13,18 +13,18 @@ import SquircleBox from '../components/SquircleBox';
 import { ytc_links } from '../components/Links';
 import PageTitle from '../components/PageTitle';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+//import { useState } from 'react';
 
 function AboutPage() {
 
     const scrollToTop = () => {
-        setExpanded(false);
+        //setExpanded(false);
         window.scrollTo({
             top: 0, behavior: 'smooth' 
         });
     };
 
-    const [expanded, setExpanded] = useState(false);
+    //const [expanded, setExpanded] = useState(false);
 
     return (<main>
 

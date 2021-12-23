@@ -1,6 +1,6 @@
 // import { HashRouter, Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+//import { useState } from 'react';
 
 import my_cover from '../images/edited-1054475.webp'
 import Image from 'react-bootstrap/Image'
@@ -12,19 +12,19 @@ import PageTitle from '../components/PageTitle';
 function HomePage() {
 
     const scrollToTop = () => {
-        setExpanded(false);
+        //setExpanded(false);
         window.scrollTo({
             top: 0, behavior: 'smooth'
         });
     };
-    const [expanded, setExpanded] = useState(false);
+    //const [expanded, setExpanded] = useState(false);
 
     return (
         <div class="px-10 py-0 text-center">
             <PageTitle title="Home" />
             <div class="container py-4">
                 <div class="align-items-center align-content-center">
-                    <Image style={{ width: "100%", height: 350, maxHeight: 500, overflow: "hidden", objectFit: "cover" }} src={my_cover} alt="Photo taken at North Point." fluid rounded/>
+                    <Image style={{ width: "100%", height: 350, maxHeight: 500, overflow: "hidden", objectFit: "cover" }} src={my_cover} alt="Photo taken at North Point." fluid rounded />
                 </div>
             </div>
 
