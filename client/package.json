@@ -121,7 +121,13 @@
     "raw-loader": "^4.0.2",
     "remark-gfm": "^1.0.0",
     "sass": "^1.35.1",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.7.2",
+    "immer": "^9.0.6",
+    "glob-parent":"^5.1.2"
+  },
+  "resolutions": {
+    "immer": "^9.0.6",
+    "glob-parent":"^5.1.2"
   },
   "homepage": "http://cluelesselectrostar.github.io/ytc-web/",
   "jest": {
