@@ -10,6 +10,7 @@ import AboutPage from './pages/About';
 import LifePage from './pages/Life';
 import BlogsPage from './pages/Blogs';
 import CovidPage from './pages/CovidTracker';
+import TravelPage from './pages/TravelLondon';
 
 import HTMLBlogImport from './blogs/HTMLBlogImport';
 import LinkModules from './components/Links_Module';
@@ -52,7 +53,8 @@ function App() {
                 <Nav.Link onClick={scrollToTop}><Link to="/projects" class="text-decoration-none text-dark"> Projects</Link></Nav.Link>
                 <Nav.Link onClick={scrollToTop}><Link to="/life" class="text-decoration-none text-dark"> Passions</Link></Nav.Link>
                 <Nav.Link onClick={scrollToTop}><Link to="/blogs" class="text-decoration-none text-dark"> Blogs</Link></Nav.Link>
-                <Nav.Link onClick={scrollToTop}><Link to="/covid" class="text-decoration-none text-dark"> Covid Tracker (Beta)</Link></Nav.Link>
+                <Nav.Link onClick={scrollToTop}><Link to="/covid" class="text-decoration-none text-dark"> Covid Tracker</Link></Nav.Link>
+                <Nav.Link onClick={scrollToTop}><Link to="/lumap" class="text-decoration-none text-dark"> Let's train, London!</Link></Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -76,6 +78,9 @@ function App() {
         </Route>
         <Route path="/covid">
           <CovidPage coviddata={coviddata} />
+        </Route>
+        <Route path="/lumap">
+          <TravelPage/>
         </Route>
 
         {/* Home page goes last */}
