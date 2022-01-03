@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Image from 'react-bootstrap/Image'
 import DOMPurify from "dompurify";
 import parse, { domToReact } from 'html-react-parser';
-import './HTMLBlogImport.css';
+import './BlogImport.css';
 
 import PageTitle from "../components/PageTitle";
 import SocialMediaShare from "../components/SocialMediaShare";

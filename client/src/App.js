@@ -11,8 +11,10 @@ import LifePage from './pages/Life';
 import BlogsPage from './pages/Blogs';
 import CovidPage from './pages/CovidTracker';
 
-import HTMLBlogImport from './blogs/HTMLBlogImport';
-import MDImport from './blogs/markdown-test/MDImport';
+import HTMLBlogImport from './blogs/HTMLBlogImport'; // Static HTML
+// import TestMDImport from './blogs/markdown-test/MDImport'; // Static Markdown (Test)
+import MDImportWrapper from './components/MDImportWrapper'; // Markdown from MongoDB
+
 import LinkModules from './components/Links_Module';
 
 
@@ -48,12 +50,12 @@ function App() {
             <Navbar.Toggle aria-controls='responsive-navbar-nav' onClick={() => setExpanded(expanded ? false : "expanded")} />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className="mr-auto">
-                <Nav.Link onClick={scrollToTop}><Link to="/" class="text-decoration-none fw-bold" style={{ color: 'teal' }} > Yan To Chau</Link></Nav.Link>
-                <Nav.Link onClick={scrollToTop}><Link to="/about" class="text-decoration-none text-dark"> About</Link></Nav.Link>
-                <Nav.Link onClick={scrollToTop}><Link to="/projects" class="text-decoration-none text-dark"> Projects</Link></Nav.Link>
-                <Nav.Link onClick={scrollToTop}><Link to="/life" class="text-decoration-none text-dark"> Passions</Link></Nav.Link>
-                <Nav.Link onClick={scrollToTop}><Link to="/blogs" class="text-decoration-none text-dark"> Blogs</Link></Nav.Link>
-                <Nav.Link onClick={scrollToTop}><Link to="/covid" class="text-decoration-none text-dark"> Covid Tracker (Beta)</Link></Nav.Link>
+                <Link onClick={scrollToTop} to="/" class="nav-link text-decoration-none fw-bold" style={{ color: 'teal' }} > Yan To Chau</Link>
+                <Link onClick={scrollToTop} to="/about" class=" nav-link text-decoration-none text-dark"> About</Link>
+                <Link onClick={scrollToTop} to="/projects" class="nav-link text-decoration-none text-dark"> Projects</Link>
+                <Link onClick={scrollToTop} to="/life" class="nav-link text-decoration-none text-dark"> Passions</Link>
+                <Link onClick={scrollToTop} to="/blogs" class="nav-link text-decoration-none text-dark"> Blogs</Link>
+                <Link onClick={scrollToTop} to="/covid" class="nav-link text-decoration-none text-dark"> Covid Tracker (Beta)</Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -71,8 +73,9 @@ function App() {
         <Route path="/life">
           <LifePage />
         </Route>
-        <Route path="/blogs/md/test.md" component={MDImport} />  {/* TODO: Need to add dynamic links later*/}
-        <Route path="/blogs/:post/:title" component={HTMLBlogImport} />
+        {/* <Route path="/blogs/md/test.md" component={TestMDImport} />  TODO: Need to add dynamic links later */}
+        <Route path="/blogs/mogodB/:title/:_id" component={MDImportWrapper} />
+        <Route path="/blogs/static/:post/:title" component={HTMLBlogImport} />
         <Route path="/blogs">
           <BlogsPage />
         </Route>

@@ -5,9 +5,7 @@ import Caption from './caption';
 
 import md from './test_reactmarkdown';
 
-import './../HTMLBlogImport.css';
-
-function MDImport() {
+function TestMDImport() {
 
     const myH1 = ({ children, ...props }) => (
         <h1 {...props} class="cust-title mt-3 mb-3 display-4">{children}</h1>
@@ -76,4 +74,4 @@ function MDImport() {
     );
 }
 
-export default MDImport;
+export default TestMDImport;

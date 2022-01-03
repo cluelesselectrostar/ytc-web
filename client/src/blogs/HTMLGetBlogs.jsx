@@ -7,9 +7,9 @@ import Image from 'react-bootstrap/Image'
 //import MDImport from './MDBlogImport.js';
 //import HTMLBlogImport from './HTMLBlogImport.js';
 //import SquircleBox from '../components/SquircleBox'
-import projects from './Blogs_List';
+import projects from './HTMLBlogsList';
 
-import './GetProjects.css'
+import './HTMLGetBlogs.css'
 
 class GetBlogs extends Component {
     constructor(props) {
@@ -46,7 +46,7 @@ class GetBlogs extends Component {
 
                                         <div class="row d-flex justify-content-between align-items-center" style={{ position: "absolute", bottom: 20, justifyContent: 'center' }}>
                                             <div class="btn-group col-md-6">
-                                                <Link to={`/blogs/${post.title}/${post.read}`} class="btn btn-sm btn-outline-secondary" onClick={() => this.scrollToTop()}> Read </Link>
+                                                <Link to={`/blogs/static/${post.title}/${post.read}`} class="btn btn-sm btn-outline-secondary" onClick={() => this.scrollToTop()}> Read </Link>
                                                 <a class="btn btn-sm btn-outline-secondary" href={post.medium}>Medium</a>
                                             </div>
                                             <div class="col-md-6">
