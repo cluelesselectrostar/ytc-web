@@ -12,6 +12,7 @@ import BlogsPage from './pages/Blogs';
 import CovidPage from './pages/CovidTracker';
 
 import HTMLBlogImport from './blogs/HTMLBlogImport';
+import MDImport from './blogs/markdown-test/MDImport';
 import LinkModules from './components/Links_Module';
 
 
@@ -70,6 +71,7 @@ function App() {
         <Route path="/life">
           <LifePage />
         </Route>
+        <Route path="/blogs/md/test.md" component={MDImport} />  {/* TODO: Need to add dynamic links later*/}
         <Route path="/blogs/:post/:title" component={HTMLBlogImport} />
         <Route path="/blogs">
           <BlogsPage />

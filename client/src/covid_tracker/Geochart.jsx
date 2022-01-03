@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import useResizeObserver from "./useResizeObserver";
-import { select, geoPath, geoMercator, min, max, scaleLinear } from "d3";
+import { select, geoPath, geoMercator, max, scaleLinear } from "d3";
 // import { geoConicEquidistant } from "d3";
 
 function GeoChart({ data, coviddata, property, date }) {
@@ -108,7 +108,7 @@ function GeoChart({ data, coviddata, property, date }) {
             .attr("x", 10)
             .attr("y", 25);
 
-    }, [data, dimensions, property, selectedCountry, date]);
+    }, [coviddata, data, dimensions, property, selectedCountry, date]);
 
     return (
         <div ref={wrapperRef} style={{ marginBottom: "2rem" }}>
