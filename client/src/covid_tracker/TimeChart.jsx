@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import * as d3 from 'd3';
 import useWindowDimensions from "./useWindowsDimensions";
 
@@ -12,7 +12,7 @@ function TimeChart({ coviddata, property, selectedCountry }) {
         var prop_list = [];
         var country_res = null;
         var prop_res = null;
-        var prev = 0; var res = 0;
+        var prev = 0;
 
         // Render line graph if a country has been selected
         if (selectedCountry) {
@@ -62,7 +62,7 @@ function TimeChart({ coviddata, property, selectedCountry }) {
                 
             }
         }
-    }, [coviddata, property, selectedCountry]);
+    }, [coviddata, property, selectedCountry, height, width]);
 
 
     function drawChart(prop_res, prop_list, width, height) {

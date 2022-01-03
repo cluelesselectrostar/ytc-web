@@ -8,6 +8,7 @@ const cors =  require('cors');
 // const authRoute = require("./routes/auth");
 // const userRoute = require("./routes/users");
 const projectPostRoute = require("./routes/projectPosts");
+const blogPostRoute = require("./routes/blogPosts");
 // const categoryRoute = require("./routes/categories");
 
 const app = express();
@@ -36,6 +37,7 @@ app.use("/api/categories", categoryRoute);
 */
 
 app.use("/api/projectposts", projectPostRoute);
+app.use("/api/blogposts", blogPostRoute);
 
 app.listen(process.env.PORT || 5000, () => {
   console.log(`Backend is running, ${process.env.PORT}.`);
