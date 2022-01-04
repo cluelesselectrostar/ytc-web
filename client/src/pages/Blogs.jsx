@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
+import Image from 'react-bootstrap/Image';
 
 import BlogPostList from "../components/BlogPostList"; //MongoDB
 import GetBlogs from '../blogs/HTMLGetBlogs'; // Static HTML
@@ -8,6 +9,8 @@ import GetBlogs from '../blogs/HTMLGetBlogs'; // Static HTML
 
 import TitleBanner from '../components/TitleBanner';
 import PageTitle from '../components/PageTitle';
+
+import load_image from '../images/loading.gif';
 
 function BlogsPage() {
 
@@ -18,8 +21,6 @@ function BlogsPage() {
         const fetchBlogs = async () => {
             const res = await axios.get("https://ytc-web.herokuapp.com/api/blogposts" + search);
             setBlogs(res.data);
-            //console.log("blogs");
-            //console.log(blogs);
         }
 
         fetchBlogs();
@@ -35,8 +36,15 @@ function BlogsPage() {
             <div class="album py-4">
                 <div class="container">
                     <div class="display-6 mt-4">Markdown content loaded from MongoDB</div>
-                    <BlogPostList posts={blogs} />
-                    <br></br>
+                    {blogs.length < 1 ? (
+                        <div class="px-10 py-0 text-center">
+                            <Image src={load_image} alt="Photo" fluid />
+                            <div>Cute image courtesy of <a href="https://dribbble.com/shots/3790348-game-loading" style={{ color: "black", textDecoration: "none" }}>yuanzi0410</a>.</div>
+                        </div >
+                    ) : (
+                        <BlogPostList posts={blogs} />
+                    )}
+                    <br class="mt-4"></br>
                     {/* <div class="display-6 mt-4">Local Markdown test articles</div>
                     <GetMDTest/>
                     <br></br> */}
