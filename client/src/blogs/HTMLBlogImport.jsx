@@ -6,7 +6,7 @@ import './BlogImport.css';
 
 import PageTitle from "../components/PageTitle";
 import SocialMediaShare from "../components/SocialMediaShare";
-import { FacebookProvider, Like, Comments } from 'react-facebook';
+import FaceBookComment from "../components/FacebookComment";
 
 class HTMLBlogImport extends Component {
 
@@ -129,18 +129,8 @@ class HTMLBlogImport extends Component {
                         </div>
 
                         <br></br>
-                        <br></br>
-                        <div class="container col-md-8 col-lg-6 mt-3 mb-3">
-                            <h3 class="display-6">CLS!</h3>
-                            <div>This comment/ like/ share plugin is only enabled when you're logged in to Facebook on this browser. Plugin implemented with thanks to the convenient react-facebook package by Zlatko Fedor.</div>
-                            <br></br>
-                            <FacebookProvider appId="215081200832412">
-                                <Like href={url} colorScheme="dark" showFaces share />
-                                <center>
-                                    <Comments href={url} />
-                                </center>
-                            </FacebookProvider>
-                        </div>
+                        <FaceBookComment url={url}/>
+                        
                     </div >
                 );
             } else {

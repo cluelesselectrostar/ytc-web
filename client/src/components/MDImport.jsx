@@ -34,15 +34,28 @@ function MDImport({ title, id }) {
     }, [title, id, md]);
 
     const myH1 = ({ children, ...props }) => (
-        <h1 {...props} class="cust-title mt-3 mb-3 display-4">{children}</h1>
+        <div>
+            <h1 {...props} class="cust-title mt-3 mb-3 display-4">{children}</h1>
+        </div>
     );
 
     const myH2 = ({ children, ...props }) => (
-        <h2 {...props} class="cust-h3 mt-3 mb-6 display-5">{children}</h2>
+        <div>
+            <br class="mt-3"></br>
+            <h2 {...props} class="cust-h3 mt-3 mb-6 display-5">{children}</h2>
+        </div>
     );
 
     const myH3 = ({ children, ...props }) => (
-        <h3 {...props} class="cust-h4 mb-3 mt-4 display-6">{children}</h3>
+        <div>
+            <h3 {...props} class="cust-h4 mb-3 mt-5 display-6">{children}</h3>
+        </div>
+    );
+
+    const myH4 = ({ children, ...props }) => (
+        <div>
+            <h4 {...props} class="mt-4">{children}</h4>
+        </div>
     );
 
     const myP = ({ children, ...props }) => (
@@ -88,6 +101,7 @@ function MDImport({ title, id }) {
                             h1: myH1,
                             h2: myH2,
                             h3: myH3,
+                            h4:myH4,
                             img: myImage,
                             p: myP,
                             a: myA,

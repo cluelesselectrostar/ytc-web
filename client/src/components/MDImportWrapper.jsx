@@ -1,8 +1,15 @@
 import React, { Component } from "react";
 import MDImport from "./MDImport";
+
 import SocialMediaShare from "../components/SocialMediaShare";
+import SquircleBox from '../components/SquircleBox';
+
+import Figure from 'react-bootstrap/Figure';
+import Collapsible from 'react-collapsible';
 
 import { FacebookProvider, Like, Comments } from 'react-facebook';
+
+import FaceBookComment from "./FacebookComment";
 
 class MDImportWrapper extends Component {
 
@@ -48,22 +55,8 @@ class MDImportWrapper extends Component {
                 <div class="container col-md-10 col-lg-8 cust-title mt-3 mb-3 display-4">
                     <SocialMediaShare link={this.props.location.pathname} />
                 </div>
-
                 <MDImport title={this.state.title} id={this.state.id} />
-
-                <div class="container col-md-8 col-lg-6 mt-3 mb-3">
-                    <h3 class="display-6">CLS!</h3>
-                    <p>Plugin implemented with thanks to the convenient react-facebook package by Zlatko Fedor.</p>
-                    <p>This comment/ like/ share plugin is, by default, only enabled on Chrome (how unsurprising!), if you're logged in to Facebook. 
-                        Unfortunately for other browsers (Firefox, Safari, Edge) you will have to enable cross-site tracking to let Zuckerberg spy on you.</p>
-                    <br></br>
-                    <FacebookProvider appId="215081200832412">
-                        <Like href={this.state.url} colorScheme="dark" showFaces share />
-                        <center>
-                            <Comments href={this.state.url} />
-                        </center>
-                    </FacebookProvider>
-                </div>
+                <FaceBookComment url={this.state.url}/>
             </div>
         );
     }
