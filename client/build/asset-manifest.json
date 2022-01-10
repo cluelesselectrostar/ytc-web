@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ytc-web/static/css/main.a4c2f0cb.chunk.css",
-    "main.js": "/ytc-web/static/js/main.c4ea3320.chunk.js",
-    "main.js.map": "/ytc-web/static/js/main.c4ea3320.chunk.js.map",
+    "main.js": "/ytc-web/static/js/main.fa15701e.chunk.js",
+    "main.js.map": "/ytc-web/static/js/main.fa15701e.chunk.js.map",
     "runtime-main.js": "/ytc-web/static/js/runtime-main.29f8bed1.js",
     "runtime-main.js.map": "/ytc-web/static/js/runtime-main.29f8bed1.js.map",
     "static/css/2.0a9ec390.chunk.css": "/ytc-web/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.e83fa8d3.chunk.js": "/ytc-web/static/js/2.e83fa8d3.chunk.js",
-    "static/js/2.e83fa8d3.chunk.js.map": "/ytc-web/static/js/2.e83fa8d3.chunk.js.map",
+    "static/js/2.5009e698.chunk.js": "/ytc-web/static/js/2.5009e698.chunk.js",
+    "static/js/2.5009e698.chunk.js.map": "/ytc-web/static/js/2.5009e698.chunk.js.map",
     "index.html": "/ytc-web/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/ytc-web/static/css/2.0a9ec390.chunk.css.map",
     "static/css/main.a4c2f0cb.chunk.css.map": "/ytc-web/static/css/main.a4c2f0cb.chunk.css.map",
-    "static/js/2.e83fa8d3.chunk.js.LICENSE.txt": "/ytc-web/static/js/2.e83fa8d3.chunk.js.LICENSE.txt",
+    "static/js/2.5009e698.chunk.js.LICENSE.txt": "/ytc-web/static/js/2.5009e698.chunk.js.LICENSE.txt",
     "static/media/BlogImport_Func.txt": "/ytc-web/static/media/BlogImport_Func.351d6b8a.txt",
     "static/media/BlogPost.txt": "/ytc-web/static/media/BlogPost.63e1d841.txt",
     "static/media/EBGaramond-Initials.ttf": "/ytc-web/static/media/EBGaramond-Initials.e30b376b.ttf",
@@ -111,8 +111,8 @@
   "entrypoints": [
     "static/js/runtime-main.29f8bed1.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.e83fa8d3.chunk.js",
+    "static/js/2.5009e698.chunk.js",
     "static/css/main.a4c2f0cb.chunk.css",
-    "static/js/main.c4ea3320.chunk.js"
+    "static/js/main.fa15701e.chunk.js"
   ]
 }

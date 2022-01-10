@@ -1,13 +1,6 @@
 import React, { Component } from "react";
 import MDImport from "./MDImport";
-
 import SocialMediaShare from "../components/SocialMediaShare";
-import SquircleBox from '../components/SquircleBox';
-
-import Figure from 'react-bootstrap/Figure';
-import Collapsible from 'react-collapsible';
-
-import { FacebookProvider, Like, Comments } from 'react-facebook';
 
 import FaceBookComment from "./FacebookComment";
 
