@@ -46,9 +46,9 @@ function MDImport({ title, id }) {
     );
 
     const myP = ({ children, ...props }) => (
-        <div class="cust mt-3 mb-3" style={{ display: 'flex'}} {...props}>
+        <p class="cust mt-3 mb-3" {...props}>
             {children}
-        </div>
+        </p>
     );
 
     const myLi = ({ children, ...props }) => (
