@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ytc-web/static/css/main.a4c2f0cb.chunk.css",
-    "main.js": "/ytc-web/static/js/main.d0d24081.chunk.js",
-    "main.js.map": "/ytc-web/static/js/main.d0d24081.chunk.js.map",
+    "main.js": "/ytc-web/static/js/main.c4ea3320.chunk.js",
+    "main.js.map": "/ytc-web/static/js/main.c4ea3320.chunk.js.map",
     "runtime-main.js": "/ytc-web/static/js/runtime-main.29f8bed1.js",
     "runtime-main.js.map": "/ytc-web/static/js/runtime-main.29f8bed1.js.map",
     "static/css/2.0a9ec390.chunk.css": "/ytc-web/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.d940ed8e.chunk.js": "/ytc-web/static/js/2.d940ed8e.chunk.js",
-    "static/js/2.d940ed8e.chunk.js.map": "/ytc-web/static/js/2.d940ed8e.chunk.js.map",
+    "static/js/2.e83fa8d3.chunk.js": "/ytc-web/static/js/2.e83fa8d3.chunk.js",
+    "static/js/2.e83fa8d3.chunk.js.map": "/ytc-web/static/js/2.e83fa8d3.chunk.js.map",
     "index.html": "/ytc-web/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/ytc-web/static/css/2.0a9ec390.chunk.css.map",
     "static/css/main.a4c2f0cb.chunk.css.map": "/ytc-web/static/css/main.a4c2f0cb.chunk.css.map",
-    "static/js/2.d940ed8e.chunk.js.LICENSE.txt": "/ytc-web/static/js/2.d940ed8e.chunk.js.LICENSE.txt",
+    "static/js/2.e83fa8d3.chunk.js.LICENSE.txt": "/ytc-web/static/js/2.e83fa8d3.chunk.js.LICENSE.txt",
     "static/media/BlogImport_Func.txt": "/ytc-web/static/media/BlogImport_Func.351d6b8a.txt",
     "static/media/BlogPost.txt": "/ytc-web/static/media/BlogPost.63e1d841.txt",
     "static/media/EBGaramond-Initials.ttf": "/ytc-web/static/media/EBGaramond-Initials.e30b376b.ttf",
@@ -27,6 +27,7 @@
     "static/media/End of Internship Review - Yanni.d7a3617b.pdf": "/ytc-web/static/media/End of Internship Review - Yanni.d7a3617b.pdf",
     "static/media/GetBlogs .txt": "/ytc-web/static/media/GetBlogs .89704dbf.txt",
     "static/media/GetMDTest.txt": "/ytc-web/static/media/GetMDTest.58d6f0a3.txt",
+    "static/media/HTMLBlogImport.txt": "/ytc-web/static/media/HTMLBlogImport.985597c2.txt",
     "static/media/ICRA.f5037976.webp": "/ytc-web/static/media/ICRA.f5037976.webp",
     "static/media/LICENSE.txt": "/ytc-web/static/media/LICENSE.253cc3b1.txt",
     "static/media/LICENSE": "/ytc-web/static/media/LICENSE.f6265be6.bin",
@@ -110,8 +111,8 @@
   "entrypoints": [
     "static/js/runtime-main.29f8bed1.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.d940ed8e.chunk.js",
+    "static/js/2.e83fa8d3.chunk.js",
     "static/css/main.a4c2f0cb.chunk.css",
-    "static/js/main.d0d24081.chunk.js"
+    "static/js/main.c4ea3320.chunk.js"
   ]
 }
