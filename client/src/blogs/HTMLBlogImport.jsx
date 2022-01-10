@@ -6,7 +6,7 @@ import './BlogImport.css';
 
 import PageTitle from "../components/PageTitle";
 import SocialMediaShare from "../components/SocialMediaShare";
-
+import { FacebookProvider, Like, Comments } from 'react-facebook';
 
 class HTMLBlogImport extends Component {
 
@@ -31,6 +31,8 @@ class HTMLBlogImport extends Component {
     render() {
         const title = decodeURIComponent(this.props.match.params.title);
         const post = decodeURIComponent(this.props.match.params.post);
+        const title_url = title.replace(/ /g, "%20");
+        const url = "https://cluelesselectrostar.github.io/ytc-web/#/blogs/static/" + title_url + "/" + post;
         if (title === "") {
             return <br></br>
         } else {
@@ -118,10 +120,24 @@ class HTMLBlogImport extends Component {
                         <br></br>
                         <div class="container col-md-10 col-lg-6 cust-title mt-3 mb-3 display-4">
                             <div>{post}</div>
-                            <SocialMediaShare link={this.props.location.pathname}/>
+                            <SocialMediaShare link={this.props.location.pathname} />
                         </div>
                         <div class="container col-md-10 col-lg-8">
                             {parse(cleanHTML, options)}
+                        </div>
+
+                        <br></br>
+                        <br></br>
+                        <div class="container col-md-8 col-lg-6 mt-3 mb-3">
+                            <h3 class="display-6">CLS!</h3>
+                            <div>This comment/ like/ share plugin is only enabled when you're logged in to Facebook on this browser. Plugin implemented with thanks to the convenient react-facebook package by Zlatko Fedor.</div>
+                            <br></br>
+                            <FacebookProvider appId="215081200832412">
+                                <Like href={url} colorScheme="dark" showFaces share />
+                                <center>
+                                    <Comments href={url} />
+                                </center>
+                            </FacebookProvider>
                         </div>
                     </div >
                 );
