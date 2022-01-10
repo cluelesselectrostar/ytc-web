@@ -44,75 +44,73 @@ class HTMLBlogImport extends Component {
 
                 // PARSER        
                 const options = {
-                    replace: node => {
-                        if (!node.attribs) {
+                    replace: ({ attribs, children }) => {
+                        if (!attribs) {
                             return;
                         }
-                        if (node.attribs.class === "imageCaption") {
+                        if (attribs.class === "imageCaption") {
                             return (
                                 <p class="cust-caption" style={{ display: 'flex', justifyContent: 'center' }}>
-                                    {domToReact(node.children, options)}
+                                    {domToReact(children, options)}
                                 </p>
                             );
-                        } else if (String(node.attribs.class).includes("section-inner")) {
+                        } else if (String(attribs.class).includes("section-inner")) {
                             return (
                                 <div class="row align-items-md-stretch" style={{ display: 'flex', justifyContent: 'center' }}>
-                                    {domToReact(node.children, options)}
+                                    {domToReact(children, options)}
                                 </div>
                             );
-                        } else if (node.attribs.class === "graf-image") {
+                        } else if (attribs.class === "graf-image") {
                             return (
                                 <div class="align-content-center align-items-center mt-3" style={{ display: 'flex', justifyContent: 'center' }}>
-                                    <Image src={node.attribs.src} alt="Photo" fluid />
+                                    <Image src={attribs.src} alt="Photo" fluid />
                                 </div >
                             );
-                        } else if (node.attribs.class === "p-name") {
+                        } else if (attribs.class === "p-name") {
                             return <div></div>;
-                        } else if (node.attribs.class === "p-summary") {
+                        } else if (attribs.class === "p-summary") {
                             return <div></div>;
-                        } else if (node.attribs.class === "section-divider") {
+                        } else if (attribs.class === "section-divider") {
                             return <br></br>;
-                        } else if (String(node.attribs.class).includes("graf--p")) {
+                        } else if (String(attribs.class).includes("graf--p")) {
                             return (
                                 <div class="col-md-10 col-lg-8 cust mt-3 mb-3">
-                                    {domToReact(node.children, options)}
+                                    {domToReact(children, options)}
                                 </div>
                             );
-                        } else if (String(node.attribs.class).includes("graf--blockquote")) {
+                        } else if (String(attribs.class).includes("graf--blockquote")) {
                             return (
                                 <div class="col-md-10 col-lg-8 cust mt-4 mb-4 blockquote">
-                                    {domToReact(node.children, options)}
+                                    {domToReact(children, options)}
                                 </div>
                             );
-                        } else if (String(node.attribs.class).includes("graf--title")) {
+                        } else if (String(attribs.class).includes("graf--title")) {
                             /* return (
                                 <div class="col-md-10 col-lg-8  cust-title mt-3 mb-3 display-4">
                                     {domToReact(children, options)}
                                 </div>
                             ); */
                             return (<div></div>);
-                        } else if (String(node.attribs.class).includes("graf--h3")) {
+                        } else if (String(attribs.class).includes("graf--h3")) {
                             return (
                                 <div class="col-md-10 col-lg-8  cust-h3 mt-3 mb-6 display-5">
-                                    {domToReact(node.children, options)}
+                                    {domToReact(children, options)}
                                 </div>
                             );
-                        } else if (String(node.attribs.class).includes("graf--h4")) {
+                        } else if (String(attribs.class).includes("graf--h4")) {
                             return (
                                 <div class="col-md-10 col-lg-8  cust-h4 mb-3 mt-4 display-6">
-                                    {domToReact(node.children, options)}
+                                    {domToReact(children, options)}
                                 </div>
                             );
-                        } else if (String(node.attribs.class).includes("postList")) {
+                        } else if (String(attribs.class).includes("postList")) {
                             return (
                                 <div class="col-md-10 col-lg-8  cust mt-4 mb-4">
-                                    {domToReact(node.children, options)}
+                                    {domToReact(children, options)}
                                 </div>
                             );
-                        } else if (node.name === "a") {
-                            return (<a href={node.attribs.href} class="text-dark">{domToReact(node.children, options)}</a>);
-                        } else if (node.name === "footer") {
-                            return (<br></br>)
+                        } else if (attribs.name === "footer") {
+                            return (<div></div>);
                         }
                     }
                 };

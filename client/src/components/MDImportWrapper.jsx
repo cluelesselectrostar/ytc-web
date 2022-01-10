@@ -53,7 +53,9 @@ class MDImportWrapper extends Component {
 
                 <div class="container col-md-8 col-lg-6 mt-3 mb-3">
                     <h3 class="display-6">CLS!</h3>
-                    <div>This comment/ like/ share plugin is only enabled when you're logged in to Facebook on this browser. Plugin implemented with thanks to the convenient react-facebook package by Zlatko Fedor.</div>
+                    <p>Plugin implemented with thanks to the convenient react-facebook package by Zlatko Fedor.</p>
+                    <p>This comment/ like/ share plugin is, by default, only enabled on Chrome (how unsurprising!), if you're logged in to Facebook. 
+                        Unfortunately for other browsers (Firefox, Safari, Edge) you will have to enable cross-site tracking to let Zuckerberg spy on you.</p>
                     <br></br>
                     <FacebookProvider appId="215081200832412">
                         <Like href={this.state.url} colorScheme="dark" showFaces share />

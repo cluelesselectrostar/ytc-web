@@ -59,7 +59,7 @@ function MDImport({ title, id }) {
 
 
     const myImage = ({ children, ...props }) => (
-        <div class="mt-3" style={{ display: 'flex', justifyContent: 'center' }} {...props}>
+        <div class="mt-3" style={{ display: 'flex', justifyContent: 'center' }} class="justify-content-md-center" {...props}>
             <Image src={props.src} alt="Photo" fluid />
         </div >
     );
