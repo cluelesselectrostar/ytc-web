@@ -27,6 +27,10 @@ function MDImport({ title, id }) {
         };
 
         fetchPost();
+
+        if (window.FB) {
+            window.FB.XFBML.parse();
+        }
     }, [title, id, md]);
 
     const myH1 = ({ children, ...props }) => (
@@ -61,7 +65,7 @@ function MDImport({ title, id }) {
     );
 
     const myA = ({ children, ...props }) => (
-        <a class="cust" {...props}>
+        <a class="cust text-dark" {...props}>
             {children}
         </a>
     );
@@ -77,34 +81,43 @@ function MDImport({ title, id }) {
         <div>
             <PageTitle title={`Blog | ${title}`} />
             {md ? (
-            <div style={{ display: 'flex', justifyContent: 'center' }} class="container d-flex py-4 col-md-10 col-lg-8" >
-                <Markdown options={{
-                    wrapper: 'article',
-                    forceBlock: true,
-                    overrides: {
-                        h1: myH1,
-                        h2: myH2,
-                        h3: myH3,
-                        img: myImage,
-                        p: myP,
-                        a: myA,
-                        li: myLi,
-                        blockquote: myBlockquote, // does not work
-                        Caption: {
-                            component: Caption,
+                <div style={{ display: 'flex', justifyContent: 'center' }} class="container d-flex py-4 col-md-10 col-lg-8" >
+                    <Markdown options={{
+                        wrapper: 'article',
+                        forceBlock: true,
+                        overrides: {
+                            h1: myH1,
+                            h2: myH2,
+                            h3: myH3,
+                            img: myImage,
+                            p: myP,
+                            a: myA,
+                            li: myLi,
+                            blockquote: myBlockquote, // does not work
+                            Caption: {
+                                component: Caption,
+                            }
                         }
-                    }
-                }}
-                >{md}</Markdown>
-            </div >
-        ) : (
-            <div>
-                <div class="px-10 py-0 text-center">
-                    <Image src={load_image} alt="Photo" fluid />
-                    <div>Cute image courtesy of <a href="https://dribbble.com/shots/3790348-game-loading" style={{ color: "black", textDecoration: "none" }}>yuanzi0410</a>.</div>
+                    }}
+                    >{md}</Markdown>
+                    {/* <div className="facebookComment">
+                        <div className="title">Comments</div>
+                        <div
+                            className="fb-comments"
+                            data-href="localhost:3000/ytc-web/#/blogs/mogodB/Pretty%20needed%20Chill/61d33d9f69f66a56c65c3486"
+                            data-width="100%"
+                            data-numposts="5"
+                        ></div>
+                    </div> */}
                 </div >
-            </div>
-        )}
+            ) : (
+                <div>
+                    <div class="px-10 py-0 text-center">
+                        <Image src={load_image} alt="Photo" fluid />
+                        <div>Cute image courtesy of <a href="https://dribbble.com/shots/3790348-game-loading" style={{ color: "black", textDecoration: "none" }}>yuanzi0410</a>.</div>
+                    </div >
+                </div>
+            )}
         </div>
     );
 
