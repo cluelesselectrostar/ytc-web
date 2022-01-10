@@ -46,7 +46,7 @@ function MDImport({ title, id }) {
     );
 
     const myP = ({ children, ...props }) => (
-        <div class="cust mt-3 mb-3" style={{ display: 'flex', justifyContent: 'center' }} {...props}>
+        <div class="cust mt-3 mb-3" style={{ display: 'flex'}} {...props}>
             {children}
         </div>
     );
@@ -84,7 +84,6 @@ function MDImport({ title, id }) {
                 <div style={{ display: 'flex', justifyContent: 'center' }} class="container d-flex py-4 col-md-10 col-lg-8" >
                     <Markdown options={{
                         wrapper: 'article',
-                        forceBlock: true,
                         overrides: {
                             h1: myH1,
                             h2: myH2,
