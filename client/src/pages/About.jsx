@@ -13,6 +13,8 @@ import SquircleBox from '../components/SquircleBox';
 import { ytc_links } from '../components/Links';
 import PageTitle from '../components/PageTitle';
 import { Link } from 'react-router-dom';
+import my_cover from '../images/edited-1054475.webp';
+import './About.css';
 //import { useState } from 'react';
 
 function AboutPage() {
@@ -20,7 +22,7 @@ function AboutPage() {
     const scrollToTop = () => {
         //setExpanded(false);
         window.scrollTo({
-            top: 0, behavior: 'smooth' 
+            top: 0, behavior: 'smooth'
         });
     };
 
@@ -28,21 +30,23 @@ function AboutPage() {
 
     return (<main>
 
-        <div class="align-items-md-stretch h-100 p-5 bg-light rounded-3">
-            <PageTitle title="About"/>
-            <div class="row">
-                <div class="col-md-9">
-                    <h1 class="display-5 fw-bold">Where I am currently at.</h1>
-                    <p class="lead">
-                        I am Yan To, raised in Hong Kong
-                        , and currently an Engineering undergraduate at Imperial College London.
-                        In addition to my portfolio of attestable project, work and volunteering experiences,
-                        I am also active in numerous student societies,
-                        bringing exciting extra-curricular experiences to Imperial students.
-                    </p>
-                </div>
-                <div class="col-md-3 align-content-center align-items-center">
-                    <Image src={profile_image} alt="Brighton." fluid roundedCircle />
+        <div class="align-items-md-stretch h-100 p-5 rounded-3 bg-light">
+            <div>
+                <PageTitle title="About" />
+                <div class="row">
+                    <div class="col-md-9">
+                        <h1 class="display-5 fw-bold">Where I am currently at.</h1>
+                        <p class="lead">
+                            I am Yan To, raised in Hong Kong
+                            , and currently an Engineering undergraduate at Imperial College London.
+                            In addition to my portfolio of attestable project, work and volunteering experiences,
+                            I am also active in numerous student societies,
+                            bringing exciting extra-curricular experiences to Imperial students.
+                        </p>
+                    </div>
+                    <div class="col-md-3 align-content-center align-items-center">
+                        <Image src={profile_image} alt="Brighton." fluid roundedCircle />
+                    </div>
                 </div>
             </div>
         </div>

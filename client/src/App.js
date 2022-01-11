@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import HomePage from './pages/Home';
 import ProjectsPage from './pages/Projects';
-import AboutPage from './pages/About';
+//import AboutPage from './pages/About';
 import LifePage from './pages/Life';
 import BlogsPage from './pages/Blogs';
 import CovidPage from './pages/CovidTracker';
@@ -46,14 +46,14 @@ function App() {
 
   return (
     <HashRouter>
-      <Container>
+      <Container class="px-10 col-md-10">
         <Navbar collapseOnSelect sticky="top" expand='sm' variant='light' bg='white' expanded={expanded}>
           <Container class="align-items-center">
             <Navbar.Toggle aria-controls='responsive-navbar-nav' onClick={() => setExpanded(expanded ? false : "expanded")} />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className="mr-auto">
                 <Link onClick={scrollToTop} to="/" class="nav-link text-decoration-none fw-bold" style={{ color: 'teal' }} > Yan To Chau</Link>
-                <Link onClick={scrollToTop} to="/about" class=" nav-link text-decoration-none text-dark"> About</Link>
+                {/* <Link onClick={scrollToTop} to="/about" class=" nav-link text-decoration-none text-dark"> About</Link> */}
                 <Link onClick={scrollToTop} to="/projects" class="nav-link text-decoration-none text-dark"> Projects</Link>
                 <Link onClick={scrollToTop} to="/life" class="nav-link text-decoration-none text-dark"> Passions</Link>
                 <Link onClick={scrollToTop} to="/blogs" class="nav-link text-decoration-none text-dark"> Blogs</Link>
@@ -66,9 +66,9 @@ function App() {
       {/* <br class=" mb-4"></br> */}
 
       <Switch>
-        <Route path="/about">
+        {/* <Route path="/about">
           <AboutPage />
-        </Route>
+        </Route> */}
         <Route path="/projects">
           <ProjectsPage />
         </Route>
