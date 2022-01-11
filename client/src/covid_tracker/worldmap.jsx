@@ -4,6 +4,7 @@ import GeoChart from './Geochart';
 import React, { Component } from "react";
 import data from './custom.geo.json';
 import './worldmap.css';
+import axios from "axios";
 
 class GeoChartWrapper extends Component {
 
@@ -12,7 +13,7 @@ class GeoChartWrapper extends Component {
 
         const today = new Date();
         const yesterday = new Date(today);
-        yesterday.setDate(yesterday.getDate() - 1); // just to be safe, limit data to 1 days ago
+        yesterday.setDate(yesterday.getDate() - 5); // just to be safe, limit data to 1 days ago
         yesterday.toDateString();
         console.log(yesterday);
 
@@ -26,30 +27,26 @@ class GeoChartWrapper extends Component {
             property: "total_cases",
             today: date_string,
             date: date_string,
-            coviddata: []
         }
-    }
-
-    async componentWillMount() {
-        fetch('https://covid.ourworldindata.org/data/owid-covid-data.json')
-            .then(response => response.json())
-            .then(data => {
-                this.setState({
-                    coviddata: data
-                });
-                console.log(data);
-            })
-            .catch((err) => console.error(err));
     }
 
     render() {
         return (
             <div>
+                {(this.props.import_covid.length < 100) ?
+                    (
+                        <div>
+                            <div class="display-5">
+                                Data is still loading. This might take up to 10 seconds.
+                            </div>
+                        </div>
+                    ) : (
+                        <></>
+                    )
+                }
                 <GeoChart
                     data={data}
-                    coviddata={
-                        (this.props.import_covid === null) ? this.state.coviddata : this.props.import_covid
-                    }
+                    coviddata={this.props.import_covid}
                     property={this.state.property}
                     date={this.state.date}
                     className="geochart"

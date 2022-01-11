@@ -36,6 +36,19 @@ app.use("/api/users", userRoute);
 app.use("/api/categories", categoryRoute);
 */
 
+
+const { createProxyMiddleware } = require('http-proxy-middleware');
+
+app.use('/api/covid', createProxyMiddleware({ 
+    target: 'https://covid.ourworldindata.org/data/owid-covid-data.json', //original url
+    changeOrigin: true, 
+    //secure: false,
+    onProxyRes: function (proxyRes, req, res) {
+       proxyRes.headers['Access-Control-Allow-Origin'] = '*';
+    }
+}));
+
+
 app.use("/api/projectposts", projectPostRoute);
 app.use("/api/blogposts", blogPostRoute);
 
@@ -44,6 +57,6 @@ app.listen(process.env.PORT || 5000, () => {
 });
 
 app.get('/', (req, res) => {
-  res.status(200).send('hello world')
+  res.status(200).send('hello world. go ahead and add /api/projectposts or /api/blogposts to view database content.')
 });
 

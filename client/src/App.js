@@ -31,6 +31,7 @@ function App() {
   const [expanded, setExpanded] = useState(false);
   const [coviddata, setCovidData] = useState(null);
 
+  /*
   useEffect(() => {
     fetch('https://covid.ourworldindata.org/data/owid-covid-data.json')
       .then(response => response.json())
@@ -39,6 +40,7 @@ function App() {
         //console.log(data);
       })
   }, []);
+  */
 
   // style={{ color: 'rgb(153,230,179)', }} (teal colour)
 

@@ -12,7 +12,29 @@ class CovidPage extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            coviddata: [],
+            loaded: false,
+            countries: [],
+        };
+    }
+
+    async componentWillMount() {
+        fetch('https://covid.ourworldindata.org/data/owid-covid-data.json')
+            .then(response => response.json())
+            .then(response => {
+                this.setState({
+                    coviddata: response,
+                    loaded: true
+                });
+                console.log("keys");
+                const data_keys = Object.keys(this.state.coviddata);
+                console.log(data_keys);
+            })
+            .catch((err) => console.error(err));
+
+        const data_keys = Object.keys(this.state.coviddata);
+        this.setState({ countries: data_keys });
     }
 
     render() {
@@ -23,13 +45,14 @@ class CovidPage extends Component {
                     title="Coronavirus Tracker 😷"
                     description="My newest weekend project: the latest data for coronavirus, grabbed from Our World in Data."
                 />
-                
+
                 <div class="container align-items-md-stretch mt-4">
-                    <GeoChartWrapper import_covid={this.props.coviddata} />
+                    {/* <GeoChartWrapper import_covid={this.props.coviddata} /> */}
+                    <GeoChartWrapper import_covid={this.state.coviddata} />
                 </div>
 
                 <div class="container align-items-md-stretch mt-4">
-                    <LineChartWrapper import_covid={this.props.coviddata} />
+                    <LineChartWrapper import_covid={this.state.coviddata}/>
                 </div>
 
                 <div class="container py-4">

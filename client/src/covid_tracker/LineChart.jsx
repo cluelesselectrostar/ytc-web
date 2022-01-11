@@ -1,5 +1,6 @@
 // import coviddata from './covid.json';
 // import React, { useEffect, useRef, useState } from "react";
+import countries from "./countries";
 import React, { Component } from "react";
 import TimeChart from './TimeChart';
 
@@ -10,7 +11,7 @@ class LineChartWrapper extends Component {
 
         const today = new Date();
         const yesterday = new Date(today);
-        yesterday.setDate(yesterday.getDate() - 1); // just to be safe, limit data to 1 days ago
+        yesterday.setDate(yesterday.getDate() - 5); // just to be safe, limit data to 1 days ago
         yesterday.toDateString();
         console.log(yesterday);
 
@@ -24,47 +25,37 @@ class LineChartWrapper extends Component {
             property: "total_cases",
             today: date_string,
             date: date_string,
-            coviddata: [],
             countries: null,
             country: "GBR",
+            //coviddata:[],
+            //loading:false
         }
     }
 
-    async componentWillMount() {
-        fetch('https://covid.ourworldindata.org/data/owid-covid-data.json')
-            .then(response => response.json())
-            .then(response => {
-                this.setState({
-                    coviddata: response
-                });
-                //console.log(response);
-            })
-            .catch((err) => console.error(err));
-        
-            if (this.props.import_covid) {
-                const data_keys = Object.entries(this.props.import_covid);
-                this.setState({countries:data_keys});
-            } else {
-                const data_keys = Object.entries(this.state.coviddata);
-                this.setState({countries:data_keys});
-            }
-    
-    }
-
     render() {
-        const { countries } = this.state;
+        console.log(countries);
 
         return (
             <div class="mt-4">
+                <br></br>
                 <div class="container">
+                    {(this.props.import_covid.length < 100) ?
+                        (
+                            <div>
+                                <div class="display-5">
+                                    Data is still loading. This might take up to 10 seconds.
+                                </div>
+                            </div>
+                        ) : (
+                            <></>
+                        )
+                    }
                     <TimeChart
-                        coviddata={
-                            (this.props.import_covid === null) ?
-                                this.state.coviddata : this.props.import_covid
-                        }
+                        coviddata={this.props.import_covid}
                         property={this.state.property}
-                        selectedCountry = {this.state.country}
+                        selectedCountry={this.state.country}
                     />
+
                 </div>
 
                 <h3 style={{ textAlign: "center" }}>Time Evolution</h3>
@@ -107,13 +98,12 @@ class LineChartWrapper extends Component {
                             }}
                             style={{ width: "100%" }}
                         >
-                            {
-                                countries.map(
-                                    country => (
-                                        <option value={country[0]}>{country[1].location}</option>
-                                    )
+                            {countries.map(
+                                country => (
+                                    // <option value={country[0]}>{country[1].location}</option>
+                                    <option value={country}></option>
                                 )
-                            }
+                            )}
                         </select>
                     </div>
 

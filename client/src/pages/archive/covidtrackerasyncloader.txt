@@ -1,0 +1,39 @@
+
+    /*
+    async componentWillMount() {
+        
+        const fetchData = async () => {
+            const res = await axios.get('https://covid.ourworldindata.org/data/owid-covid-data.json');
+            this.setState({
+                coviddata: res
+            });
+        }
+
+        fetchData();
+        
+        fetch('https://covid.ourworldindata.org/data/owid-covid-data.json')
+            .then(response => response.json())
+            .then(response => {
+                this.setState({
+                    coviddata: response,
+                    loaded:true
+                });
+                //console.log(response);
+            })
+            .catch((err) => console.error(err));
+
+
+        if (this.props.import_covid) {
+            const data_keys = Object.entries(this.props.import_covid);
+            this.setState({ countries: data_keys });
+        } else {
+            const data_keys = Object.entries(this.state.coviddata);
+            this.setState({ countries: data_keys });
+        }
+        
+        if (this.props.import_covid.length > 100) {
+            const data_keys = Object.entries(this.props.import_covid);
+            this.setState({ countries: data_keys });
+        }
+    }
+    */
