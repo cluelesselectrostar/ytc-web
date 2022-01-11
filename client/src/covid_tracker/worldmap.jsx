@@ -6,6 +6,8 @@ import data from './custom.geo.json';
 import './worldmap.css';
 import axios from "axios";
 
+import DataLoading from '../components/DataLoading';
+
 class GeoChartWrapper extends Component {
 
     constructor(props) {
@@ -35,11 +37,7 @@ class GeoChartWrapper extends Component {
             <div>
                 {(this.props.import_covid.length < 100) ?
                     (
-                        <div>
-                            <div class="display-5">
-                                Data is still loading. This might take up to 10 seconds.
-                            </div>
-                        </div>
+                        <DataLoading/>
                     ) : (
                         <></>
                     )

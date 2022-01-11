@@ -4,6 +4,8 @@ import countries from "./countries";
 import React, { Component } from "react";
 import TimeChart from './TimeChart';
 
+import DataLoading from "../components/DataLoading";
+
 class LineChartWrapper extends Component {
 
     constructor(props) {
@@ -24,8 +26,6 @@ class LineChartWrapper extends Component {
         this.state = {
             property: "total_cases",
             today: date_string,
-            date: date_string,
-            countries: null,
             country: "GBR",
             //coviddata:[],
             //loading:false
@@ -33,7 +33,16 @@ class LineChartWrapper extends Component {
     }
 
     render() {
+        /*
+        const countries = [];
+        for (const country of Object.entries(this.props.import_covid)) {
+            const shortcode = country[0];
+            const name = country[1].location;
+            const pair = [shortcode, name];
+            countries.push(pair);
+        }
         console.log(countries);
+        */
 
         return (
             <div class="mt-4">
@@ -41,11 +50,7 @@ class LineChartWrapper extends Component {
                 <div class="container">
                     {(this.props.import_covid.length < 100) ?
                         (
-                            <div>
-                                <div class="display-5">
-                                    Data is still loading. This might take up to 10 seconds.
-                                </div>
-                            </div>
+                            <DataLoading/>
                         ) : (
                             <></>
                         )
@@ -101,7 +106,7 @@ class LineChartWrapper extends Component {
                             {countries.map(
                                 country => (
                                     // <option value={country[0]}>{country[1].location}</option>
-                                    <option value={country}></option>
+                                    <option value={country[0]}>{country[1]}</option>
                                 )
                             )}
                         </select>

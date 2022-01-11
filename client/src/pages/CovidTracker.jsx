@@ -20,6 +20,8 @@ class CovidPage extends Component {
     }
 
     async componentWillMount() {
+        var data_keys = [];
+        // var countries = [];
         fetch('https://covid.ourworldindata.org/data/owid-covid-data.json')
             .then(response => response.json())
             .then(response => {
@@ -27,13 +29,21 @@ class CovidPage extends Component {
                     coviddata: response,
                     loaded: true
                 });
-                console.log("keys");
-                const data_keys = Object.keys(this.state.coviddata);
+                console.log("entries");
+                data_keys = Object.entries(this.state.coviddata);
                 console.log(data_keys);
+                /*
+                var countries = [];
+                for (const country of Object.entries(data_keys)) {
+                    console.log(country);
+                    delete country.data;
+                    countries.push(country);
+                }
+                console.log("entries with data removed");
+                console.log(countries);
+                */
             })
             .catch((err) => console.error(err));
-
-        const data_keys = Object.keys(this.state.coviddata);
         this.setState({ countries: data_keys });
     }
 
@@ -52,7 +62,7 @@ class CovidPage extends Component {
                 </div>
 
                 <div class="container align-items-md-stretch mt-4">
-                    <LineChartWrapper import_covid={this.state.coviddata}/>
+                    <LineChartWrapper import_covid={this.state.coviddata} />
                 </div>
 
                 <div class="container py-4">
