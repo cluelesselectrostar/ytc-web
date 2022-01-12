@@ -4,7 +4,7 @@ import { ytc_links } from './Links';
 function LinkModules() {
 
     return (
-        <div class="align-items-md-stretch h-100 p-5 bg-light rounded-3">
+        <div class="align-items-md-stretch h-100 p-5 bg-light">
             <div class="col-lg-10 col-md-10 container">
                 <h1 class="display-6 fw-bold">Get in touch 🤙</h1>
                 <div class="row align-items-md-stretch mb-4">

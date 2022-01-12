@@ -4,7 +4,7 @@ import GeoChart from './Geochart';
 import React, { Component } from "react";
 import data from './custom.geo.json';
 import './worldmap.css';
-import axios from "axios";
+//import axios from "axios";
 
 import DataLoading from '../components/DataLoading';
 

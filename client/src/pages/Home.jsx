@@ -19,6 +19,8 @@ import Image from 'react-bootstrap/Image';
 import Figure from 'react-bootstrap/Figure';
 import Button from 'react-bootstrap/Button';
 
+//import { FullPage, Slide } from 'react-full-page';
+
 function HomePage() {
 
     const aboutRef = useRef(null);

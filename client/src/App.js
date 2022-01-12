@@ -1,5 +1,5 @@
 import { HashRouter, Link, Switch, Route } from 'react-router-dom';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 // import { Row } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 
@@ -31,28 +31,26 @@ function App() {
   const [expanded, setExpanded] = useState(false);
   const [coviddata, setCovidData] = useState(null);
 
-  /*
   useEffect(() => {
     fetch('https://covid.ourworldindata.org/data/owid-covid-data.json')
       .then(response => response.json())
       .then(data => {
         setCovidData(data);
-        //console.log(data);
+        console.log("data grabbed at top level");
       })
   }, []);
-  */
 
   // style={{ color: 'rgb(153,230,179)', }} (teal colour)
 
   return (
     <HashRouter>
-      <Container class="px-10 col-md-10">
-        <Navbar collapseOnSelect sticky="top" expand='sm' variant='light' bg='white' expanded={expanded}>
-          <Container class="align-items-center">
+      <div class="px-10">
+        <div class="col-md-10 container">
+          <Navbar collapseOnSelect sticky="top" expand='sm' variant='light' bg='white' expanded={expanded}>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' onClick={() => setExpanded(expanded ? false : "expanded")} />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className="mr-auto">
-                <Link onClick={scrollToTop} to="/" class="nav-link text-decoration-none fw-bold" style={{ color: 'teal' }} > Yan To Chau</Link>
+                <Link onClick={scrollToTop} to="/" class="nav-link text-decoration-none fw-bold" style={{ color: 'teal' }} >Yan To Chau</Link>
                 {/* <Link onClick={scrollToTop} to="/about" class=" nav-link text-decoration-none text-dark"> About</Link> */}
                 <Link onClick={scrollToTop} to="/projects" class="nav-link text-decoration-none text-dark"> Projects</Link>
                 <Link onClick={scrollToTop} to="/life" class="nav-link text-decoration-none text-dark"> Passions</Link>
@@ -60,9 +58,9 @@ function App() {
                 <Link onClick={scrollToTop} to="/covid" class="nav-link text-decoration-none text-dark"> Covid Tracker (Beta)</Link>
               </Nav>
             </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      </Container>
+          </Navbar>
+        </div>
+      </div>
       {/* <br class=" mb-4"></br> */}
 
       <Switch>
