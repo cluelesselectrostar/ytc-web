@@ -65,8 +65,11 @@ function HomePage() {
                 </div>
 
             </div>
-            <br></br>
 
+            <div class="container col-md-10 mt-3">
+                <br></br>
+                <hr />
+            </div>
 
             <div class="container py-4" ref={aboutRef}>
                 <div class="row align-items-md-stretch">
@@ -79,7 +82,7 @@ function HomePage() {
                                     <p>
                                         I have always been fascinated in the sophisticated circuits and systems powering our gadgets and appliances,
                                         which is why I went for EEE.
-                                        I truly believe that harnessing the power of these newest technology is the way to build a smarter,
+                                        I truly believe that harnessing the power of these newest technologies is the way to build a smarter,
                                         greener and more sustainable future. While I envision to work in an inter-disciplinary engineering environment,
                                         I have developed my specific interests during my course. Some of my interests include:
                                     </p>
@@ -130,17 +133,19 @@ function HomePage() {
                                 <div>
                                     <h5 class=" mt-4">Majestic Engineering (Construction Project Subcontractor)</h5>
                                     <p>
-                                        While amending the installation manuals and floorpans construction project with respect to the clients' requirements.
-                                        I grasped the importance of effectively communicating with various stakeholders of project.
-                                        The main takeaway of this internship was the interactive process of iterating through design and specifications,
-                                        and working with compliance, ensuring safe and effective completion of the project.
+                                        Here I made amendments to various technical specification documents, 
+                                        used AutoCAD for amending floorplan schematics, and developed a system of VBA macros and functions
+                                        for organising the site's inventory, which was checked against compliance and used for submission to various stakeholders.
                                     </p>
-                                    <h5 class="mt-4">Origami Labs (Local Startup)</h5>
+                                    <h5 class="mt-4">Origami Labs (Hong Kong Startup)</h5>
                                     <p>
-                                        I assisted the development of the startup's iOS enterprise mobile application,
-                                        and assisted their product pilot-testing and deployment.
-                                        This gave me an exclusive outlook into the process of crafting a seamless solution,
-                                        truly tailored to its customers, and delivered reliably to a high standard.
+                                        Mainly worked with the engineering team on building the iOS version of the enterprise mobile app with Flutter.
+                                        Also kickstarted a data analysis template for customer insights, and assisted trial and deployment for OFLO's clients.
+                                    </p>
+                                    <h5 class="mt-4">VoltShare (British Startup)</h5>
+                                    <p>
+                                        As a Business Relations Associate, I wrote a series of insightful whitepaper articles to promote VoltShare as a thought leader among sustainable businesses and the EV industry, 
+                                        conducted research on market trends, and utilised these efforts to convert participants into leads or even customers.
                                     </p>
                                     <a class="btn btn-outline-light" href={review_pdf}>Employer Review</a>
                                 </div>
@@ -157,11 +162,9 @@ function HomePage() {
                             content={
                                 <div>
                                     <p>
-                                        Alongside my briliant colleagues at rail and transport society (ICRTS),
-                                        we link enthusiastic students with the UK transport industry,
+                                        Previously as a secretary and now as a chair of rail and transport society (ICRTS), my colleagues and I
+                                        link enthusiastic students with the UK transport industry,
                                         hosting a range of industry talks, excursions and social events.
-                                        As ICRTS' secretary, I've been actively engaged in hosting and cohosting quizzes and industry-oriented talks throughout the year,
-                                        and the number of inter-university events has remarkably surpassed previous years.
                                     </p>
                                     <p>
                                         Check out our Medium blog page "RailPub", where we document our exciting experiences,

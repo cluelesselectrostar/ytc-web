@@ -52,18 +52,18 @@ function LifePage() {
 
                                 <h2>Training my mind to mind the trains 🚅</h2>
                                 <p>
-                                    Trains have always been a huge part of my life. As a child I was attracted to Thomas & Friends, but jokes aside, many bits of a railway entice me, whether it be rolling stock design, the timetabling logistics, the sophisticated and evolving signalling systems, and so much more! Occasionally I seek solace in listening to motor noises from familiar rolling stock, though this probably isn't the best place to elaborate on such a niche interest.
+                                    Trains have always been a huge part of my life. As a child I was attracted to Thomas & Friends, but jokes aside, many bits of a railway entice me, whether it be rolling stock design, the timetabling logistics, the sophisticated and evolving signalling systems, and so much more!
                                 </p>
                                 <h5 class=" mt-4">Tibetan Railway</h5>
                                 <p>
-                                    I think the most remarkable rail journey I have made is the 55-hour sleeper service from Guangzhou/ Canton (廣東廣州) to Tibet Lhasa (西藏拉薩). That was my first time I ever went on a sleeper service, let alone one of the world's (distance-wise) longest and (altitude-wise) highest service. It was amazing to witness the diverse landscapes and cityscapes scrolling past my eyes, but getting to interact with people from diverse backgrounds was a joy as well!
+                                    As part of my graduation trip I made the world's (distance-wise) longest and (altitude-wise) highest 55-hour sleeper service from Guangzhou/ Canton (廣東廣州) to Tibet Lhasa (西藏拉薩), where I made the first sleeper journey of my life, witnessed the gorgeous landscapes and cityscapes scrolling past my eyes, and interacted with people from diverse cultural landscapes!
                                 </p>
                                 <h5 class=" mt-4">2019-2020 ICRTS Flagship - Welsh Highlands Heritage Railways Volunteering Trip</h5>
                                 <p>
-                                    Given my age, I do not have a particular attachment to steam railways, but I have always looked forward to witnessing the grandeur of steam railways. Working alongside experienced veterans of the industry gave me new perspectives on the country's railways, and made my first encounter with steam locomotives an absolutely remarkable experience! As a volunteer, we gained hands-on engineering experience, such as track laying and installing electrical mains at the depot, which was laborious but ultimately rewarding.
+                                    While I do not have a particular attachment to steam railways, a brief weekend of laborious hands-on engineering work such as track-laying and installing electrical mains, as well as working alongside experienced veterans of the industry, was ultimately rewarding and gifted me with new perspectives on the country's railways.
                                 </p>
                                 <p>
-                                    There are so many more journeys I would like to make post-coronavirus, and I very much look forward to them. Meanwhile, have a read at my (hopefully decently written) blogs on medium!
+                                    To take a deeper look, have a read at my (hopefully decently written) blogs on medium!
                                 </p>
                                 <a class="btn btn-outline-light" style={{ width: "200px" }} href={ytc_links.myMedium}>Yanni Chau on Medium</a>
                             </div>
@@ -149,7 +149,7 @@ function LifePage() {
                                         I love travelling and taking photographs, but I like to call it "jaywalking" because half the time I don't even have any idea what I'm looking for. In addition, I tend to capture my best shots at familiar locations, but during the most unexpected moments.
                                     </p>
                                     <p>
-                                        Similar to what I've done for trainspotting, I have written a couple blogs on Medium, and several Tibet Travel blogs on Exposure. That said, I am aware of the implications of publishing on a commercialised site, so I am planning to upload the blogs to this site. Fingers crossed for that!
+                                        Similar to what I've done for trainspotting, I have written a couple blogs on Medium, and several Tibet Travel blogs on Exposure. That said, I am aware of the implications of publishing on a commercialised site, so I am planning to gradually migrate the content and upload the blogs to this site. Fingers crossed for that!
                                     </p>
                                     <a class="btn btn-outline-secondary" style={{ width: "200px" }} href={ytc_links.myMedium}>Yanni Chau on Medium</a>
                                 </div>
