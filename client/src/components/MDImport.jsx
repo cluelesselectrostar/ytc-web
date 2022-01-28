@@ -83,6 +83,32 @@ function MDImport({ title, id }) {
         </a>
     );
 
+    const myTr = ({ children, ...props }) => (
+        <tr class="cust-tr" {...props}>
+            {children}
+        </tr>
+    );
+
+    const myTd = ({ children, ...props }) => (
+        <td class="cust text-dark" {...props} style={{ padding: "5px", border: "1px solid", borderColor:"#f2f2f2" }}>
+            {children}
+        </td>
+    );
+
+    const myTh = ({ children, ...props }) => (
+        <td class="cust text-dark" {...props} style={{ padding: "5px", fontWeight: "bold", border: "1px solid", borderColor:"#f2f2f2" }}>
+            {children}
+        </td>
+    );
+
+    const myTable = ({ children, ...props }) => (
+        <center>
+            <table {...props}>
+                {children}
+            </table>
+        </center>
+    );
+
     const myBlockquote = ({ children, ...props }) => (
         <div class="mt-3 mb-3 display-6" style={{ display: 'flex', justifyContent: 'center' }} {...props}>
             {children}
@@ -101,12 +127,16 @@ function MDImport({ title, id }) {
                             h1: myH1,
                             h2: myH2,
                             h3: myH3,
-                            h4:myH4,
+                            h4: myH4,
                             img: myImage,
                             p: myP,
                             a: myA,
                             li: myLi,
                             blockquote: myBlockquote, // does not work
+                            tr: myTr,
+                            th: myTh,
+                            td: myTd,
+                            table: myTable,
                             Caption: {
                                 component: Caption,
                             }
