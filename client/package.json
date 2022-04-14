@@ -75,7 +75,7 @@
     "react-helmet": "^6.1.0",
     "react-markdown": "^7.1.1",
     "react-refresh": "^0.8.3",
-    "react-router-dom": "^6.2.1",
+    "react-router-dom": "^5.2.0",
     "react-scroll-parallax": "^2.4.0",
     "react-share": "^4.4.0",
     "resize-observer-polyfill": "^1.5.1",
