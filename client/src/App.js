@@ -10,6 +10,7 @@ import ProjectsPage from './pages/Projects';
 import LifePage from './pages/Life';
 import BlogsPage from './pages/Blogs';
 import CovidPage from './pages/CovidTracker';
+import TubeMapPage from './pages/TubeMap';
 
 import HTMLBlogImport from './blogs/HTMLBlogImport'; // Static HTML
 // import TestMDImport from './blogs/markdown-test/MDImport'; // Static Markdown (Test)
@@ -70,6 +71,7 @@ function App() {
                 <Link onClick={scrollToTop} to="/life" class="nav-link text-decoration-none text-dark"> Passions</Link>
                 <Link onClick={scrollToTop} to="/blogs" class="nav-link text-decoration-none text-dark"> Blogs</Link>
                 <Link onClick={scrollToTop} to="/covid" class="nav-link text-decoration-none text-dark"> Covid Tracker (Beta)</Link>
+                <Link onClick={scrollToTop} to="/tube" class="nav-link text-decoration-none text-dark"> Yanni's Map</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -95,6 +97,9 @@ function App() {
         </Route>
         <Route path="/covid">
           <CovidPage coviddata={coviddata} />
+        </Route>
+        <Route path="/tube">
+          <TubeMapPage />
         </Route>
 
         {/* Home page goes last */}
