@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import HomePage from './pages/Home';
 import ProjectsPage from './pages/Projects';
-//import AboutPage from './pages/About';
+import TubePage from './pages/Tube';
 import LifePage from './pages/Life';
 import BlogsPage from './pages/Blogs';
 import CovidPage from './pages/CovidTracker';
@@ -70,6 +70,7 @@ function App() {
                 <Link onClick={scrollToTop} to="/life" class="nav-link text-decoration-none text-dark"> Passions</Link>
                 <Link onClick={scrollToTop} to="/blogs" class="nav-link text-decoration-none text-dark"> Blogs</Link>
                 <Link onClick={scrollToTop} to="/covid" class="nav-link text-decoration-none text-dark"> Covid Tracker (Beta)</Link>
+                <Link onClick={scrollToTop} to="/travel" class="nav-link text-decoration-none text-dark"> Woodstock Travels</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -95,6 +96,9 @@ function App() {
         </Route>
         <Route path="/covid">
           <CovidPage coviddata={coviddata} />
+        </Route>
+        <Route path="/travel">
+          <TubePage/>
         </Route>
 
         {/* Home page goes last */}
