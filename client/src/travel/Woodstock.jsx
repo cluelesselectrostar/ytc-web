@@ -20,52 +20,31 @@ function WoodstockTravels() {
     useEffect(() => {
 
         var svg = d3.select(svgRef.current);
+        var attr = "";
 
-        //svg.selectAll("text").attr("font-size", "5px");
-
-        /*
-        svg.selectAll("text").on("click", datum => {
-            console.log("clicked text");
-            console.log(datum);
-            console.log(datum.target.childNodes[0]);
-        });
-        */
-
+        //svg.selectAll("text").attr("font-size", "10px");
         // svg.selectAll("use").attr("stroke-width",50); //testing what "use" contains
 
         svg.selectAll("use")
             .filter(function (d) {
-                return d3.select(this)._groups[0][0].getAttributeNS('http://www.w3.org/1999/xlink', 'href').includes("st");
+                attr = d3.select(this)._groups[0][0].getAttributeNS('http://www.w3.org/1999/xlink', 'href');
+                return attr.includes("#st") || attr.includes("wheelchair") || attr.includes("base") || attr.includes("crutch") || attr.includes("int") || attr.includes("cap") || attr.includes("term");
             })
-            .on("mouseover", datum => {
+            .on("mouseover", datum => { // on click to do other things?
                 console.log("hovered feature");
                 //console.log(datum);
                 console.log(datum.srcElement.id);
                 console.log(datum.srcElement.href.baseVal);
-                d3.select(this).style("cursor", "pointer"); 
             })
-            .on("mouseout", datum => {
-                d3.select(this).style("cursor", "default"); 
-            });
+            .style("cursor", "pointer");
         
-        /*
-        svg.selectAll("use")
-            .on("click", datum => {
-                console.log("clicked use feature");
-                console.log(datum);
-                console.log(datum.srcElement.id);
-                console.log(datum.srcElement.href.baseVal);
-            });
-            */
 
 
     }, []);
 
 
     return (
-        <div class="container">
-            <MapSVG ref={svgRef} />
-        </div>
+        <MapSVG ref={svgRef} />
     );
 }
 
