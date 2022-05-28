@@ -34,7 +34,7 @@ function CovidPage({ coviddata }) {
 
             {loaded ? (
                 <div>
-                    <div class="container align-items-md-stretch mt-4">
+                    <div class="align-items-md-stretch mt-4">
                         <GeoChartWrapper import_covid={coviddata} />
                     </div>
 

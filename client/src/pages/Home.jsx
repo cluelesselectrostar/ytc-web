@@ -63,7 +63,6 @@ function HomePage() {
                         <Image src={profile_image} alt="Brighton." fluid roundedCircle />
                     </div>
                 </div>
-
             </div>
 
             <div class="container col-md-10 mt-3">

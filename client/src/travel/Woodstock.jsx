@@ -1,23 +1,36 @@
+import TitleBanner from '../components/TitleBanner';
+import PageTitle from '../components/PageTitle';
+
 import React, { useRef, useEffect, useState } from "react";
-import { SvgLoader, SvgProxy } from 'react-svgmt';
-import useResizeObserver from "./useResizeObserver";
+//import { SvgLoader, SvgProxy } from 'react-svgmt';
+import Alert from 'react-bootstrap/Alert';
+import Button from "react-bootstrap/Button";
 import * as d3 from "d3";
+import ReactTooltip from 'react-tooltip';
+
 import './Woodstock.css';
 
 //import OptimisedSVG from './optimised.svg';
 //import SvgOriginalMap from "./optimised_map";
-
-
-import { ReactComponent as MapSVG } from './original_map.svg';
-import { packSiblings } from "d3";
 //import {ReactComponent as MapSVG} from './official_tfl.svg';
+import { ReactComponent as MapSVG } from './original_map.svg';
 
 
 function WoodstockTravels() {
 
+    const width = window.innerWidth;
+
     const svgRef = useRef();
+    const [selectedStation, setSelectedStation] = useState("Hover over a station for details!");
+    const [isMobile, setMobile] = useState(false);
 
     useEffect(() => {
+
+        if (width < 620) {
+            setMobile(true);
+        } else {
+            setMobile(false);
+        }
 
         var svg = d3.select(svgRef.current);
         var attr = "";
@@ -35,16 +48,31 @@ function WoodstockTravels() {
                 //console.log(datum);
                 console.log(datum.srcElement.id);
                 console.log(datum.srcElement.href.baseVal);
+                d3.select(this).append("div").html("FIRST LINE <br> SECOND LINE");
+
+                if (datum.srcElement.id != "") {
+                    setSelectedStation(datum.srcElement.id);
+                }
             })
-            .style("cursor", "pointer");
-        
-
-
     }, []);
 
 
     return (
-        <MapSVG ref={svgRef} />
+        <main>
+            <PageTitle title="Travel" />
+            <TitleBanner
+                title="Woodstock Travels! 🤙"
+                description="Woodstock hitching on Snoopy's rides!"
+            />
+            {isMobile ?
+                <Alert variant="success" style={{ position: "sticky", margin: "5px", left: 0, top: "1%" }}>{selectedStation}</Alert>
+                :
+                <Alert variant="success" style={{ position: "sticky", margin: "5px", left: 0, top: "1%", width: "300px" }}>{selectedStation}</Alert>
+            }
+            <div>
+                <MapSVG ref={svgRef} />
+            </div >
+        </main>
     );
 }
 

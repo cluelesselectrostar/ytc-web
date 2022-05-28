@@ -18,11 +18,6 @@ import MDImportWrapper from './components/MDImportWrapper'; // Markdown from Mon
 import LinkModules from './components/Links_Module';
 
 
-// Google analytics
-import ReactGA from 'react-ga';
-import { createBrowserHistory } from 'history';
-
-
 function App() {
 
   const scrollToTop = () => {
@@ -36,15 +31,6 @@ function App() {
   const [expanded, setExpanded] = useState(false);
   const [coviddata, setCovidData] = useState(null);
 
-  const trackingId = "UA-218770633-1"; // Replace with your Google Analytics tracking ID
-  ReactGA.initialize(trackingId);
-  const history = createBrowserHistory();
-  // Initialize google analytics page view tracking
-  history.listen(location => {
-    ReactGA.set({ page: location.pathname }); // Update the user's current page
-    ReactGA.pageview(location.pathname); // Record a pageview for the given page
-  });
-
   useEffect(() => {
     fetch('https://covid.ourworldindata.org/data/owid-covid-data.json')
       .then(response => response.json())
@@ -57,7 +43,7 @@ function App() {
   // style={{ color: 'rgb(153,230,179)', }} (teal colour)
 
   return (
-    <HashRouter history={history}>
+    <HashRouter>
       <div class="px-10">
         <div class="col-md-10 container">
           <Navbar collapseOnSelect sticky="top" expand='sm' variant='light' bg='white' expanded={expanded}>

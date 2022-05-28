@@ -78,6 +78,7 @@
     "react-scroll-parallax": "^2.4.0",
     "react-share": "^4.4.0",
     "react-svgmt": "^1.2.0",
+    "react-tooltip": "^4.2.21",
     "resize-observer-polyfill": "^1.5.1",
     "resolve": "1.18.1",
     "resolve-url-loader": "^3.1.2",
