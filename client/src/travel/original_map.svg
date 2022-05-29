@@ -1071,10 +1071,10 @@
 			" />
 			<!--<text x="725" y="1039" class="st rn b">River Thames</text>-->
 			<text transform="translate(907,1011.5)rotate(-36.78)" class="st rn b">River <tspan dx="15">Thames</tspan>
-				</text>
+			</text>
 			<text x="1520" y="643" class="st rn b">River Thames</text>
 			<text transform="translate(2273,694)rotate(-36.78)" class="st rn b">River <tspan dx="7">Thames</tspan>
-				</text>
+			</text>
 		</g>
 		<g id="double_zones" cursor="help" class="zone_layer doublezone">
 			<g id="zone1-2">
@@ -1320,7 +1320,7 @@
 			<use xlink:href="#Greenford_Branch_Line_route" class="mex"/>
 		</g>-->
 		<g class="me swnc">
-			<title>Waterloo &amp; City line. Out of service on Sundays or public holidays.</title>
+			<title>Waterloo & City line. Out of service on Sundays or public holidays.</title>
 			<path id="Waterloo_and_City_line_route" d="
 			M 1469.5,558
 			v 5 q 0,20 -16,32
@@ -1581,7 +1581,7 @@
 				id="North_and_West_London_Lines_route_stripe" />
 		</g>
 		<g class="me shnc">
-			<title>Hammersmith &amp; City line</title>
+			<title>Hammersmith & City line</title>
 			<path id="Hammersmith_and_City_line_route" d="
 			M 981,559 a 61.25,61.25 0 0,1 -36.75,12.25
 			h -15 a 66.25,66.25 0 0,0 -39.75,13.25
@@ -1778,7 +1778,7 @@
 					id="East_London_Line_Battersea_Park_branch_stripe" />
 			</g>
 			<g>
-				<title>Overground Dalston/Highbury &amp; Islington–Clapham Junction/West Croydon/Crystal Palace/New
+				<title>Overground Dalston/Highbury & Islington–Clapham Junction/West Croydon/Crystal Palace/New
 					Cross</title>
 				<path id="East_and_South_London_Lines_route" d="
 				M 1420,305
@@ -1839,7 +1839,7 @@
 		<text x="105" y="17" class="b mid" style="font-size:15px;fill:#fff">Key to symbols</text>
 		<use xlink:href="#int" transform="translate(20,47)" />
 		<use xlink:href="#cap2" transform="translate(45,39.5)rotate(90)" />
-		<use xlink:href="#Bank_Monument_hub" transform="translate(65,35)" />
+		<use xlink:href="#Bank_Monument_hub" transform="translate(65,35)" id="Bank_Monument_Hub" />
 		<use xlink:href="#intnr" transform="translate(25,93)" />
 		<use xlink:href="#cap2nr" transform="translate(53,85.5)rotate(90)" />
 		<use xlink:href="#nr" transform="translate(53,92)" />
@@ -1915,13 +1915,13 @@
 					<tspan x="0" dy="22" class="tleg" id="lcentral">Central line </tspan>
 					<tspan x="0" dy="22" class="tleg" id="lcircle">Circle line </tspan>
 					<tspan x="0" dy="22" class="tleg" id="ldistrict">District line </tspan>
-					<tspan x="0" dy="22" class="tleg" id="lhnc">Hammersmith &amp; City line </tspan>
+					<tspan x="0" dy="22" class="tleg" id="lhnc">Hammersmith & City line </tspan>
 					<tspan x="0" dy="22" class="tleg" id="ljubilee">Jubilee line </tspan>
 					<tspan x="200" y="18" class="tleg" id="lmetropolitan">Metropolitan line </tspan>
 					<tspan x="200" dy="22" class="tleg" id="lnorthern">Northern line </tspan>
 					<tspan x="200" dy="22" class="tleg" id="lpiccadilly">Piccadilly line </tspan>
 					<tspan x="200" dy="22" class="tleg" id="lvictoria">Victoria line </tspan>
-					<tspan x="200" dy="22" class="tleg" id="lwnc">Waterloo &amp; City line </tspan>
+					<tspan x="200" dy="22" class="tleg" id="lwnc">Waterloo & City line </tspan>
 				</text>
 				<text x="0" dy="18" class="toff progress fbakerloo sbakerloo" id="Bakerloo_line_off"
 					visibility="hidden">Bakerloo line
@@ -1963,7 +1963,7 @@
 						repeatCount="indefinite" dur="0.5s" fill="remove" />
 				</text>
 				<text x="0" dy="106" class="toff fhnc shnc" id="Hammersmith_and_City_line_off"
-					visibility="hidden">Hammersmith &amp; City line
+					visibility="hidden">Hammersmith & City line
 					<set begin="lhnc.click;Hammersmith_and_City_line_route.click"
 						end="bg.click;Thames_stripe.click;Hammersmith_and_City_line_blink.click;Hammersmith_and_City_line_off.click"
 						attributeName="visibility" attributeType="CSS" to="visible" fill="remove" />
@@ -2027,7 +2027,7 @@
 						repeatCount="indefinite" dur="0.5s" fill="remove" />
 				</text>
 				<text x="200" dy="106" class="toff fwnc swnc" id="Waterloo_and_City_line_off"
-					visibility="hidden">Waterloo &amp; City line
+					visibility="hidden">Waterloo & City line
 					<set begin="lwnc.click;Waterloo_and_City_line_route.click"
 						end="bg.click;Thames_stripe.click;Waterloo_and_City_line_blink.click;Waterloo_and_City_line_off.click"
 						attributeName="visibility" attributeType="CSS" to="visible" fill="remove" />
@@ -2043,7 +2043,7 @@
 					<tspan x="10" dy="22" class="tleg" id="lwatford">Watford Junction–Euston </tspan>
 					<tspan x="10" dy="20" class="tleg" id="lnw_london">Richmond/Clapham Junction–Stratford </tspan>
 					<tspan x="10" dy="20" class="tleg" id="lgospel">Gospel Oak–Barking </tspan>
-					<tspan x="10" dy="20" class="tleg" id="lse_london">Dalston/Highbury &amp; Islington–Clapham
+					<tspan x="10" dy="20" class="tleg" id="lse_london">Dalston/Highbury & Islington–Clapham
 						Junction/
 						<tspan x="10" dy="15">West Croydon/Crystal Palace/New Cross </tspan>
 					</tspan>
@@ -2093,7 +2093,7 @@
 						repeatCount="indefinite" dur="0.5s" fill="remove" />
 				</text>
 				<text x="10" dy="82" class="toff fog sog" id="East_and_South_London_line_off"
-					visibility="hidden">Dalston/Highbury &amp; Islington–Clapham Junction/<tspan x="10" dy="15">West
+					visibility="hidden">Dalston/Highbury & Islington–Clapham Junction/<tspan x="10" dy="15">West
 						Croydon/Crystal Palace/New Cross</tspan>
 					<set begin="lse_london.click;East_London_Line_Battersea_Park_branch.click;East_and_South_London_Lines_route.click;East_and_South_London_Lines_route_stripe.click;East_London_Line_Battersea_Park_branch_stripe.click"
 						end="bg.click;Thames_stripe.click;East_and_South_London_Lines_blink.click;East_London_Line_Battersea_Park_branch_blink.click;East_and_South_London_line_off.click"
@@ -2217,7 +2217,7 @@
 			</use>
 		</g>
 		<g>
-			<title>Waterloo &amp; City line. Out of service on Sundays or public holidays.</title>
+			<title>Waterloo & City line. Out of service on Sundays or public holidays.</title>
 			<use xlink:href="#Waterloo_and_City_line_route" id="Waterloo_and_City_line_blink" class="blink swnc">
 				<set begin="lwnc.click;Waterloo_and_City_line_route.click"
 					end="bg.click;Thames_stripe.click;Waterloo_and_City_line_blink.click;Waterloo_and_City_line_off.click"
@@ -2368,7 +2368,7 @@
 			</use>
 		</g>
 		<g>
-			<title>Hammersmith &amp; City line</title>
+			<title>Hammersmith & City line</title>
 			<use xlink:href="#Hammersmith_and_City_line_route" id="Hammersmith_and_City_line_blink" class="blink bhnc">
 				<set begin="lhnc.click;Hammersmith_and_City_line_route.click"
 					end="bg.click;Thames_stripe.click;Hammersmith_and_City_line_blink.click;Hammersmith_and_City_line_off.click"
@@ -2532,7 +2532,7 @@
 			</use>
 		</g>
 		<g>
-			<title>Overground Dalston/Highbury &amp; Islington–Clapham Junction/West Croydon/Crystal Palace/New Cross
+			<title>Overground Dalston/Highbury & Islington–Clapham Junction/West Croydon/Crystal Palace/New Cross
 			</title>
 			<use xlink:href="#East_and_South_London_Lines_route" id="East_and_South_London_Lines_blink"
 				class="blink sog">
@@ -2619,7 +2619,7 @@
 					</g>
 					<use xlink:href="#Aldgate-Tower_Gateway_osi_base" class="osi" />
 				</g>
-				<use xlink:href="#int" x="1601.5" y="541.5" />
+				<use xlink:href="#int" x="1601.5" y="541.5" id="Aldgate" />
 			</g>
 			<g>
 				<title>0.1-mile walking distance within 15 minutes</title>
@@ -2638,23 +2638,22 @@
 			</path>
 			<use xlink:href="#int" x="1074" y="169.5" id="Archway" />
 			<use xlink:href="#int" x="1107" y="169.5" id="Upper_Holloway" />
-
 			<use xlink:href="#cap2" transform="translate(1038.5,519)rotate(-36.87)" id="Baker_Street" />
-			<g transform="translate(1474.5,558)" cursor="help">
+			<g transform="translate(1474.5,558)" id="Bank_Monument_hub">
 				<g id="Bank_Monument_hub">
 					<title>Free out-of-station interchange between all Bank-Monument gatelines within 15 minutes.
 					</title>
 					<path d="M 0,0 l 20.25,27" style="stroke:#fff;stroke-width:7.5" />
-					<rect x="-8.25" y="-8.25" width="31" height="16.5" rx="8.5" fill="#fff" transform="rotate(53.13)" />
-					<circle cx="20.25" cy="27" r="8.25" fill="#fff" />
+					<rect x="-8.25" y="-8.25" width="31" height="16.5" rx="8.5" fill="#fff" transform="rotate(53.13)" id="Bank_Monument_hub"/>
+					<circle cx="20.25" cy="27" r="8.25" fill="#fff" id="Bank_Monument_hub"/>
 					<rect x="-6" y="-6" width="26.5" height="12" rx="6" style="stroke:#000;stroke-width:3"
-						transform="rotate(53.13)" />
-					<circle cx="20.25" cy="27" r="6" style="stroke:#000;stroke-width:3" />
-					<path d="M 0,0 l 20.25,27" style="stroke:#000;stroke-width:6" />
+						transform="rotate(53.13)" id="Bank_Monument_hub"/>
+					<circle cx="20.25" cy="27" r="6" style="stroke:#000;stroke-width:3" id="Bank_Monument_hub"/>
+					<path d="M 0,0 l 20.25,27" style="stroke:#000;stroke-width:6" id="Bank_Monument_hub"/>
 					<rect x="-4.5" y="-4.5" width="23.5" height="9" rx="4.5" style="fill:#fff;stroke:none"
-						transform="rotate(53.13)" />
-					<circle cx="20.25" cy="27" r="4.5" style="fill:#fff;stroke:none" />
-					<path d="M 0,0 l 20.25,27" style="stroke:#fff;stroke-width:1.5" />
+						transform="rotate(53.13)" id="Bank_Monument_hub"/>
+					<circle cx="20.25" cy="27" r="4.5" style="fill:#fff;stroke:none" id="Bank_Monument_hub"/>
+					<path d="M 0,0 l 20.25,27" style="stroke:#fff;stroke-width:1.5" id="Bank_Monument_hub"/>
 				</g>
 			</g>
 
@@ -2765,7 +2764,7 @@
 			<g>
 				<path class="osi" d="M 1583,295 L 1564.625,337" />
 				<title>0.2-mile walking distance within 20 minutes. Some trains terminate at Dalston Junction instead of
-					Highbury &amp; Islington.</title>
+					Highbury & Islington.</title>
 				<use xlink:href="#int" x="1583" y="295" id="Dalston_Kingsland" />
 				<use xlink:href="#int" x="1564.625" y="337" id="Dalston_Junction" />
 			</g>
@@ -2786,7 +2785,7 @@
 				<use xlink:href="#cap2" transform="translate(981,559)rotate(53.13)" id="Edgware_Road_circle" />
 			</g>
 			<g>
-				<title>Free out-of-station interchange to/from Elephant &amp; Castle National Rail station within 20
+				<title>Free out-of-station interchange to/from Elephant & Castle National Rail station within 20
 					minutes. 0.2-mile walking distance.</title>
 				<use xlink:href="#intnr" x="1479" y="768" id="Elephant_And_Castle" />
 			</g>
@@ -2862,11 +2861,11 @@
 			<use xlink:href="#int" x="372" y="620.4" id="Hanger_Lane" />
 			<use xlink:href="#int" x="384" y="643" id="Park_Royal" />
 			<g>
-				<title>Harrow &amp; Wealdstone Underground-Overground-National Rail station</title>
+				<title>Harrow & Wealdstone Underground-Overground-National Rail station</title>
 				<use xlink:href="#intnr" x="531.5" y="239" id="Harrow_and_Wealdstone" />
 			</g>
 			<g cursor="help">
-				<title>Underground Piccadilly line trains only head towards Heathrow Terminals 2 &amp; 3 station from
+				<title>Underground Piccadilly line trains only head towards Heathrow Terminals 2 & 3 station from
 					here without option of opposite direction.</title>
 				<use xlink:href="#stpiccadilly" transform="translate(111,984.5)rotate(53.33)"
 					id="Heathrow_4_piccadilly" />
@@ -2876,7 +2875,7 @@
 				<title>London Heathrow Airport</title>
 			</use>
 			<g>
-				<title>Highbury &amp; Islington Underground-Overground-National Rail station</title>
+				<title>Highbury & Islington Underground-Overground-National Rail station</title>
 				<use xlink:href="#intnr" x="1420" y="300" id="Highbury_and_Islington" />
 			</g>
 			<use xlink:href="#int" x="1290" y="520" id="Holborn" />
@@ -3300,7 +3299,7 @@
 			</g>
 			<use xlink:href="#termmetropolitan" x="124" y="38" id="Chesham" />
 			<g>
-				<title>Chalfont &amp; Latimer Underground-National Rail station</title>
+				<title>Chalfont & Latimer Underground-National Rail station</title>
 				<use xlink:href="#intnr" x="140" y="90" id="Chalfont_and_Latimer" />
 			</g>
 			<use xlink:href="#stmetropolitan" transform="translate(170,112.5)rotate(126.87)" id="Chorleywood" />
@@ -3676,7 +3675,7 @@
 			<use xlink:href="#stelizabeth" x="0" y="690" id="Iver" />
 			<use xlink:href="#stelizabeth" transform="translate(86,723.9)rotate(270)" id="West_Drayton" />
 			<g>
-				<title>Hayes &amp; Harlington Elizabeth line-National Rail station</title>
+				<title>Hayes & Harlington Elizabeth line-National Rail station</title>
 				<use xlink:href="#intnr" x="160" y="723.9" id="Hayes_and_Harlington" />
 			</g>
 			<use xlink:href="#stelizabeth" transform="translate(200,723.9)rotate(90)" id="Southall" />
@@ -3916,7 +3915,7 @@
 			<text x="-7" y="39">Step-free access from street to platform. Wheelchair user <tspan x="-7" dy="15">should
 					call station staff for assistance due to larger platform-train gap/step.</tspan></text>
 			<a xlink:href="https://tfl.gov.uk/transport-accessibility/wheelchair-access-and-avoiding-stairs">
-				<title>Wheelchair access &amp; avoiding stairs, Transport for London official site</title>
+				<title>Wheelchair access & avoiding stairs, Transport for London official site</title>
 				<text x="505" y="19" class="end ul">For detailed accessible information of each station,<tspan x="505"
 						dy="15" class="ul">visit TfL official site.</tspan></text>
 			</a>
@@ -3957,7 +3956,7 @@
 			</g>
 			<use xlink:href="#x_acc" x="1812.5" y="445" id="Mile_End_acc">
 				<title>No step-free access from street to any platform, but platforms of Central line and
-					District/Hammersmith &amp; City lines of the same directions are arranged in cross-platform
+					District/Hammersmith & City lines of the same directions are arranged in cross-platform
 					interchange layouts.</title>
 			</use>
 			<use xlink:href="#crutch" x="1928.5" y="46" id="Woodford_acc">
@@ -3984,7 +3983,7 @@
 					so is regarded as starting a new train journey.</title>
 			</use>
 			<g id="Hammersmith_acc">
-				<title>Circle/Hammersmith &amp; City lines platforms provide step-free access from street to train;
+				<title>Circle/Hammersmith & City lines platforms provide step-free access from street to train;
 					District and Piccadilly lines platforms require staff assistance for wheelchair user.</title>
 				<use xlink:href="#wheelchair" x="637" y="835" id="Hammersmith_circle_acc" />
 				<use xlink:href="#crutch" x="637" y="861.9" id="Hammersmith_District_acc" />
@@ -4128,7 +4127,7 @@
 				<!--District line-->
 				<g id="West_Ham_acc">
 					<title>Jubilee line and DLR platforms provide step-free access from street to train;
-						District/Hammersmith &amp; City lines platforms require staff assistance for wheelchair user.
+						District/Hammersmith & City lines platforms require staff assistance for wheelchair user.
 					</title>
 					<use xlink:href="#wheelchair" x="2031" y="449.5" id="West_Ham_Jubilee_DLR_acc" />
 					<use xlink:href="#crutch" x="2031" y="434" id="West_Ham_District_acc" />
@@ -4275,7 +4274,7 @@
 				</text>
 				<text x="1062" y="169.5" class="end">Archway</text>
 				<text x="1053" y="528">Baker <tspan x="1062" dy="13">Street</tspan></text>
-				<text x="1465" y="555" class="end">Bank</text>
+				<text x="1465" y="555" class="end">Bank <use xlink:href="#int" id="Bank_Monument_hub" /> </text>
 				<text x="1444" y="477" class="mid">Barbican</text>
 				<text x="2173" y="364">Barking</text>
 				<text x="1362" y="630" class="end">Blackfriars</text>
@@ -4321,7 +4320,7 @@
 					<tspan x="871" dy="13">Court</tspan>
 				</text>
 				<!--<text x="961" y="536" class="end">Edgware Road</text>-->
-				<text x="1490" y="768">Elephant &amp; Castle</text>
+				<text x="1490" y="768">Elephant & Castle</text>
 				<text x="1282" y="695" class="end">Embankment</text>
 				<text x="1185" y="350" class="end">Euston</text>
 				<!--NR-->
@@ -4333,7 +4332,7 @@
 				<text x="1376" y="493" class="end">Farringdon</text>
 				<!--Elizabeth line-->
 				<text x="957" y="368">Finchley <tspan x="963" dy="13">Road</tspan></text>
-				<text x="958" y="338">Finchley Road &amp; Frognal</text>
+				<text x="958" y="338">Finchley Road & Frognal</text>
 				<text x="1375" y="183" class="end">Finsbury Park</text>
 				<text x="2050" y="287">Forest <tspan x="2050" dy="13">Gate</tspan></text>
 				<text x="1142" y="670" class="end">Green Park</text>
@@ -4344,10 +4343,10 @@
 				<text x="1647" y="312">Hackney <tspan x="1647" dy="13">Central</tspan></text>
 				<text x="1647" y="275">Hackney Downs</text>
 				<text x="647" y="843">Hammersmith</text>
-				<text x="543.5" y="236">Harrow &amp; <tspan x="543.5" dy="13">Wealdstone</tspan></text>
+				<text x="543.5" y="236">Harrow & <tspan x="543.5" dy="13">Wealdstone</tspan></text>
 				<text x="117" y="1002" style="font-weight:400">Heathrow Terminal 4</text>
 				<text x="1870" y="660" class="end">Heron Quays</text>
-				<text x="1426" y="268">Highbury &amp; <tspan x="1426" dy="15">Islington</tspan></text>
+				<text x="1426" y="268">Highbury & <tspan x="1426" dy="15">Islington</tspan></text>
 				<text x="1284" y="510" class="end">Holborn</text>
 				<text x="818" y="806" class="end">Kensington<tspan x="818" dy="15"> (Olympia)</tspan></text>
 				<text x="1140" y="210">Kentish Town</text>
@@ -4371,8 +4370,8 @@
 				<text x="2102" y="244">Manor Park</text>
 				<text x="1816" y="459.5">Mile <tspan x="1816" dy="13">End</tspan></text>
 				<g transform="translate(1459,602)">
-					<text x="0" y="0" class="textbg">Monument</text>
-					<text x="0" y="0">Monument</text>
+					<text x="0" y="0" class="textbg">Monument <use xlink:href="#int" id="Bank_Monument_hub" /> </text>
+					<text x="0" y="0">Monument <use xlink:href="#int" id="Bank_Monument_hub" /> </text>
 				</g>
 				<text x="1484" y="483">Moorgate</text>
 				<text x="869" y="700.5" class="end">Notting<tspan x="869" dy="13"> Hill Gate</tspan></text>
@@ -4599,7 +4598,7 @@
 			<g id="stname_Metropolitan_line">
 				<text x="136" y="38">Chesham</text>
 				<text x="90" y="68.5" class="end">Amersham</text>
-				<text x="131.5" y="100" class="end">Chalfont &amp; Latimer</text>
+				<text x="131.5" y="100" class="end">Chalfont & Latimer</text>
 				<text x="161.5" y="122.5" class="end">Chorleywood</text>
 				<text x="191.5" y="145" class="end">Rickmansworth</text>
 				<!--<text x="223" y="66" class="ul mid"><title>Watford station is scheduled to close upon the opening of the rail link between Croxley and Watford Junction stations.</title>Watford</text>-->
@@ -4646,7 +4645,7 @@
 				</text>
 				<text x="913" y="107" class="mid">Mill Hill East</text>
 				<text x="864" y="-4">High Barnet</text>
-				<text x="894" y="18.5">Totteridge &amp; Whetstone</text>
+				<text x="894" y="18.5">Totteridge & Whetstone</text>
 				<text x="924" y="41">Woodside Park</text>
 				<text x="954" y="63.5">West Finchley</text>
 				<text x="994" y="93.5">Finchley Central</text>
@@ -4683,7 +4682,7 @@
 				<text x="30" y="983.5" class="mid">Heathrow<tspan x="63" dy="0"> </tspan>
 					<tspan x="30" dy="13">Terminal 5</tspan>
 				</text>
-				<text x="96" y="913" class="end">Heathrow<tspan x="96" dy="13"> Terminals<tspan x="96" dy="13"> 2 &amp;
+				<text x="96" y="913" class="end">Heathrow<tspan x="96" dy="13"> Terminals<tspan x="96" dy="13"> 2 &
 							3</tspan>
 					</tspan></text>
 				<text x="170" y="956">Hatton Cross</text>
@@ -4810,7 +4809,7 @@
 				</g>
 				<text x="991.5" y="270">Hampstead Heath</text>
 				<text x="1047" y="204" class="b end">Gospel Oak</text>
-				<text x="1296" y="312">Caledonian Road <tspan x="1296" dy="13">&amp; Barnsbury</tspan></text>
+				<text x="1296" y="312">Caledonian Road <tspan x="1296" dy="13">& Barnsbury</tspan></text>
 				<text x="1538" y="317" class="b end">Canonbury</text>
 				<g class="mid">
 					<text x="1760" y="312">Homerton</text>
@@ -4910,8 +4909,8 @@
 			</g>
 			<g id="stname_elizabeth">
 				<text x="116" y="924">
-					<title>Signages read "Heathrow Central Terminals 2 &amp; 3" but addressed as "Heathrow Terminals 2
-						&amp; 3" in the official route map. It is a separate station to the namesake station on the
+					<title>Signages read "Heathrow Central Terminals 2 & 3" but addressed as "Heathrow Terminals 2
+						& 3" in the official route map. It is a separate station to the namesake station on the
 						Piccadilly line.</title>
 					<tspan class="ul">Heathrow</tspan>
 					<tspan x="116" dy="13" class="ul">Central</tspan>
@@ -4928,7 +4927,7 @@
 					<text x="86" y="691.9">West<tspan x="106" dy="0"> </tspan>
 						<tspan x="86" dy="15">Drayton</tspan>
 					</text>
-					<text x="151" y="691.9">Hayes &amp;<tspan x="181" dy="0"> </tspan>
+					<text x="151" y="691.9">Hayes &<tspan x="181" dy="0"> </tspan>
 						<tspan x="151" dy="15">Harlington</tspan>
 					</text>
 					<text x="200" y="740.9">Southall</text>
@@ -5018,9 +5017,9 @@
 							class="mid">line</text>
 					</g>
 					<text transform="translate(620,837)rotate(90)" class="fhnc end">Hammersmith<tspan x="0" dy="10">
-							&amp; City line</tspan></text>
+							& City line</tspan></text>
 					<text transform="translate(2144,350)rotate(-36.87)" cursor="help" class="fhnc end">
-						<title>Hammersmith &amp; City line</title>H&amp;C line
+						<title>Hammersmith & City line</title>H&C line
 					</text>
 					<text x="780" y="301.5" class="fjubilee">Jubilee line</text>
 					<text transform="translate(1163,674)rotate(53.13)" class="fjubilee">Jubilee line</text>
@@ -5041,8 +5040,8 @@
 					<text x="1612" y="121" class="fvictoria">Victoria line</text>
 					<text transform="translate(1141,682)rotate(90)" class="fvictoria">Victoria line</text>
 					<text transform="translate(1361,676)rotate(-36.87)" class="fwnc" cursor="help">
-						<title>Waterloo &amp; City line. Out of service on Sundays or public holidays.</title>Waterloo
-						&amp; City line
+						<title>Waterloo & City line. Out of service on Sundays or public holidays.</title>Waterloo
+						& City line
 					</text>
 					<g class="fdlr">
 						<g cursor="help">
@@ -5105,9 +5104,9 @@
 	M 90,769 l 5,-5 5,5
 	M 90,899 l 5,5 5,-5
 	" />
-	<g id="title_header" transform="translate(-40,-120)">
+	<!-- <g id="title_header" transform="translate(-40,-120)">
 		<path class="ftfl" style="stroke:none" d="M -10,0 L 0,0 v 27 h 982 q 15,0 27,-9 l 12,-9 q 12,-9 27,-9 z" />
 		<text x="7" y="20" class="b" style="font-size:20px;fill:#fff">Route map of London Underground, London
 			Overground, Docklands Light Railway and Elizabeth line</text>
-	</g>
+	</g> -->
 </svg>
