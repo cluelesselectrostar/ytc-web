@@ -3,8 +3,9 @@ import PageTitle from '../components/PageTitle';
 
 import React, { useRef, useEffect, useState } from "react";
 //import { SvgLoader, SvgProxy } from 'react-svgmt';
-import Alert from 'react-bootstrap/Alert';
+//import Alert from 'react-bootstrap/Alert';
 import CentreModal from '../components/CentreModal';
+import stationData from './stations.json';
 
 import * as d3 from "d3";
 
@@ -20,6 +21,7 @@ function WoodstockTravels() {
 
     const svgRef = useRef();
     const [selectedStation, setSelectedStation] = useState("Hover over a station for details!");
+    const [infoTip, setInfoTip] = useState(null);
     const [isMobile, setMobile] = useState(false);
 
     const [show, setShow] = useState(false);
@@ -49,8 +51,25 @@ function WoodstockTravels() {
 
         var svg = d3.select(svgRef.current);
 
-        // svg.selectAll("text").attr("font-size", "10px");
-        // svg.selectAll("use").attr("stroke-width",50); //testing what "use" contains
+        svg.selectAll("use")
+            .filter(function (d) {
+                return filter_stations(this);
+            })
+            .each(function (d, i) {
+                var station_name = d3.select(this)._groups[0][0].id;
+                //console.log(i); // index              
+                if (station_name !== "") {
+                    //console.log(station_name);                 
+                    for (const item of stationData) {
+                        if (item.ID === station_name) {
+                            svg.select(`#${station_name}`).datum(item);
+                            //console.log("matched");
+                            break;
+                        }
+                    }
+                }
+            }
+            );
 
         svg.selectAll("use")
             .filter(function (d) {
@@ -59,7 +78,11 @@ function WoodstockTravels() {
             .on("mouseover", datum => {
                 //console.log("hovered feature id:" + datum.srcElement.id + ", baseVal:" + datum.srcElement.href.baseVal);
                 if (datum.srcElement.id !== "") {
+                    var stationInfo = datum.srcElement.__data__;
+                    console.log(stationInfo);
                     setSelectedStation(datum.srcElement.id);
+                    setInfoTip(stationInfo);
+                    //console.log(datum);
                 }
             })
             .on("click", datum => {
@@ -68,7 +91,7 @@ function WoodstockTravels() {
                     handleShow();
                 }
             })
-            .style("cursor", "pointer");
+            .style("cursor", "pointer")
 
         svg.selectAll("#Bank_Monument_hub")
             .on("mouseover", datum => {
@@ -106,12 +129,21 @@ function WoodstockTravels() {
                 <MapSVG ref={svgRef} />
             </div >
 
-            <CentreModal
-                title="Station name"
-                content="Woodstock has not been here before!"
-                show={show}
-                onHide={() => setShow(false)}
-            />
+            {infoTip === null ?
+                <CentreModal
+                    title="Station placeholder"
+                    content={null}
+                    show={show}
+                    onHide={() => setShow(false)}
+                />
+                :
+                <CentreModal
+                    title={infoTip.Station}
+                    content={infoTip}
+                    show={show}
+                    onHide={() => setShow(false)}
+                />
+            }
         </main>
     );
 }

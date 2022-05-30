@@ -52,11 +52,11 @@ function App() {
               <Nav className="mr-auto">
                 <Link onClick={scrollToTop} to="/" class="nav-link text-decoration-none fw-bold" style={{ color: 'teal' }} >Yan To Chau</Link>
                 {/* <Link onClick={scrollToTop} to="/about" class=" nav-link text-decoration-none text-dark"> About</Link> */}
-                <Link onClick={scrollToTop} to="/projects" class="nav-link text-decoration-none text-dark"> Projects</Link>
-                <Link onClick={scrollToTop} to="/life" class="nav-link text-decoration-none text-dark"> Passions</Link>
-                <Link onClick={scrollToTop} to="/blogs" class="nav-link text-decoration-none text-dark"> Blogs</Link>
-                <Link onClick={scrollToTop} to="/covid" class="nav-link text-decoration-none text-dark"> Covid Tracker (Beta)</Link>
-                <Link onClick={scrollToTop} to="/travel" class="nav-link text-decoration-none text-dark"> Woodstock Travels</Link>
+                <Link onClick={scrollToTop} to="/projects" class="nav-link text-decoration-none text-dark" style={{marginLeft:"10px"}}> 🔌 Projects</Link>
+                <Link onClick={scrollToTop} to="/life" class="nav-link text-decoration-none text-dark" style={{marginLeft:"10px"}}> 🛼 Skates </Link>
+                <Link onClick={scrollToTop} to="/blogs" class="nav-link text-decoration-none text-dark" style={{marginLeft:"10px"}}> 📷 Blogs</Link>
+                <Link onClick={scrollToTop} to="/covid" class="nav-link text-decoration-none text-dark" style={{marginLeft:"10px"}}> 😷 Covid Tracker</Link>
+                <Link onClick={scrollToTop} to="/travel" class="nav-link text-decoration-none text-dark" style={{marginLeft:"10px"}}> 🚂 Woodstock Travels</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
