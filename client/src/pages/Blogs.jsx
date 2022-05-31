@@ -23,18 +23,29 @@ import image_6 from "../images/jaywalking/edited-1054607.webp";
 import image_7 from "../images/jaywalking/edited-1054755.webp";
 
 
-function BlogsPage() {
+function BlogsPage({ blogdata }) {
+
+    const [loaded, setLoaded] = useState(false);
 
     const [blogs, setBlogs] = useState([]);
     const { search } = useLocation();
 
     useEffect(() => {
-        const fetchBlogs = async () => {
-            const res = await axios.get("https://ytc-web.herokuapp.com/api/blogposts" + search);
-            setBlogs(res.data);
+        if (blogdata) {
+            setLoaded(true);
+            setBlogs(blogdata);
+        } else {
+            setLoaded(false);
         }
 
-        fetchBlogs();
+        /* if (search !== "") {
+            const fetchBlogs = async () => {
+                const res = await axios.get("https://ytc-web.herokuapp.com/api/blogposts" + search);
+                setBlogs(res.data);
+            }
+            fetchBlogs();
+        } */
+
     }, [search, blogs]);
 
     return (
@@ -112,13 +123,13 @@ function BlogsPage() {
                     <br></br>
 
                     <div class="display-6 mt-4">Markdown content loaded from MongoDB</div>
-                    {blogs.length < 1 ? (
+                    {loaded ? (
+                        <BlogPostList posts={blogs} />
+                    ) : (
                         <div class="px-10 py-0 text-center">
                             <Image src={load_image} alt="Photo" fluid />
                             <div>Cute image courtesy of <a href="https://dribbble.com/shots/3790348-game-loading" style={{ color: "black", textDecoration: "none" }}>yuanzi0410</a>.</div>
                         </div >
-                    ) : (
-                        <BlogPostList posts={blogs} />
                     )}
                     <br class="mt-4"></br>
                     <div class="display-6 mt-4">Local HTML Medium articles from 2019-2021</div>

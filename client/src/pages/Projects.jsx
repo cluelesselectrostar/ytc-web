@@ -11,20 +11,30 @@ import TitleBanner from '../components/TitleBanner';
 import PageTitle from '../components/PageTitle';
 import load_image from '../images/loading.gif';
 
-function ProjectsPage() {
+function ProjectsPage({ projectdata }) {
+
+    const [loaded, setLoaded] = useState(false);
     const [posts, setPosts] = useState([]);
     const { search } = useLocation();
     //const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        const fetchPosts = async () => {
-            //setLoading(true);
-            const res = await axios.get("https://ytc-web.herokuapp.com/api/projectposts" + search);
-            setPosts(res.data);
-            //setLoading(false);
+        if (projectdata) {
+            setLoaded(true);
+            setPosts(projectdata);
+        } else {
+            setLoaded(false);
         }
-        
-        fetchPosts();
+
+        /* if (search !== "") {
+            const fetchPosts = async () => {
+                //setLoading(true);
+                const res = await axios.get("https://ytc-web.herokuapp.com/api/projectposts" + search);
+                setPosts(res.data);
+                //setLoading(false);
+            }
+            fetchPosts();
+        } */
     }, [search, posts]);
 
     return (
@@ -53,24 +63,18 @@ function ProjectsPage() {
                 }
             />
 
-            <div class="container py-4">
-                <div class="alert alert-warning" role="alert">
-                    Currrently deploying the backend on Mongo DB. Apologies if this does not load properly!
-                </div>
-            </div>
-
-            {posts.length<4 ? (
-                <div>
-                    <div class="px-10 py-0 text-center">
-                        <Image src={load_image} alt="Photo" fluid />
-                        <div>Cute image courtesy of <a href="https://dribbble.com/shots/3790348-game-loading" style={{color:"black", textDecoration:"none"}}>yuanzi0410</a>.</div>
-                    </div >
-                </div>
-            ) : (
+            {loaded ? (
                 <div class="album">
                     <div class="container">
                         <ProjectPostList posts={posts} />
                     </div>
+                </div>
+            ) : (
+                <div>
+                    <div class="px-10 py-0 text-center">
+                        <Image src={load_image} alt="Photo" fluid />
+                        <div>Cute image courtesy of <a href="https://dribbble.com/shots/3790348-game-loading" style={{ color: "black", textDecoration: "none" }}>yuanzi0410</a>.</div>
+                    </div >
                 </div>
             )
             }

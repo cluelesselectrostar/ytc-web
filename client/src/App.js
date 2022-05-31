@@ -1,7 +1,7 @@
 import { HashRouter, Link, Switch, Route } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
-// import { Row } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
+import axios from "axios";
 
 import './App.css';
 import HomePage from './pages/Home';
@@ -30,6 +30,8 @@ function App() {
 
   const [expanded, setExpanded] = useState(false);
   const [coviddata, setCovidData] = useState(null);
+  const [blogdata, setBlogData] = useState(null);
+  const [projectdata, setProjectData] = useState(null);
 
   useEffect(() => {
     fetch('https://covid.ourworldindata.org/data/owid-covid-data.json')
@@ -38,6 +40,21 @@ function App() {
         setCovidData(data);
         console.log("data grabbed at top level");
       })
+
+    const fetchBlogs = async () => {
+      const res = await axios.get("https://ytc-web.herokuapp.com/api/blogposts");
+      setBlogData(res.data);
+    }
+    fetchBlogs();
+
+    const fetchPosts = async () => {
+      //setLoading(true);
+      const res = await axios.get("https://ytc-web.herokuapp.com/api/projectposts");
+      setProjectData(res.data);
+      //setLoading(false);
+    }
+    fetchPosts();
+
   }, []);
 
   // style={{ color: 'rgb(153,230,179)', }} (teal colour)
@@ -52,11 +69,11 @@ function App() {
               <Nav className="mr-auto">
                 <Link onClick={scrollToTop} to="/" class="nav-link text-decoration-none fw-bold" style={{ color: 'teal' }} >Yan To Chau</Link>
                 {/* <Link onClick={scrollToTop} to="/about" class=" nav-link text-decoration-none text-dark"> About</Link> */}
-                <Link onClick={scrollToTop} to="/projects" class="nav-link text-decoration-none text-dark" style={{marginLeft:"10px"}}> 🔌 Projects</Link>
-                <Link onClick={scrollToTop} to="/life" class="nav-link text-decoration-none text-dark" style={{marginLeft:"10px"}}> 🛼 Skates </Link>
-                <Link onClick={scrollToTop} to="/blogs" class="nav-link text-decoration-none text-dark" style={{marginLeft:"10px"}}> 📷 Blogs</Link>
-                <Link onClick={scrollToTop} to="/covid" class="nav-link text-decoration-none text-dark" style={{marginLeft:"10px"}}> 😷 Covid Tracker</Link>
-                <Link onClick={scrollToTop} to="/travel" class="nav-link text-decoration-none text-dark" style={{marginLeft:"10px"}}> 🚂 Woodstock Travels</Link>
+                <Link onClick={scrollToTop} to="/projects" class="nav-link text-decoration-none text-dark" style={{ marginLeft: "10px" }}> 🔌 Projects</Link>
+                <Link onClick={scrollToTop} to="/life" class="nav-link text-decoration-none text-dark" style={{ marginLeft: "10px" }}> 🛼 Passions </Link>
+                <Link onClick={scrollToTop} to="/blogs" class="nav-link text-decoration-none text-dark" style={{ marginLeft: "10px" }}> 📷 Blogs</Link>
+                <Link onClick={scrollToTop} to="/covid" class="nav-link text-decoration-none text-dark" style={{ marginLeft: "10px" }}> 😷 Covid Tracker</Link>
+                <Link onClick={scrollToTop} to="/travel" class="nav-link text-decoration-none text-dark" style={{ marginLeft: "10px" }}> 🚂 Woodstock Travels</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -69,7 +86,7 @@ function App() {
           <AboutPage />
         </Route> */}
         <Route path="/projects">
-          <ProjectsPage />
+          <ProjectsPage projectdata={projectdata}/>
         </Route>
         <Route path="/life">
           <LifePage />
@@ -78,13 +95,13 @@ function App() {
         <Route path="/blogs/mogodB/:title/:_id" component={MDImportWrapper} />
         <Route path="/blogs/static/:post/:title" component={HTMLBlogImport} />
         <Route path="/blogs">
-          <BlogsPage />
+          <BlogsPage blogdata={blogdata} />
         </Route>
         <Route path="/covid">
           <CovidPage coviddata={coviddata} />
         </Route>
         <Route path="/travel">
-          <TubePage/>
+          <TubePage />
         </Route>
 
         {/* Home page goes last */}

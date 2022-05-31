@@ -5,19 +5,18 @@ import { useRef } from 'react';
 
 import circuit_image from '../images/circuit.webp';
 import profile_image from '../images/brighton.webp';
-import icra_image from '../images/ICRA.webp';
-import train_image from '../images/oldoakcommon.webp';
+
 import review_pdf from '../docs/End of Internship Review - Yanni.pdf';
 import my_cover from '../images/edited-1054475.webp'
 
 import FramedFigure from '../components/FramedFigure';
 import SquircleBox from '../components/SquircleBox';
-import { ytc_links } from '../components/Links';
 import PageTitle from '../components/PageTitle';
 
 import Image from 'react-bootstrap/Image';
 import Figure from 'react-bootstrap/Figure';
 import Button from 'react-bootstrap/Button';
+import { Row, Col } from 'react-bootstrap';
 
 //import { FullPage, Slide } from 'react-full-page';
 
@@ -52,7 +51,7 @@ function HomePage() {
                         <p class="lead mt-3">
                             Hello! I am Yan To, an Electrical and Electronic Engineering undergraduate at Imperial College London.
                             In addition to my portfolio of attestable project, work and volunteering experiences,
-                            I love trains, I love photography, and I love jaywalking, and most importantly documenting these experiences. Afterall, "the world is my oyster"!
+
                         </p>
                         <br></br>
                         <Button variant="light" onClick={scrollAbout}>
@@ -72,47 +71,66 @@ function HomePage() {
 
             <div class="container py-4" ref={aboutRef}>
                 <div class="row align-items-md-stretch">
-                    <div class="col-md-8 mt-4">
+                    <div class="col-md-7 mt-4">
                         <SquircleBox
                             appearance="teal"
-                            title="Inspired by EEE 🔌"
+                            title="I am electrifyingly inspired by...... 🔌"
                             content={
                                 <div>
-                                    <p>
-                                        I have always been fascinated in the sophisticated circuits and systems powering our gadgets and appliances,
-                                        which is why I went for EEE.
-                                        I truly believe that harnessing the power of these newest technologies is the way to build a smarter,
-                                        greener and more sustainable future. While I envision to work in an inter-disciplinary engineering environment,
-                                        I have developed my specific interests during my course. Some of my interests include:
+                                    <p class="lead mt-3">
+                                        Highly sophisticated circuits and systems, particularly power electronics - it feels
+                                        mesmersing to craft high-power, efficient and time-critical circuits that
+                                        can be applied in everything ranging from gadgets to giant motors!
                                     </p>
-                                    <ul>
-                                        <li>Power Engineering</li>
-                                        <li>Control Systems</li>
-                                        <li>Robotics</li>
-                                    </ul>
                                 </div>
                             }
                         />
                     </div>
-                    <div class="col-md-4 align-content-center align-items-center mt-4">
+
+                    <div class="col-md-5 align-content-center align-items-center mt-4">
                         <FramedFigure
                             image={circuit_image}
-                            caption="Year 2 Circuits and Systems Lab Breadboard, labelled."
+                            caption="Year 2 Circuits and Systems Lab Breadboard."
                         />
                     </div>
-                </div>
 
-                <div class="row align-items-md-stretch">
-                    <div class="col-md-4 mt-4">
+                    <div class="mt-4">
                         <SquircleBox
-                            appearance="bordered-grey"
-                            title="Computing for engineering 💻"
+                            appearance="dark"
+                            title="I have built a porfolio of professional experiences, at...... 💼"
                             content={
                                 <div>
+                                    <h5 class="mt-4">Majestic Engineering (Site Subcontractor)
+                                        - Summer '20</h5>
                                     <p>
-                                        I code in a number of languages, ranging from Python for personal projects,
-                                        to C/C++/Arduino for hardware projects. I also have experience in Verilog HDL,
-                                        for FPGA laboratory work. More details in the Projects page and GitHub.
+                                        Used AutoCAD for amending technical documents
+                                        , and developed a system of VBA macros and functions for organising the site's inventory.
+                                    </p>
+                                    <h5 class="mt-4">Origami Labs (Team Communications Platform Startup) - Autumn '20</h5>
+                                    <p>
+                                        Worked with the engineering team to build the enterprise iOS app with Flutter.
+                                    </p>
+                                    <h5 class="mt-4">VoltShare (EV Charger Startup) - Summer '21</h5>
+                                    <p>
+                                        Promoted VoltShare as a thought leader amongst sustainable businesses and the EV industry,
+                                        through publishing whitepaper articles and market research campaigns.
+                                    </p>
+                                    <a class="btn btn-outline-light" href={review_pdf}>Employer Review</a>
+                                </div>
+                            }
+                        />
+                    </div>
+
+                    <div class="col-md-6 mt-4">
+                        <SquircleBox
+                            appearance="grey"
+                            title="Speaking of getting my hands dirty...... 💻"
+                            content={
+                                <div>
+                                    <p class="lead mt-3">
+                                        (not literally), I work on various projects beyond my curriculum, ranging from
+                                        Python mini-projects to C/C++/Arduino-powered hardware projects.
+                                        More details in the projects page and GitHub.
                                     </p>
                                     <button class="btn btn-outline-secondary" type="button">
                                         <Link to="/projects" class="text-decoration-none btn-outline-secondary" onClick={scrollToTop}>
@@ -122,109 +140,48 @@ function HomePage() {
                                 </div>
                             }
                         />
-
                     </div>
-                    <div class="col-md-8 mt-4">
-                        <SquircleBox
-                            appearance="dark"
-                            title="Internship Experiences 💼"
-                            content={
-                                <div>
-                                    <h5 class=" mt-4">Majestic Engineering (Construction Project Subcontractor)</h5>
-                                    <p>
-                                        Here I made amendments to various technical specification documents, 
-                                        used AutoCAD for amending floorplan schematics, and developed a system of VBA macros and functions
-                                        for organising the site's inventory, which was checked against compliance and used for submission to various stakeholders.
-                                    </p>
-                                    <h5 class="mt-4">Origami Labs (Hong Kong Startup)</h5>
-                                    <p>
-                                        Mainly worked with the engineering team on building the iOS version of the enterprise mobile app with Flutter.
-                                        Also kickstarted a data analysis template for customer insights, and assisted trial and deployment for OFLO's clients.
-                                    </p>
-                                    <h5 class="mt-4">VoltShare (British Startup)</h5>
-                                    <p>
-                                        As a Business Relations Associate, I wrote a series of insightful whitepaper articles to promote VoltShare as a thought leader among sustainable businesses and the EV industry, 
-                                        conducted research on market trends, and utilised these efforts to convert participants into leads or even customers.
-                                    </p>
-                                    <a class="btn btn-outline-light" href={review_pdf}>Employer Review</a>
-                                </div>
-                            }
-                        />
-                    </div>
-                </div>
 
-                <div class="row align-items-md-stretch">
-                    <div class="col-md-7 mt-4">
+                    <div class="col-md-6 mt-4">
                         <SquircleBox
                             appearance="teal"
-                            title="Trains for life 🚂"
+                            title="Beyond all this, ...... ♥️"
                             content={
                                 <div>
-                                    <p>
-                                        Previously as a secretary and now as a chair of rail and transport society (ICRTS), my colleagues and I
-                                        link enthusiastic students with the UK transport industry,
-                                        hosting a range of industry talks, excursions and social events.
+                                    <p class="lead mt-3">
+                                        I love trains, I love skating, and I love jaywalking, and most importantly I love documenting these experiences.
+                                        Afterall, "the world is my oyster"!
                                     </p>
-                                    <p>
-                                        Check out our Medium blog page "RailPub", where we document our exciting experiences,
-                                        and random railfan trivia!
-                                    </p>
-                                    <p>
-                                        <a class="btn btn-outline-light" style={{ width: "200px" }} href={ytc_links.ICRTSMedium}>RailPub on Medium</a>
-                                    </p>
-                                    <p>
-                                        <a class="btn btn-outline-light" style={{ width: "200px" }} href={ytc_links.myMedium}>Yanni Chau on Medium</a>
-                                    </p>
+                                    <br></br>
+                                    <Row>
+                                        <Col md="auto">
+                                            <button class="btn btn-outline-light" type="button">
+                                                <Link to="/life" class="text-decoration-none btn-outline-light" onClick={scrollToTop}>
+                                                    <h3>🛼</h3>
+                                                </Link>
+                                            </button>
+                                        </Col>
+                                        <Col md="auto">
+                                            <button class="btn btn-outline-light" type="button">
+                                                <Link to="/blogs" class="text-decoration-none btn-outline-light" onClick={scrollToTop}>
+                                                    <h3>📷</h3>
+                                                </Link>
+                                            </button>
+                                        </Col>
+                                        <Col md="auto">
+                                            <button class="btn btn-outline-light" type="button">
+                                                <Link to="/travel" class="text-decoration-none btn-outline-light" onClick={scrollToTop}>
+                                                    <h3>🚂</h3>
+                                                </Link>
+                                            </button>
+                                        </Col>
+                                    </Row>
                                 </div>
                             }
                         />
+                    </div>
 
-                    </div>
-                    <div class="col-md-5 align-content-center align-items-center mt-4">
-                        <div class="h-100 p-2 bg-white border rounded-3 align-content-center align-items-center">
-                            <Figure>
-                                <Figure.Image
-                                    src={train_image}
-                                    fluid rounded
-                                />
-                                <Figure.Caption>
-                                    ICRTS trip to the Crossrail Old Oak Common depot. (Spring 2020)
-                                </Figure.Caption>
-                            </Figure>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="row align-items-md-stretch">
-                    <div class="col-md-4 align-content-center align-items-center mt-4">
-                        <FramedFigure
-                            image={icra_image}
-                            caption="Imperial College Robotics Academy Lego Mindstorms Workshop. (Autumn 2019)"
-                        />
-                    </div>
-                    <div class="col-md-8 mt-4">
-                        <SquircleBox
-                            appearance="grey"
-                            title="Volunteering 🏫"
-                            content={
-                                <div>
-                                    <p>
-                                        Serving as training manager for robotics academy (ICRA) was one of my most rewarding commitments of the year.
-                                        While ICRA was previously focused on teaching schoolchildren robotics through building LEGO Mindstorms Robots,
-                                        in view of coronavirus,
-                                        we adapted our workshops to a remote-friendly format. I was charged with developing game-orientated learning workshops on Tynker,
-                                        where schoolchildren can learn to program various games.
-                                        This process not only enhanced my interest for developing games,
-                                        but also increased my awareness on creating workshops with educational appeal.
-                                    </p>
-                                    <p>
-                                        Ultimately, it's a joy working with kids, and I'm glad to be a part of their quest towards STEM!
-                                    </p>
-                                </div>
-                            }
-                        />
-
-                    </div>
                 </div>
             </div>
 

@@ -51,7 +51,7 @@ function LinkModules() {
                 </div>
                 <footer class="footer mt-auto py-3 text-center mb-auto">
                     <div class="container">
-                        <span class="text-muted">A full stack web app proudly built with MERN (MongoDB, Express, React, Node)! © Yan To Chau 2021.</span>
+                        <span class="text-muted">A full stack web app proudly built with MERN (MongoDB, Express, React, Node)! © Yan To Chau 2022.</span>
                     </div>
                 </footer>
             </div>
