@@ -67,50 +67,6 @@ function TubePage() {
                     }
                 />
             </div>
-
-            <div class="container">
-                <div class="row align-items-center justify-content-center align-items-md-stretch">
-                    <div class="col-md-7 mt-4">
-                        <SquircleBox
-                            appearance="dark"
-                            title="Imperial College Rail and Transport Society 🚂"
-                            content={
-                                <div>
-                                    <p>
-                                        Previously as a secretary and now as a chair of rail and transport society (ICRTS), my colleagues and I
-                                        link enthusiastic students with the UK transport industry,
-                                        hosting a range of industry talks, excursions and social events.
-                                    </p>
-                                    <p>
-                                        Check out our Medium blog page "RailPub", where we document our exciting experiences,
-                                        and random railfan trivia!
-                                    </p>
-                                    <p>
-                                        <a class="btn btn-outline-light" style={{ width: "200px" }} href={ytc_links.ICRTSMedium}>RailPub on Medium</a>
-                                    </p>
-                                    <p>
-                                        <a class="btn btn-outline-light" style={{ width: "200px" }} href={ytc_links.myMedium}>Yanni Chau on Medium</a>
-                                    </p>
-                                </div>
-                            }
-                        />
-                    </div>
-
-                    <div class="col-md-5 align-content-center align-items-center mt-4">
-                        <div class="h-100 p-2 bg-white border rounded-3 align-content-center align-items-center">
-                            <Figure>
-                                <Figure.Image
-                                    src={train_image}
-                                    fluid rounded
-                                />
-                                <Figure.Caption>
-                                    ICRTS trip to the Crossrail Old Oak Common depot. (Spring 2020)
-                                </Figure.Caption>
-                            </Figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </main>
     );
 }

@@ -116,7 +116,32 @@ function WoodstockTravels() {
             <PageTitle title="Travel" />
             <TitleBanner
                 title="Woodstock Travels! 🤙"
-                description="Woodstock hitching on Snoopy's rides!"
+                description={
+                    <div>
+                        <p>
+                            I recently learnt that Japan has a travel agency for stuffed animals, which appeared very amusing to me.
+                            So while I am not ready to splurge large amounts on sending my dolls to travel, this is a cool idea,
+                            I was thinking how I could recreate something of a similar nature.
+                        </p>
+                        <p>
+                            Since I am a fan of the Underground, I have decidedto bring Woodstock on every station on the tube,
+                            which will inject a bit more purpose into my frequent commuting and trainspotting trips.
+                            In addition, it will be a great excuse for me to rejuvenate my abandoned photography instagram account,
+                            and to learn a bit of vector graphics rendering for the web.
+                        </p>
+                        <p>
+                            So hop on Snoopy's back and whiz through the world's oldest Underground system!
+                        </p>
+                        <br></br>
+                        <p>
+                            <small>
+                                SVG map extracted from <a href="https://upload.wikimedia.org/wikipedia/commons/1/13/London_Underground_Overground_DLR_Crossrail_map.svg">Wikipedia</a>.
+                                There are currently no images uploaded on this site yet, but meanwhile I have implemented a couple interactive elements on this map
+                                (beyond the already useful OSI tooltips and blinking lines in the original file!)
+                            </small>
+                        </p>
+                    </div>
+                }
             />
 
             {/* {isMobile ?

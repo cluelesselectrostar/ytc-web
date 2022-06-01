@@ -47,11 +47,11 @@ function HomePage() {
             <div class="container col-md-10 mt-3">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-9">
-                        <h1 class="display-5 fw-bold mt-3">Engineer, Rail Enthusiast, and Jaywalker.</h1>
+                        <h1 class="display-5 fw-bold mt-3">Hi I am Yan To - An Engineer, Rail Enthusiast, and Jaywalker!</h1>
                         <p class="lead mt-3">
-                            Hello! I am Yan To, an Electrical and Electronic Engineering undergraduate at Imperial College London.
-                            In addition to my portfolio of attestable project, work and volunteering experiences,
-
+                            I am an Electrical and Electronic Engineering undergraduate at Imperial College London
+                            , with an attestable portfolio of academic, work and volunteering experiences.
+                            Feel free to roam around my site!
                         </p>
                         <br></br>
                         <Button variant="light" onClick={scrollAbout}>
