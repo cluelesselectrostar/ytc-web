@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ytc-web/static/css/main.31213662.chunk.css",
-    "main.js": "/ytc-web/static/js/main.65a8b1e6.chunk.js",
-    "main.js.map": "/ytc-web/static/js/main.65a8b1e6.chunk.js.map",
+    "main.js": "/ytc-web/static/js/main.3302e504.chunk.js",
+    "main.js.map": "/ytc-web/static/js/main.3302e504.chunk.js.map",
     "runtime-main.js": "/ytc-web/static/js/runtime-main.29f8bed1.js",
     "runtime-main.js.map": "/ytc-web/static/js/runtime-main.29f8bed1.js.map",
     "static/css/2.0a9ec390.chunk.css": "/ytc-web/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.18f31fad.chunk.js": "/ytc-web/static/js/2.18f31fad.chunk.js",
-    "static/js/2.18f31fad.chunk.js.map": "/ytc-web/static/js/2.18f31fad.chunk.js.map",
+    "static/js/2.3f34597f.chunk.js": "/ytc-web/static/js/2.3f34597f.chunk.js",
+    "static/js/2.3f34597f.chunk.js.map": "/ytc-web/static/js/2.3f34597f.chunk.js.map",
     "index.html": "/ytc-web/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/ytc-web/static/css/2.0a9ec390.chunk.css.map",
     "static/css/main.31213662.chunk.css.map": "/ytc-web/static/css/main.31213662.chunk.css.map",
-    "static/js/2.18f31fad.chunk.js.LICENSE.txt": "/ytc-web/static/js/2.18f31fad.chunk.js.LICENSE.txt",
+    "static/js/2.3f34597f.chunk.js.LICENSE.txt": "/ytc-web/static/js/2.3f34597f.chunk.js.LICENSE.txt",
     "static/media/BlogImport_Func.txt": "/ytc-web/static/media/BlogImport_Func.174ea77f.txt",
     "static/media/BlogPost.txt": "/ytc-web/static/media/BlogPost.011affe6.txt",
     "static/media/EBGaramond-Initials.ttf": "/ytc-web/static/media/EBGaramond-Initials.e30b376b.ttf",
@@ -74,6 +74,7 @@
     "static/media/RobotoCondensed-MediumItalic.ttf": "/ytc-web/static/media/RobotoCondensed-MediumItalic.d493d063.ttf",
     "static/media/RobotoCondensed-Regular.ttf": "/ytc-web/static/media/RobotoCondensed-Regular.fe01088c.ttf",
     "static/media/brighton.f324e456.webp": "/ytc-web/static/media/brighton.f324e456.webp",
+    "static/media/cgcu_gse.d43ab597.webp": "/ytc-web/static/media/cgcu_gse.d43ab597.webp",
     "static/media/chasing.webp": "/ytc-web/static/media/chasing.a877998b.webp",
     "static/media/circuit.df34b718.webp": "/ytc-web/static/media/circuit.df34b718.webp",
     "static/media/cv_updated.f41abfe4.pdf": "/ytc-web/static/media/cv_updated.f41abfe4.pdf",
@@ -99,13 +100,14 @@
     "static/media/streetskate.dbd6b208.webp": "/ytc-web/static/media/streetskate.dbd6b208.webp",
     "static/media/tibet.ba6f45e0.webp": "/ytc-web/static/media/tibet.ba6f45e0.webp",
     "static/media/training.webp": "/ytc-web/static/media/training.5146307d.webp",
-    "static/media/wales.47cb0d07.webp": "/ytc-web/static/media/wales.47cb0d07.webp"
+    "static/media/wales.47cb0d07.webp": "/ytc-web/static/media/wales.47cb0d07.webp",
+    "static/media/woodstock.e69ef8d2.png": "/ytc-web/static/media/woodstock.e69ef8d2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.29f8bed1.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.18f31fad.chunk.js",
+    "static/js/2.3f34597f.chunk.js",
     "static/css/main.31213662.chunk.css",
-    "static/js/main.65a8b1e6.chunk.js"
+    "static/js/main.3302e504.chunk.js"
   ]
 }
