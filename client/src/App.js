@@ -10,6 +10,7 @@ import TubePage from './pages/Tube';
 import LifePage from './pages/Life';
 import BlogsPage from './pages/Blogs';
 import CovidPage from './pages/CovidTracker';
+import LandingPage from './pages/Landing';
 
 import HTMLBlogImport from './blogs/HTMLBlogImport'; // Static HTML
 // import TestMDImport from './blogs/markdown-test/MDImport'; // Static Markdown (Test)
@@ -102,6 +103,9 @@ function App() {
         </Route>
         <Route path="/travel">
           <TubePage />
+        </Route>
+        <Route path="/landing">
+          <LandingPage />
         </Route>
 
         {/* Home page goes last */}

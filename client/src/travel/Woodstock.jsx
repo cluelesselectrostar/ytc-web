@@ -5,15 +5,15 @@ import React, { useRef, useEffect, useState } from "react";
 //import { SvgLoader, SvgProxy } from 'react-svgmt';
 //import Alert from 'react-bootstrap/Alert';
 import CentreModal from '../components/CentreModal';
-import stationData from './stations.json';
-
+import Image from 'react-bootstrap/Image';
 import * as d3 from "d3";
 
 import './Woodstock.css';
 
+import stationData from './stations.json';
 //import SvgOriginalMap from "./optimised_map";
+import woodstock from '../images/woodstock.png';
 import { ReactComponent as MapSVG } from './original_map.svg';
-
 
 function WoodstockTravels() {
 
@@ -115,7 +115,12 @@ function WoodstockTravels() {
         <main>
             <PageTitle title="Travel" />
             <TitleBanner
-                title="Woodstock Travels! 🤙"
+                title={<h1 class="display-5 fw-bold">Woodstock Travels! <Image
+                    height={70}
+                    alt="Woodstock"
+                    src={woodstock}
+                    style={{ marginLeft: "10px" }}
+                /></h1>}
                 description={
                     <div>
                         <p>
