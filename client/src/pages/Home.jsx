@@ -5,6 +5,7 @@ import { useRef } from 'react';
 
 import circuit_image from '../images/circuit.webp';
 import profile_image from '../images/brighton.webp';
+import cgcu_gse from '../images/cgcu_gse.webp';
 
 import review_pdf from '../docs/End of Internship Review - Yanni.pdf';
 import my_cover from '../images/edited-1054475.webp'
@@ -41,6 +42,7 @@ function HomePage() {
             <div class="container mt-3 col-md-10">
                 <div class="align-items-center align-content-center">
                     <Image style={{ width: "100%", height: 350, maxHeight: 500, overflow: "hidden", objectFit: "cover" }} src={my_cover} alt="Photo taken at North Point." fluid rounded />
+
                 </div>
             </div>
 
@@ -186,7 +188,7 @@ function HomePage() {
             </div>
 
             <br class=" mb-4"></br>
-        </div>
+        </div >
     );
 
 }

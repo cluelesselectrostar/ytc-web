@@ -9,7 +9,7 @@ const cors =  require('cors');
 // const userRoute = require("./routes/users");
 const projectPostRoute = require("./routes/projectPosts");
 const blogPostRoute = require("./routes/blogPosts");
-// const categoryRoute = require("./routes/categories");
+const stationPostRoute = require("./routes/stationPosts");
 
 const app = express();
 
@@ -51,12 +51,13 @@ app.use('/api/covid', createProxyMiddleware({
 
 app.use("/api/projectposts", projectPostRoute);
 app.use("/api/blogposts", blogPostRoute);
+app.use("/api/stationposts", stationPostRoute);
 
 app.listen(process.env.PORT || 5000, () => {
   console.log(`Backend is running, ${process.env.PORT}.`);
 });
 
 app.get('/', (req, res) => {
-  res.status(200).send('hello world. go ahead and add /api/projectposts or /api/blogposts to view database content.')
+  res.status(200).send('hello world. go ahead and add /api/projectposts or /api/blogposts or /api/stationposts to view database content.')
 });
 
