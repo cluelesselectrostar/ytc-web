@@ -1,21 +1,18 @@
-import TitleBanner from '../components/TitleBanner';
-import PageTitle from '../components/PageTitle';
-
 import React, { useRef, useEffect, useState } from "react";
 //import { SvgLoader, SvgProxy } from 'react-svgmt';
 //import Alert from 'react-bootstrap/Alert';
-import CentreModal from '../components/CentreModal';
-import Image from 'react-bootstrap/Image';
 import * as d3 from "d3";
+
+import CentreModal from '../components/CentreModal';
 
 import './Woodstock.css';
 
 import stationData from './stations.json';
 //import SvgOriginalMap from "./optimised_map";
-import woodstock from '../images/woodstock.png';
 import { ReactComponent as MapSVG } from './original_map.svg';
+import woodstock_stn from './../images/woodstock_stn.webp';
 
-function WoodstockTravels() {
+function WoodstockTravels({ postdata }) {
 
     const width = window.innerWidth;
 
@@ -43,6 +40,12 @@ function WoodstockTravels() {
 
     useEffect(() => {
 
+        postdata.map(post => {
+            console.log(post);
+        }
+
+        );
+
         if (width < 620) {
             setMobile(true);
         } else {
@@ -57,13 +60,50 @@ function WoodstockTravels() {
             })
             .each(function (d, i) {
                 var station_name = d3.select(this)._groups[0][0].id;
-                //console.log(i); // index              
                 if (station_name !== "") {
-                    //console.log(station_name);                 
-                    for (const item of stationData) {
+                    for (const item of stationData) { // Loop all stations
+                        //console.log(item);
                         if (item.ID === station_name) {
+                            for (const post of postdata) {
+                                if (post.station_ID === station_name) {
+                                    item.ws_description = post.description;
+                                    item.ws_image = post.image;
+                                    console.log(d3.select(this));
+
+                                    var x = d3.select(this)._groups[0][0].attributes.x.value;
+                                    var y = d3.select(this)._groups[0][0].attributes.y.value;
+                                    svg.append("svg:image")
+                                        .attr("id", `ws_${item.ID}`)
+                                        .attr('x', x)
+                                        .attr('y', y)
+                                        .attr('height', 40)
+                                        .attr("transform", "translate(-15,-20)")
+                                        .attr("xlink:href", woodstock_stn);
+
+                                    svg.select(`image#ws_${item.ID}`)
+                                        .datum(item)
+                                        .on("mouseover", datum => {
+                                            svg.select(`image#ws_${item.ID}`).attr('height', 60);
+                                            if (datum.srcElement.id !== "") {
+                                                var stationInfo = datum.srcElement.__data__;
+                                                setSelectedStation(datum.srcElement.id);
+                                                setInfoTip(stationInfo);
+                                            }
+                                        })
+                                        .on("click", datum => {
+                                            if (datum.srcElement.id !== "") {
+                                                setSelectedStation(datum.srcElement.id);
+                                                handleShow();
+                                            }
+                                        })
+                                        .on("mouseout",function(){
+                                            svg.select(`image#ws_${item.ID}`).attr('height', 40);
+                                          })
+                                        .style("cursor", "pointer");
+
+                                }
+                            }
                             svg.select(`#${station_name}`).datum(item);
-                            //console.log("matched");
                             break;
                         }
                     }
@@ -79,7 +119,7 @@ function WoodstockTravels() {
                 //console.log("hovered feature id:" + datum.srcElement.id + ", baseVal:" + datum.srcElement.href.baseVal);
                 if (datum.srcElement.id !== "") {
                     var stationInfo = datum.srcElement.__data__;
-                    console.log(stationInfo);
+                    //console.log(stationInfo);
                     setSelectedStation(datum.srcElement.id);
                     setInfoTip(stationInfo);
                     //console.log(datum);
@@ -113,42 +153,6 @@ function WoodstockTravels() {
 
     return (
         <main>
-            <PageTitle title="Travel" />
-            <TitleBanner
-                title={<h1 class="display-5 fw-bold">Woodstock Travels! <Image
-                    height={70}
-                    alt="Woodstock"
-                    src={woodstock}
-                    style={{ marginLeft: "10px" }}
-                /></h1>}
-                description={
-                    <div>
-                        <p>
-                            I recently learnt that Japan has a travel agency for stuffed animals, which appeared very amusing to me.
-                            So while I am not ready to splurge large amounts on sending my dolls to travel, this is a cool idea,
-                            I was thinking how I could recreate something of a similar nature.
-                        </p>
-                        <p>
-                            Since I am a fan of the Underground, I have decidedto bring Woodstock on every station on the tube,
-                            which will inject a bit more purpose into my frequent commuting and trainspotting trips.
-                            In addition, it will be a great excuse for me to rejuvenate my abandoned photography instagram account,
-                            and to learn a bit of vector graphics rendering for the web.
-                        </p>
-                        <p>
-                            So hop on Snoopy's back and whiz through the world's oldest Underground system!
-                        </p>
-                        <br></br>
-                        <p>
-                            <small>
-                                SVG map extracted from <a href="https://upload.wikimedia.org/wikipedia/commons/1/13/London_Underground_Overground_DLR_Crossrail_map.svg">Wikipedia</a>.
-                                There are currently no images uploaded on this site yet, but meanwhile I have implemented a couple interactive elements on this map
-                                (beyond the already useful OSI tooltips and blinking lines in the original file!)
-                            </small>
-                        </p>
-                    </div>
-                }
-            />
-
             {/* {isMobile ?
                 <Alert variant="success" style={{ position: "sticky", margin: "5px", left: "1%", top: "1%" }}>{selectedStation}</Alert>
                 :

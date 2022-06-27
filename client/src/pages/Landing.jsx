@@ -5,7 +5,7 @@
 
 import profile_image from '../images/brighton.webp';
 //import my_cover from '../images/edited-1054475.webp';
-import woodstock from '../images/woodstock.png';
+import woodstock from '../images/woodstock.webp';
 import cgcu_gse from '../images/cgcu_gse.webp';
 
 //import FramedFigure from '../components/FramedFigure';

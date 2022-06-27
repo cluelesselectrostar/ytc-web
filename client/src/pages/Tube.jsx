@@ -1,20 +1,85 @@
 import WoodstockTravels from '../travel/Woodstock';
 
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router";
+import Image from 'react-bootstrap/Image';
+
 import Figure from 'react-bootstrap/Figure';
 import { ytc_links } from '../components/Links';
 import SquircleBox from '../components/SquircleBox';
+import TitleBanner from '../components/TitleBanner';
+import PageTitle from '../components/PageTitle';
 
 import wales_image from '../images/wales.webp';
 import tibet_image from '../images/tibet.webp';
 import train_image from '../images/oldoakcommon.webp';
+import woodstock from '../images/woodstock.webp';
+import load_image from '../images/loading.gif';
 
 
+function TubePage({ stationdata }) {
 
-function TubePage() {
+    const [loaded, setLoaded] = useState(false);
+    const [posts, setPosts] = useState([]);
+    const { search } = useLocation();
+
+    useEffect(() => {
+        if (stationdata) {
+            setLoaded(true);
+            setPosts(stationdata);
+        } else {
+            setLoaded(false);
+        }
+    }, [search, posts]);
 
     return (
         <main>
-            <WoodstockTravels />
+            <PageTitle title="Travel" />
+            <TitleBanner
+                title={<h1 class="display-5 fw-bold">Woodstock Travels! <Image
+                    height={70}
+                    alt="Woodstock"
+                    src={woodstock}
+                    style={{ marginLeft: "10px" }}
+                /></h1>}
+                description={
+                    <div>
+                        <p>
+                            I recently learnt that Japan has a travel agency for stuffed animals, which appeared very amusing to me.
+                            So while I am not ready to splurge large amounts on sending my dolls to travel, this is a cool idea,
+                            I was thinking how I could recreate something of a similar nature.
+                        </p>
+                        <p>
+                            Since I am a fan of the Underground, I have decidedto bring Woodstock on every station on the tube,
+                            which will inject a bit more purpose into my frequent commuting and trainspotting trips.
+                            In addition, it will be a great excuse for me to rejuvenate my abandoned photography instagram account,
+                            and to learn a bit of vector graphics rendering for the web.
+                        </p>
+                        <p>
+                            So hop on Snoopy's back and whiz through the world's oldest Underground system!
+                        </p>
+                        <br></br>
+                        <p>
+                            <small>
+                                SVG map extracted from <a href="https://upload.wikimedia.org/wikipedia/commons/1/13/London_Underground_Overground_DLR_Crossrail_map.svg">Wikipedia</a>.
+                                There are currently no images uploaded on this site yet, but meanwhile I have implemented a couple interactive elements on this map
+                                (beyond the already useful OSI tooltips and blinking lines in the original file!)
+                            </small>
+                        </p>
+                    </div>
+                }
+            />
+            {loaded ? (
+                <WoodstockTravels postdata={posts} />
+            ) : (
+                <div>
+                    <div class="px-10 py-0 text-center">
+                        <Image src={load_image} alt="Photo" fluid />
+                        <div>Cute image courtesy of <a href="https://dribbble.com/shots/3790348-game-loading" style={{ color: "black", textDecoration: "none" }}>yuanzi0410</a>.</div>
+                    </div >
+                </div>
+            )
+            }
             <div class="container mt-4">
                 <SquircleBox
                     appearance="teal"

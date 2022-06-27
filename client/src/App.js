@@ -33,6 +33,13 @@ function App() {
   const [coviddata, setCovidData] = useState(null);
   const [blogdata, setBlogData] = useState(null);
   const [projectdata, setProjectData] = useState(null);
+  const [stationdata, setStationData] = useState(null);
+
+  const renderHelloWorld = () => {
+    return (
+      <MDImportWrapper/>
+    )
+  }
 
   useEffect(() => {
     fetch('https://covid.ourworldindata.org/data/owid-covid-data.json')
@@ -55,6 +62,12 @@ function App() {
       //setLoading(false);
     }
     fetchPosts();
+
+    const fetchStations = async () => {
+      const res = await axios.get("https://ytc-web.herokuapp.com/api/stationposts");
+      setStationData(res.data);
+    }
+    fetchStations();
 
   }, []);
 
@@ -93,7 +106,7 @@ function App() {
           <LifePage />
         </Route>
         {/* <Route path="/blogs/md/test.md" component={TestMDImport} />  TODO: Need to add dynamic links later */}
-        <Route path="/blogs/mogodB/:title/:_id" component={MDImportWrapper} />
+        <Route path="/blogs/mogodB/:title/:_id" component={MDImportWrapper}></Route>
         <Route path="/blogs/static/:post/:title" component={HTMLBlogImport} />
         <Route path="/blogs">
           <BlogsPage blogdata={blogdata} />
@@ -102,7 +115,7 @@ function App() {
           <CovidPage coviddata={coviddata} />
         </Route>
         <Route path="/travel">
-          <TubePage />
+          <TubePage stationdata={stationdata}/>
         </Route>
         <Route path="/landing">
           <LandingPage />

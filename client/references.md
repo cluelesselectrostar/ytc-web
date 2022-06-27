@@ -31,4 +31,21 @@ https://betterprogramming.pub/react-d3-plotting-a-line-chart-with-tooltips-ed41a
 https://bestofreactjs.com/repo/CherryProjects-react-facebook-react-miscellaneous
 
 
+# Unused packages
+
+https://github.com/gregberge/svgr
+
+https://www.npmjs.com/package/react-svgmt
+
+https://medium.com/@hugozap/svg-manipulation-tools-for-react-e1d58b754c81
+
+https://hugozap.github.io/react-svgmt/
+
+https://www.npmjs.com/package/react-tooltip
+
+# Woodstock images
+
+https://www.clipartmax.com/max/m2i8G6G6d3H7H7G6/
+
+
 
