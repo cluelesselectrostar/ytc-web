@@ -69,11 +69,22 @@ function WoodstockTravels({ postdata }) {
                                 if (post.station_ID === station_name) {
                                     item.ws_description = post.description;
                                     item.ws_image = post.image;
-                                    console.log(d3.select(this));
+                                    console.log("printattribute")
+
+                                    var x=0;
+                                    var y=0;
+                                    if (d3.select(this)._groups[0][0].attributes.x) {
+                                        x = d3.select(this)._groups[0][0].attributes.x.value;
+                                        y = d3.select(this)._groups[0][0].attributes.y.value;
+                                    } else if (d3.select(this)._groups[0][0].attributes.transform) {
+                                        var t_string = d3.select(this)._groups[0][0].attributes.transform.value;
+                                        x = t_string.split('(')[1].split(',')[0];
+                                        y = t_string.split('(')[1].split(',')[1].split(')')[0];
+                                    } else {
+
+                                    }
                                     
                                     // Redner a woodstock on stations with posts
-                                    var x = d3.select(this)._groups[0][0].attributes.x.value;
-                                    var y = d3.select(this)._groups[0][0].attributes.y.value;
                                     svg.append("svg:image")
                                         .attr("id", `ws_${item.ID}`)
                                         .attr('x', x)
@@ -103,6 +114,7 @@ function WoodstockTravels({ postdata }) {
                                             svg.select(`image#ws_${item.ID}`).attr('height', 40);
                                           })
                                         .style("cursor", "pointer");
+                                        break;
 
                                 }
                             }
