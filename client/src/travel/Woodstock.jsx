@@ -53,7 +53,8 @@ function WoodstockTravels({ postdata }) {
         }
 
         var svg = d3.select(svgRef.current);
-
+        
+        // Append information to each station, and if applicable, post information
         svg.selectAll("use")
             .filter(function (d) {
                 return filter_stations(this);
@@ -69,7 +70,8 @@ function WoodstockTravels({ postdata }) {
                                     item.ws_description = post.description;
                                     item.ws_image = post.image;
                                     console.log(d3.select(this));
-
+                                    
+                                    // Redner a woodstock on stations with posts
                                     var x = d3.select(this)._groups[0][0].attributes.x.value;
                                     var y = d3.select(this)._groups[0][0].attributes.y.value;
                                     svg.append("svg:image")
@@ -88,6 +90,7 @@ function WoodstockTravels({ postdata }) {
                                                 var stationInfo = datum.srcElement.__data__;
                                                 setSelectedStation(datum.srcElement.id);
                                                 setInfoTip(stationInfo);
+                                                console.log(stationInfo);
                                             }
                                         })
                                         .on("click", datum => {
