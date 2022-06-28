@@ -143,10 +143,10 @@ function MDImport({ title, id }) {
                         }
                     }}
                     >{md}</Markdown>
-                    {/* <div className="facebookComment">
-                        <div className="title">Comments</div>
+                    {/* <div class="facebookComment">
+                        <div class="title">Comments</div>
                         <div
-                            className="fb-comments"
+                            class="fb-comments"
                             data-href="localhost:3000/ytc-web/#/blogs/mogodB/Pretty%20needed%20Chill/61d33d9f69f66a56c65c3486"
                             data-width="100%"
                             data-numposts="5"

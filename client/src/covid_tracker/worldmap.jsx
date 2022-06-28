@@ -47,7 +47,7 @@ class GeoChartWrapper extends Component {
                     coviddata={this.props.import_covid}
                     property={this.state.property}
                     date={this.state.date}
-                    className="geochart"
+                    class="geochart"
                 />
 
                 <h3 style={{ textAlign: "center" }}>Geo-Search</h3>

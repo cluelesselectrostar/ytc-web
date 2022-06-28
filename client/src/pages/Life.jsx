@@ -1,6 +1,6 @@
 //import Figure from 'react-bootstrap/Figure';
 //import { ParallaxProvider } from 'react-scroll-parallax';
-import { Parallax } from 'react-scroll-parallax';
+//import { Parallax } from 'react-scroll-parallax';
 import Image from 'react-bootstrap/Image';
 import FramedFigure from '../components/FramedFigure';
 import icra_image from '../images/ICRA.webp'; // volunteering image
@@ -30,7 +30,7 @@ function LifePage() {
         />
 
         {/* <ParallaxProvider>
-                <Parallax className="custom-class" x={[200, -200]} tagOuter="figure">
+                <Parallax class="custom-class" x={[200, -200]} tagOuter="figure">
                 <Image src={bakerloo_image} height="300px" />
                 </Parallax>
             </ParallaxProvider> */}

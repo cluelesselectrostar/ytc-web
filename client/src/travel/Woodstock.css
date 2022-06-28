@@ -12,4 +12,10 @@
       height:80vh;
     }
   }
+
+  .scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
   

@@ -1,4 +1,3 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import Image from 'react-bootstrap/Image';
@@ -26,7 +25,6 @@ import image_7 from "../images/jaywalking/edited-1054755.webp";
 function BlogsPage({ blogdata }) {
 
     const [loaded, setLoaded] = useState(false);
-
     const [blogs, setBlogs] = useState([]);
     const { search } = useLocation();
 
@@ -34,19 +32,8 @@ function BlogsPage({ blogdata }) {
         if (blogdata) {
             setLoaded(true);
             setBlogs(blogdata);
-        } else {
-            setLoaded(false);
-        }
-
-        /* if (search !== "") {
-            const fetchBlogs = async () => {
-                const res = await axios.get("https://ytc-web.herokuapp.com/api/blogposts" + search);
-                setBlogs(res.data);
-            }
-            fetchBlogs();
-        } */
-
-    }, [search, blogs]);
+        } 
+    }, [search, setBlogs, blogdata]);
 
     return (
         <main>

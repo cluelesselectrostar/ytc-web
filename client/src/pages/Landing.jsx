@@ -12,7 +12,6 @@ import cgcu_gse from '../images/cgcu_gse.webp';
 //import SquircleBox from '../components/SquircleBox';
 import PageTitle from '../components/PageTitle';
 
-import Figure from 'react-bootstrap/Figure'
 import Image from 'react-bootstrap/Image';
 import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
@@ -22,24 +21,26 @@ import { Row, Col } from 'react-bootstrap';
 
 function LandingPage() {
 
+    /* TODO: Use routes instead of href links on landing page. Is this important though?
     const scrollToTop = () => {
         //setExpanded(false);
         window.scrollTo({
             top: 0, behavior: 'smooth'
         });
     };
+    */
 
     return (
         <div class="px-10">
             <PageTitle title="Landing" />
 
             <div class="container col-md-6">
-                <Container className="mt-4">
-                    <Row className="justify-content-md-center align-items-center">
+                <Container class="mt-4">
+                    <Row class="justify-content-md-center align-items-center">
                         <Col md={4}>
                             <Image src={profile_image} alt="Brighton." fluid roundedCircle />
                         </Col>
-                        <Col md="auto" className="justify-content-center align-items-center mx-auto">
+                        <Col md="auto" class="justify-content-center align-items-center mx-auto">
                             <div class="container col-md-8">
                                 <h1 class="display-5 fw-bold mt-3 text-center">cluelessyanni</h1>
                                 <p class="lead mt-3 text-center">

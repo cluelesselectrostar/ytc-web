@@ -26,7 +26,7 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <div className="scroll-to-top">
+    <div class="scroll-to-top">
       {isVisible && (
         <div onClick={scrollToTop} style={{margin:50}}>
           <h1>🆙</h1>

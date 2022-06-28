@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Component } from 'react';
-import axios from "axios";
+// import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import Image from 'react-bootstrap/Image';
@@ -22,20 +22,8 @@ function ProjectsPage({ projectdata }) {
         if (projectdata) {
             setLoaded(true);
             setPosts(projectdata);
-        } else {
-            setLoaded(false);
         }
-
-        /* if (search !== "") {
-            const fetchPosts = async () => {
-                //setLoading(true);
-                const res = await axios.get("https://ytc-web.herokuapp.com/api/projectposts" + search);
-                setPosts(res.data);
-                //setLoading(false);
-            }
-            fetchPosts();
-        } */
-    }, [search, posts]);
+    }, [search, projectdata]);
 
     return (
         <main>

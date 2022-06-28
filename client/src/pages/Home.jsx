@@ -5,7 +5,6 @@ import { useRef } from 'react';
 
 import circuit_image from '../images/circuit.webp';
 import profile_image from '../images/brighton.webp';
-import cgcu_gse from '../images/cgcu_gse.webp';
 
 import review_pdf from '../docs/End of Internship Review - Yanni.pdf';
 import my_cover from '../images/edited-1054475.webp'
@@ -15,7 +14,6 @@ import SquircleBox from '../components/SquircleBox';
 import PageTitle from '../components/PageTitle';
 
 import Image from 'react-bootstrap/Image';
-import Figure from 'react-bootstrap/Figure';
 import Button from 'react-bootstrap/Button';
 import { Row, Col } from 'react-bootstrap';
 

@@ -14,43 +14,33 @@ import woodstock_stn from './../images/woodstock_stn.webp';
 
 function WoodstockTravels({ postdata }) {
 
-    const width = window.innerWidth;
+    // const width = window.innerWidth;
+    // const [isMobile, setMobile] = useState(false);
 
     const svgRef = useRef();
-    const [selectedStation, setSelectedStation] = useState("Hover over a station for details!");
+    // const [selectedStation, setSelectedStation] = useState("Hover over a station for details!");
     const [infoTip, setInfoTip] = useState(null);
-    const [isMobile, setMobile] = useState(false);
-
     const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
+    // const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-    var attr = "";
-
-    // FILTER FUNCTIONS
-
-    const filter_stations = (input) => {
-        attr = d3.select(input)._groups[0][0].getAttributeNS('http://www.w3.org/1999/xlink', 'href');
-        list.push(d3.select(input)._groups[0][0].id);
-        //console.log(list);
-        return attr.includes("#st") || attr.includes("wheelchair") || attr.includes("base") || attr.includes("crutch") || attr.includes("int") || attr.includes("cap") || attr.includes("term") || attr.includes("hub");
-    };
-
-    var list = [];
-
+    
     useEffect(() => {
+        
+        // FILTER FUNCTIONS
+        const filter_stations = (input) => {
+            var attr = d3.select(input)._groups[0][0].getAttributeNS('http://www.w3.org/1999/xlink', 'href');
+            //list.push(d3.select(input)._groups[0][0].id);
+            //console.log(list);
+            return attr.includes("#st") || attr.includes("wheelchair") || attr.includes("base") || attr.includes("crutch") || attr.includes("int") || attr.includes("cap") || attr.includes("term") || attr.includes("hub");
+        };
 
-        postdata.map(post => {
-            console.log(post);
-        }
-
-        );
-
+        /*
         if (width < 620) {
             setMobile(true);
         } else {
             setMobile(false);
         }
+        */
 
         var svg = d3.select(svgRef.current);
         
@@ -99,14 +89,14 @@ function WoodstockTravels({ postdata }) {
                                             svg.select(`image#ws_${item.ID}`).attr('height', 60);
                                             if (datum.srcElement.id !== "") {
                                                 var stationInfo = datum.srcElement.__data__;
-                                                setSelectedStation(datum.srcElement.id);
+                                                //setSelectedStation(datum.srcElement.id);
                                                 setInfoTip(stationInfo);
                                                 console.log(stationInfo);
                                             }
                                         })
                                         .on("click", datum => {
                                             if (datum.srcElement.id !== "") {
-                                                setSelectedStation(datum.srcElement.id);
+                                                //setSelectedStation(datum.srcElement.id);
                                                 handleShow();
                                             }
                                         })
@@ -135,14 +125,14 @@ function WoodstockTravels({ postdata }) {
                 if (datum.srcElement.id !== "") {
                     var stationInfo = datum.srcElement.__data__;
                     //console.log(stationInfo);
-                    setSelectedStation(datum.srcElement.id);
+                    //setSelectedStation(datum.srcElement.id);
                     setInfoTip(stationInfo);
-                    //console.log(datum);
                 }
             })
             .on("click", datum => {
                 if (datum.srcElement.id !== "") {
-                    setSelectedStation(datum.srcElement.id);
+                    console.log(datum.srcElement);
+                    //setSelectedStation(datum.srcElement.id);
                     handleShow();
                 }
             })
@@ -152,18 +142,18 @@ function WoodstockTravels({ postdata }) {
             .on("mouseover", datum => {
                 if (datum.srcElement.id !== "") {
                     console.log("Hovered over bank monument hub")
-                    setSelectedStation(datum.srcElement.id);
+                    //setSelectedStation(datum.srcElement.id);
                 }
             })
             .on("click", datum => {
                 if (datum.srcElement.id !== "") {
-                    setSelectedStation(datum.srcElement.id);
+                    //setSelectedStation(datum.srcElement.id);
                     handleShow();
                 }
             })
             .style("cursor", "pointer");
 
-    }, []);
+    }, [postdata]);
 
 
     return (
@@ -174,7 +164,7 @@ function WoodstockTravels({ postdata }) {
                 <Alert variant="success" style={{ position: "sticky", margin: "5px", left: "1%", top: "1%", width: "300px" }}>{selectedStation}</Alert>
             } */}
 
-            <div>
+            <div class="scrolling-wrapper">
                 <MapSVG ref={svgRef} />
             </div >
 

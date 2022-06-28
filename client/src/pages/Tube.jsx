@@ -12,7 +12,6 @@ import PageTitle from '../components/PageTitle';
 
 import wales_image from '../images/wales.webp';
 import tibet_image from '../images/tibet.webp';
-import train_image from '../images/oldoakcommon.webp';
 import woodstock from '../images/woodstock.webp';
 import load_image from '../images/loading.gif';
 
@@ -20,37 +19,35 @@ import load_image from '../images/loading.gif';
 function TubePage({ stationdata }) {
 
     const [loaded, setLoaded] = useState(false);
-    const [posts, setPosts] = useState([]);
+    const [ stationPosts, setStationPosts] = useState([]);
     const { search } = useLocation();
 
     useEffect(() => {
         if (stationdata) {
             setLoaded(true);
-            setPosts(stationdata);
-        } else {
-            setLoaded(false);
+            setStationPosts(stationdata);
         }
-    }, [search, posts]);
+    }, [search, stationdata]);
 
     return (
         <main>
             <PageTitle title="Travel" />
             <TitleBanner
-                title={<h1 class="display-5 fw-bold">Woodstock Travels! <Image
+                title={<span>Woodstock Travels! <Image
                     height={70}
                     alt="Woodstock"
                     src={woodstock}
                     style={{ marginLeft: "10px" }}
-                /></h1>}
+                /></span>}
                 description={
-                    <div>
+                    <span>
                         <p>
                             I recently learnt that Japan has a travel agency for stuffed animals, which appeared very amusing to me.
                             So while I am not ready to splurge large amounts on sending my dolls to travel, this is a cool idea,
                             I was thinking how I could recreate something of a similar nature.
                         </p>
                         <p>
-                            Since I am a fan of the Underground, I have decidedto bring Woodstock on every station on the tube,
+                            Since I am a fan of the Underground, I have decided to bring Woodstock on every station on the tube,
                             which will inject a bit more purpose into my frequent commuting and trainspotting trips.
                             In addition, it will be a great excuse for me to rejuvenate my abandoned photography instagram account,
                             and to learn a bit of vector graphics rendering for the web.
@@ -58,7 +55,6 @@ function TubePage({ stationdata }) {
                         <p>
                             So hop on Snoopy's back and whiz through the world's oldest Underground system!
                         </p>
-                        <br></br>
                         <p>
                             <small>
                                 SVG map extracted from <a href="https://upload.wikimedia.org/wikipedia/commons/1/13/London_Underground_Overground_DLR_Crossrail_map.svg">Wikipedia</a>.
@@ -66,11 +62,11 @@ function TubePage({ stationdata }) {
                                 (beyond the already useful OSI tooltips and blinking lines in the original file!)
                             </small>
                         </p>
-                    </div>
+                    </span>
                 }
             />
             {loaded ? (
-                <WoodstockTravels postdata={posts} />
+                <WoodstockTravels postdata={stationPosts} />
             ) : (
                 <div>
                     <div class="px-10 py-0 text-center">

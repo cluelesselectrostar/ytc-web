@@ -6,7 +6,7 @@ I have to say, I still think London’s railway network looks way too complicate
 
 ![](https://cdn-images-1.medium.com/max/2560/1*afXj1YWhWPDMcVW-uuRv8g.jpeg)
 
-<Caption text="Maquette seat covering for the Overground Class 315s running between Upminster and Romford" />
+<Caption text="Maquette seat covering for the Overground class 315s running between Upminster and Romford" />
 
 Our day started at Liverpool Street. Looks like a pretty nice place to start with, but not necessarily so when you see pigeons doing their business within the station. Fortunately or unfortunately, I don’t have a photo for that.
 
@@ -14,12 +14,12 @@ Our day started at Liverpool Street. Looks like a pretty nice place to start wit
 
 <Caption text="Liverpool Street Station Concourse" />
 
-We then caught the next TfL rail train to Shenfield. I was actually kind of looking forward to seeing the Class 315s running on TfL rail, but I guess they run quite infrequently. This is the interiors of the Class 345 Aventra, exactly the type I previously saw at London Paddington.
+We then caught the next TfL rail train to Shenfield. I was actually kind of looking forward to seeing the class 315s running on TfL rail, but I guess they run quite infrequently. This is the interiors of the class 345 Aventra, exactly the type I previously saw at London Paddington.
 
 
 ![](https://cdn-images-1.medium.com/max/800/1*xksk0fkXyuMongwqtazbjQ.jpeg)
 
-<Caption text="Interiors of the TfL Rail Class 345 Aventra">
+<Caption text="Interiors of the TfL Rail class 345 Aventra">
 
 Its colourful maquette seat covering is quite a delight to look at as well.
 
@@ -31,7 +31,7 @@ As expected, this is a photo of the front of the locomotive when we arrived at R
 
 ![](https://cdn-images-1.medium.com/max/800/1*APeBhYcWmDHOnGuv9Nuz9Q.png)
 
-<Caption text="Southbound TfL Rail approaching Romford. (Class 345 Aventra)">
+<Caption text="Southbound TfL Rail approaching Romford. (class 345 Aventra)">
 
 I think I was pretty bored at the time, so I even took a few picture of the sleepers of the rail. I later did a bit of reading, and turns out “Tarmac” used to be one of the country’s largest suppliers for concrete rail sleepers. On a side note, when I was on my volunteering trip to the Ffestiniog and Welsh Heritage Railway, we were told that the newly replaced sleepers were made from recycled plastics. A lot of work must have went into this kind of product to make sure it wouldn’t expand or contract drastically during extreme weather conditions.
 I don’t know what company supplies sleepers for the national rail network right now, but the recycled plastic sleepers that I talked about are definitely not as widespread at the moment.
@@ -44,20 +44,20 @@ Meanwhile, we also spotted a stopping southbound Greater Anglia Railway service.
 
 ![](https://cdn-images-1.medium.com/max/800/1*FSYdBncCKJ5fChSPsyY4Wg.jpeg)
 
-<Caption text="Greater Anglia Railway Class 321 trains stopping at Romford.">
+<Caption text="Greater Anglia Railway class 321 trains stopping at Romford.">
 
 We were waiting for the London Overground Romford to Upminster service to arrive, and finally here it is! The locomotive is quite “boxy” indeed.
 Another interesting thing I observed was the train’s double-leaf sliding doors, rather than the single-leaf sliding doors or sliding plug doors used in today’s trains. Not sure what the advantage of a double-leaf sliding door is; maybe it has better aerodynamics, or maybe it reduces the chance of debris jamming on the door rails. But this design is definitely something from the past.
 
 ![](https://cdn-images-1.medium.com/max/800/1*R7u-vn7dd3heh2MZ0rbBpA.jpeg)
 
-<Caption text="London Overground Class 315">
+<Caption text="London Overground class 315">
 
 The exterior of the train looks quite normal, but the interior definitely shows the age of the train, as if it is something from the 60s. It even has luggage racks, which reminds us that it used to run long-haul suburban services.
 
 ![](https://cdn-images-1.medium.com/max/2560/1*aJcs9tiAWJH7g9B4KVqiug.jpeg)
 
-<Caption text="London Overground Class 315 Interiors">
+<Caption text="London Overground class 315 Interiors">
 
 
 
