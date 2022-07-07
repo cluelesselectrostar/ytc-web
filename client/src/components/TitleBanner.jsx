@@ -14,10 +14,10 @@ class TitleBanner extends Component {
 
     render() {
         return (
-            <div class="align-items-md-stretch h-100 p-5 bg-light rounded-3">
-                <div class="col-md-8">
-                    <h1 class="display-5 fw-bold">{this.props.title}</h1>
-                    <p class="lead">
+            <div className="align-items-md-stretch h-100 p-5 bg-light rounded-3">
+                <div className="col-md-8">
+                    <h1 className="display-5 fw-bold">{this.props.title}</h1>
+                    <p className="lead">
                         {this.props.description}
                     </p>
                 </div>

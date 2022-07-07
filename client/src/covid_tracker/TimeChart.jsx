@@ -196,7 +196,7 @@ function TimeChart({ coviddata, property, selectedCountry }) {
     }
 
     return (
-        <center><div id="line_chart" class="container" /></center>
+        <center><div id="line_chart" className="container" /></center>
     )
 }
 

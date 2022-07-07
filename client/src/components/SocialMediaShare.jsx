@@ -35,8 +35,8 @@ class SocialMediaShare extends Component {
 
     render() {
         return (
-            <div class="d-flex justify-content-left">
-                {/* <div class="row align-items-md-stretch align-items-center align-content-center">
+            <div className="d-flex justify-content-left">
+                {/* <div className="row align-items-md-stretch align-items-center align-content-center">
                     <Col>
                         <FacebookShareButton
                             children={<FacebookIcon size={48} round={true} />}
@@ -47,78 +47,78 @@ class SocialMediaShare extends Component {
                         <TwitterShareButton
                             children={<TwitterIcon size={48} round={true} />}
                             url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.link}`}
-                            class="col-md-2"
+                            className="col-md-2"
                         />
                     </div>
                     <Col>
                         <LinkedinShareButton
                             children={<LinkedinIcon size={48} round={true} />}
                             url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.link}`}
-                            class="col-md-2"
+                            className="col-md-2"
                         />
                     </div>
                     <Col>
                         <PinterestShareButton
                             children={<PinterestIcon size={48} round={true} />}
                             url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.link}`}
-                            class="col-md-2"
+                            className="col-md-2"
                         />
                     </div>
                     <Col>
                         <RedditShareButton
                             children={<RedditIcon size={48} round={true} />}
                             url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.link}`}
-                            class="col-md-2"
+                            className="col-md-2"
                         />
                     </div>
                     <Col>
                         <EmailShareButton
                             children={<EmailIcon size={48} round={true} />}
                             url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.link}`}
-                            class="col-md-2"
+                            className="col-md-2"
                         />
                     </div>
                 </div> */}
                 <Row>
                     <Col md={1} xs={2}>
                         <FacebookShareButton
-                            children={<FacebookIcon size={48} round={true} class="sharebutton"/>}
+                            children={<FacebookIcon size={48} round={true} className="sharebutton"/>}
                             url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.link}`}
                         />
                     </Col>
                     <Col md={1} xs={2}>
                         <TwitterShareButton
-                            children={<TwitterIcon size={48} round={true} class="sharebutton"/>}
+                            children={<TwitterIcon size={48} round={true} className="sharebutton"/>}
                             url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.link}`}
-                            class="col-md-2"
+                            className="col-md-2"
                         />
                     </Col>
                     <Col md={1} xs={2}>
                         <LinkedinShareButton
-                            children={<LinkedinIcon size={48} round={true} class="sharebutton"/>}
+                            children={<LinkedinIcon size={48} round={true} className="sharebutton"/>}
                             url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.link}`}
-                            class="col-md-2"
+                            className="col-md-2"
                         />
                     </Col>
                     <Col md={1} xs={2}>
                         <PinterestShareButton
-                            children={<PinterestIcon size={48} round={true} class="sharebutton"/>}
+                            children={<PinterestIcon size={48} round={true} className="sharebutton"/>}
                             url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.link}`}
-                            class="col-md-2"
+                            className="col-md-2"
                         />
                     </Col>
                     <Col md={1} xs={2}>
                         <RedditShareButton
-                            children={<RedditIcon size={48} round={true} class="sharebutton"/>}
+                            children={<RedditIcon size={48} round={true} className="sharebutton"/>}
                             url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.link}`}
-                            class="col-md-2"
+                            className="col-md-2"
                         />
                     </Col>
                     <Col md={1} xs={2}>
                         <EmailShareButton
-                            children={<EmailIcon size={48} round={true} class="sharebutton"/>}
+                            children={<EmailIcon size={48} round={true} className="sharebutton"/>}
                             url={`https://cluelesselectrostar.github.io/ytc-web/#${this.props.link}`}
-                            class="col-md-2"
+                            className="col-md-2"
                         />
                     </Col>
                 </Row>

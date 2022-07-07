@@ -10,7 +10,7 @@ function ContactPage() {
                 title = "Contact Me 🤙"
                 description = "Contact me whichever method you desire!"
             />
-            <div class="container">
+            <div className="container">
                 <LinkModules />
             </div>
         </main>

@@ -47,14 +47,14 @@ class GeoChartWrapper extends Component {
                     coviddata={this.props.import_covid}
                     property={this.state.property}
                     date={this.state.date}
-                    class="geochart"
+                    className="geochart"
                 />
 
                 <h3 style={{ textAlign: "center" }}>Geo-Search</h3>
-                <div class="row align-items-center justify-content-center ">
+                <div className="row align-items-center justify-content-center ">
 
-                    <div class="col-md-3"><h5>Coronavirus Property</h5></div>
-                    <div class="col-md-3">
+                    <div className="col-md-3"><h5>Coronavirus Property</h5></div>
+                    <div className="col-md-3">
                         <select
                             value={this.state.property}
                             onChange={event => this.setState({ property: event.target.value })}
@@ -81,11 +81,11 @@ class GeoChartWrapper extends Component {
                         </select>
                     </div>
                 </div>
-                <div class="row align-items-center justify-content-center mt-2">
-                    <div class="col-md-3"><h5>Data collection date</h5></div>
-                    <div class="col-md-3">
+                <div className="row align-items-center justify-content-center mt-2">
+                    <div className="col-md-3"><h5>Data collection date</h5></div>
+                    <div className="col-md-3">
                         <input
-                            class="mt-2"
+                            className="mt-2"
                             type="date"
                             id="start"
                             name="trip-start"

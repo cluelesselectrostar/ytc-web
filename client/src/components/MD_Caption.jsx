@@ -15,7 +15,7 @@ class Caption extends Component {
     render() {
         return (
             <div>
-                <p class="cust-caption mt-2 mb-4" style={{ display: 'flex', justifyContent: 'center' }}>
+                <p className="cust-caption mt-2 mb-4" style={{ display: 'flex', justifyContent: 'center' }}>
                     {this.props.text}
                 </p>
             </div>

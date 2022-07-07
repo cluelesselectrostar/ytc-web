@@ -30,13 +30,13 @@ function AboutPage() {
 
     return (<main>
 
-        <div class="align-items-md-stretch h-100 p-5 rounded-3 bg-light">
+        <div className="align-items-md-stretch h-100 p-5 rounded-3 bg-light">
             <div>
                 <PageTitle title="About" />
-                <div class="row">
-                    <div class="col-md-9">
-                        <h1 class="display-5 fw-bold">Where I am currently at.</h1>
-                        <p class="lead">
+                <div className="row">
+                    <div className="col-md-9">
+                        <h1 className="display-5 fw-bold">Where I am currently at.</h1>
+                        <p className="lead">
                             I am Yan To, raised in Hong Kong
                             , and currently an Engineering undergraduate at Imperial College London.
                             In addition to my portfolio of attestable project, work and volunteering experiences,
@@ -44,16 +44,16 @@ function AboutPage() {
                             bringing exciting extra-curricular experiences to Imperial students.
                         </p>
                     </div>
-                    <div class="col-md-3 align-content-center align-items-center">
+                    <div className="col-md-3 align-content-center align-items-center">
                         <Image src={profile_image} alt="Brighton." fluid roundedCircle />
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container py-4">
-            <div class="row align-items-md-stretch">
-                <div class="col-md-8 mt-4">
+        <div className="container py-4">
+            <div className="row align-items-md-stretch">
+                <div className="col-md-8 mt-4">
                     <SquircleBox
                         appearance="teal"
                         title="Inspired by EEE 🔌"
@@ -75,7 +75,7 @@ function AboutPage() {
                         }
                     />
                 </div>
-                <div class="col-md-4 align-content-center align-items-center mt-4">
+                <div className="col-md-4 align-content-center align-items-center mt-4">
                     <FramedFigure
                         image={circuit_image}
                         caption="Year 2 Circuits and Systems Lab Breadboard, labelled."
@@ -83,8 +83,8 @@ function AboutPage() {
                 </div>
             </div>
 
-            <div class="row align-items-md-stretch">
-                <div class="col-md-4 mt-4">
+            <div className="row align-items-md-stretch">
+                <div className="col-md-4 mt-4">
                     <SquircleBox
                         appearance="bordered-grey"
                         title="Computing for engineering 💻"
@@ -95,8 +95,8 @@ function AboutPage() {
                                     to C/C++/Arduino for hardware projects. I also have experience in Verilog HDL,
                                     for FPGA laboratory work. More details in the Projects page and GitHub.
                                 </p>
-                                <button class="btn btn-outline-secondary" type="button">
-                                    <Link to="/projects" class="text-decoration-none btn-outline-secondary" onClick={scrollToTop}>
+                                <button className="btn btn-outline-secondary" type="button">
+                                    <Link to="/projects" className="text-decoration-none btn-outline-secondary" onClick={scrollToTop}>
                                         Projects
                                     </Link>
                                 </button>
@@ -105,35 +105,35 @@ function AboutPage() {
                     />
 
                 </div>
-                <div class="col-md-8 mt-4">
+                <div className="col-md-8 mt-4">
                     <SquircleBox
                         appearance="dark"
                         title="Internship Experiences 💼"
                         content={
                             <div>
-                                <h5 class=" mt-4">Majestic Engineering (Construction Project Subcontractor)</h5>
+                                <h5 className=" mt-4">Majestic Engineering (Construction Project Subcontractor)</h5>
                                 <p>
                                     While amending the installation manuals and floorpans construction project with respect to the clients' requirements.
                                     I grasped the importance of effectively communicating with various stakeholders of project.
                                     The main takeaway of this internship was the interactive process of iterating through design and specifications,
                                     and working with compliance, ensuring safe and effective completion of the project.
                                 </p>
-                                <h5 class="mt-4">Origami Labs (Local Startup)</h5>
+                                <h5 className="mt-4">Origami Labs (Local Startup)</h5>
                                 <p>
                                     I assisted the development of the startup's iOS enterprise mobile application,
                                     and assisted their product pilot-testing and deployment.
                                     This gave me an exclusive outlook into the process of crafting a seamless solution,
                                     truly tailored to its customers, and delivered reliably to a high standard.
                                 </p>
-                                <a class="btn btn-outline-light" href={review_pdf}>Employer Review</a>
+                                <a className="btn btn-outline-light" href={review_pdf}>Employer Review</a>
                             </div>
                         }
                     />
                 </div>
             </div>
 
-            <div class="row align-items-md-stretch">
-                <div class="col-md-7 mt-4">
+            <div className="row align-items-md-stretch">
+                <div className="col-md-7 mt-4">
                     <SquircleBox
                         appearance="teal"
                         title="Trains for life 🚂"
@@ -151,18 +151,18 @@ function AboutPage() {
                                     and random railfan trivia!
                                 </p>
                                 <p>
-                                    <a class="btn btn-outline-light" style={{ width: "200px" }} href={ytc_links.ICRTSMedium}>RailPub on Medium</a>
+                                    <a className="btn btn-outline-light" style={{ width: "200px" }} href={ytc_links.ICRTSMedium}>RailPub on Medium</a>
                                 </p>
                                 <p>
-                                    <a class="btn btn-outline-light" style={{ width: "200px" }} href={ytc_links.myMedium}>Yanni Chau on Medium</a>
+                                    <a className="btn btn-outline-light" style={{ width: "200px" }} href={ytc_links.myMedium}>Yanni Chau on Medium</a>
                                 </p>
                             </div>
                         }
                     />
 
                 </div>
-                <div class="col-md-5 align-content-center align-items-center mt-4">
-                    <div class="h-100 p-2 bg-white border rounded-3 align-content-center align-items-center">
+                <div className="col-md-5 align-content-center align-items-center mt-4">
+                    <div className="h-100 p-2 bg-white border rounded-3 align-content-center align-items-center">
                         <Figure>
                             <Figure.Image
                                 src={train_image}
@@ -176,14 +176,14 @@ function AboutPage() {
                 </div>
             </div>
 
-            <div class="row align-items-md-stretch">
-                <div class="col-md-4 align-content-center align-items-center mt-4">
+            <div className="row align-items-md-stretch">
+                <div className="col-md-4 align-content-center align-items-center mt-4">
                     <FramedFigure
                         image={icra_image}
                         caption="Imperial College Robotics Academy Lego Mindstorms Workshop. (Autumn 2019)"
                     />
                 </div>
-                <div class="col-md-8 mt-4">
+                <div className="col-md-8 mt-4">
                     <SquircleBox
                         appearance="grey"
                         title="Volunteering 🏫"

@@ -3,13 +3,13 @@ import React from 'react';
 // import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
-import Image from 'react-bootstrap/Image';
+//import Image from 'react-bootstrap/Image';
 
 // import GetLocalProjects from '../projects/GetProjects';
 import ProjectPostList from '../components/ProjectPostList';
 import TitleBanner from '../components/TitleBanner';
 import PageTitle from '../components/PageTitle';
-import load_image from '../images/loading.gif';
+import LoadingGif from '../components/LoadingGIF';
 
 function ProjectsPage({ projectdata }) {
 
@@ -32,7 +32,7 @@ function ProjectsPage({ projectdata }) {
                 title="Getting my hands dirty!"
                 description={
                     <div>
-                        <p class="lead">
+                        <p className="lead">
                             This page links to all the repositories of my individual and group projects.
                             Documentation and relevant introductory website is available for some group projects as well.
                         </p>
@@ -52,18 +52,13 @@ function ProjectsPage({ projectdata }) {
             />
 
             {loaded ? (
-                <div class="album">
-                    <div class="container">
+                <div className="album">
+                    <div className="container">
                         <ProjectPostList posts={posts} />
                     </div>
                 </div>
             ) : (
-                <div>
-                    <div class="px-10 py-0 text-center">
-                        <Image src={load_image} alt="Photo" fluid />
-                        <div>Cute image courtesy of <a href="https://dribbble.com/shots/3790348-game-loading" style={{ color: "black", textDecoration: "none" }}>yuanzi0410</a>.</div>
-                    </div >
-                </div>
+                <LoadingGif/>
             )
             }
 

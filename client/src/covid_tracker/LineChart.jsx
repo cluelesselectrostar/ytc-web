@@ -45,9 +45,9 @@ class LineChartWrapper extends Component {
         */
 
         return (
-            <div class="mt-4">
+            <div className="mt-4">
                 <br></br>
-                <div class="container">
+                <div className="container">
                     {(this.props.import_covid.length < 100) ?
                         (
                             <DataLoading/>
@@ -64,9 +64,9 @@ class LineChartWrapper extends Component {
                 </div>
 
                 <h3 style={{ textAlign: "center" }}>Time Evolution</h3>
-                <div class="row align-items-center justify-content-center ">
-                    <div class="col-md-3"><h5>Coronavirus Property</h5></div>
-                    <div class="col-md-3">
+                <div className="row align-items-center justify-content-center ">
+                    <div className="col-md-3"><h5>Coronavirus Property</h5></div>
+                    <div className="col-md-3">
                         <select
                             value={this.state.property}
                             onChange={event => this.setState({ property: event.target.value })}
@@ -93,9 +93,9 @@ class LineChartWrapper extends Component {
                         </select>
                     </div>
                 </div>
-                <div class="row align-items-center justify-content-center mt-2">
-                    <div class="col-md-3"><h5>Country</h5></div>
-                    <div class="col-md-3">
+                <div className="row align-items-center justify-content-center mt-2">
+                    <div className="col-md-3"><h5>Country</h5></div>
+                    <div className="col-md-3">
                         <select
                             value={this.state.country}
                             onChange={event => {

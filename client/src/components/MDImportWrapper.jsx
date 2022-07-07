@@ -45,7 +45,7 @@ class MDImportWrapper extends Component {
     render() {
         return (
             <div>
-                <div class="container col-md-10 col-lg-8 cust-title mt-3 mb-3 display-4">
+                <div className="container col-md-10 col-lg-8 cust-title mt-3 mb-3 display-4">
                     <SocialMediaShare link={this.props.location.pathname} />
                 </div>
                 <MDImport title={this.state.title} id={this.state.id} />

@@ -50,19 +50,19 @@ class HTMLBlogImport extends Component {
                         }
                         if (node.attribs.class === "imageCaption") {
                             return (
-                                <p class="cust-caption" style={{ display: 'flex', justifyContent: 'center' }}>
+                                <p className="cust-caption" style={{ display: 'flex', justifyContent: 'center' }}>
                                     {domToReact(node.children, options)}
                                 </p>
                             );
                         } else if (String(node.attribs.class).includes("section-inner")) {
                             return (
-                                <div class="row align-items-md-stretch" style={{ display: 'flex', justifyContent: 'center' }}>
+                                <div className="row align-items-md-stretch" style={{ display: 'flex', justifyContent: 'center' }}>
                                     {domToReact(node.children, options)}
                                 </div>
                             );
                         } else if (node.attribs.class === "graf-image") {
                             return (
-                                <div class="align-content-center align-items-center mt-3" style={{ display: 'flex', justifyContent: 'center' }}>
+                                <div className="align-content-center align-items-center mt-3" style={{ display: 'flex', justifyContent: 'center' }}>
                                     <Image src={node.attribs.src} alt="Photo" fluid />
                                 </div >
                             );
@@ -74,43 +74,43 @@ class HTMLBlogImport extends Component {
                             return <br></br>;
                         } else if (String(node.attribs.class).includes("graf--p")) {
                             return (
-                                <div class="col-md-10 col-lg-8 cust mt-3 mb-3">
+                                <div className="col-md-10 col-lg-8 cust mt-3 mb-3">
                                     {domToReact(node.children, options)}
                                 </div>
                             );
                         } else if (String(node.attribs.class).includes("graf--blockquote")) {
                             return (
-                                <div class="col-md-10 col-lg-8 cust mt-4 mb-4 blockquote">
+                                <div className="col-md-10 col-lg-8 cust mt-4 mb-4 blockquote">
                                     {domToReact(node.children, options)}
                                 </div>
                             );
                         } else if (String(node.attribs.class).includes("graf--title")) {
                             /* return (
-                                <div class="col-md-10 col-lg-8  cust-title mt-3 mb-3 display-4">
+                                <div className="col-md-10 col-lg-8  cust-title mt-3 mb-3 display-4">
                                     {domToReact(children, options)}
                                 </div>
                             ); */
                             return (<div></div>);
                         } else if (String(node.attribs.class).includes("graf--h3")) {
                             return (
-                                <div class="col-md-10 col-lg-8  cust-h3 mt-3 mb-6 display-5">
+                                <div className="col-md-10 col-lg-8  cust-h3 mt-3 mb-6 display-5">
                                     {domToReact(node.children, options)}
                                 </div>
                             );
                         } else if (String(node.attribs.class).includes("graf--h4")) {
                             return (
-                                <div class="col-md-10 col-lg-8  cust-h4 mb-3 mt-4 display-6">
+                                <div className="col-md-10 col-lg-8  cust-h4 mb-3 mt-4 display-6">
                                     {domToReact(node.children, options)}
                                 </div>
                             );
                         } else if (String(node.attribs.class).includes("postList")) {
                             return (
-                                <div class="col-md-10 col-lg-8  cust mt-4 mb-4">
+                                <div className="col-md-10 col-lg-8  cust mt-4 mb-4">
                                     {domToReact(node.children, options)}
                                 </div>
                             );
                         } else if (node.name === "a") {
-                            return (<a href={node.attribs.href} class="text-dark">{domToReact(node.children, options)}</a>);
+                            return (<a href={node.attribs.href} className="text-dark">{domToReact(node.children, options)}</a>);
                         } else if (node.name === "footer") {
                             return (<br></br>)
                         }
@@ -120,11 +120,11 @@ class HTMLBlogImport extends Component {
                     <div>
                         <PageTitle title={`Blog | ${post}`} />
                         <br></br>
-                        <div class="container col-md-10 col-lg-6 cust-title mt-3 mb-3 display-4">
+                        <div className="container col-md-10 col-lg-6 cust-title mt-3 mb-3 display-4">
                             <div>{post}</div>
                             <SocialMediaShare link={this.props.location.pathname} />
                         </div>
-                        <div class="container col-md-10 col-lg-8">
+                        <div className="container col-md-10 col-lg-8">
                             {parse(cleanHTML, options)}
                         </div>
 
@@ -137,7 +137,7 @@ class HTMLBlogImport extends Component {
                 return (
                     <div>
                         <PageTitle title={`Blog | Error`} />
-                        <h1 class="px-10 py-0 my-5 text-center">This blog post does not seem to exist.</h1>
+                        <h1 className="px-10 py-0 my-5 text-center">This blog post does not seem to exist.</h1>
                     </div>
                 );
             }

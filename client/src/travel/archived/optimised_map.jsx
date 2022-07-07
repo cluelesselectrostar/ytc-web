@@ -17,148 +17,148 @@ const SvgOriginalMap = (props) => (
     <defs>
       <use
         xlinkHref="#original_map_svg__term"
-        class="original_map_svg__sbakerloo"
+        className="original_map_svg__sbakerloo"
         id="original_map_svg__termbakerloo"
       />
       <use
         xlinkHref="#original_map_svg__term"
-        class="original_map_svg__scentral"
+        className="original_map_svg__scentral"
         id="original_map_svg__termcentral"
       />
       <use
         xlinkHref="#original_map_svg__term"
-        class="original_map_svg__scircle"
+        className="original_map_svg__scircle"
         id="original_map_svg__termcircle"
       />
       <use
         xlinkHref="#original_map_svg__term"
-        class="original_map_svg__sdistrict"
+        className="original_map_svg__sdistrict"
         id="original_map_svg__termdistrict"
       />
       <use
         xlinkHref="#original_map_svg__term"
-        class="original_map_svg__shnc"
+        className="original_map_svg__shnc"
         id="original_map_svg__termhnc"
       />
       <use
         xlinkHref="#original_map_svg__term"
-        class="original_map_svg__sjubilee"
+        className="original_map_svg__sjubilee"
         id="original_map_svg__termjubilee"
       />
       <use
         xlinkHref="#original_map_svg__term"
-        class="original_map_svg__smetropolitan"
+        className="original_map_svg__smetropolitan"
         id="original_map_svg__termmetropolitan"
       />
       <use
         xlinkHref="#original_map_svg__term"
-        class="original_map_svg__snorthern"
+        className="original_map_svg__snorthern"
         id="original_map_svg__termnorthern"
       />
       <use
         xlinkHref="#original_map_svg__term"
-        class="original_map_svg__spiccadilly"
+        className="original_map_svg__spiccadilly"
         id="original_map_svg__termpiccadilly"
       />
       <use
         xlinkHref="#original_map_svg__term"
-        class="original_map_svg__svictoria"
+        className="original_map_svg__svictoria"
         id="original_map_svg__termvictoria"
       />
       <use
         xlinkHref="#original_map_svg__term"
-        class="original_map_svg__sdlr"
+        className="original_map_svg__sdlr"
         id="original_map_svg__termdlr"
       />
       <use
         xlinkHref="#original_map_svg__term"
-        class="original_map_svg__sog"
+        className="original_map_svg__sog"
         id="original_map_svg__termog"
       />
       <use
         xlinkHref="#original_map_svg__term"
-        class="original_map_svg__selizabeth"
+        className="original_map_svg__selizabeth"
         id="original_map_svg__termelizabeth"
       />
       <use
         xlinkHref="#original_map_svg__termx"
-        class="original_map_svg__selizabeth"
+        className="original_map_svg__selizabeth"
         id="original_map_svg__termelizabethx"
       />
       <use
         xlinkHref="#original_map_svg__termx"
-        class="original_map_svg__snorthern"
+        className="original_map_svg__snorthern"
         id="original_map_svg__termnorthernx"
       />
       <use
         xlinkHref="#original_map_svg__termx"
-        class="original_map_svg__sog"
+        className="original_map_svg__sog"
         id="original_map_svg__termogx"
       />
       <use
         xlinkHref="#original_map_svg__st"
-        class="original_map_svg__sbakerloo"
+        className="original_map_svg__sbakerloo"
         id="original_map_svg__stbakerloo"
       />
       <use
         xlinkHref="#original_map_svg__st"
-        class="original_map_svg__scentral"
+        className="original_map_svg__scentral"
         id="original_map_svg__stcentral"
       />
       <use
         xlinkHref="#original_map_svg__st"
-        class="original_map_svg__sdistrict"
+        className="original_map_svg__sdistrict"
         id="original_map_svg__stdistrict"
       />
       <use
         xlinkHref="#original_map_svg__st"
-        class="original_map_svg__sjubilee"
+        className="original_map_svg__sjubilee"
         id="original_map_svg__stjubilee"
       />
       <use
         xlinkHref="#original_map_svg__st"
-        class="original_map_svg__smetropolitan"
+        className="original_map_svg__smetropolitan"
         id="original_map_svg__stmetropolitan"
       />
       <use
         xlinkHref="#original_map_svg__st"
-        class="original_map_svg__snorthern"
+        className="original_map_svg__snorthern"
         id="original_map_svg__stnorthern"
       />
       <use
         xlinkHref="#original_map_svg__st"
-        class="original_map_svg__spiccadilly"
+        className="original_map_svg__spiccadilly"
         id="original_map_svg__stpiccadilly"
       />
       <use
         xlinkHref="#original_map_svg__st"
-        class="original_map_svg__svictoria"
+        className="original_map_svg__svictoria"
         id="original_map_svg__stvictoria"
       />
       <use
         xlinkHref="#original_map_svg__st"
-        class="original_map_svg__sdlr"
+        className="original_map_svg__sdlr"
         id="original_map_svg__stdlr"
       />
       <use
         xlinkHref="#original_map_svg__st"
-        class="original_map_svg__sog"
+        className="original_map_svg__sog"
         id="original_map_svg__stog"
       />
       <use
         xlinkHref="#original_map_svg__st"
-        class="original_map_svg__selizabeth"
+        className="original_map_svg__selizabeth"
         id="original_map_svg__stelizabeth"
       />
       <use
         xlinkHref="#original_map_svg__st"
-        class="original_map_svg__sgreenford"
+        className="original_map_svg__sgreenford"
         id="original_map_svg__stgreenford"
       />
       <g id="original_map_svg__termmetropolitan2">
         <use
           xlinkHref="#original_map_svg__termb"
-          class="original_map_svg__meb"
+          className="original_map_svg__meb"
           style={{
             stroke: "#fff",
           }}
@@ -168,27 +168,27 @@ const SvgOriginalMap = (props) => (
       <g id="original_map_svg__stcircle">
         <use
           xlinkHref="#original_map_svg__stb"
-          class="original_map_svg__meb original_map_svg__bcircle"
+          className="original_map_svg__meb original_map_svg__bcircle"
         />
         <use
           xlinkHref="#original_map_svg__st"
-          class="original_map_svg__scircle"
+          className="original_map_svg__scircle"
         />
       </g>
       <g id="original_map_svg__sthnc">
         <use
           xlinkHref="#original_map_svg__stb"
-          class="original_map_svg__meb original_map_svg__bhnc"
+          className="original_map_svg__meb original_map_svg__bhnc"
         />
         <use
           xlinkHref="#original_map_svg__st"
-          class="original_map_svg__shnc"
+          className="original_map_svg__shnc"
         />
       </g>
       <g id="original_map_svg__stmetropolitan2">
         <use
           xlinkHref="#original_map_svg__stb"
-          class="original_map_svg__meb"
+          className="original_map_svg__meb"
           style={{
             stroke: "#fff",
           }}
@@ -198,7 +198,7 @@ const SvgOriginalMap = (props) => (
       <g id="original_map_svg__stpiccadilly2">
         <use
           xlinkHref="#original_map_svg__stb"
-          class="original_map_svg__meb"
+          className="original_map_svg__meb"
           style={{
             stroke: "#fff",
           }}
@@ -208,28 +208,28 @@ const SvgOriginalMap = (props) => (
       <g id="original_map_svg__stmetropolitanx">
         <use
           xlinkHref="#original_map_svg__stx"
-          class="original_map_svg__smetropolitan"
+          className="original_map_svg__smetropolitan"
         />
         <use xlinkHref="#original_map_svg__stxm" />
       </g>
       <g id="original_map_svg__stnorthernx">
         <use
           xlinkHref="#original_map_svg__stx"
-          class="original_map_svg__snorthern"
+          className="original_map_svg__snorthern"
         />
         <use xlinkHref="#original_map_svg__stxm" />
       </g>
       <g id="original_map_svg__stogx">
         <use
           xlinkHref="#original_map_svg__stx"
-          class="original_map_svg__sog"
+          className="original_map_svg__sog"
         />
         <use xlinkHref="#original_map_svg__stxm" />
       </g>
       <g id="original_map_svg__stpiccadillye">
         <use
           xlinkHref="#original_map_svg__stx"
-          class="original_map_svg__spiccadilly"
+          className="original_map_svg__spiccadilly"
         />
         <path
           style={{
@@ -243,14 +243,14 @@ const SvgOriginalMap = (props) => (
       <g id="original_map_svg__stelizabethx">
         <use
           xlinkHref="#original_map_svg__stx"
-          class="original_map_svg__selizabeth"
+          className="original_map_svg__selizabeth"
         />
         <use xlinkHref="#original_map_svg__stxm" />
       </g>
       <g id="original_map_svg__stgreenfordx">
         <use
           xlinkHref="#original_map_svg__stx"
-          class="original_map_svg__sgreenford"
+          className="original_map_svg__sgreenford"
         />
         <use xlinkHref="#original_map_svg__stxm" />
       </g>
@@ -497,12 +497,12 @@ const SvgOriginalMap = (props) => (
         />
       </g>
       <path
-        class="original_map_svg__me"
+        className="original_map_svg__me"
         d="M-7.5 0h15"
         id="original_map_svg__term"
       />
       <path
-        class="original_map_svg__me"
+        className="original_map_svg__me"
         style={{
           strokeWidth: 5.5,
         }}
@@ -518,12 +518,12 @@ const SvgOriginalMap = (props) => (
         id="original_map_svg__termx"
       />
       <path
-        class="original_map_svg__me"
+        className="original_map_svg__me"
         d="M1 0h6.5"
         id="original_map_svg__st"
       />
       <path
-        class="original_map_svg__me"
+        className="original_map_svg__me"
         style={{
           strokeWidth: 5.5,
         }}
@@ -584,7 +584,7 @@ const SvgOriginalMap = (props) => (
       />
       <circle
         r={4}
-        class="original_map_svg__ftl"
+        className="original_map_svg__ftl"
         id="original_map_svg__sttl"
       />
       <rect
@@ -593,7 +593,7 @@ const SvgOriginalMap = (props) => (
         width={16}
         height={16}
         rx={5}
-        class="original_map_svg__fog"
+        className="original_map_svg__fog"
         id="original_map_svg__route_base"
       />
     </defs>
@@ -602,7 +602,7 @@ const SvgOriginalMap = (props) => (
         style={{
           visibility: "visible",
         }}
-        class="original_map_svg__progress"
+        className="original_map_svg__progress"
       >
         <path
           style={{
@@ -626,7 +626,7 @@ const SvgOriginalMap = (props) => (
         <g
           fontSize={20}
           fill="#edc"
-          class="original_map_svg__b original_map_svg__mid"
+          className="original_map_svg__b original_map_svg__mid"
         >
           <text x={1065} y={700}>
             {"Zone 1"}
@@ -649,7 +649,7 @@ const SvgOriginalMap = (props) => (
       </g>
       <g
         id="original_map_svg__Thames_stripe"
-        class="original_map_svg__progress"
+        className="original_map_svg__progress"
       >
         <path
           style={{
@@ -668,7 +668,7 @@ const SvgOriginalMap = (props) => (
         />
         <text
           transform="rotate(-36.78 1974.727 -858.316)"
-          class="original_map_svg__st original_map_svg__rn original_map_svg__b"
+          className="original_map_svg__st original_map_svg__rn original_map_svg__b"
         >
           {"River "}
           <tspan dx={15}>{"Thames"}</tspan>
@@ -676,13 +676,13 @@ const SvgOriginalMap = (props) => (
         <text
           x={1520}
           y={643}
-          class="original_map_svg__st original_map_svg__rn original_map_svg__b"
+          className="original_map_svg__st original_map_svg__rn original_map_svg__b"
         >
           {"River Thames"}
         </text>
         <text
           transform="rotate(-36.78 2180.229 -3071.437)"
-          class="original_map_svg__st original_map_svg__rn original_map_svg__b"
+          className="original_map_svg__st original_map_svg__rn original_map_svg__b"
         >
           {"River "}
           <tspan dx={7}>{"Thames"}</tspan>
@@ -695,8 +695,8 @@ const SvgOriginalMap = (props) => (
         cursor: "pointer",
       }}
     >
-      <g class="original_map_svg__me original_map_svg__selizabeth">
-        <g class="original_map_svg__xb">
+      <g className="original_map_svg__me original_map_svg__selizabeth">
+        <g className="original_map_svg__xb">
           <path
             id="original_map_svg__Elizabeth_route_x"
             d="m1700 532.5 10 7.5a50 50 0 0 0 30 10h61a50 50 0 0 0 50-50v-52.5a50 50 0 0 1 20-40L2377 28"
@@ -704,7 +704,7 @@ const SvgOriginalMap = (props) => (
         </g>
         <use
           xlinkHref="#original_map_svg__Elizabeth_route_x"
-          class="original_map_svg__mex"
+          className="original_map_svg__mex"
           id="original_map_svg__Elizabeth_x_stripe"
         />
         <path
@@ -713,32 +713,32 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__Elizabeth_route"
-          class="original_map_svg__mes"
+          className="original_map_svg__mes"
           id="original_map_svg__Elizabeth_stripe"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__selizabeth">
+      <g className="original_map_svg__me original_map_svg__selizabeth">
         <path
           id="original_map_svg__Elizabeth_Heathrow_route"
           d="M0 480v213.9a30 30 0 0 0 30 30h130m0 0h-10a45 45 0 0 0-45 45v177.6a20 20 0 0 1-20 20H30m75-20v55.5m55-278.1h320a60 60 0 0 0 30-10L647.2 611a60 60 0 0 1 30-10h225.04"
         />
         <use
           xlinkHref="#original_map_svg__Elizabeth_Heathrow_route"
-          class="original_map_svg__mes"
+          className="original_map_svg__mes"
           id="original_map_svg__Elizabeth_Heathrow_stripe"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__swnc">
+      <g className="original_map_svg__me original_map_svg__swnc">
         <path
           id="original_map_svg__Waterloo_and_City_line_route"
           d="M1469.5 558v5q0 20-16 32l-103.14 77.355q-16 12-16 32v29.625"
         />
         <use
           xlinkHref="#original_map_svg__Waterloo_and_City_line_route"
-          class="original_map_svg__swnc2"
+          className="original_map_svg__swnc2"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__sjubilee">
+      <g className="original_map_svg__me original_map_svg__sjubilee">
         <path
           id="original_map_svg__Jubilee_line_route"
           d="M651 162v132a15 15 0 0 0 15 15h195q20 0 32 16l300 400q12 16 32 16h85q15 0 27-9l64-48q12-9 27-9h282q15 0 27-9l12-9q12-9 27-9h230a20 20 0 0 0 20-20V405a45 45 0 0 0-9-27l-36-48"
@@ -746,37 +746,37 @@ const SvgOriginalMap = (props) => (
       </g>
       <use
         xlinkHref="#original_map_svg__Hammersmith_and_City_line_route"
-        class="original_map_svg__meb original_map_svg__bhnc"
+        className="original_map_svg__meb original_map_svg__bhnc"
       />
       <use
         xlinkHref="#original_map_svg__Circle_line_route"
-        class="original_map_svg__meb original_map_svg__bcircle"
+        className="original_map_svg__meb original_map_svg__bcircle"
       />
-      <g class="original_map_svg__me original_map_svg__scentral">
+      <g className="original_map_svg__me original_map_svg__scentral">
         <path
           id="original_map_svg__Central_line_route"
           d="M340 718.9h20q15 0 27-9l28-21a40 40 0 0 1 48 0l35 26q12 9 27 9h412q15 0 27-9L1212 529q12-9 27-9h136q20 0 32 16l15 20q12 16 32 16 15 0 27-9l136-102q12-9 27-9h136q15 0 27-9l176-132a30 30 0 0 0 6-42l-54-72q-9-12-9-27v-274M624 723.9h-99q-15 0-27-9l-340-255q-16-12-16-32V277.5M1926 150a30 30 0 0 1 30-30h125a30 30 0 0 0 30-30V40a30 30 0 0 0-30-30h-120a30 30 0 0 0-30 30v6"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__snorthern">
+      <g className="original_map_svg__me original_map_svg__snorthern">
         <path
           id="original_map_svg__Northern_line_route"
           d="M706 124.5 902.67 272q12 9 27 9H1165a37 37 0 0 1 37 37v42q0 13-19.5 26t-19.5 26v49.667q0 10 6 18L1278 625q9 12 9 25t9 25l94.875 126.5a30 30 0 0 1-6.5 42l-42 31.5q-12 9-27 9H1240.5q-15 0-27 9l-33.33 25.25q-12 9-27 9H1134M1350.375 869q-5 3.75-5 10t-5 10M854 4.5 1124 207q16 12 16 32v17a25 25 0 0 0 25 25 25 25 0 0 1 25 25v55a18.5 18.5 0 0 0 18.5 18.5H1389a90 90 0 0 1 90 90V765q0 20-16 32l-462.5 347M980 99q-12-9-27-9h-40"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__svictoria">
+      <g className="original_map_svg__me original_map_svg__svictoria">
         <path
           id="original_map_svg__Victoria_line_route"
           d="M1682 113h-259a30 30 0 0 0-30 30v40q0 15 9 27l9 12q9 12 9 27v85.5a40 40 0 0 1-40 40h-187a40 40 0 0 0-40 40v320.83q0 20 12 36L1305 958"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__sbakerloo">
+      <g className="original_map_svg__me original_map_svg__sbakerloo">
         <path
           id="original_map_svg__Bakerloo_line_route"
           d="M529 239v82a45 45 0 0 0 18 36l329 246.75a45 45 0 0 0 54 0c28-21 12-37.5 40-58.5l1-.75 26-19.5q10.67-9 24-8h70q20 0 32 16l10.5 14 76.5 102q12 16 32 16h14.5q20 0 32 16l53.25 71a40 40 0 0 0 32 16H1475"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__spiccadilly">
+      <g className="original_map_svg__me original_map_svg__spiccadilly">
         <path
           id="original_map_svg__Piccadilly_line_route"
           d="M20 299h288a40 40 0 0 1 24 8l36 27a40 40 0 0 1 16 32v327.4a40 40 0 0 0 16 32l160 120a45 45 0 0 0 27 9h433.3a130.5 130.5 0 0 0 78.3-26.1q16-12 16-32v-75.5a40 40 0 0 1 16-32L1274 581.25a40 40 0 0 0 16-32V292q0-20 16-32l61-45.75q16-12 16-32V130q0-20-16-32L1155-60M637 854.4h-50a45 45 0 0 1-27-9L470 778a70 70 0 0 0-84 0L160 947.5q-12 9-27 9H30m130-9-60 45a20 20 0 1 1-21.08-33.82"
@@ -795,35 +795,35 @@ const SvgOriginalMap = (props) => (
         xlinkHref="#original_map_svg__STRg"
         transform="rotate(-126.87 306.25 455)"
       />
-      <g class="original_map_svg__me original_map_svg__sdlr">
+      <g className="original_map_svg__me original_map_svg__sdlr">
         <path
           id="original_map_svg__DLR_routes"
           d="M1481.5 570h115q10 0 22.5 7.5t22.5 7.5H1860a20 20 0 0 1 20 20v325m-278.5-345H2370a20 20 0 0 0 20-20v-50m-510 415V605a20 20 0 0 1 8-16l4-3a20 20 0 0 0 8-16V450m50-178 75 100a55 55 0 0 1 11 33v160a20 20 0 0 0 20 20h2.67a20 20 0 0 1 12 4L2212 695q12 9 27 9h49"
         />
         <use
           xlinkHref="#original_map_svg__DLR_routes"
-          class="original_map_svg__sdlr2"
+          className="original_map_svg__sdlr2"
           id="original_map_svg__DLR_routes_stripe"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__sdistrict">
+      <g className="original_map_svg__me original_map_svg__sdistrict">
         <path
           id="original_map_svg__District_Olympia_branch"
           d="M871 869.4h-4a36 36 0 0 1-36-36V819"
         />
         <use
           xlinkHref="#original_map_svg__District_Olympia_branch"
-          class="original_map_svg__branch"
+          className="original_map_svg__branch"
           id="original_map_svg__District_Olympia_branch_stripe"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__sdistrict">
+      <g className="original_map_svg__me original_map_svg__sdistrict">
         <path
           id="original_map_svg__District_line_route"
           d="m987 567-54 40.5a145.5 145.5 0 0 0-29.1 203.7 36.375 36.375 0 0 1-29.1 58.2H867a36 36 0 0 0-36 36v55.1a45 45 0 0 0 9 27l99 132M340 728.9h19.67a60 60 0 0 1 36 12L551 857.4a60 60 0 0 0 36 12h433a145.5 145.5 0 0 0 87.3-29.1L1433 596.5a45 45 0 0 1 27-9h103a46 46 0 0 0 27.6-9.2l14.67-11q12-9 27-9H1653a50 50 0 0 0 30-10l137.07-102.8a45 45 0 0 1 27-9H2041a50 50 0 0 0 30-10L2401 179M637 869.4h-50a60 60 0 0 1-36-12l-36-27a45 45 0 0 0-54.75 0l-99.25 75"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__sog">
+      <g className="original_map_svg__me original_map_svg__sog">
         <g id="original_map_svg__North_and_West_London_Lines_route">
           <path
             id="original_map_svg__West_London_Line_route"
@@ -836,40 +836,40 @@ const SvgOriginalMap = (props) => (
         </g>
         <use
           xlinkHref="#original_map_svg__North_and_West_London_Lines_route"
-          class="original_map_svg__mes"
+          className="original_map_svg__mes"
           id="original_map_svg__North_and_West_London_Lines_route_stripe"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__shnc">
+      <g className="original_map_svg__me original_map_svg__shnc">
         <path
           id="original_map_svg__Hammersmith_and_City_line_route"
           d="M981 559a61.25 61.25 0 0 1-36.75 12.25h-15a66.25 66.25 0 0 0-39.75 13.25l-30 22.5a45 45 0 0 1-27 9h-60a50 50 0 0 0-30 10l-90 67.5a45 45 0 0 0-18 36V835M981 559l192-144a148.2 148.2 0 0 1 207.5 29.64L1407 479a40 40 0 0 0 32 16h124a46 46 0 0 1 36.8 18.4l18 24q12 16 32 16h3.2a45 45 0 0 0 27-9l137.07-102.9a50 50 0 0 1 30-10H2041a45 45 0 0 0 27-9l90-67.5"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__scircle">
+      <g className="original_map_svg__me original_map_svg__scircle">
         <path
           id="original_map_svg__Circle_line_route"
           d="m990 571-54 40.5a140.5 140.5 0 0 0 168.6 224.8L1430 592.5a50 50 0 0 1 30-10h103a41 41 0 0 0 0-82.5m-579 63a66.25 66.25 0 0 1-39.75 13.25h-15a61.25 61.25 0 0 0-36.75 12.25l-30 21.5a50 50 0 0 1-30 10h-60a45 45 0 0 0-27 9l-90 68.5a40 40 0 0 0-16 32V835M984 563l192-144a143.2 143.2 0 0 1 200.48 28.64L1403 482a45 45 0 0 0 36 18h124"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__sog">
+      <g className="original_map_svg__me original_map_svg__sog">
         <path
           id="original_map_svg__Watford_DC_Line_route"
           d="M534 20v301a40 40 0 0 0 16 32l212 159"
         />
         <use
           xlinkHref="#original_map_svg__Watford_DC_Line_route"
-          class="original_map_svg__mes"
+          className="original_map_svg__mes"
           id="original_map_svg__Watford_DC_Line_stripe"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__smetropolitan">
+      <g className="original_map_svg__me original_map_svg__smetropolitan">
         <path
           id="original_map_svg__Metropolitan_line_route"
           d="m100 60 300 225q12 9 27 9h434a55 55 0 0 1 44 22l141 188a15 15 0 0 0 21 3l112-84a138.2 138.2 0 0 1 193.48 27.64L1399 485a50 50 0 0 0 40 20h124a36 36 0 0 1 36 36M140 90q-16-12-16-32V38m115 126.25q-16-12-16-32V80M20 294h420"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__sog">
+      <g className="original_map_svg__me original_map_svg__sog">
         <path
           id="original_map_svg__Watford_DC_Line_route_over"
           d="m762 512 16 12a45 45 0 0 0 54 0l200.2-150.15q12-9 27-9h113.732"
@@ -877,28 +877,28 @@ const SvgOriginalMap = (props) => (
       </g>
       <use
         xlinkHref="#original_map_svg__Watford_DC_Line_route_over"
-        class="original_map_svg__mes"
+        className="original_map_svg__mes"
         id="original_map_svg__Watford_DC_Line_over_stripe"
       />
-      <g class="original_map_svg__me original_map_svg__selizabeth">
+      <g className="original_map_svg__me original_map_svg__selizabeth">
         <path
           id="original_map_svg__Elizabeth_Shenfield_route"
           d="M1564 475h166.58a50 50 0 0 0 30-10l85.42-64a50 50 0 0 1 30-10 50 50 0 0 0 30-10l471-353"
         />
         <use
           xlinkHref="#original_map_svg__Elizabeth_Shenfield_route"
-          class="original_map_svg__mes"
+          className="original_map_svg__mes"
           id="original_map_svg__Elizabeth_Shenfield_stripe"
         />
       </g>
-      <g class="original_map_svg__me original_map_svg__sog">
-        <g class="original_map_svg__me original_map_svg__xb">
+      <g className="original_map_svg__me original_map_svg__sog">
+        <g className="original_map_svg__me original_map_svg__xb">
           <path
             id="original_map_svg__Gospel_Oak_to_Barking_Line_extension_route"
             d="m2159.5 357 45 60q12 16 32 16H2390"
           />
         </g>
-        <g class="original_map_svg__mex">
+        <g className="original_map_svg__mex">
           <use
             xlinkHref="#original_map_svg__Gospel_Oak_to_Barking_Line_extension_route"
             id="original_map_svg__Gospel_Oak_to_Barking_Line_extension_route_stripe"
@@ -910,7 +910,7 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__Gospel_Oak_to_Barking_Line_route"
-          class="original_map_svg__mes"
+          className="original_map_svg__mes"
           id="original_map_svg__Gospel_Oak_to_Barking_Line_route_stripe"
         />
         <path
@@ -919,7 +919,7 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__Seven_Sisters_Line_routes"
-          class="original_map_svg__mes"
+          className="original_map_svg__mes"
           id="original_map_svg__Seven_Sisters_Line_routes_stripe"
         />
         <path
@@ -928,10 +928,10 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__Romford_to_Upminster_Line_route"
-          class="original_map_svg__mes"
+          className="original_map_svg__mes"
           id="original_map_svg__Romford_to_Upminster_Line_route_stripe"
         />
-        <g class="original_map_svg__me original_map_svg__sog">
+        <g className="original_map_svg__me original_map_svg__sog">
           <path
             id="original_map_svg__East_London_Line_Battersea_Park_branch"
             d="M1240.5 946H1110"
@@ -939,7 +939,7 @@ const SvgOriginalMap = (props) => (
         </g>
         <use
           xlinkHref="#original_map_svg__East_London_Line_Battersea_Park_branch"
-          class="original_map_svg__branch"
+          className="original_map_svg__branch"
           id="original_map_svg__East_London_Line_Battersea_Park_branch_stripe"
         />
         <path
@@ -948,23 +948,23 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__East_and_South_London_Lines_route"
-          class="original_map_svg__mes"
+          className="original_map_svg__mes"
           id="original_map_svg__East_and_South_London_Lines_route_stripe"
         />
       </g>
       <path
         id="original_map_svg__Central_line_route_over"
-        class="original_map_svg__me original_map_svg__scentral"
+        className="original_map_svg__me original_map_svg__scentral"
         d="M142 277.5V394"
       />
-      <g class="original_map_svg__me original_map_svg__sdlr">
+      <g className="original_map_svg__me original_map_svg__sdlr">
         <path
           id="original_map_svg__DLR_route_over"
           d="M1900 450v-32a40 40 0 0 1 16-32l73-54.75"
         />
         <use
           xlinkHref="#original_map_svg__DLR_route_over"
-          class="original_map_svg__sdlr2"
+          className="original_map_svg__sdlr2"
           id="original_map_svg__DLR_route_stripe_over"
         />
       </g>
@@ -996,7 +996,7 @@ const SvgOriginalMap = (props) => (
       <text
         x={105}
         y={17}
-        class="original_map_svg__b original_map_svg__mid"
+        className="original_map_svg__b original_map_svg__mid"
         style={{
           fontSize: 15,
           fill: "#fff",
@@ -1020,15 +1020,15 @@ const SvgOriginalMap = (props) => (
       />
       <use xlinkHref="#original_map_svg__nr" transform="translate(53 92)" />
       <use xlinkHref="#original_map_svg__sttlnr" x={80} y={93} />
-      <path class="original_map_svg__osi" d="m43 125 15 20" />
+      <path className="original_map_svg__osi" d="m43 125 15 20" />
       <use xlinkHref="#original_map_svg__int" x={43} y={125} />
       <use xlinkHref="#original_map_svg__int" x={58} y={145} />
-      <g class="original_map_svg__me original_map_svg__snorthern">
+      <g className="original_map_svg__me original_map_svg__snorthern">
         <path id="original_map_svg__legend_branch" d="M17 178h65" />
       </g>
       <use
         xlinkHref="#original_map_svg__legend_branch"
-        class="original_map_svg__branch"
+        className="original_map_svg__branch"
       />
       <use xlinkHref="#original_map_svg__airport" x={53} y={213} />
       <g
@@ -1093,7 +1093,7 @@ const SvgOriginalMap = (props) => (
       <text
         x={205}
         y={17}
-        class="original_map_svg__b original_map_svg__mid"
+        className="original_map_svg__b original_map_svg__mid"
         style={{
           fontSize: 15,
           fill: "#fff",
@@ -1101,58 +1101,58 @@ const SvgOriginalMap = (props) => (
       >
         {"Key to lines"}
       </text>
-      <g class="original_map_svg__me">
-        <path class="original_map_svg__sbakerloo" d="M10 65h190" />
-        <path class="original_map_svg__scentral" d="M10 87h190" />
-        <path class="original_map_svg__scircle" d="M10 109h190" />
-        <path class="original_map_svg__sdistrict" d="M10 131h190" />
-        <path class="original_map_svg__shnc" d="M10 153h190" />
-        <path class="original_map_svg__sjubilee" d="M10 175h190" />
-        <path class="original_map_svg__smetropolitan" d="M210 65h190" />
-        <path class="original_map_svg__snorthern" d="M210 87h190" />
-        <path class="original_map_svg__spiccadilly" d="M210 109h190" />
-        <path class="original_map_svg__svictoria" d="M210 131h190" />
-        <g class="original_map_svg__swnc">
+      <g className="original_map_svg__me">
+        <path className="original_map_svg__sbakerloo" d="M10 65h190" />
+        <path className="original_map_svg__scentral" d="M10 87h190" />
+        <path className="original_map_svg__scircle" d="M10 109h190" />
+        <path className="original_map_svg__sdistrict" d="M10 131h190" />
+        <path className="original_map_svg__shnc" d="M10 153h190" />
+        <path className="original_map_svg__sjubilee" d="M10 175h190" />
+        <path className="original_map_svg__smetropolitan" d="M210 65h190" />
+        <path className="original_map_svg__snorthern" d="M210 87h190" />
+        <path className="original_map_svg__spiccadilly" d="M210 109h190" />
+        <path className="original_map_svg__svictoria" d="M210 131h190" />
+        <g className="original_map_svg__swnc">
           <path id="original_map_svg__legend_swnc" d="M210 153h190" />
         </g>
-        <g class="original_map_svg__sog">
+        <g className="original_map_svg__sog">
           <path id="original_map_svg__legend_sog" d="M10 205h390" />
         </g>
-        <g class="original_map_svg__selizabeth">
+        <g className="original_map_svg__selizabeth">
           <path id="original_map_svg__legend_selizabeth" d="M10 370h390" />
         </g>
-        <g class="original_map_svg__sdlr">
+        <g className="original_map_svg__sdlr">
           <path id="original_map_svg__legend_sdlr" d="M10 405h210" />
         </g>
-        <g class="original_map_svg__stl">
+        <g className="original_map_svg__stl">
           <path id="original_map_svg__legend_stl" d="M250 405h150" />
         </g>
       </g>
       <use
         xlinkHref="#original_map_svg__legend_swnc"
-        class="original_map_svg__swnc2"
+        className="original_map_svg__swnc2"
       />
       <use
         xlinkHref="#original_map_svg__legend_sog"
-        class="original_map_svg__mes"
+        className="original_map_svg__mes"
       />
       <use
         xlinkHref="#original_map_svg__legend_sdlr"
-        class="original_map_svg__sdlr2"
+        className="original_map_svg__sdlr2"
       />
       <use
         xlinkHref="#original_map_svg__legend_selizabeth"
-        class="original_map_svg__mes"
+        className="original_map_svg__mes"
       />
-      <g class="original_map_svg__st">
-        <text class="original_map_svg__st" transform="translate(10 42)">
-          <tspan x={15} y={0} class="original_map_svg__b">
+      <g className="original_map_svg__st">
+        <text className="original_map_svg__st" transform="translate(10 42)">
+          <tspan x={15} y={0} className="original_map_svg__b">
             {"London Underground: "}
           </tspan>
           <tspan
             x={0}
             dy={18}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__lbakerloo"
           >
             {"Bakerloo line "}
@@ -1160,7 +1160,7 @@ const SvgOriginalMap = (props) => (
           <tspan
             x={0}
             dy={22}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__lcentral"
           >
             {"Central line "}
@@ -1168,7 +1168,7 @@ const SvgOriginalMap = (props) => (
           <tspan
             x={0}
             dy={22}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__lcircle"
           >
             {"Circle line "}
@@ -1176,7 +1176,7 @@ const SvgOriginalMap = (props) => (
           <tspan
             x={0}
             dy={22}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__ldistrict"
           >
             {"District line "}
@@ -1184,7 +1184,7 @@ const SvgOriginalMap = (props) => (
           <tspan
             x={0}
             dy={22}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__lhnc"
           >
             {"Hammersmith & City line "}
@@ -1192,7 +1192,7 @@ const SvgOriginalMap = (props) => (
           <tspan
             x={0}
             dy={22}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__ljubilee"
           >
             {"Jubilee line "}
@@ -1200,7 +1200,7 @@ const SvgOriginalMap = (props) => (
           <tspan
             x={200}
             y={18}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__lmetropolitan"
           >
             {"Metropolitan line "}
@@ -1208,7 +1208,7 @@ const SvgOriginalMap = (props) => (
           <tspan
             x={200}
             dy={22}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__lnorthern"
           >
             {"Northern line "}
@@ -1216,7 +1216,7 @@ const SvgOriginalMap = (props) => (
           <tspan
             x={200}
             dy={22}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__lpiccadilly"
           >
             {"Piccadilly line "}
@@ -1224,7 +1224,7 @@ const SvgOriginalMap = (props) => (
           <tspan
             x={200}
             dy={22}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__lvictoria"
           >
             {"Victoria line "}
@@ -1232,20 +1232,20 @@ const SvgOriginalMap = (props) => (
           <tspan
             x={200}
             dy={22}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__lwnc"
           >
             {"Waterloo & City line "}
           </tspan>
         </text>
-        <text class="original_map_svg__st" transform="translate(10 200)">
-          <tspan x={15} y={0} class="original_map_svg__b">
+        <text className="original_map_svg__st" transform="translate(10 200)">
+          <tspan x={15} y={0} className="original_map_svg__b">
             {"London Overground: "}
           </tspan>
           <tspan
             x={10}
             dy={22}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__lwatford"
           >
             {"Watford Junction\u2013Euston "}
@@ -1253,7 +1253,7 @@ const SvgOriginalMap = (props) => (
           <tspan
             x={10}
             dy={20}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__lnw_london"
           >
             {"Richmond/Clapham Junction\u2013Stratford "}
@@ -1261,7 +1261,7 @@ const SvgOriginalMap = (props) => (
           <tspan
             x={10}
             dy={20}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__lgospel"
           >
             {"Gospel Oak\u2013Barking "}
@@ -1269,7 +1269,7 @@ const SvgOriginalMap = (props) => (
           <tspan
             x={10}
             dy={20}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__lse_london"
           >
             {
@@ -1282,7 +1282,7 @@ const SvgOriginalMap = (props) => (
           <tspan
             x={10}
             dy={20}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__l7sisters"
           >
             {"Liverpool Street\u2013Enfield Town/Cheshunt/Chingford "}
@@ -1290,7 +1290,7 @@ const SvgOriginalMap = (props) => (
           <tspan
             x={10}
             dy={20}
-            class="original_map_svg__tleg"
+            className="original_map_svg__tleg"
             id="original_map_svg__lromford"
           >
             {"Romford\u2013Upminster "}
@@ -1317,7 +1317,7 @@ const SvgOriginalMap = (props) => (
         <text
           x={10}
           y={365}
-          class="original_map_svg__tleg"
+          className="original_map_svg__tleg"
           id="original_map_svg__lelizabeth"
         >
           {"Elizabeth line (Crossrail)"}
@@ -1325,7 +1325,7 @@ const SvgOriginalMap = (props) => (
         <text
           x={10}
           y={400}
-          class="original_map_svg__tleg"
+          className="original_map_svg__tleg"
           id="original_map_svg__ldlr"
         >
           {"Docklands Light Railway (DLR)"}
@@ -1346,7 +1346,7 @@ const SvgOriginalMap = (props) => (
     />
     <g id="original_map_svg__interactivity" />
     <path
-      class="original_map_svg__stl"
+      className="original_map_svg__stl"
       id="original_map_svg__Tramlink_route"
       d="M939 1119.5h49q7.5 0 13.5 4.5l35.33 26.5q6 4.5 13.5 4.5H1740m-390 0q7.5 0 13.5-4.5l22.67-17q6-4.5 13.5-4.5h8.66q7.5 0 13.5 4.5l22.67 17q6 4.5 13.5 4.5m-70.5 0a10 10 0 0 1-6-18m148.5 18q7.5 0 13.5-4.5l172-129m-102 76.5q6-4.5 13.5-4.5h20"
     />
@@ -1358,7 +1358,7 @@ const SvgOriginalMap = (props) => (
           id="original_map_svg__Acton_Town"
         />
         <g id="original_map_svg__Fenchurch_Street" cursor="help">
-          <g class="original_map_svg__osib">
+          <g className="original_map_svg__osib">
             <path
               id="original_map_svg__Fenchurch_Street_osi_base"
               d="M1601.5 541.5 1563 585m19.25-21.75L1601.5 585m-19.25-21.75h-59q-15 0-27 9l-4 3"
@@ -1366,7 +1366,7 @@ const SvgOriginalMap = (props) => (
           </g>
           <use
             xlinkHref="#original_map_svg__Fenchurch_Street_osi_base"
-            class="original_map_svg__osi"
+            className="original_map_svg__osi"
             style={{
               stroke: "#ef2721",
             }}
@@ -1377,7 +1377,7 @@ const SvgOriginalMap = (props) => (
           </g>
           <text
             transform="matrix(.9 0 0 1 1575 560)"
-            class="original_map_svg__end"
+            className="original_map_svg__end"
             style={{
               fill: "#ef2721",
               fontSize: 10,
@@ -1387,7 +1387,7 @@ const SvgOriginalMap = (props) => (
           </text>
         </g>
         <g id="original_map_svg__Aldgate">
-          <g class="original_map_svg__osib">
+          <g className="original_map_svg__osib">
             <path
               id="original_map_svg__Aldgate-Tower_Gateway_osi_base"
               d="M1601.5 541.5V585"
@@ -1395,11 +1395,11 @@ const SvgOriginalMap = (props) => (
           </g>
           <use
             xlinkHref="#original_map_svg__Aldgate-Tower_Gateway_osi_base"
-            class="original_map_svg__osi"
+            className="original_map_svg__osi"
           />
           <use xlinkHref="#original_map_svg__int" x={1601.5} y={541.5} />
         </g>
-        <g class="original_map_svg__osib">
+        <g className="original_map_svg__osib">
           <path
             id="original_map_svg__Tower_Hill-Tower_Gateway_osi_base"
             d="M1563 585h38.5"
@@ -1407,7 +1407,7 @@ const SvgOriginalMap = (props) => (
         </g>
         <use
           xlinkHref="#original_map_svg__Tower_Hill-Tower_Gateway_osi_base"
-          class="original_map_svg__osi"
+          className="original_map_svg__osi"
         />
         <use
           xlinkHref="#original_map_svg__int"
@@ -1427,7 +1427,7 @@ const SvgOriginalMap = (props) => (
           y={556}
           id="original_map_svg__Aldgate_East"
         />
-        <path class="original_map_svg__osi" d="M1074 169.5h33" />
+        <path className="original_map_svg__osi" d="M1074 169.5h33" />
         <use
           xlinkHref="#original_map_svg__int"
           x={1074}
@@ -1524,9 +1524,9 @@ const SvgOriginalMap = (props) => (
         </g>
         <use
           xlinkHref="#original_map_svg__Barbican_Farringdon_osi"
-          class="original_map_svg__osib"
+          className="original_map_svg__osib"
         />
-        <g class="original_map_svg__osi">
+        <g className="original_map_svg__osi">
           <path
             id="original_map_svg__Barbican_Farringdon_osi"
             d="M1386 459.625V493h29"
@@ -1544,7 +1544,7 @@ const SvgOriginalMap = (props) => (
           y={493}
           id="original_map_svg__Farringdon_elizabeth_base"
         />
-        <path class="original_map_svg__isi" d="M1386 493v-33.375" />
+        <path className="original_map_svg__isi" d="M1386 493v-33.375" />
         <use
           xlinkHref="#original_map_svg__intnrtop"
           x={1386}
@@ -1557,7 +1557,7 @@ const SvgOriginalMap = (props) => (
           y={493}
           id="original_map_svg__Farringdon_elizabeth_top"
         />
-        <path class="original_map_svg__isit" d="M1386 493v-33.375" />
+        <path className="original_map_svg__isit" d="M1386 493v-33.375" />
         <use xlinkHref="#original_map_svg__nr" x={1386} y={459.625} />
         <use
           xlinkHref="#original_map_svg__int"
@@ -1595,9 +1595,9 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__Bow_osi"
-          class="original_map_svg__osib"
+          className="original_map_svg__osib"
         />
-        <g class="original_map_svg__osi">
+        <g className="original_map_svg__osi">
           <path id="original_map_svg__Bow_osi" d="m1900 418-22 16" />
         </g>
         <use
@@ -1614,9 +1614,9 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__Brondesbury_Kilburn_osi"
-          class="original_map_svg__osib"
+          className="original_map_svg__osib"
         />
-        <g class="original_map_svg__osi">
+        <g className="original_map_svg__osi">
           <path
             id="original_map_svg__Brondesbury_Kilburn_osi"
             d="M861 331.5a5 5 0 0 1-2 4l-40.5 30.375a5 5 0 0 0-2 4"
@@ -1640,7 +1640,7 @@ const SvgOriginalMap = (props) => (
         />
         <g cursor="help">
           <path
-            class="original_map_svg__osi"
+            className="original_map_svg__osi"
             d="M1893.5 585v63l-13.5 13m0-52.5 13.5 13.5-13.5 13 13.5 13"
           />
           <use
@@ -1674,7 +1674,7 @@ const SvgOriginalMap = (props) => (
           y={585}
           id="original_map_svg__Poplar"
         />
-        <path class="original_map_svg__osi" d="m1165 281 20.33-15" />
+        <path className="original_map_svg__osi" d="m1165 281 20.33-15" />
         <use
           xlinkHref="#original_map_svg__int"
           x={1185.33}
@@ -1704,7 +1704,7 @@ const SvgOriginalMap = (props) => (
           y={671.26}
           id="original_map_svg__Charing_Cross"
         />
-        <path class="original_map_svg__osi" d="M1240.5 946v18" />
+        <path className="original_map_svg__osi" d="M1240.5 946v18" />
         <use
           xlinkHref="#original_map_svg__intnr"
           x={1240.5}
@@ -1723,7 +1723,7 @@ const SvgOriginalMap = (props) => (
           y={590}
           id="original_map_svg__Custom_House_for_ExCeL"
         />
-        <path class="original_map_svg__osi" d="m1583 295-18.375 42" />
+        <path className="original_map_svg__osi" d="m1583 295-18.375 42" />
         <use
           xlinkHref="#original_map_svg__int"
           x={1583}
@@ -1778,9 +1778,9 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__Euston_osi"
-          class="original_map_svg__osib"
+          className="original_map_svg__osib"
         />
-        <g class="original_map_svg__osi">
+        <g className="original_map_svg__osi">
           <path
             id="original_map_svg__Euston_osi"
             d="m1212 376.85-10.08 26.65-28.988-38.65H1212"
@@ -1799,7 +1799,7 @@ const SvgOriginalMap = (props) => (
             id="original_map_svg__Euston_Overground_NR"
           />
         </g>
-        <g class="original_map_svg__osib">
+        <g className="original_map_svg__osib">
           <path
             id="original_map_svg__Euston_Square-Warren_Street_osi"
             d="M1159.5 403.5h42.42"
@@ -1807,7 +1807,7 @@ const SvgOriginalMap = (props) => (
         </g>
         <use
           xlinkHref="#original_map_svg__Euston_Square-Warren_Street_osi"
-          class="original_map_svg__osi"
+          className="original_map_svg__osi"
         />
         <use
           xlinkHref="#original_map_svg__int"
@@ -1821,7 +1821,7 @@ const SvgOriginalMap = (props) => (
           y={403.5}
           id="original_map_svg__Warren_Street"
         />
-        <path class="original_map_svg__osi" d="M946 372v-35" />
+        <path className="original_map_svg__osi" d="M946 372v-35" />
         <use
           xlinkHref="#original_map_svg__cap2"
           transform="matrix(.8 -.6 .6 .8 935 381)"
@@ -1839,7 +1839,7 @@ const SvgOriginalMap = (props) => (
           y={183}
           id="original_map_svg__Finsbury_Park"
         />
-        <path class="original_map_svg__osi" d="M2041 258v22" />
+        <path className="original_map_svg__osi" d="M2041 258v22" />
         <use
           xlinkHref="#original_map_svg__int"
           transform="rotate(53.13 740.5 2181.005)"
@@ -1902,7 +1902,7 @@ const SvgOriginalMap = (props) => (
             d="m1639.5 281.375 16.17 12.125"
           />
         </g>
-        <path class="original_map_svg__osi" d="M637 835v34.4" />
+        <path className="original_map_svg__osi" d="M637 835v34.4" />
         <use
           xlinkHref="#original_map_svg__int"
           x={637}
@@ -1916,9 +1916,9 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__Hanger_Lane_Park_Royal_osi"
-          class="original_map_svg__osib"
+          className="original_map_svg__osib"
         />
-        <g class="original_map_svg__osi">
+        <g className="original_map_svg__osi">
           <path
             id="original_map_svg__Hanger_Lane_Park_Royal_osi"
             d="m372 620.4 12 22.6"
@@ -1975,9 +1975,9 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__West_Ruislip_Ickenham_osi"
-          class="original_map_svg__osib"
+          className="original_map_svg__osib"
         />
-        <g class="original_map_svg__osi">
+        <g className="original_map_svg__osi">
           <path
             id="original_map_svg__West_Ruislip_Ickenham_osi"
             d="m142 277.5-25.33 19"
@@ -1995,7 +1995,7 @@ const SvgOriginalMap = (props) => (
           y={296.5}
           id="original_map_svg__Ickenham"
         />
-        <path class="original_map_svg__osi" d="m1128 210-21.33 16" />
+        <path className="original_map_svg__osi" d="m1128 210-21.33 16" />
         <use
           xlinkHref="#original_map_svg__intnr"
           x={1128}
@@ -2010,9 +2010,9 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__Kenton_Northwick_Park_osi"
-          class="original_map_svg__osib"
+          className="original_map_svg__osib"
         />
-        <g class="original_map_svg__osi">
+        <g className="original_map_svg__osi">
           <path
             id="original_map_svg__Kenton_Northwick_Park_osi"
             d="m531.5 274-15 20"
@@ -2050,9 +2050,9 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__Leytonstone_High_Road_osi"
-          class="original_map_svg__osib"
+          className="original_map_svg__osib"
         />
-        <g class="original_map_svg__osi">
+        <g className="original_map_svg__osi">
           <path
             id="original_map_svg__Leytonstone_High_Road_osi"
             d="m1926 148 14 38"
@@ -2072,9 +2072,9 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__Liverpool_Street_Moorgate_osi"
-          class="original_map_svg__osib"
+          className="original_map_svg__osib"
         />
-        <g class="original_map_svg__osi">
+        <g className="original_map_svg__osi">
           <path
             id="original_map_svg__Liverpool_Street_Moorgate_osi"
             d="M1564 480v20"
@@ -2117,7 +2117,7 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__Moorgate-Liverpool_Street_isi"
-          class="original_map_svg__isi"
+          className="original_map_svg__isi"
         />
         <use
           xlinkHref="#original_map_svg__inttop"
@@ -2139,7 +2139,7 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__Moorgate-Liverpool_Street_isi"
-          class="original_map_svg__isit"
+          className="original_map_svg__isit"
         />
         <use
           xlinkHref="#original_map_svg__nr"
@@ -2153,7 +2153,7 @@ const SvgOriginalMap = (props) => (
           y={675}
           id="original_map_svg__London_Bridge"
         />
-        <path class="original_map_svg__osi" d="M2090 243.25v23.25" />
+        <path className="original_map_svg__osi" d="M2090 243.25v23.25" />
         <use
           xlinkHref="#original_map_svg__int"
           x={2090}
@@ -2185,7 +2185,7 @@ const SvgOriginalMap = (props) => (
           id="original_map_svg__Oxford_Circus"
         />
         <g cursor="help">
-          <g class="original_map_svg__osib">
+          <g className="original_map_svg__osib">
             <g id="original_map_svg__Paddington_osi_base">
               <path d="M921 574v19l-17.234 8M921 593l11.7 14.7" />
               <circle cx={921} cy={593} r={19} />
@@ -2193,7 +2193,7 @@ const SvgOriginalMap = (props) => (
           </g>
           <use
             xlinkHref="#original_map_svg__Paddington_osi_base"
-            class="original_map_svg__osi"
+            className="original_map_svg__osi"
             id="original_map_svg__Paddington_osi"
           />
           <use
@@ -2271,7 +2271,7 @@ const SvgOriginalMap = (props) => (
           y={118}
           id="original_map_svg__Romford"
         />
-        <path class="original_map_svg__osi" d="M1426.67 113v25" />
+        <path className="original_map_svg__osi" d="M1426.67 113v25" />
         <use
           xlinkHref="#original_map_svg__intnr"
           x={1426.67}
@@ -2292,7 +2292,7 @@ const SvgOriginalMap = (props) => (
             id="original_map_svg__Shadwell"
           />
         </g>
-        <path class="original_map_svg__osi" d="m696 723.9 10-15" />
+        <path className="original_map_svg__osi" d="m696 723.9 10-15" />
         <use
           xlinkHref="#original_map_svg__int"
           x={696}
@@ -2328,7 +2328,7 @@ const SvgOriginalMap = (props) => (
           id="original_map_svg__Tottenham_Court_Road"
         />
         <path
-          class="original_map_svg__osi"
+          className="original_map_svg__osi"
           style={{
             strokeDasharray: 2,
             strokeDashoffset: 2.8,
@@ -2347,7 +2347,7 @@ const SvgOriginalMap = (props) => (
           y={786}
           id="original_map_svg__Victoria"
         />
-        <path class="original_map_svg__osi" d="m1682 113 18.75 25" />
+        <path className="original_map_svg__osi" d="m1682 113 18.75 25" />
         <use
           xlinkHref="#original_map_svg__int"
           x={1682}
@@ -2416,9 +2416,9 @@ const SvgOriginalMap = (props) => (
         />
         <use
           xlinkHref="#original_map_svg__White_City_Wood_Lane_osi"
-          class="original_map_svg__osib"
+          className="original_map_svg__osib"
         />
-        <g class="original_map_svg__osi">
+        <g className="original_map_svg__osi">
           <path
             id="original_map_svg__White_City_Wood_Lane_osi"
             d="m624 723.9 13 19"
@@ -2436,7 +2436,7 @@ const SvgOriginalMap = (props) => (
           y={742.9}
           id="original_map_svg__Wood_Lane"
         />
-        <path class="original_map_svg__osi" d="M2320.67 679.5 2288 704" />
+        <path className="original_map_svg__osi" d="M2320.67 679.5 2288 704" />
         <use
           xlinkHref="#original_map_svg__int"
           x={2320.67}
@@ -3961,7 +3961,7 @@ const SvgOriginalMap = (props) => (
           y={946}
           id="original_map_svg__Battersea_Park"
         />
-        <g class="original_map_svg__osib">
+        <g className="original_map_svg__osib">
           <path
             id="original_map_svg__New_Cross_osi"
             d="M1744.67 818.5 1700 852"
@@ -3969,7 +3969,7 @@ const SvgOriginalMap = (props) => (
         </g>
         <use
           xlinkHref="#original_map_svg__New_Cross_osi"
-          class="original_map_svg__osi"
+          className="original_map_svg__osi"
         />
         <use
           xlinkHref="#original_map_svg__intnr"
@@ -4478,7 +4478,7 @@ const SvgOriginalMap = (props) => (
             fill: "#fff",
           }}
           y={4}
-          class="original_map_svg__b original_map_svg__mid"
+          className="original_map_svg__b original_map_svg__mid"
         >
           {"RV"}
         </text>
@@ -4487,31 +4487,31 @@ const SvgOriginalMap = (props) => (
     <g id="original_map_svg__text">
       <g
         id="original_map_svg__stname"
-        class="original_map_svg__st"
+        className="original_map_svg__st"
         transform="translate(0 4)"
         opacity={1}
       >
         <g
           id="original_map_svg__stname_interchanges"
-          class="original_map_svg__b"
+          className="original_map_svg__b"
         >
-          <text x={436} y={781} class="original_map_svg__end">
+          <text x={436} y={781} className="original_map_svg__end">
             {"Acton"}
             <tspan x={436} dy={13}>
               {"Town"}
             </tspan>
           </text>
-          <text x={1591.5} y={541.5} class="original_map_svg__end">
+          <text x={1591.5} y={541.5} className="original_map_svg__end">
             {"Aldgate"}
           </text>
-          <text x={1653} y={528} class="original_map_svg__mid">
+          <text x={1653} y={528} className="original_map_svg__mid">
             {"Aldgate"}
             <tspan x={1683} dy={0} />
             <tspan x={1653} dy={13}>
               {"East"}
             </tspan>
           </text>
-          <text x={1062} y={169.5} class="original_map_svg__end">
+          <text x={1062} y={169.5} className="original_map_svg__end">
             {"Archway"}
           </text>
           <text x={1053} y={528}>
@@ -4520,29 +4520,29 @@ const SvgOriginalMap = (props) => (
               {"Street"}
             </tspan>
           </text>
-          <text x={1465} y={555} class="original_map_svg__end">
+          <text x={1465} y={555} className="original_map_svg__end">
             {"Bank"}
           </text>
-          <text x={1444} y={477} class="original_map_svg__mid">
+          <text x={1444} y={477} className="original_map_svg__mid">
             {"Barbican"}
           </text>
           <text x={2173} y={364}>
             {"Barking"}
           </text>
-          <text x={1362} y={630} class="original_map_svg__end">
+          <text x={1362} y={630} className="original_map_svg__end">
             {"Blackfriars"}
           </text>
-          <text x={1602} y={88} class="original_map_svg__mid">
+          <text x={1602} y={88} className="original_map_svg__mid">
             {"Blackhorse"}
             <tspan x={1645} dy={0} />
             <tspan x={1602} dy={13}>
               {"Road"}
             </tspan>
           </text>
-          <text x={1095} y={607} class="original_map_svg__end">
+          <text x={1095} y={607} className="original_map_svg__end">
             {"Bond Street"}
           </text>
-          <text x={1893} y={449} class="original_map_svg__end">
+          <text x={1893} y={449} className="original_map_svg__end">
             {"Bow"}
             <tspan x={1893} dy={13}>
               {" Road"}
@@ -4557,13 +4557,13 @@ const SvgOriginalMap = (props) => (
               {"Road"}
             </tspan>
           </text>
-          <text x={1180} y={298} class="original_map_svg__end">
-            <tspan class="original_map_svg__ul">{"Camden"}</tspan>
+          <text x={1180} y={298} className="original_map_svg__end">
+            <tspan className="original_map_svg__ul">{"Camden"}</tspan>
             <tspan x={1180} dy={13}>
-              <tspan class="original_map_svg__ul">{"Town"}</tspan>
+              <tspan className="original_map_svg__ul">{"Town"}</tspan>
             </tspan>
           </text>
-          <text x={1694} y={689} class="original_map_svg__end">
+          <text x={1694} y={689} className="original_map_svg__end">
             {"Canada"}
             <tspan x={1694} dy={13}>
               {" Water"}
@@ -4572,7 +4572,7 @@ const SvgOriginalMap = (props) => (
           <text
             x={1870}
             y={635}
-            class="original_map_svg__end original_map_svg__ul"
+            className="original_map_svg__end original_map_svg__ul"
           >
             {"Canary Wharf"}
           </text>
@@ -4591,16 +4591,16 @@ const SvgOriginalMap = (props) => (
               {"Town"}
             </tspan>
           </text>
-          <text x={1426} y={568} class="original_map_svg__end">
+          <text x={1426} y={568} className="original_map_svg__end">
             {"Cannon"}
             <tspan x={1426} dy={13}>
               {" Street"}
             </tspan>
           </text>
-          <text x={1277} y={677} class="original_map_svg__end">
+          <text x={1277} y={677} className="original_map_svg__end">
             {"Charing Cross"}
           </text>
-          <text x={1265} y={915} class="original_map_svg__end">
+          <text x={1265} y={915} className="original_map_svg__end">
             {"Clapham"}
             <tspan x={1265} dy={15}>
               {" High Street"}
@@ -4609,39 +4609,39 @@ const SvgOriginalMap = (props) => (
           <text x={1244.5} y={977}>
             {"Clapham North"}
           </text>
-          <text x={2210} y={607} class="original_map_svg__end">
+          <text x={2210} y={607} className="original_map_svg__end">
             {"Custom House"}
             <tspan x={2210} dy={13}>
               {" for ExCeL"}
             </tspan>
           </text>
-          <text x={1583} y={265} class="original_map_svg__mid">
+          <text x={1583} y={265} className="original_map_svg__mid">
             {"Dalston"}
             <tspan x={1613} />
             <tspan x={1583} dy={13}>
               {"Kingsland"}
             </tspan>
           </text>
-          <text x={1555} y={340} class="original_map_svg__end">
+          <text x={1555} y={340} className="original_map_svg__end">
             {"Dalston"}
             <tspan x={1555} dy={13}>
               {" Junction"}
             </tspan>
           </text>
-          <text x={340} y={692} class="original_map_svg__mid">
+          <text x={340} y={692} className="original_map_svg__mid">
             {"Ealing"}
             <tspan x={365} dy={0} />
             <tspan x={340} dy={13}>
               {"Broadway"}
             </tspan>
           </text>
-          <text x={395} y={749} class="original_map_svg__end">
+          <text x={395} y={749} className="original_map_svg__end">
             {"Ealing"}
             <tspan x={395} dy={13}>
               {" Common"}
             </tspan>
           </text>
-          <text x={871} y={886.4} class="original_map_svg__mid">
+          <text x={871} y={886.4} className="original_map_svg__mid">
             {"Earl's"}
             <tspan x={892} dy={0} />
             <tspan x={871} dy={13}>
@@ -4651,10 +4651,10 @@ const SvgOriginalMap = (props) => (
           <text x={1490} y={768}>
             {"Elephant & Castle"}
           </text>
-          <text x={1282} y={695} class="original_map_svg__end">
+          <text x={1282} y={695} className="original_map_svg__end">
             {"Embankment"}
           </text>
-          <text x={1185} y={350} class="original_map_svg__end">
+          <text x={1185} y={350} className="original_map_svg__end">
             {"Euston"}
           </text>
           <text x={1215} y={362}>
@@ -4669,7 +4669,7 @@ const SvgOriginalMap = (props) => (
           <text x={1396} y={452}>
             {"Farringdon"}
           </text>
-          <text x={1376} y={493} class="original_map_svg__end">
+          <text x={1376} y={493} className="original_map_svg__end">
             {"Farringdon"}
           </text>
           <text x={957} y={368}>
@@ -4681,7 +4681,7 @@ const SvgOriginalMap = (props) => (
           <text x={958} y={338}>
             {"Finchley Road & Frognal"}
           </text>
-          <text x={1375} y={183} class="original_map_svg__end">
+          <text x={1375} y={183} className="original_map_svg__end">
             {"Finsbury Park"}
           </text>
           <text x={2050} y={287}>
@@ -4690,17 +4690,17 @@ const SvgOriginalMap = (props) => (
               {"Gate"}
             </tspan>
           </text>
-          <text x={1142} y={670} class="original_map_svg__end">
+          <text x={1142} y={670} className="original_map_svg__end">
             {"Green Park"}
           </text>
-          <text x={1020.3} y={884} class="original_map_svg__mid">
+          <text x={1020.3} y={884} className="original_map_svg__mid">
             {"Gloucester"}
             <tspan x={1062} dy={0} />
             <tspan x={1020.3} dy={13}>
               {"Road"}
             </tspan>
           </text>
-          <text x={439} y={828} class="original_map_svg__end">
+          <text x={439} y={828} className="original_map_svg__end">
             {"Gunnersbury"}
           </text>
           <text x={1647} y={312}>
@@ -4730,7 +4730,7 @@ const SvgOriginalMap = (props) => (
           >
             {"Heathrow Terminal 4"}
           </text>
-          <text x={1870} y={660} class="original_map_svg__end">
+          <text x={1870} y={660} className="original_map_svg__end">
             {"Heron Quays"}
           </text>
           <text x={1426} y={268}>
@@ -4739,10 +4739,10 @@ const SvgOriginalMap = (props) => (
               {"Islington"}
             </tspan>
           </text>
-          <text x={1284} y={510} class="original_map_svg__end">
+          <text x={1284} y={510} className="original_map_svg__end">
             {"Holborn"}
           </text>
-          <text x={818} y={806} class="original_map_svg__end">
+          <text x={818} y={806} className="original_map_svg__end">
             {"Kensington"}
             <tspan x={818} dy={15}>
               {" (Olympia)"}
@@ -4751,7 +4751,7 @@ const SvgOriginalMap = (props) => (
           <text x={1140} y={210}>
             {"Kentish Town"}
           </text>
-          <text x={1133} y={242} class="original_map_svg__end">
+          <text x={1133} y={242} className="original_map_svg__end">
             {"Kentish Town"}
             <tspan x={1133} dy={13}>
               {" West"}
@@ -4760,7 +4760,7 @@ const SvgOriginalMap = (props) => (
           <text x={543.5} y={274}>
             {"Kenton"}
           </text>
-          <text x={521.5} y={311} class="original_map_svg__end">
+          <text x={521.5} y={311} className="original_map_svg__end">
             {"Northwick"}
             <tspan x={521.5} dy={13}>
               {" Park"}
@@ -4787,16 +4787,16 @@ const SvgOriginalMap = (props) => (
               {"High Road"}
             </tspan>
           </text>
-          <text x={1564} y={452} class="original_map_svg__mid">
+          <text x={1564} y={452} className="original_map_svg__mid">
             {"Liverpool"}
             <tspan x={1601} dy={0} />
             <tspan x={1564} dy={13}>
               {"Street"}
             </tspan>
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text
-              class="original_map_svg__textbg"
+              className="original_map_svg__textbg"
               transform="translate(1535 530)"
             >
               {"Liverpool Street"}
@@ -4819,7 +4819,7 @@ const SvgOriginalMap = (props) => (
             </tspan>
           </text>
           <text
-            class="original_map_svg__textbg"
+            className="original_map_svg__textbg"
             transform="translate(1459 602)"
           >
             {"Monument"}
@@ -4828,7 +4828,7 @@ const SvgOriginalMap = (props) => (
           <text x={1484} y={483}>
             {"Moorgate"}
           </text>
-          <text x={869} y={700.5} class="original_map_svg__end">
+          <text x={869} y={700.5} className="original_map_svg__end">
             {"Notting"}
             <tspan x={869} dy={13}>
               {" Hill Gate"}
@@ -4840,7 +4840,7 @@ const SvgOriginalMap = (props) => (
               {"Circus"}
             </tspan>
           </text>
-          <text x={950} y={557} class="original_map_svg__end">
+          <text x={950} y={557} className="original_map_svg__end">
             {"Paddington"}
           </text>
           <text x={1213} y={637}>
@@ -4849,10 +4849,10 @@ const SvgOriginalMap = (props) => (
               {"Circus"}
             </tspan>
           </text>
-          <text x={754} y={527} class="original_map_svg__end">
+          <text x={754} y={527} className="original_map_svg__end">
             {"Queen's Park"}
           </text>
-          <text x={300} y={266.5} class="original_map_svg__mid">
+          <text x={300} y={266.5} className="original_map_svg__mid">
             {"Rayners"}
             <tspan x={333} dy={0} />
             <tspan x={300} dy={13}>
@@ -4865,7 +4865,7 @@ const SvgOriginalMap = (props) => (
           <text x={1417} y={98}>
             {"Seven Sisters"}
           </text>
-          <text x={1693} y={575} class="original_map_svg__end">
+          <text x={1693} y={575} className="original_map_svg__end">
             {"Shadwell"}
           </text>
           <text x={713} y={699}>
@@ -4883,10 +4883,10 @@ const SvgOriginalMap = (props) => (
           <text x={1296} y={933}>
             {"Stockwell"}
           </text>
-          <text x={1962} y={318} class="original_map_svg__end">
+          <text x={1962} y={318} className="original_map_svg__end">
             {"Stratford"}
           </text>
-          <text x={1085} y={813} class="original_map_svg__end">
+          <text x={1085} y={813} className="original_map_svg__end">
             {"South"}
             <tspan x={1085} dy={13}>
               {" Kensington"}
@@ -4907,7 +4907,7 @@ const SvgOriginalMap = (props) => (
               {"Gateway"}
             </tspan>
           </text>
-          <text x={1563} y={602} class="original_map_svg__mid">
+          <text x={1563} y={602} className="original_map_svg__mid">
             {"Tower"}
             <tspan x={1586} dy={0} />
             <tspan x={1563} dy={13}>
@@ -4932,26 +4932,26 @@ const SvgOriginalMap = (props) => (
               {"Queen's Road"}
             </tspan>
           </text>
-          <text x={2041} y={230} class="original_map_svg__mid">
+          <text x={2041} y={230} className="original_map_svg__mid">
             {"Wanstead"}
             <tspan x={2078} dy={0} />
             <tspan x={2041} dy={13}>
               {"Park"}
             </tspan>
           </text>
-          <text x={1148} y={404} class="original_map_svg__end">
+          <text x={1148} y={404} className="original_map_svg__end">
             {"Warren Street"}
           </text>
           <text x={1350} y={736}>
             {"Waterloo"}
           </text>
-          <text x={595} y={409} class="original_map_svg__end">
+          <text x={595} y={409} className="original_map_svg__end">
             {"Wembley Central"}
           </text>
           <text x={656} y={282}>
             {"Wembley Park"}
           </text>
-          <text x={816.5} y={920} class="original_map_svg__end">
+          <text x={816.5} y={920} className="original_map_svg__end">
             {"West Brompton"}
           </text>
           <text x={2043} y={450}>
@@ -4960,22 +4960,22 @@ const SvgOriginalMap = (props) => (
               {"Ham"}
             </tspan>
           </text>
-          <text x={914} y={366} class="original_map_svg__end">
+          <text x={914} y={366} className="original_map_svg__end">
             {"West"}
             <tspan x={914} dy={13}>
               {" Hampstead"}
             </tspan>
           </text>
-          <text x={1870} y={597} class="original_map_svg__end">
-            <tspan class="original_map_svg__ul">{"West India"}</tspan>
+          <text x={1870} y={597} className="original_map_svg__end">
+            <tspan className="original_map_svg__ul">{"West India"}</tspan>
             <tspan x={1870} dy={13}>
-              <tspan class="original_map_svg__ul">{"Quay"}</tspan>
+              <tspan className="original_map_svg__ul">{"Quay"}</tspan>
             </tspan>
           </text>
           <text x={1243} y={754}>
             {"Westminster"}
           </text>
-          <text x={683} y={466.5} class="original_map_svg__end">
+          <text x={683} y={466.5} className="original_map_svg__end">
             {"Willesden Junction"}
           </text>
           <text x={1716} y={536}>
@@ -4990,7 +4990,7 @@ const SvgOriginalMap = (props) => (
           <text x={2330.67} y={671}>
             {"Woolwich"}
           </text>
-          <text x={2286.29} y={721} class="original_map_svg__mid">
+          <text x={2286.29} y={721} className="original_map_svg__mid">
             {"Woolwich"}
             <tspan x={2323} dy={0} />
             <tspan x={2286.29} dy={13}>
@@ -4999,7 +4999,7 @@ const SvgOriginalMap = (props) => (
           </text>
         </g>
         <g id="original_map_svg__stname_Bakerloo_line">
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={537} y={365.5}>
               {"South Kenton"}
             </text>
@@ -5040,7 +5040,7 @@ const SvgOriginalMap = (props) => (
               {"Park"}
             </tspan>
           </text>
-          <text x={1420} y={785} class="original_map_svg__mid">
+          <text x={1420} y={785} className="original_map_svg__mid">
             {"Lambeth"}
             <tspan x={1452} dy={0} />
             <tspan x={1420} dy={13}>
@@ -5052,7 +5052,7 @@ const SvgOriginalMap = (props) => (
           <text
             x={142}
             y={247.5}
-            class="original_map_svg__b original_map_svg__mid"
+            className="original_map_svg__b original_map_svg__mid"
           >
             {"West"}
             <tspan x={164} dy={0} />
@@ -5060,7 +5060,7 @@ const SvgOriginalMap = (props) => (
               {"Ruislip"}
             </tspan>
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={130} y={344}>
               {"Ruislip Gardens"}
             </text>
@@ -5076,7 +5076,7 @@ const SvgOriginalMap = (props) => (
             <text x={294} y={577.9}>
               {"Perivale"}
             </text>
-            <text x={360} y={620.4} class="original_map_svg__b">
+            <text x={360} y={620.4} className="original_map_svg__b">
               {"Hanger Lane"}
             </text>
           </g>
@@ -5092,7 +5092,7 @@ const SvgOriginalMap = (props) => (
               {"Acton"}
             </tspan>
           </text>
-          <text x={580} y={693.9} class="original_map_svg__mid">
+          <text x={580} y={693.9} className="original_map_svg__mid">
             {"East"}
             <tspan x={597} dy={0} />
             <tspan x={580} dy={13}>
@@ -5102,20 +5102,20 @@ const SvgOriginalMap = (props) => (
           <text
             x={624}
             y={737}
-            class="original_map_svg__end original_map_svg__b"
+            className="original_map_svg__end original_map_svg__b"
           >
             {"White"}
             <tspan x={624} dy={13}>
               {" City"}
             </tspan>
           </text>
-          <text x={806} y={741} class="original_map_svg__mid">
+          <text x={806} y={741} className="original_map_svg__mid">
             {"Holland Park"}
           </text>
-          <text x={930} y={740.9} class="original_map_svg__mid">
+          <text x={930} y={740.9} className="original_map_svg__mid">
             {"Queensway"}
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={986} y={669.5}>
               {"Lancaster"}
               <tspan x={986} dy={13}>
@@ -5126,14 +5126,14 @@ const SvgOriginalMap = (props) => (
               {"Marble Arch"}
             </text>
           </g>
-          <text x={1330} y={535} class="original_map_svg__mid">
+          <text x={1330} y={535} className="original_map_svg__mid">
             {"Chancery"}
             <tspan x={1364} dy={0} />
             <tspan x={1330} dy={13}>
               {"Lane"}
             </tspan>
           </text>
-          <text x={1400} y={540} class="original_map_svg__end">
+          <text x={1400} y={540} className="original_map_svg__end">
             {"St."}
             <tspan x={1400} dy={13}>
               {" Paul's"}
@@ -5142,17 +5142,17 @@ const SvgOriginalMap = (props) => (
           <text x={1655} y={435}>
             {"Bethnal Green"}
           </text>
-          <text x={1937} y={222.5} class="original_map_svg__end">
+          <text x={1937} y={222.5} className="original_map_svg__end">
             {"Leyton"}
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={1914} y={106}>
               {"Snaresbrook"}
             </text>
             <text x={1914} y={76}>
               {"South Woodford"}
             </text>
-            <text x={1914} y={46} class="original_map_svg__b">
+            <text x={1914} y={46} className="original_map_svg__b">
               {"Woodford"}
             </text>
             <text x={1914} y={16}>
@@ -5171,7 +5171,7 @@ const SvgOriginalMap = (props) => (
               {"Epping"}
             </text>
           </g>
-          <g class="original_map_svg__mid">
+          <g className="original_map_svg__mid">
             <text x={1996} y={103}>
               {"Redbridge"}
             </text>
@@ -5201,7 +5201,7 @@ const SvgOriginalMap = (props) => (
           <text x={2071} y={-7}>
             {"Grange Hill"}
           </text>
-          <g class="original_map_svg__mid">
+          <g className="original_map_svg__mid">
             <text x={2026} y={-7}>
               {"Chigwell"}
             </text>
@@ -5215,13 +5215,13 @@ const SvgOriginalMap = (props) => (
           </g>
         </g>
         <g id="original_map_svg__stname_Circle_line">
-          <text transform="translate(1000 562)" class="original_map_svg__b">
+          <text transform="translate(1000 562)" className="original_map_svg__b">
             {"Edgware "}
             <tspan x={0} dy={13}>
               {"Road"}
             </tspan>
           </text>
-          <text x={875} y={660} class="original_map_svg__end">
+          <text x={875} y={660} className="original_map_svg__end">
             {"Bayswater"}
           </text>
           <text x={918} y={789.5}>
@@ -5239,7 +5239,7 @@ const SvgOriginalMap = (props) => (
           <text x={1220} y={772}>
             {"St. James's Park"}
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={1336} y={648}>
               {"Temple"}
             </text>
@@ -5268,7 +5268,7 @@ const SvgOriginalMap = (props) => (
               </tspan>
             </text>
           </g>
-          <text x={800} y={637} class="original_map_svg__mid">
+          <text x={800} y={637} className="original_map_svg__mid">
             {"Royal Oak"}
           </text>
           <text x={699.5} y={680.5}>
@@ -5288,22 +5288,22 @@ const SvgOriginalMap = (props) => (
           </text>
         </g>
         <g id="original_map_svg__stname_District_line_and_Hammersmith_And_City_line">
-          <text x={465} y={810} class="original_map_svg__end">
+          <text x={465} y={810} className="original_map_svg__end">
             {"Chiswick Park"}
           </text>
           <text x={540} y={814.5}>
-            <tspan class="original_map_svg__ul">{"Turnham"}</tspan>
-            <tspan x={550} dy={13} class="original_map_svg__ul">
+            <tspan className="original_map_svg__ul">{"Turnham"}</tspan>
+            <tspan x={550} dy={13} className="original_map_svg__ul">
               {"Green"}
             </tspan>
           </text>
-          <text x={535} y={855.5} class="original_map_svg__end">
+          <text x={535} y={855.5} className="original_map_svg__end">
             {"Stamford"}
             <tspan x={535} dy={13}>
               {" Brook"}
             </tspan>
           </text>
-          <g class="original_map_svg__mid">
+          <g className="original_map_svg__mid">
             <text x={587} y={886.4}>
               {"Ravenscourt"}
               <tspan x={630} dy={0} />
@@ -5362,7 +5362,7 @@ const SvgOriginalMap = (props) => (
           <text x={2321} y={255}>
             {"Elm Park"}
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={2331} y={215.5}>
               {"Hornchurch"}
             </text>
@@ -5373,11 +5373,11 @@ const SvgOriginalMap = (props) => (
           <text
             x={2401}
             y={162}
-            class="original_map_svg__mid original_map_svg__b"
+            className="original_map_svg__mid original_map_svg__b"
           >
             {"Upminster"}
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={819} y={960}>
               {"Fulham Broadway"}
             </text>
@@ -5396,7 +5396,7 @@ const SvgOriginalMap = (props) => (
             <text x={908} y={1100}>
               {"Wimbledon Park"}
             </text>
-            <text x={927} y={1128} class="original_map_svg__b">
+            <text x={927} y={1128} className="original_map_svg__b">
               {"Wimbledon"}
             </text>
           </g>
@@ -5414,7 +5414,7 @@ const SvgOriginalMap = (props) => (
           <text x={663} y={252}>
             {"Kingsbury"}
           </text>
-          <g class="original_map_svg__mid">
+          <g className="original_map_svg__mid">
             <text x={681} y={326}>
               {"Neasden"}
             </text>
@@ -5432,14 +5432,14 @@ const SvgOriginalMap = (props) => (
                 {"Green"}
               </tspan>
             </text>
-            <text x={861} y={326} class="original_map_svg__b">
+            <text x={861} y={326} className="original_map_svg__b">
               {"Kilburn"}
             </text>
           </g>
-          <text x={947.5} y={419.5} class="original_map_svg__end">
+          <text x={947.5} y={419.5} className="original_map_svg__end">
             {"Swiss Cottage"}
           </text>
-          <text x={985} y={469.5} class="original_map_svg__end">
+          <text x={985} y={469.5} className="original_map_svg__end">
             {"St. John's"}
             <tspan x={985} dy={13}>
               {" Wood"}
@@ -5448,10 +5448,10 @@ const SvgOriginalMap = (props) => (
           <text x={1390} y={708}>
             {"Southwark"}
           </text>
-          <text x={1590} y={692} class="original_map_svg__mid">
+          <text x={1590} y={692} className="original_map_svg__mid">
             {"Bermondsey"}
           </text>
-          <text x={2000} y={665} class="original_map_svg__mid">
+          <text x={2000} y={665} className="original_map_svg__mid">
             {"North"}
             <tspan x={2020} dy={0} />
             <tspan x={2000} dy={13}>
@@ -5463,16 +5463,16 @@ const SvgOriginalMap = (props) => (
           <text x={136} y={38}>
             {"Chesham"}
           </text>
-          <text x={90} y={68.5} class="original_map_svg__end">
+          <text x={90} y={68.5} className="original_map_svg__end">
             {"Amersham"}
           </text>
-          <text x={131.5} y={100} class="original_map_svg__end">
+          <text x={131.5} y={100} className="original_map_svg__end">
             {"Chalfont & Latimer"}
           </text>
-          <text x={161.5} y={122.5} class="original_map_svg__end">
+          <text x={161.5} y={122.5} className="original_map_svg__end">
             {"Chorleywood"}
           </text>
-          <text x={191.5} y={145} class="original_map_svg__end">
+          <text x={191.5} y={145} className="original_map_svg__end">
             {"Rickmansworth"}
           </text>
           <text x={234} y={80}>
@@ -5502,14 +5502,14 @@ const SvgOriginalMap = (props) => (
               {"Harrow"}
             </tspan>
           </text>
-          <g class="original_map_svg__mid">
+          <g className="original_map_svg__mid">
             <text x={20} y={316}>
               {"Uxbridge"}
             </text>
             <text x={60} y={277}>
               {"Hillingdon"}
             </text>
-            <text x={100} y={316} class="original_map_svg__b">
+            <text x={100} y={316} className="original_map_svg__b">
               {"Ickenham"}
             </text>
             <text x={180} y={316}>
@@ -5562,21 +5562,21 @@ const SvgOriginalMap = (props) => (
           <text x={898} y={253}>
             {"Hampstead"}
           </text>
-          <text x={1010} y={298} class="original_map_svg__mid">
+          <text x={1010} y={298} className="original_map_svg__mid">
             {"Belsize"}
             <tspan x={1035} dy={0} />
             <tspan x={1010} dy={13}>
               {"Park"}
             </tspan>
           </text>
-          <text x={1090} y={298} class="original_map_svg__mid">
+          <text x={1090} y={298} className="original_map_svg__mid">
             {"Chalk"}
             <tspan x={1111} dy={0} />
             <tspan x={1090} dy={13}>
               {"Farm"}
             </tspan>
           </text>
-          <text x={913} y={107} class="original_map_svg__mid">
+          <text x={913} y={107} className="original_map_svg__mid">
             {"Mill Hill East"}
           </text>
           <text x={864} y={-4}>
@@ -5612,16 +5612,16 @@ const SvgOriginalMap = (props) => (
           <text x={1175} y={450}>
             {"Goodge Street"}
           </text>
-          <text x={1418} y={401} class="original_map_svg__end">
+          <text x={1418} y={401} className="original_map_svg__end">
             {"Angel"}
           </text>
-          <text x={1455} y={425} class="original_map_svg__end">
+          <text x={1455} y={425} className="original_map_svg__end">
             {"Old Street"}
           </text>
           <text x={1491} y={730}>
             {"Borough"}
           </text>
-          <text x={1376} y={875} class="original_map_svg__b">
+          <text x={1376} y={875} className="original_map_svg__b">
             {"Kennington"}
           </text>
           <text x={1338.5} y={906.5}>
@@ -5648,18 +5648,18 @@ const SvgOriginalMap = (props) => (
           <text x={1040.5} y={1131.5}>
             {"South Wimbledon"}
           </text>
-          <text x={990.5} y={1145.5} class="original_map_svg__end">
+          <text x={990.5} y={1145.5} className="original_map_svg__end">
             {"Morden"}
           </text>
-          <text x={1194.5} y={892.5} class="original_map_svg__end">
+          <text x={1194.5} y={892.5} className="original_map_svg__end">
             {"Nine Elms"}
           </text>
-          <text x={1125} y={927.25} class="original_map_svg__end">
+          <text x={1125} y={927.25} className="original_map_svg__end">
             {"Battersea Power Station"}
           </text>
         </g>
         <g id="original_map_svg__stname_Piccadilly_line">
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={372} y={370}>
               {"South Harrow"}
             </text>
@@ -5672,21 +5672,21 @@ const SvgOriginalMap = (props) => (
             <text x={372} y={550}>
               {"Alperton"}
             </text>
-            <text x={372} y={643} class="original_map_svg__b">
+            <text x={372} y={643} className="original_map_svg__b">
               {"Park Royal"}
             </text>
             <text x={372} y={670}>
               {"North Ealing"}
             </text>
           </g>
-          <text x={30} y={983.5} class="original_map_svg__mid">
+          <text x={30} y={983.5} className="original_map_svg__mid">
             {"Heathrow"}
             <tspan x={63} dy={0} />
             <tspan x={30} dy={13}>
               {"Terminal 5"}
             </tspan>
           </text>
-          <text x={96} y={913} class="original_map_svg__end">
+          <text x={96} y={913} className="original_map_svg__end">
             {"Heathrow"}
             <tspan x={96} dy={13}>
               {" Terminals"}
@@ -5704,7 +5704,7 @@ const SvgOriginalMap = (props) => (
           <text x={230} y={911}>
             {"Hounslow Central"}
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={240} y={871.5}>
               {"Hounslow East"}
             </text>
@@ -5730,9 +5730,9 @@ const SvgOriginalMap = (props) => (
               </tspan>
             </text>
             <text x={1284} y={544}>
-              <tspan class="original_map_svg__ul">{"Covent"}</tspan>
+              <tspan className="original_map_svg__ul">{"Covent"}</tspan>
               <tspan x={1284} dy={13}>
-                <tspan class="original_map_svg__ul">{"Garden"}</tspan>
+                <tspan className="original_map_svg__ul">{"Garden"}</tspan>
               </tspan>
             </text>
           </g>
@@ -5745,7 +5745,7 @@ const SvgOriginalMap = (props) => (
           <text x={1302} y={278}>
             {"Caledonian Road"}
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={1326} y={229}>
               {"Holloway Road"}
             </text>
@@ -5779,7 +5779,7 @@ const SvgOriginalMap = (props) => (
           </g>
         </g>
         <g id="original_map_svg__stname_Victoria_line">
-          <text x={1530} y={129} class="original_map_svg__mid">
+          <text x={1530} y={129} className="original_map_svg__mid">
             {"Tottenham Hale"}
           </text>
           <text x={1216} y={817.5}>
@@ -5793,10 +5793,10 @@ const SvgOriginalMap = (props) => (
           </text>
         </g>
         <g id="original_map_svg__stname_Docklands_Light_Railway">
-          <text x={1847} y={572} class="original_map_svg__b">
+          <text x={1847} y={572} className="original_map_svg__b">
             {"Poplar"}
           </text>
-          <g class="original_map_svg__mid">
+          <g className="original_map_svg__mid">
             <text x={1747} y={602}>
               {"Limehouse"}
             </text>
@@ -5837,10 +5837,10 @@ const SvgOriginalMap = (props) => (
               {"Cyprus"}
             </text>
           </g>
-          <text x={2378} y={543} class="original_map_svg__end">
+          <text x={2378} y={543} className="original_map_svg__end">
             {"Gallions Reach"}
           </text>
-          <text x={2378} y={513} class="original_map_svg__end">
+          <text x={2378} y={513} className="original_map_svg__end">
             {"Beckton"}
           </text>
           <text x={1946} y={384}>
@@ -5858,7 +5858,7 @@ const SvgOriginalMap = (props) => (
           <text x={1912} y={540}>
             {"All Saints"}
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={1868} y={690}>
               {"South Quay"}
             </text>
@@ -5890,7 +5890,7 @@ const SvgOriginalMap = (props) => (
           <text x={1892} y={930}>
             {"Lewisham"}
           </text>
-          <text x={1938} y={266} class="original_map_svg__end">
+          <text x={1938} y={266} className="original_map_svg__end">
             {"Stratford"}
             <tspan x={1938} dy={13}>
               {" International"}
@@ -5911,7 +5911,7 @@ const SvgOriginalMap = (props) => (
           <text x={2048} y={510}>
             {"Star Lane"}
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={2082} y={610.5}>
               {"West"}
               <tspan x={2099} dy={13}>
@@ -5954,7 +5954,7 @@ const SvgOriginalMap = (props) => (
               {"Lane"}
             </tspan>
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={852} y={480}>
               {"Kilburn"}
               <tspan x={852} dy={13}>
@@ -5967,7 +5967,7 @@ const SvgOriginalMap = (props) => (
           </g>
         </g>
         <g id="original_map_svg__stname_West_London_Line" opacity={1}>
-          <text x={910} y={949} class="original_map_svg__mid">
+          <text x={910} y={949} className="original_map_svg__mid">
             {"Imperial"}
             <tspan x={940} dy={0} />
             <tspan x={910} dy={15}>
@@ -5977,7 +5977,7 @@ const SvgOriginalMap = (props) => (
           <text
             x={1098.333}
             y={999}
-            class="original_map_svg__mid original_map_svg__b"
+            className="original_map_svg__mid original_map_svg__b"
           >
             {"Clapham"}
             <tspan x={1130} dy={0} />
@@ -5999,14 +5999,14 @@ const SvgOriginalMap = (props) => (
               {"Central"}
             </tspan>
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={738.5} y={418.5}>
               {"Kensal Rise"}
             </text>
             <text x={772.5} y={393}>
               {"Brondesbury Park"}
             </text>
-            <text x={806.5} y={367.5} class="original_map_svg__b">
+            <text x={806.5} y={367.5} className="original_map_svg__b">
               {"Brondesbury"}
             </text>
           </g>
@@ -6016,7 +6016,7 @@ const SvgOriginalMap = (props) => (
           <text
             x={1047}
             y={204}
-            class="original_map_svg__b original_map_svg__end"
+            className="original_map_svg__b original_map_svg__end"
           >
             {"Gospel Oak"}
           </text>
@@ -6029,11 +6029,11 @@ const SvgOriginalMap = (props) => (
           <text
             x={1538}
             y={317}
-            class="original_map_svg__b original_map_svg__end"
+            className="original_map_svg__b original_map_svg__end"
           >
             {"Canonbury"}
           </text>
-          <g class="original_map_svg__mid">
+          <g className="original_map_svg__mid">
             <text x={1760} y={312}>
               {"Homerton"}
             </text>
@@ -6048,7 +6048,7 @@ const SvgOriginalMap = (props) => (
         </g>
         <g
           id="original_map_svg__stname_Gospel_Oak_to_Barking_Line"
-          class="original_map_svg__mid"
+          className="original_map_svg__mid"
         >
           <text x={1206} y={123}>
             {"Crouch Hill"}
@@ -6067,14 +6067,14 @@ const SvgOriginalMap = (props) => (
               {"Midland Road"}
             </tspan>
           </text>
-          <text x={2280} y={401} class="original_map_svg__x">
+          <text x={2280} y={401} className="original_map_svg__x">
             {"Renwick"}
             <tspan x={2310} dy={0} />
             <tspan x={2280} dy={15}>
               {"Road"}
             </tspan>
           </text>
-          <text x={2390} y={401} class="original_map_svg__x">
+          <text x={2390} y={401} className="original_map_svg__x">
             {"Barking"}
             <tspan x={2420} dy={0} />
             <tspan x={2390} dy={15}>
@@ -6083,11 +6083,11 @@ const SvgOriginalMap = (props) => (
           </text>
         </g>
         <g id="original_map_svg__stname_East_London_Line">
-          <g class="original_map_svg__end">
-            <text x={1578.625} y={377.5} class="original_map_svg__end">
+          <g className="original_map_svg__end">
+            <text x={1578.625} y={377.5} className="original_map_svg__end">
               {"Haggerston"}
             </text>
-            <text x={1596.625} y={401} class="original_map_svg__end">
+            <text x={1596.625} y={401} className="original_map_svg__end">
               {"Hoxton"}
             </text>
             <text x={1614.625} y={419.5}>
@@ -6100,14 +6100,14 @@ const SvgOriginalMap = (props) => (
           <text x={1712} y={622.5}>
             {"Wapping"}
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={1688} y={652.5}>
               {"Rotherhithe"}
             </text>
             <text x={1688} y={730}>
               {"Surrey Quays"}
             </text>
-            <text x={1634} y={818.5} class="original_map_svg__x">
+            <text x={1634} y={818.5} className="original_map_svg__x">
               {"Surrey Canal"}
             </text>
             <text x={1574} y={850.5}>
@@ -6123,7 +6123,7 @@ const SvgOriginalMap = (props) => (
               {"Battersea Park"}
             </text>
           </g>
-          <g class="original_map_svg__mid">
+          <g className="original_map_svg__mid">
             <text x={1440} y={964}>
               {"Denmark Hill"}
             </text>
@@ -6135,20 +6135,20 @@ const SvgOriginalMap = (props) => (
               </tspan>
             </text>
           </g>
-          <text x={1739} y={835.5} class="original_map_svg__b">
+          <text x={1739} y={835.5} className="original_map_svg__b">
             {"New Cross"}
           </text>
           <text
             x={1690}
             y={852}
-            class="original_map_svg__end original_map_svg__b"
+            className="original_map_svg__end original_map_svg__b"
           >
             {"New"}
             <tspan x={1690} dy={13}>
               {" Cross Gate"}
             </tspan>
           </text>
-          <text x={1688} y={887} class="original_map_svg__end">
+          <text x={1688} y={887} className="original_map_svg__end">
             {"Brockley"}
           </text>
           <text x={1694} y={927.5}>
@@ -6160,7 +6160,7 @@ const SvgOriginalMap = (props) => (
           <text x={1614} y={987.5}>
             {"Sydenham"}
           </text>
-          <text x={1502} y={1009} class="original_map_svg__end">
+          <text x={1502} y={1009} className="original_map_svg__end">
             {"Crystal Palace"}
           </text>
           <text x={1534} y={1047.5}>
@@ -6175,13 +6175,13 @@ const SvgOriginalMap = (props) => (
           <text
             x={1394}
             y={1120.5}
-            class="original_map_svg__end original_map_svg__b"
+            className="original_map_svg__end original_map_svg__b"
           >
             {"West Croydon"}
           </text>
         </g>
         <g id="original_map_svg__stname_Seven_Sisters_Line">
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={1391} y={-61.5}>
               {"Enfield Town"}
             </text>
@@ -6213,7 +6213,7 @@ const SvgOriginalMap = (props) => (
           <text x={1415} y={76}>
             {"Bruce Grove"}
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={1517} y={197.5}>
               {"Stamford Hill"}
             </text>
@@ -6224,15 +6224,15 @@ const SvgOriginalMap = (props) => (
               {"Rectory Road"}
             </text>
           </g>
-          <text x={1647} y={355} class="original_map_svg__ul">
+          <text x={1647} y={355} className="original_map_svg__ul">
             {"London Fields"}
           </text>
-          <text x={1647} y={390} class="original_map_svg__ul">
+          <text x={1647} y={390} className="original_map_svg__ul">
             {"Cambridge Heath"}
           </text>
           <text x={1622} y={492}>
-            <tspan class="original_map_svg__ul">{"Bethnal"}</tspan>
-            <tspan x={1622} dy={13} class="original_map_svg__ul">
+            <tspan className="original_map_svg__ul">{"Bethnal"}</tspan>
+            <tspan x={1622} dy={13} className="original_map_svg__ul">
               {"Green"}
             </tspan>
           </text>
@@ -6247,25 +6247,25 @@ const SvgOriginalMap = (props) => (
           <text x={1694} y={83}>
             {"Wood Street"}
           </text>
-          <text x={1670} y={170} class="original_map_svg__end">
+          <text x={1670} y={170} className="original_map_svg__end">
             {"St. James Street"}
           </text>
-          <text x={1670} y={210} class="original_map_svg__end">
+          <text x={1670} y={210} className="original_map_svg__end">
             {"Clapton"}
           </text>
         </g>
         <text
           x={2320.25}
           y={157.5}
-          class="original_map_svg__end"
+          className="original_map_svg__end"
           id="original_map_svg__stname_Romford_to_Upminster_Line"
         >
           {"Emerson Park"}
         </text>
         <g id="original_map_svg__stname_elizabeth">
           <text x={116} y={924}>
-            <tspan class="original_map_svg__ul">{"Heathrow"}</tspan>
-            <tspan x={116} dy={13} class="original_map_svg__ul">
+            <tspan className="original_map_svg__ul">{"Heathrow"}</tspan>
+            <tspan x={116} dy={13} className="original_map_svg__ul">
               {"Central"}
             </tspan>
           </text>
@@ -6293,7 +6293,7 @@ const SvgOriginalMap = (props) => (
           <text x={12} y={690}>
             {"Iver"}
           </text>
-          <g class="original_map_svg__mid">
+          <g className="original_map_svg__mid">
             <text x={86} y={691.9}>
               {"West"}
               <tspan x={106} dy={0} />
@@ -6334,7 +6334,7 @@ const SvgOriginalMap = (props) => (
           <text x={2018} y={316.5}>
             {"Maryland"}
           </text>
-          <g class="original_map_svg__end">
+          <g className="original_map_svg__end">
             <text x={2127} y={199.5}>
               {"Ilford"}
             </text>
@@ -6347,7 +6347,7 @@ const SvgOriginalMap = (props) => (
             <text x={2217} y={130}>
               {"Chadwell Heath"}
             </text>
-            <text x={2247} y={107.5} class="original_map_svg__b">
+            <text x={2247} y={107.5} className="original_map_svg__b">
               {"Romford"}
             </text>
             <text x={2277} y={85}>
@@ -6371,14 +6371,14 @@ const SvgOriginalMap = (props) => (
           }}
         >
           <g id="original_map_svg__stname_Tramlink">
-            <text x={1155} y={1167} class="original_map_svg__mid">
+            <text x={1155} y={1167} className="original_map_svg__mid">
               {"Mitcham"}
               <tspan x={1177} dy={0} />
               <tspan x={1155} dy={11}>
                 {"Junction"}
               </tspan>
             </text>
-            <text x={1465} y={1167} class="original_map_svg__mid">
+            <text x={1465} y={1167} className="original_map_svg__mid">
               {"East"}
               <tspan x={1478} dy={0} />
               <tspan x={1465} dy={11}>
@@ -6406,11 +6406,11 @@ const SvgOriginalMap = (props) => (
           </g>
           <g
             id="original_map_svg__Heathrow_rail_tunnel_special_fares"
-            class="original_map_svg__end"
+            className="original_map_svg__end"
           >
             <text
               transform="translate(100 820)"
-              class="original_map_svg__felizabeth"
+              className="original_map_svg__felizabeth"
             >
               {"Higher fares apply"}
               <tspan x={0} dy={13}>
@@ -6449,60 +6449,60 @@ const SvgOriginalMap = (props) => (
               </tspan>
             </tspan>
           </text>
-          <g class="original_map_svg__b">
+          <g className="original_map_svg__b">
             <text
               transform="matrix(.8 .6 -.6 .8 808 543)"
-              class="original_map_svg__fbakerloo"
+              className="original_map_svg__fbakerloo"
             >
               {"Bakerloo line"}
             </text>
             <text
               x={1420}
               y={758}
-              class="original_map_svg__fbakerloo original_map_svg__mid"
+              className="original_map_svg__fbakerloo original_map_svg__mid"
             >
               {"Bakerloo line"}
             </text>
             <text
               transform="matrix(.8 .6 -.6 .8 415 642)"
-              class="original_map_svg__fcentral"
+              className="original_map_svg__fcentral"
             >
               {"Central line"}
             </text>
             <text
               transform="matrix(.8 -.6 .6 .8 1050 662)"
-              class="original_map_svg__fcentral"
+              className="original_map_svg__fcentral"
             >
               {"Central line"}
             </text>
             <text
               transform="rotate(53.13 712.5 2125.004)"
-              class="original_map_svg__fcentral original_map_svg__end"
+              className="original_map_svg__fcentral original_map_svg__end"
             >
               {"Central line"}
             </text>
-            <g class="original_map_svg__fcircle">
+            <g className="original_map_svg__fcircle">
               <text transform="matrix(.8 -.6 .6 .8 714 665)">
                 {"Circle line"}
               </text>
               <text
                 transform="rotate(-65 977.053 -374.325)"
-                class="original_map_svg__mid"
+                className="original_map_svg__mid"
               >
                 {"Circle"}
               </text>
               <text
                 transform="rotate(-51 1133.767 -643.102)"
-                class="original_map_svg__mid"
+                className="original_map_svg__mid"
               >
                 {"line"}
               </text>
             </g>
-            <g class="original_map_svg__fdistrict">
+            <g className="original_map_svg__fdistrict">
               <text x={908} y={878}>
                 {"District line"}
               </text>
-              <g class="original_map_svg__end">
+              <g className="original_map_svg__end">
                 <text transform="matrix(.8 -.6 .6 .8 484 829)">
                   {"District line"}
                 </text>
@@ -6515,20 +6515,20 @@ const SvgOriginalMap = (props) => (
               </g>
               <text
                 transform="rotate(77 -44.2 924.296)"
-                class="original_map_svg__mid"
+                className="original_map_svg__mid"
               >
                 {"District"}
               </text>
               <text
                 transform="rotate(65 -182.003 1083.725)"
-                class="original_map_svg__mid"
+                className="original_map_svg__mid"
               >
                 {"line"}
               </text>
             </g>
             <text
               transform="rotate(90 -108.5 728.5)"
-              class="original_map_svg__fhnc original_map_svg__end"
+              className="original_map_svg__fhnc original_map_svg__end"
             >
               {"Hammersmith"}
               <tspan x={0} dy={10}>
@@ -6538,29 +6538,29 @@ const SvgOriginalMap = (props) => (
             <text
               transform="matrix(.8 -.6 .6 .8 2144 350)"
               cursor="help"
-              class="original_map_svg__fhnc original_map_svg__end"
+              className="original_map_svg__fhnc original_map_svg__end"
             >
               {"H&C line"}
             </text>
-            <text x={780} y={301.5} class="original_map_svg__fjubilee">
+            <text x={780} y={301.5} className="original_map_svg__fjubilee">
               {"Jubilee line"}
             </text>
             <text
               transform="matrix(.6 .8 -.8 .6 1163 674)"
-              class="original_map_svg__fjubilee"
+              className="original_map_svg__fjubilee"
             >
               {"Jubilee line"}
             </text>
             <text
               transform="rotate(53.13 646 2149.504)"
-              class="original_map_svg__fjubilee"
+              className="original_map_svg__fjubilee"
             >
               {"Jubilee line"}
             </text>
-            <text x={780} y={284} class="original_map_svg__fmetropolitan">
+            <text x={780} y={284} className="original_map_svg__fmetropolitan">
               {"Metropolitan line"}
             </text>
-            <g class="original_map_svg__fnorthern">
+            <g className="original_map_svg__fnorthern">
               <text transform="rotate(36.87 322.5 1527.496)">
                 {"Northern line"}
               </text>
@@ -6574,10 +6574,10 @@ const SvgOriginalMap = (props) => (
                 {"Northern line"}
               </text>
             </g>
-            <g class="original_map_svg__fpiccadilly">
+            <g className="original_map_svg__fpiccadilly">
               <text
                 transform="matrix(.8 -.6 .6 .8 324 836)"
-                class="original_map_svg__end"
+                className="original_map_svg__end"
               >
                 {"Piccadilly line"}
               </text>
@@ -6587,28 +6587,28 @@ const SvgOriginalMap = (props) => (
               <text transform="rotate(90 208 913)">{"Piccadilly line"}</text>
               <text
                 transform="rotate(36.87 552.5 2102.494)"
-                class="original_map_svg__end"
+                className="original_map_svg__end"
               >
                 {"Piccadilly line"}
               </text>
             </g>
-            <text x={1612} y={121} class="original_map_svg__fvictoria">
+            <text x={1612} y={121} className="original_map_svg__fvictoria">
               {"Victoria line"}
             </text>
             <text
               transform="rotate(90 229.5 911.5)"
-              class="original_map_svg__fvictoria"
+              className="original_map_svg__fvictoria"
             >
               {"Victoria line"}
             </text>
             <text
               transform="matrix(.8 -.6 .6 .8 1361 676)"
-              class="original_map_svg__fwnc"
+              className="original_map_svg__fwnc"
               cursor="help"
             >
               {"Waterloo & City line"}
             </text>
-            <g class="original_map_svg__fdlr">
+            <g className="original_map_svg__fdlr">
               <g cursor="help">
                 <text x={1645} y={594}>
                   {"DLR"}
@@ -6620,7 +6620,7 @@ const SvgOriginalMap = (props) => (
                 {"Docklands Light Railway"}
               </text>
             </g>
-            <g class="original_map_svg__fog">
+            <g className="original_map_svg__fog">
               <text transform="rotate(90 188 334)">{"Overground"}</text>
               <text transform="matrix(.8 -.6 .6 .8 597 527)">
                 {"Overground"}
@@ -6628,15 +6628,15 @@ const SvgOriginalMap = (props) => (
               <text x={1612} y={146}>
                 {"Overground"}
               </text>
-              <text x={1800} y={284} class="original_map_svg__mid">
+              <text x={1800} y={284} className="original_map_svg__mid">
                 {"Overground"}
               </text>
-              <text x={1135} y={373} class="original_map_svg__end">
+              <text x={1135} y={373} className="original_map_svg__end">
                 {"Overground"}
               </text>
               <text
                 transform="rotate(53.13 743 2318.505)"
-                class="original_map_svg__end"
+                className="original_map_svg__end"
               >
                 {"Overground"}
               </text>
@@ -6644,20 +6644,20 @@ const SvgOriginalMap = (props) => (
               <text transform="rotate(53.13 1051.5 2365.505)">
                 {"Overground"}
               </text>
-              <text x={990} y={989} class="original_map_svg__mid">
+              <text x={990} y={989} className="original_map_svg__mid">
                 {"Overground"}
               </text>
               <text transform="matrix(.8 -.6 .6 .8 1545 1034)">
                 {"Overground"}
               </text>
-              <text x={2335} y={442} class="original_map_svg__mid">
+              <text x={2335} y={442} className="original_map_svg__mid">
                 {"2022"}
               </text>
             </g>
-            <g class="original_map_svg__felizabeth">
+            <g className="original_map_svg__felizabeth">
               <text
                 transform="matrix(.76 -.57 .6 .8 1111 560)"
-                class="original_map_svg__mid"
+                className="original_map_svg__mid"
               >
                 {"Elizabeth "}
                 <tspan x={0} dy={12}>
@@ -6666,25 +6666,25 @@ const SvgOriginalMap = (props) => (
               </text>
               <text
                 transform="rotate(36.87 147.503 3752.49)"
-                class="original_map_svg__end"
+                className="original_map_svg__end"
               >
                 {"Elizabeth line"}
               </text>
               <text
                 transform="rotate(36.87 147.503 3752.49)"
-                class="original_map_svg__end"
+                className="original_map_svg__end"
               >
                 {"Elizabeth line"}
               </text>
               <text
                 transform="matrix(.8 -.6 .6 .8 1845 542)"
-                class="original_map_svg__mid"
+                className="original_map_svg__mid"
               >
                 {"2022"}
               </text>
             </g>
-            <g class="original_map_svg__felizabeth">
-              <text x={100} y={733} class="original_map_svg__end">
+            <g className="original_map_svg__felizabeth">
+              <text x={100} y={733} className="original_map_svg__end">
                 {"Elizabeth line"}
                 <tspan x={100} dy={12}>
                   {" (Reading section)"}
@@ -6706,7 +6706,7 @@ const SvgOriginalMap = (props) => (
             <text
               x={1230}
               y={1145}
-              class="original_map_svg__ftl original_map_svg__mid"
+              className="original_map_svg__ftl original_map_svg__mid"
             >
               {"Tramlink"}
             </text>
@@ -6720,7 +6720,7 @@ const SvgOriginalMap = (props) => (
         fill: "none",
         strokeWidth: 1,
       }}
-      class="original_map_svg__selizabeth"
+      className="original_map_svg__selizabeth"
       d="M90 764h10M90 904h10m-5-140v47m0 45v48m-5-135 5-5 5 5M90 899l5 5 5-5"
     />
     <g id="original_map_svg__title_header">
@@ -6735,7 +6735,7 @@ const SvgOriginalMap = (props) => (
       <text
         x={7}
         y={20}
-        class="original_map_svg__b"
+        className="original_map_svg__b"
         style={{
           fontSize: 20,
           fill: "#fff",

@@ -164,7 +164,7 @@ function WoodstockTravels({ postdata }) {
                 <Alert variant="success" style={{ position: "sticky", margin: "5px", left: "1%", top: "1%", width: "300px" }}>{selectedStation}</Alert>
             } */}
 
-            <div class="scrolling-wrapper">
+            <div className="scrolling-wrapper">
                 <MapSVG ref={svgRef} />
             </div >
 

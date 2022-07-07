@@ -30,14 +30,14 @@ function LifePage() {
         />
 
         {/* <ParallaxProvider>
-                <Parallax class="custom-class" x={[200, -200]} tagOuter="figure">
+                <Parallax className="custom-class" x={[200, -200]} tagOuter="figure">
                 <Image src={bakerloo_image} height="300px" />
                 </Parallax>
             </ParallaxProvider> */}
 
-        <div class="container g-4">
-            <div class="row align-items-center justify-content-center align-items-md-stretch">
-                <div class="col-md-7 mt-4">
+        <div className="container g-4">
+            <div className="row align-items-center justify-content-center align-items-md-stretch">
+                <div className="col-md-7 mt-4">
                     <SquircleBox
                         appearance="dark"
                         title="Imperial College Rail and Transport Society 🚂"
@@ -53,18 +53,18 @@ function LifePage() {
                                     and random railfan trivia!
                                 </p>
                                 <p>
-                                    <a class="btn btn-outline-light" style={{ width: "200px" }} href={ytc_links.ICRTSMedium}>RailPub on Medium</a>
+                                    <a className="btn btn-outline-light" style={{ width: "200px" }} href={ytc_links.ICRTSMedium}>RailPub on Medium</a>
                                 </p>
                                 <p>
-                                    <a class="btn btn-outline-light" style={{ width: "200px" }} href={ytc_links.myMedium}>Yanni Chau on Medium</a>
+                                    <a className="btn btn-outline-light" style={{ width: "200px" }} href={ytc_links.myMedium}>Yanni Chau on Medium</a>
                                 </p>
                             </div>
                         }
                     />
                 </div>
 
-                <div class="col-md-5 align-content-center align-items-center mt-4">
-                    <div class="h-100 p-2 bg-white border rounded-3 align-content-center align-items-center">
+                <div className="col-md-5 align-content-center align-items-center mt-4">
+                    <div className="h-100 p-2 bg-white border rounded-3 align-content-center align-items-center">
                         <Figure>
                             <Figure.Image
                                 src={train_image}
@@ -77,38 +77,38 @@ function LifePage() {
                     </div>
                 </div>
 
-                <div class="col-md-12 mt-4">
+                <div className="col-md-12 mt-4">
 
                     <SquircleBox
                         appearance="teal"
                         content={
                             <div>
-                                <div class="row align-items-center align-content-center">
-                                    <div class="col-md-5 mt-4">
-                                        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                                            <div class="carousel-indicators">
-                                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <div className="row align-items-center align-content-center">
+                                    <div className="col-md-5 mt-4">
+                                        <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
+                                            <div className="carousel-indicators">
+                                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                                                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                             </div>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
+                                            <div className="carousel-inner">
+                                                <div className="carousel-item active">
                                                     <Image src={skatepark_image} fluid height="30%" rounded />
                                                 </div>
-                                                <div class="carousel-item">
+                                                <div className="carousel-item">
                                                     <Image src={streetskate_image} fluid height="30%" rounded />
                                                 </div>
                                             </div>
-                                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
+                                            <button className="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span className="visually-hidden">Previous</span>
                                             </button>
-                                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
+                                            <button className="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span className="visually-hidden">Next</span>
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="col-md-7 mt-4">
+                                    <div className="col-md-7 mt-4">
                                         <h2>Rolling with my feet 🛼</h2>
                                         <p>
                                             I started rolling skating 2 years ago when I first joined the college Skate society in Autumn 2019. Thanks to the coronavirus pandemic, I've actually spent more time street-skating and aggressive skating in skateparks.
@@ -123,13 +123,13 @@ function LifePage() {
                     />
                 </div>
 
-                <div class="col-md-4 align-content-center align-items-center mt-4">
+                <div className="col-md-4 align-content-center align-items-center mt-4">
                     <FramedFigure
                         image={icra_image}
                         caption="Imperial College Robotics Academy Lego Mindstorms Workshop. (Autumn 2019)"
                     />
                 </div>
-                <div class="col-md-8 mt-4">
+                <div className="col-md-8 mt-4">
                     <SquircleBox
                         appearance="grey"
                         title="Volunteering 🏫"

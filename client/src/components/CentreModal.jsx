@@ -38,7 +38,7 @@ function CentreModal(props) {
                     {props.content["ws_image"] === ""
                       ? <></>
                       :
-                      <Row class="justify-content-md-center">
+                      <Row className="justify-content-md-center">
                         <Col md={6} xs={10}>
                           <Image src={props.content["ws_image"]} fluid />
                         </Col>

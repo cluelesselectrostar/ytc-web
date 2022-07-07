@@ -35,68 +35,68 @@ function MDImport({ title, id }) {
 
     const myH1 = ({ children, ...props }) => (
         <div>
-            <h1 {...props} class="cust-title mt-3 mb-3 display-4">{children}</h1>
+            <h1 {...props} className="cust-title mt-3 mb-3 display-4">{children}</h1>
         </div>
     );
 
     const myH2 = ({ children, ...props }) => (
         <div>
-            <br class="mt-3"></br>
-            <h2 {...props} class="cust-h3 mt-3 mb-6 display-5">{children}</h2>
+            <br className="mt-3"></br>
+            <h2 {...props} className="cust-h3 mt-3 mb-6 display-5">{children}</h2>
         </div>
     );
 
     const myH3 = ({ children, ...props }) => (
         <div>
-            <h3 {...props} class="cust-h4 mb-3 mt-5 display-6">{children}</h3>
+            <h3 {...props} className="cust-h4 mb-3 mt-5 display-6">{children}</h3>
         </div>
     );
 
     const myH4 = ({ children, ...props }) => (
         <div>
-            <h4 {...props} class="mt-4">{children}</h4>
+            <h4 {...props} className="mt-4">{children}</h4>
         </div>
     );
 
     const myP = ({ children, ...props }) => (
-        <p class="cust mt-3 mb-3" {...props}>
+        <p className="cust mt-3 mb-3" {...props}>
             {children}
         </p>
     );
 
     const myLi = ({ children, ...props }) => (
-        <li class="cust" {...props}>
+        <li className="cust" {...props}>
             {children}
         </li>
     );
 
 
     const myImage = ({ children, ...props }) => (
-        <div class="mt-3" style={{ display: 'flex', justifyContent: 'center' }} class="justify-content-md-center" {...props}>
+        <div className="mt-3" style={{ display: 'flex', justifyContent: 'center' }} class="justify-content-md-center" {...props}>
             <Image src={props.src} alt="Photo" fluid />
         </div >
     );
 
     const myA = ({ children, ...props }) => (
-        <a class="cust text-dark" {...props}>
+        <a className="cust text-dark" {...props}>
             {children}
         </a>
     );
 
     const myTr = ({ children, ...props }) => (
-        <tr class="cust-tr" {...props}>
+        <tr className="cust-tr" {...props}>
             {children}
         </tr>
     );
 
     const myTd = ({ children, ...props }) => (
-        <td class="cust text-dark" {...props} style={{ padding: "5px", border: "1px solid", borderColor:"#f2f2f2" }}>
+        <td className="cust text-dark" {...props} style={{ padding: "5px", border: "1px solid", borderColor:"#f2f2f2" }}>
             {children}
         </td>
     );
 
     const myTh = ({ children, ...props }) => (
-        <td class="cust text-dark" {...props} style={{ padding: "5px", fontWeight: "bold", border: "1px solid", borderColor:"#f2f2f2" }}>
+        <td className="cust text-dark" {...props} style={{ padding: "5px", fontWeight: "bold", border: "1px solid", borderColor:"#f2f2f2" }}>
             {children}
         </td>
     );
@@ -110,7 +110,7 @@ function MDImport({ title, id }) {
     );
 
     const myBlockquote = ({ children, ...props }) => (
-        <div class="mt-3 mb-3 display-6" style={{ display: 'flex', justifyContent: 'center' }} {...props}>
+        <div className="mt-3 mb-3 display-6" style={{ display: 'flex', justifyContent: 'center' }} {...props}>
             {children}
         </div>
     );
@@ -120,7 +120,7 @@ function MDImport({ title, id }) {
         <div>
             <PageTitle title={`Blog | ${title}`} />
             {md ? (
-                <div style={{ display: 'flex', justifyContent: 'center' }} class="container d-flex py-4 col-md-10 col-lg-8" >
+                <div style={{ display: 'flex', justifyContent: 'center' }} className="container d-flex py-4 col-md-10 col-lg-8" >
                     <Markdown options={{
                         wrapper: 'article',
                         overrides: {
@@ -143,10 +143,10 @@ function MDImport({ title, id }) {
                         }
                     }}
                     >{md}</Markdown>
-                    {/* <div class="facebookComment">
-                        <div class="title">Comments</div>
+                    {/* <div className="facebookComment">
+                        <div className="title">Comments</div>
                         <div
-                            class="fb-comments"
+                            className="fb-comments"
                             data-href="localhost:3000/ytc-web/#/blogs/mogodB/Pretty%20needed%20Chill/61d33d9f69f66a56c65c3486"
                             data-width="100%"
                             data-numposts="5"
@@ -155,7 +155,7 @@ function MDImport({ title, id }) {
                 </div >
             ) : (
                 <div>
-                    <div class="px-10 py-0 text-center">
+                    <div className="px-10 py-0 text-center">
                         <Image src={load_image} alt="Photo" fluid />
                         <div>Cute image courtesy of <a href="https://dribbble.com/shots/3790348-game-loading" style={{ color: "black", textDecoration: "none" }}>yuanzi0410</a>.</div>
                     </div >

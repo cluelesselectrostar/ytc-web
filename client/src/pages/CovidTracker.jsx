@@ -34,33 +34,33 @@ function CovidPage({ coviddata }) {
 
             {loaded ? (
                 <div>
-                    <div class="align-items-md-stretch mt-4">
+                    <div className="align-items-md-stretch mt-4">
                         <GeoChartWrapper import_covid={coviddata} />
                     </div>
 
-                    <div class="container align-items-md-stretch mt-4">
+                    <div className="container align-items-md-stretch mt-4">
                         <LineChartWrapper import_covid={coviddata} />
                     </div>
                 </div>
             ) : (
-                <div class="container py-4">
-                    <DataLoading class="mt-4"/>
+                <div className="container py-4">
+                    <DataLoading className="mt-4"/>
                 </div>
             )}
 
-            <div class="container py-4">
-                <div class="row align-items-md-stretch justify-content-center">
-                    <div class="col-md-6 mt-4">
+            <div className="container py-4">
+                <div className="row align-items-md-stretch justify-content-center">
+                    <div className="col-md-6 mt-4">
                         <SquircleBox
                             title="The Indicators"
                             appearance="teal"
                             content={
                                 <div>
                                     <p>
-                                        The dataset is maintained by <a href="https://ourworldindata.org/coronavirus" class="text-reset">Our World in Data</a> 
-                                        and is fetched from a <a href="https://covid.ourworldindata.org/data/owid-covid-data.json" class="text-reset">JSON data source</a>. 
+                                        The dataset is maintained by <a href="https://ourworldindata.org/coronavirus" className="text-reset">Our World in Data</a> 
+                                        and is fetched from a <a href="https://covid.ourworldindata.org/data/owid-covid-data.json" className="text-reset">JSON data source</a>. 
                                         More details of the dataset indicators are available on their 
-                                        <a href="https://github.com/owid/covid-19-data/tree/master/public/data" class="text-reset">COVID-19 Data GitHub Repository</a>. 
+                                        <a href="https://github.com/owid/covid-19-data/tree/master/public/data" className="text-reset">COVID-19 Data GitHub Repository</a>. 
                                         The team deserves a great amount of respect and appreciation, 
                                         as a lot of effort is spent to extract data (sometimes manually) from a number of reputable sources, 
                                         such as the WHO, European CDC, and other national health agencies, making the data available in such an accessible manner.
@@ -79,7 +79,7 @@ function CovidPage({ coviddata }) {
                             }
                         />
                     </div>
-                    <div class="col-md-6 mt-4">
+                    <div className="col-md-6 mt-4">
                         <SquircleBox
                             title="About Coronavirus Tracker"
                             appearance="dark"
@@ -93,7 +93,7 @@ function CovidPage({ coviddata }) {
                                         This will likely involve some MERN (MongoDB, Express, React, Node) database tricks which I'm currently experimenting with.
                                     </p>
                                     <p>
-                                        This project is heavily inspired by a <a href="https://www.youtube.com/watch?v=gGORNzKIXL4&list=PLDZ4p-ENjbiPo4WH7KdHjh_EMI7Ic8b2B&index=14" class="text-reset">YouTube tutorial by The Muratorium</a> and
+                                        This project is heavily inspired by a <a href="https://www.youtube.com/watch?v=gGORNzKIXL4&list=PLDZ4p-ENjbiPo4WH7KdHjh_EMI7Ic8b2B&index=14" className="text-reset">YouTube tutorial by The Muratorium</a> and
                                          for that I must thank muratkemaldar for the extremely useful tutorial
                                         , which provided an excellent launchpad for me to explore the quirks of working with JSON API's and D3.js!
                                     </p>

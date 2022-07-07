@@ -14,7 +14,7 @@ class FramedFigure extends Component {
 
     render() {
         return (
-            <div class="h-100 p-2 bg-white border rounded-3 align-content-center align-items-center">
+            <div className="h-100 p-2 bg-white border rounded-3 align-content-center align-items-center">
                 <Figure>
                     <Figure.Image
                         src={this.props.image}
