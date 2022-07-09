@@ -40,9 +40,10 @@ function BlogsPage({ blogdata }) {
             <TitleBanner
                 title="Blogs ✍️"
                 description="All my content on Medium, backed up with Markdown!"
+                image = {image_6}
             />
             <div className="album py-4">
-                <div className="container">
+                <div className="container col-md-10">
                     <SquircleBox
                         appearance="bordered-grey"
                         content={

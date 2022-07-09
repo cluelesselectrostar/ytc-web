@@ -21,15 +21,6 @@ import { Row, Col } from 'react-bootstrap';
 
 function LandingPage() {
 
-    /* TODO: Use routes instead of href links on landing page. Is this important though?
-    const scrollToTop = () => {
-        //setExpanded(false);
-        window.scrollTo({
-            top: 0, behavior: 'smooth'
-        });
-    };
-    */
-
     return (
         <div className="px-10">
             <PageTitle title="Landing" />
@@ -47,7 +38,7 @@ function LandingPage() {
                                     Who wants to climb on a linktr.ee 🌲 when you can approach with a cool landing 🛬?
                                 </p>
                                 <div className="row mb-2">
-                                    <Button variant="outline-primary" href="https://cluelesselectrostar.github.io/ytc-web/" style={{ fontSize: "1.2em" }}>
+                                    <Button variant="outline-primary" href="https://yannichau.github.io/ytc-web/" style={{ fontSize: "1.2em" }}>
                                         <i className="bi bi-globe2" style={{ marginRight: "10px" }}></i>
                                         My personal website
                                     </Button>
@@ -59,7 +50,7 @@ function LandingPage() {
                                     </Button>
                                 </div>
                                 <div className="row mb-2">
-                                    <Button variant="outline-warning" href="https://cluelesselectrostar.github.io/ytc-web/#/travel" style={{ fontSize: "1.2em" }}>
+                                    <Button variant="outline-warning" href="https://yannichau.github.io/ytc-web/#/travel" style={{ fontSize: "1.2em" }}>
                                             <Image
                                                 height={30}
                                                 alt="Woodstock"
@@ -71,7 +62,7 @@ function LandingPage() {
                                     </Button>
                                 </div>
                                 <div className="row mb-2">
-                                    <Button variant="outline-success" href="https://cluelesselectrostar.github.io/ytc-web/#/blogs" style={{ fontSize: "1.2em" }}>
+                                    <Button variant="outline-success" href="https://yannichau.github.io/ytc-web/#/blogs" style={{ fontSize: "1.2em" }}>
                                         <i className="bi bi-pen-fill" style={{ marginRight: "10px" }}></i>
                                         Medium Blog Friend Links
                                     </Button>

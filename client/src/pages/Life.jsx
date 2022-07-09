@@ -18,6 +18,7 @@ import train_image from '../images/oldoakcommon.webp';
 
 import Figure from 'react-bootstrap/Figure';
 import { ytc_links } from '../components/Links';
+import image_3 from "../images/jaywalking/edited-1054347.webp";
 
 function LifePage() {
 
@@ -27,6 +28,7 @@ function LifePage() {
         <TitleBanner
             title="Living my passions ❤️‍🔥"
             description="My life beyond engineering!"
+            image = {image_3}
         />
 
         {/* <ParallaxProvider>
@@ -35,7 +37,7 @@ function LifePage() {
                 </Parallax>
             </ParallaxProvider> */}
 
-        <div className="container g-4">
+        <div className="container col-md-10">
             <div className="row align-items-center justify-content-center align-items-md-stretch">
                 <div className="col-md-7 mt-4">
                     <SquircleBox

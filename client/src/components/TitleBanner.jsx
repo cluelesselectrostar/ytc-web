@@ -1,5 +1,6 @@
 
 import React, { Component } from "react";
+import Card from 'react-bootstrap/Card'
 
 class TitleBanner extends Component {
 
@@ -13,16 +14,51 @@ class TitleBanner extends Component {
     }
 
     render() {
-        return (
-            <div className="align-items-md-stretch h-100 p-5 bg-light rounded-3">
-                <div className="col-md-8">
-                    <h1 className="display-5 fw-bold">{this.props.title}</h1>
-                    <p className="lead">
-                        {this.props.description}
-                    </p>
+        if (this.props.variant === "light") {
+            return (
+                <div className="container mt-3 col-md-10">
+                    <Card className="bg-light text-dark align-items-center" style={{ height: 350 }}>
+                        {this.props.image ?
+                            (
+                                <Card.Img src={this.props.image} style={{ width: "100%", height: 350, maxHeight: 500, overflow: "hidden", objectFit: "cover", opacity: "30%" }} />)
+                            : (
+                                <div></div>
+                            )
+                        }
+                        <Card.ImgOverlay>
+                            <div class="card-img-overlay p-5 row align-items-center">
+                                <div>
+                                    <h5 class="display-4 fw-bold">{this.props.title}</h5>
+                                    <p class="lead mt-4 fw-bold">{this.props.description}</p>
+                                </div>
+                            </div>
+                        </Card.ImgOverlay>
+                    </Card>
                 </div>
-            </div>
-        );
+            );
+        } else {
+            return (
+                <div className="container mt-3 col-md-10">
+                    <Card className="bg-dark text-white align-items-center" style={{ height: 350 }}>
+                        {this.props.image ?
+                            (
+                                <Card.Img src={this.props.image} style={{ width: "100%", height: 350, maxHeight: 500, overflow: "hidden", objectFit: "cover", opacity: "50%" }} />)
+                            : (
+                                <div></div>
+                            )
+                        }
+                        <Card.ImgOverlay>
+                            <div class="card-img-overlay p-5 row align-items-center">
+                                <div>
+                                    <h5 class="display-4 fw-bold">{this.props.title}</h5>
+                                    <p class="lead mt-4">{this.props.description}</p>
+                                </div>
+                            </div>
+                        </Card.ImgOverlay>
+                    </Card>
+                </div>
+            );
+        }
     }
 
 }

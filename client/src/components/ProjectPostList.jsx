@@ -6,11 +6,11 @@ export default function ProjectPostList({ posts }) {
         <div className="row g-3">
             {posts.map(post => (
             <div className="col-xs-12 col-md-6 col-lg-4">
-                <div className="card shadow-sm" style={{ height: 600 }}>
+                <div className="card shadow-sm" style={{ height: 550}}>
                     <Image src={(post.image)} style={{ width: "100%", height: 250, maxHeight: 250, overflow: "hidden", objectFit: "cover" }} />
                     <div className="card-body">
                         <h3> {post.title}</h3>
-                        <p className="card-text">{post.description}</p>
+                        <p className="card-text" style={{textOverflow:"ellipsis"}}>{post.description}</p>
                         <div className="row d-flex justify-content-between align-items-center" style={{ position: "absolute", bottom: 20, justifyContent: 'center' }}>
                             <div className="btn-group col-md-6">
                                 <a className="btn btn-sm btn-outline-secondary" href={post.repo}>Repo</a>

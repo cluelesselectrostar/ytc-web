@@ -9,6 +9,8 @@ import { useEffect } from 'react';
 
 import DataLoading from '../components/DataLoading';
 
+import image_7 from "../images/jaywalking/edited-1054755.webp";
+
 import './CovidTracker.css';
 
 function CovidPage({ coviddata }) {
@@ -30,6 +32,7 @@ function CovidPage({ coviddata }) {
             <TitleBanner
                 title="Coronavirus Tracker 😷"
                 description="My newest weekend project: the latest data for coronavirus, grabbed from Our World in Data."
+                image = {image_7}
             />
 
             {loaded ? (
@@ -48,7 +51,7 @@ function CovidPage({ coviddata }) {
                 </div>
             )}
 
-            <div className="container py-4">
+            <div className="container py-4 col-md-10">
                 <div className="row align-items-md-stretch justify-content-center">
                     <div className="col-md-6 mt-4">
                         <SquircleBox

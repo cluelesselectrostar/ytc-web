@@ -69,7 +69,7 @@ function HomePage() {
                 <hr />
             </div>
 
-            <div className="container py-4" ref={aboutRef}>
+            <div className="container py-4 col-md-10" ref={aboutRef}>
                 <div className="row align-items-md-stretch">
                     <div className="col-md-7 mt-4">
                         <SquircleBox
@@ -144,7 +144,7 @@ function HomePage() {
 
                     <div className="col-md-6 mt-4">
                         <SquircleBox
-                            appearance="teal"
+                            appearance="bordered-white"
                             title="Beyond all this, ...... ♥️"
                             content={
                                 <div>
@@ -155,21 +155,21 @@ function HomePage() {
                                     <br></br>
                                     <Row>
                                         <Col md="auto">
-                                            <button className="btn btn-outline-light" type="button">
+                                            <button className="btn btn-outline-dark" type="button">
                                                 <Link to="/life" className="text-decoration-none btn-outline-light" onClick={scrollToTop}>
                                                     <h3>🛼</h3>
                                                 </Link>
                                             </button>
                                         </Col>
                                         <Col md="auto">
-                                            <button className="btn btn-outline-light" type="button">
+                                            <button className="btn btn-outline-dark" type="button">
                                                 <Link to="/blogs" className="text-decoration-none btn-outline-light" onClick={scrollToTop}>
                                                     <h3>📷</h3>
                                                 </Link>
                                             </button>
                                         </Col>
                                         <Col md="auto">
-                                            <button className="btn btn-outline-light" type="button">
+                                            <button className="btn btn-outline-dark" type="button">
                                                 <Link to="/travel" className="text-decoration-none btn-outline-light" onClick={scrollToTop}>
                                                     <h3>🚂</h3>
                                                 </Link>

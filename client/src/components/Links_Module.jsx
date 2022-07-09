@@ -22,7 +22,7 @@ function LinkModules() {
                         </div>
                     </div>
                     <div className="col-md-3 mt-4">
-                        <div className="h-100 p-5 bg-light rounded-3">
+                        <div className="h-100 p-5 bg-light border border-dark rounded-3">
                             <h2>GitHub 💻</h2>
                             <p>
                                 Check out my repositories on GitHub!

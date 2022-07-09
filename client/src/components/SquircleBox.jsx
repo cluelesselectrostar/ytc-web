@@ -34,7 +34,14 @@ class SquircleBox extends Component {
                     <div>{this.props.content}</div>
                 </div>
             );
-        } else { // "grey" - grey without border
+        } else if (this.props.appearance === "bordered-white") {
+            return (
+                <div className="h-100 p-5 bg-white border-dark border rounded-3">
+                    <h2>{this.props.title}</h2>
+                    <div>{this.props.content}</div>
+                </div>
+            );
+        }else { // "grey" - grey without border
             return (
                 <div className="h-100 p-5 bg-light rounded-3">
                     <h2>{this.props.title}</h2>

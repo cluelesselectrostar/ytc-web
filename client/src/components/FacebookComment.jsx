@@ -52,7 +52,7 @@ export default function FaceBookComment({ url }) {
                                 <div className="col-md-6">
                                     <Figure>
                                         <Figure.Image
-                                            src="https://raw.githubusercontent.com/cluelesselectrostar/ytc-web/master/images/chrome_tracking.png"
+                                            src="https://i.imgur.com/kW6akNc.png"
                                             fluid rounded
                                         />
                                         <Figure.Caption>
@@ -63,7 +63,7 @@ export default function FaceBookComment({ url }) {
                                 <div className="col-md-6">
                                     <Figure>
                                         <Figure.Image
-                                            src="https://raw.githubusercontent.com/cluelesselectrostar/ytc-web/master/images/firefox_tracking.png"
+                                            src="https://i.imgur.com/dAw6s3k.png"
                                             fluid rounded
                                         />
                                         <Figure.Caption>
