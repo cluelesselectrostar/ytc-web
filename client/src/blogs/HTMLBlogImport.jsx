@@ -36,7 +36,7 @@ class HTMLBlogImport extends Component {
         //const title_url = title.replace(/ /g, "%20");
         // const url = "https://cluelesselectrostar.github.io/ytc-web/#/blogs/static/" + title_url + "/" + post;
         const title = this.props.title;
-        const post = this.props.post;
+        // const post = this.props.post;
 
         if (title === "") {
             return <br></br>

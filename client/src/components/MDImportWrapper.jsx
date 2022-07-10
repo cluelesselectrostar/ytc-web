@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import MDImport from "./MDImport";
 import SocialMediaShare from "../components/SocialMediaShare";
 import { useParams } from 'react-router-dom';

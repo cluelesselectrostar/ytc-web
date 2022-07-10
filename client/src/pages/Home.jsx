@@ -13,10 +13,12 @@ import FramedFigure from '../components/FramedFigure';
 import SquircleBox from '../components/SquircleBox';
 import PageTitle from '../components/PageTitle';
 
+import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import { Row, Col } from 'react-bootstrap';
 import scrollToTop from '../components/ScrollToTop';
+import FadeIn from "react-lazyload-fadein";
 
 //import { FullPage, Slide } from 'react-full-page';
 
@@ -31,12 +33,15 @@ function HomePage() {
     return (
         <div className="px-10">
             <PageTitle title="Home" />
-            <div className="container mt-3 col-md-10">
-                <div className="align-items-center align-content-center">
-                    <Image style={{ width: "100%", height: 350, maxHeight: 500, overflow: "hidden", objectFit: "cover" }} src={my_cover} alt="Photo taken at North Point." fluid rounded />
 
-                </div>
-            </div>
+            <Container className="mt-3" >
+                <FadeIn height={400}>
+                    {onload => (
+                        <img src={my_cover} className="rounded img-fluid" onLoad={onload} alt="North-Point"/>
+                    )}
+                </FadeIn>
+            </Container>
+
 
             <div className="container col-md-10 mt-3">
                 <div className="row align-items-center justify-content-center">

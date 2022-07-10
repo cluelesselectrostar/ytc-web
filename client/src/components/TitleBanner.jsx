@@ -1,6 +1,7 @@
 
 import React, { Component } from "react";
 import Card from 'react-bootstrap/Card';
+// import FadeIn from "react-lazyload-fadein";
 // import { Image } from 'react-image-and-background-image-fade';
 
 class TitleBanner extends Component {
