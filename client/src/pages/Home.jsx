@@ -16,19 +16,13 @@ import PageTitle from '../components/PageTitle';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import { Row, Col } from 'react-bootstrap';
+import scrollToTop from '../components/ScrollToTop';
 
 //import { FullPage, Slide } from 'react-full-page';
 
 function HomePage() {
 
     const aboutRef = useRef(null);
-
-    const scrollToTop = () => {
-        //setExpanded(false);
-        window.scrollTo({
-            top: 0, behavior: 'smooth'
-        });
-    };
 
     const scrollAbout = () => aboutRef.current.scrollIntoView({
         behavior: 'smooth'

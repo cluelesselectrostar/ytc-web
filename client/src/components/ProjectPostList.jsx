@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'react-bootstrap/Image';
+import { Image } from 'react-image-and-background-image-fade';
 
 export default function ProjectPostList({ posts }) {
     return (

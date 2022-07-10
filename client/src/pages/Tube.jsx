@@ -1,4 +1,5 @@
 import WoodstockTravels from '../travel/Woodstock';
+import WoodstockMasonry from '../travel/Woodstock_Masonry';
 
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
@@ -46,13 +47,18 @@ function TubePage({ stationdata }) {
                 image={acton}
             />
             {loaded ? (
-                <WoodstockTravels postdata={stationPosts} />
+                <div>
+                    <WoodstockTravels postdata={stationPosts} />
+                    <div className="container mt-4 col-md-10">
+                        <WoodstockMasonry postdata={stationPosts} />
+                    </div>
+                </div>
             ) : (
                 <LoadingGif />
             )
             }
 
-            <div className="container py-4 col-md-10">
+            <div className="container col-md-10">
                 <div className="row align-items-md-stretch">
                     <div className="col-md-4 mt-4">
                         <SquircleBox

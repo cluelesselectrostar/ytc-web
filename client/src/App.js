@@ -1,4 +1,4 @@
-import { HashRouter, Link, Switch, Route } from 'react-router-dom';
+import { HashRouter, Link, Routes, Route , useLocation} from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import axios from "axios";
@@ -17,17 +17,10 @@ import HTMLBlogImport from './blogs/HTMLBlogImport'; // Static HTML
 import MDImportWrapper from './components/MDImportWrapper'; // Markdown from MongoDB
 
 import LinkModules from './components/Links_Module';
+import scrollToTop from './components/ScrollToTop';
 
 
 function App() {
-
-  const scrollToTop = () => {
-    setExpanded(false);
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  };
 
   const [expanded, setExpanded] = useState(false);
   const [coviddata, setCovidData] = useState(null);
@@ -87,39 +80,20 @@ function App() {
           </Navbar>
         </div>
       </div>
-      {/* <br class=" mb-4"></br> */}
 
-      <Switch>
-        {/* <Route path="/about">
-          <AboutPage />
-        </Route> */}
-        <Route path="/projects">
-          <ProjectsPage projectdata={projectdata}/>
-        </Route>
-        <Route path="/life">
-          <LifePage />
-        </Route>
+      <Routes>
+        <Route path="/projects" element={<ProjectsPage projectdata={projectdata}/>} />
+        <Route path="/life" element={<LifePage />} />
         {/* <Route path="/blogs/md/test.md" component={TestMDImport} />  TODO: Need to add dynamic links later */}
-        <Route path="/blogs/mogodB/:title/:_id" component={MDImportWrapper}></Route>
-        <Route path="/blogs/static/:post/:title" component={HTMLBlogImport} />
-        <Route path="/blogs">
-          <BlogsPage blogdata={blogdata} />
-        </Route>
-        <Route path="/covid">
-          <CovidPage coviddata={coviddata} />
-        </Route>
-        <Route path="/travel">
-          <TubePage stationdata={stationdata}/>
-        </Route>
-        <Route path="/landing">
-          <LandingPage />
-        </Route>
-
+        <Route path="/blogs/mogodB/:title/:_id" element={<MDImportWrapper/>} />
+        <Route path="/blogs/static/:post/:title" element={<HTMLBlogImport/>} />
+        <Route path="/blogs" element={<BlogsPage blogdata={blogdata} />} />
+        <Route path="/covid" element={<CovidPage coviddata={coviddata} />} />
+        <Route path="/travel" element={<TubePage stationdata={stationdata}/>} />
+        <Route path="/landing" elemet={<LandingPage />} />
         {/* Home page goes last */}
-        <Route path="/">
-          <HomePage />
-        </Route>
-      </Switch>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
 
       <br class=" mb-4"></br>
 
