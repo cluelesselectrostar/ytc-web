@@ -8,7 +8,7 @@ import LifePage from '../pages/Life';
 import BlogsPage from '../pages/Blogs';
 import CovidPage from '../pages/CovidTracker';
 import LandingPage from '../pages/Landing';
-import HTMLBlogImport from '../blogs/HTMLBlogImport'; // Static HTML
+import HTMLImportWrapper from '../blogs/HTMLImportWrapper';
 // import TestMDImport from './blogs/markdown-test/MDImport'; // Static Markdown (Test)
 import MDImportWrapper from './MDImportWrapper'; // Markdown from MongoDB
 import AnimatePage from './AnimatePage';
@@ -23,8 +23,8 @@ function AnimatedRoutes({ projectdata, blogdata, coviddata, stationdata }) {
                 <Route path="/projects" element={<AnimatePage page={<ProjectsPage projectdata={projectdata} />} />} />
                 <Route path="/life" element={<AnimatePage page={<LifePage />} />} />
                 {/* <Route path="/blogs/md/test.md" component={TestMDImport} />  TODO: Need to add dynamic links later */}
-                <Route path="/blogs/mogodB/:title/:_id" element={<AnimatePage page={<MDImportWrapper />} />} />
-                <Route path="/blogs/static/:post/:title" element={<AnimatePage page={<HTMLBlogImport />} />} />
+                <Route path="/blogs/mogodB/:title/:_id" element={<AnimatePage page={<MDImportWrapper url={location.pathname}/>} />} />
+                <Route path="/blogs/static/:post/:title" element={<HTMLImportWrapper url={location.pathname}/>} />
                 <Route path="/blogs" element={<AnimatePage page={<BlogsPage blogdata={blogdata} />} />} />
                 <Route path="/covid" element={<AnimatePage page={<CovidPage coviddata={coviddata} />} />} />
                 <Route path="/travel" element={<AnimatePage page={<TubePage stationdata={stationdata} />} />} />

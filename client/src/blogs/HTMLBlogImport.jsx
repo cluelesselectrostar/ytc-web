@@ -5,14 +5,15 @@ import parse, { domToReact } from 'html-react-parser';
 import './BlogImport.css';
 
 import PageTitle from "../components/PageTitle";
-import SocialMediaShare from "../components/SocialMediaShare";
-import FaceBookComment from "../components/FacebookComment";
 
 class HTMLBlogImport extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            //import_title: title,
+            //import_post: post,
+        };
     }
 
     componentDidMount() {
@@ -29,10 +30,14 @@ class HTMLBlogImport extends Component {
 
 
     render() {
-        const title = decodeURIComponent(this.props.match.params.title);
-        const post = decodeURIComponent(this.props.match.params.post);
-        const title_url = title.replace(/ /g, "%20");
-        const url = "https://cluelesselectrostar.github.io/ytc-web/#/blogs/static/" + title_url + "/" + post;
+        //console.log(this.props.match.params);
+        //const title = decodeURIComponent(this.props.match.params.title);
+        //const post = decodeURIComponent(this.props.match.params.post);
+        //const title_url = title.replace(/ /g, "%20");
+        // const url = "https://cluelesselectrostar.github.io/ytc-web/#/blogs/static/" + title_url + "/" + post;
+        const title = this.props.title;
+        const post = this.props.post;
+
         if (title === "") {
             return <br></br>
         } else {
@@ -117,21 +122,9 @@ class HTMLBlogImport extends Component {
                     }
                 };
                 return (
-                    <div>
-                        <PageTitle title={`Blog | ${post}`} />
-                        <br></br>
-                        <div className="container col-md-10 col-lg-6 cust-title mt-3 mb-3 display-4">
-                            <div>{post}</div>
-                            <SocialMediaShare link={this.props.location.pathname} />
-                        </div>
-                        <div className="container col-md-10 col-lg-8">
-                            {parse(cleanHTML, options)}
-                        </div>
-
-                        <br></br>
-                        <FaceBookComment url={url}/>
-                        
-                    </div >
+                    <div className="container col-md-10 col-lg-8">
+                        {parse(cleanHTML, options)}
+                    </div>
                 );
             } else {
                 return (
