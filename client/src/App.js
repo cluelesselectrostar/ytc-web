@@ -1,23 +1,13 @@
-import { HashRouter, Link, Routes, Route , useLocation} from 'react-router-dom';
+import { HashRouter, Link} from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import axios from "axios";
 
 import './App.css';
-import HomePage from './pages/Home';
-import ProjectsPage from './pages/Projects';
-import TubePage from './pages/Tube';
-import LifePage from './pages/Life';
-import BlogsPage from './pages/Blogs';
-import CovidPage from './pages/CovidTracker';
-import LandingPage from './pages/Landing';
-
-import HTMLBlogImport from './blogs/HTMLBlogImport'; // Static HTML
-// import TestMDImport from './blogs/markdown-test/MDImport'; // Static Markdown (Test)
-import MDImportWrapper from './components/MDImportWrapper'; // Markdown from MongoDB
 
 import LinkModules from './components/Links_Module';
 import scrollToTop from './components/ScrollToTop';
+import AnimatedRoutes from './components/AnimatedRoutes';
 
 
 function App() {
@@ -81,22 +71,7 @@ function App() {
         </div>
       </div>
 
-      <Routes>
-        <Route path="/projects" element={<ProjectsPage projectdata={projectdata}/>} />
-        <Route path="/life" element={<LifePage />} />
-        {/* <Route path="/blogs/md/test.md" component={TestMDImport} />  TODO: Need to add dynamic links later */}
-        <Route path="/blogs/mogodB/:title/:_id" element={<MDImportWrapper/>} />
-        <Route path="/blogs/static/:post/:title" element={<HTMLBlogImport/>} />
-        <Route path="/blogs" element={<BlogsPage blogdata={blogdata} />} />
-        <Route path="/covid" element={<CovidPage coviddata={coviddata} />} />
-        <Route path="/travel" element={<TubePage stationdata={stationdata}/>} />
-        <Route path="/landing" elemet={<LandingPage />} />
-        {/* Home page goes last */}
-        <Route path="/" element={<HomePage />} />
-      </Routes>
-
-      <br class=" mb-4"></br>
-
+      <AnimatedRoutes blogdata={blogdata} coviddata={coviddata} projectdata={projectdata} stationdata={stationdata}/>
       <div class="mt-4">
         <LinkModules />
       </div>
