@@ -35,11 +35,7 @@ function HomePage() {
             <PageTitle title="Home" />
 
             <Container className="mt-3" >
-                <FadeIn height={400}>
-                    {onload => (
-                        <img src={my_cover} className="rounded img-fluid" onLoad={onload} alt="North-Point"/>
-                    )}
-                </FadeIn>
+                <img src={my_cover} className="rounded img-fluid" alt="North-Point" />
             </Container>
 
 
@@ -53,7 +49,7 @@ function HomePage() {
                             Feel free to roam around my site!
                         </p>
                         <br></br>
-                        <Button variant="light" onClick={scrollAbout}>
+                        <Button variant="secondary" onClick={scrollAbout}>
                             <i className="bi bi-chevron-down" style={{ fontSize: "1.5em" }}></i>
                         </Button>
                     </div>

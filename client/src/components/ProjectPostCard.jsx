@@ -8,7 +8,7 @@ import FadeIn from "react-lazyload-fadein";
 
 function ProjectPostCard({ post }) {
     return (
-        <FadeIn height={300} preset={350}>
+        <FadeIn height={300} offset={700}>
             {onload => (
                 <Card onLoad={onload} style={{height:550}}>
                     <Card.Img variant="top" src={(post.image)} style={{ width: "100%", height: 250, maxHeight: 250, overflow: "hidden", objectFit: "cover" }} />

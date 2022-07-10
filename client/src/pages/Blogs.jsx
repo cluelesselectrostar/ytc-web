@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
+import { useRef } from 'react';
+import Button from 'react-bootstrap/Button';
 
 import BlogPostList from "../components/BlogPostList"; //MongoDB
 // import GetBlogs from '../blogs/HTMLGetBlogs'; // Static HTML
@@ -10,6 +12,7 @@ import PageTitle from '../components/PageTitle';
 import LoadingGif from "../components/LoadingGIF";
 import { ytc_links } from '../components/Links';
 import SquircleBox from '../components/SquircleBox';
+import BouncyArrow from "../components/BouncyArrow";
 
 import Image from 'react-bootstrap/Image';
 import image_1 from "../images/jaywalking/edited-1054311.webp";
@@ -22,6 +25,11 @@ import image_7 from "../images/jaywalking/edited-1054755.webp";
 
 
 function BlogsPage({ blogdata }) {
+
+    const postRef = useRef(null);
+    const scrollToPost = () => postRef.current.scrollIntoView({
+        behavior: 'smooth'
+    })
 
     const [loaded, setLoaded] = useState(false);
     const [blogs, setBlogs] = useState([]);
@@ -43,12 +51,6 @@ function BlogsPage({ blogdata }) {
                 image={image_6}
             />
             <div className="container col-md-10 mt-4">
-                {loaded ? (
-                    <BlogPostList mdPosts={blogs} />
-                ) : (
-                    <LoadingGif />
-                )}
-                <br></br>
                 <SquircleBox
                     appearance="bordered-grey"
                     content={
@@ -112,6 +114,16 @@ function BlogsPage({ blogdata }) {
                         </div>
                     }
                 />
+                <div onClick={scrollToPost}>
+                    <BouncyArrow />
+                </div>
+                {loaded ? (
+                    <div ref={postRef}>
+                        <BlogPostList mdPosts={blogs} />
+                    </div>
+                ) : (
+                    <LoadingGif ref={postRef} />
+                )}
             </div>
         </main>
     );

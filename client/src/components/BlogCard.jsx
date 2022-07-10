@@ -8,7 +8,7 @@ import FadeIn from "react-lazyload-fadein";
 
 function BlogCard({ post, isLocal }) {
     return (
-        <FadeIn height={300} preset={350}>
+        <FadeIn height={300} offset={350}>
             {onload => (
                 < Card onLoad={onload}>
                     <Card.Img variant="top" src={(post.image)} style={{ width: "100%" }} />

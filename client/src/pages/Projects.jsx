@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRef } from 'react';
 // import { Component } from 'react';
 // import axios from "axios";
 import { useEffect, useState } from "react";
@@ -12,6 +13,7 @@ import SquircleBox from '../components/SquircleBox';
 import ProjectPostList from '../components/ProjectPostList';
 import TitleBanner from '../components/TitleBanner';
 import PageTitle from '../components/PageTitle';
+import BouncyArrow from '../components/BouncyArrow';
 
 import LoadingGif from '../components/LoadingGIF';
 import circuit_image from '../images/circuit.webp';
@@ -35,6 +37,12 @@ import react from '../images/icons_webp/react.webp';
 
 
 function ProjectsPage({ projectdata }) {
+
+    const postRef = useRef(null);
+
+    const scrollToPost = () => postRef.current.scrollIntoView({
+        behavior: 'smooth'
+    })
 
     const [loaded, setLoaded] = useState(false);
     const [posts, setPosts] = useState([]);
@@ -62,7 +70,6 @@ function ProjectsPage({ projectdata }) {
                 }
                 image={circuit_image}
             />
-
             <div className="container col-md-10">
                 <div className="row align-items-md-stretch">
                     <div className="col-md-4 mt-4">
@@ -91,7 +98,7 @@ function ProjectsPage({ projectdata }) {
                                         <p>
                                             I have a pethora of experience working with hardware programming,
                                             both in my coursework and internship projects, ranging from
-                                            Arduino projects to programming for micro-controllers. 
+                                            Arduino projects to programming for micro-controllers.
                                         </p>
                                     </div>
                                 </div>
@@ -174,14 +181,18 @@ function ProjectsPage({ projectdata }) {
                 </div>
             </div>
 
+            <div onClick={scrollToPost} >
+                <BouncyArrow />
+            </div>
+
             {loaded ? (
-                <div className="album mt-4">
+                <div className="album mt-4" ref={postRef}>
                     <div className="container">
                         <ProjectPostList posts={posts} />
                     </div>
                 </div>
             ) : (
-                <LoadingGif />
+                <LoadingGif ref={postRef} />
             )
             }
 
