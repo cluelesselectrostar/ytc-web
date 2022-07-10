@@ -24,7 +24,7 @@ function AnimatedRoutes({ projectdata, blogdata, coviddata, stationdata }) {
                 <Route path="/life" element={<AnimatePage page={<LifePage />} />} />
                 {/* <Route path="/blogs/md/test.md" component={TestMDImport} />  TODO: Need to add dynamic links later */}
                 <Route path="/blogs/mogodB/:title/:_id" element={<AnimatePage page={<MDImportWrapper url={location.pathname}/>} />} />
-                <Route path="/blogs/static/:post/:title" element={<HTMLImportWrapper url={location.pathname}/>} />
+                <Route path="/blogs/static/:post/:title" element={<AnimatePage page={<HTMLImportWrapper url={location.pathname}/>} />} />
                 <Route path="/blogs" element={<AnimatePage page={<BlogsPage blogdata={blogdata} />} />} />
                 <Route path="/covid" element={<AnimatePage page={<CovidPage coviddata={coviddata} />} />} />
                 <Route path="/travel" element={<AnimatePage page={<TubePage stationdata={stationdata} />} />} />
