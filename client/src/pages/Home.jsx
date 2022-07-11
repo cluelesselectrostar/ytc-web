@@ -6,7 +6,6 @@ import { useRef } from 'react';
 import circuit_image from '../images/circuit.webp';
 import profile_image from '../images/brighton.webp';
 
-import review_pdf from '../docs/End of Internship Review - Yanni.pdf';
 import my_cover from '../images/edited-1054475.webp'
 
 import FramedFigure from '../components/FramedFigure';
@@ -18,7 +17,7 @@ import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import { Row, Col } from 'react-bootstrap';
 import scrollToTop from '../components/ScrollToTop';
-import FadeIn from "react-lazyload-fadein";
+// import FadeIn from "react-lazyload-fadein";
 
 //import { FullPage, Slide } from 'react-full-page';
 
@@ -77,6 +76,14 @@ function HomePage() {
                                         mesmersing to craft high-power, efficient and time-critical circuits that
                                         can be applied in everything ranging from gadgets to giant motors!
                                     </p>
+                                    <p className="lead">
+                                        Check out my attestable portfolio of academic and professional experiences in my CV.
+                                    </p>
+                                    <button className="btn btn-outline-light" type="button">
+                                        <Link to="/cv" className="text-decoration-none btn-outline-light" onClick={scrollToTop}>
+                                            CV
+                                        </Link>
+                                    </button>
                                 </div>
                             }
                         />
@@ -89,33 +96,6 @@ function HomePage() {
                         />
                     </div>
 
-                    <div className="mt-4">
-                        <SquircleBox
-                            appearance="dark"
-                            title="I have built a porfolio of professional experiences, at...... 💼"
-                            content={
-                                <div>
-                                    <h5 className="mt-4">Majestic Engineering (Site Subcontractor)
-                                        - Summer '20</h5>
-                                    <p>
-                                        Used AutoCAD for amending technical documents
-                                        , and developed a system of VBA macros and functions for organising the site's inventory.
-                                    </p>
-                                    <h5 className="mt-4">Origami Labs (Team Communications Platform Startup) - Autumn '20</h5>
-                                    <p>
-                                        Worked with the engineering team to build the enterprise iOS app with Flutter.
-                                    </p>
-                                    <h5 className="mt-4">VoltShare (EV Charger Startup) - Summer '21</h5>
-                                    <p>
-                                        Promoted VoltShare as a thought leader amongst sustainable businesses and the EV industry,
-                                        through publishing whitepaper articles and market research campaigns.
-                                    </p>
-                                    <a className="btn btn-outline-light" href={review_pdf}>Employer Review</a>
-                                </div>
-                            }
-                        />
-                    </div>
-
                     <div className="col-md-6 mt-4">
                         <SquircleBox
                             appearance="grey"
@@ -125,7 +105,7 @@ function HomePage() {
                                     <p className="lead mt-3">
                                         (not literally), I work on various projects beyond my curriculum, ranging from
                                         Python mini-projects to C/C++/Arduino-powered hardware projects.
-                                        More details in the projects page and GitHub.
+                                        So check out my projects page and GitHub!
                                     </p>
                                     <button className="btn btn-outline-secondary" type="button">
                                         <Link to="/projects" className="text-decoration-none btn-outline-secondary" onClick={scrollToTop}>
@@ -139,8 +119,8 @@ function HomePage() {
 
                     <div className="col-md-6 mt-4">
                         <SquircleBox
-                            appearance="bordered-white"
-                            title="Beyond all this, ...... ♥️"
+                            appearance="dark"
+                            title="Beyond all this, ...... 🔥"
                             content={
                                 <div>
                                     <p className="lead mt-3">
@@ -150,21 +130,21 @@ function HomePage() {
                                     <br></br>
                                     <Row>
                                         <Col md="auto">
-                                            <button className="btn btn-outline-dark" type="button">
-                                                <Link to="/life" className="text-decoration-none btn-outline-light" onClick={scrollToTop}>
-                                                    <h3>🛼</h3>
+                                            <button className="btn btn-outline-light" type="button">
+                                                <Link to="/covid" className="text-decoration-none btn-outline-light" onClick={scrollToTop}>
+                                                    <h3>😷</h3>
                                                 </Link>
                                             </button>
                                         </Col>
                                         <Col md="auto">
-                                            <button className="btn btn-outline-dark" type="button">
+                                            <button className="btn btn-outline-light" type="button">
                                                 <Link to="/blogs" className="text-decoration-none btn-outline-light" onClick={scrollToTop}>
                                                     <h3>📷</h3>
                                                 </Link>
                                             </button>
                                         </Col>
                                         <Col md="auto">
-                                            <button className="btn btn-outline-dark" type="button">
+                                            <button className="btn btn-outline-light" type="button">
                                                 <Link to="/travel" className="text-decoration-none btn-outline-light" onClick={scrollToTop}>
                                                     <h3>🚂</h3>
                                                 </Link>

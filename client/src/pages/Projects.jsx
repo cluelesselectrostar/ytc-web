@@ -81,6 +81,9 @@ function ProjectsPage({ projectdata }) {
                                     <div>
                                         <Row className="justify-content-md-center g-1">
                                             <Col md={2} xs={4}>
+                                                <Image src={altium} fluid />
+                                            </Col>
+                                            <Col md={2} xs={4}>
                                                 <Image src={arduino} fluid />
                                             </Col>
                                             <Col md={2} xs={4}>
@@ -94,11 +97,12 @@ function ProjectsPage({ projectdata }) {
                                             </Col>
                                         </Row>
                                     </div>
-                                    <div>
+                                    <div class="mt-4">
                                         <p>
-                                            I have a pethora of experience working with hardware programming,
-                                            both in my coursework and internship projects, ranging from
-                                            Arduino projects to programming for micro-controllers.
+                                            I have a wealth of experience working with hardware
+                                            in both in my coursework and internship projects, ranging from
+                                            designing interference-free PCBs for high speed power electronics,
+                                            to programming microcontrollers.
                                         </p>
                                     </div>
                                 </div>
@@ -126,13 +130,10 @@ function ProjectsPage({ projectdata }) {
                                             <Image src={react} fluid />
                                         </Col>
                                     </Row>
-                                    <p>
-                                        I am proficient in the following languages:
-                                        <ul>
-                                            <li>Python - For personal web-based/ data-processing projects</li>
-                                            <li>Flutter/ Dart - iOS and Android app development, for a personal app and internship project</li>
-                                            <li>MERN - The full stack web-dev framework (and of course good old HTML and CSS) for developing this brilliant portfolio!</li>
-                                        </ul>
+                                    <p class="mt-4">
+                                        These are mainly for the my own interest, such as data-processing and mobile app development.
+                                        The highlight of all is of course the full stack "MERN" web-dev framework
+                                        for developing this brilliant portfolio!
                                     </p>
                                 </div>
                             }
@@ -147,9 +148,6 @@ function ProjectsPage({ projectdata }) {
                                 <div>
                                     <Row className="justify-content-md-center g-1">
                                         <Col md={2} xs={4}>
-                                            <Image src={altium} fluid />
-                                        </Col>
-                                        <Col md={2} xs={4}>
                                             <Image src={ltspice} fluid />
                                         </Col>
                                         <Col md={2} xs={4}>
@@ -163,9 +161,8 @@ function ProjectsPage({ projectdata }) {
                                         </Col>
                                     </Row>
                                     <p>
-                                        Throughout my degree I have become fluent at a number of industry-relevant scientific computing and simulation software:
+                                        Throughout my degree I have become fluent at a number of industry-relevant software:
                                         <ul>
-                                            <li>Altium - Designing interference-free PCBs for high speed power electronics</li>
                                             <li>LTSpice - Simulating transient behaviour of analogue circuits</li>
                                             <li>MATLAB - Modelling of control systems</li>
                                             <li>Quartus - Digital circuit simulations ad FPGA programming</li>
@@ -181,18 +178,18 @@ function ProjectsPage({ projectdata }) {
                 </div>
             </div>
 
-            <div onClick={scrollToPost} >
+            <div onClick={scrollToPost} ref={postRef}>
                 <BouncyArrow />
             </div>
 
             {loaded ? (
-                <div className="album mt-4" ref={postRef}>
+                <div className="album mt-4">
                     <div className="container">
                         <ProjectPostList posts={posts} />
                     </div>
                 </div>
             ) : (
-                <LoadingGif ref={postRef} />
+                <LoadingGif/>
             )
             }
 

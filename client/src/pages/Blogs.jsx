@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import { useRef } from 'react';
-import Button from 'react-bootstrap/Button';
 
 import BlogPostList from "../components/BlogPostList"; //MongoDB
 // import GetBlogs from '../blogs/HTMLGetBlogs'; // Static HTML
@@ -15,6 +14,8 @@ import SquircleBox from '../components/SquircleBox';
 import BouncyArrow from "../components/BouncyArrow";
 
 import Image from 'react-bootstrap/Image';
+import skatepark_image from '../images/skatepark.webp';
+import streetskate_image from '../images/streetskate.webp';
 import image_1 from "../images/jaywalking/edited-1054311.webp";
 import image_2 from "../images/jaywalking/edited-1054329.webp";
 import image_3 from "../images/jaywalking/edited-1054347.webp";
@@ -46,8 +47,8 @@ function BlogsPage({ blogdata }) {
         <main>
             <PageTitle title="Blogs" />
             <TitleBanner
-                title="Blogs ✍️"
-                description="All my content on Medium, backed up with Markdown!"
+                title="Blogs ❤️‍🔥"
+                description="Documenting my life beyond engineering!"
                 image={image_6}
             />
             <div className="container col-md-10 mt-4">
@@ -58,7 +59,7 @@ function BlogsPage({ blogdata }) {
                             <div className="row align-items-center align-content-center">
                                 <div className="col-md-7 mt-4">
                                     <h2>Jaywalking 🚶‍♂️</h2>
-                                    <p>
+                                    <p class="mt-4">
                                         I love travelling and taking photographs, but I like to call it "jaywalking" because half the time I don't even have any idea what I'm looking for. In addition, I tend to capture my best shots at familiar locations, but during the most unexpected moments.
                                     </p>
                                     <p>
@@ -114,16 +115,64 @@ function BlogsPage({ blogdata }) {
                         </div>
                     }
                 />
-                <div onClick={scrollToPost}>
+
+                <div onClick={scrollToPost} ref={postRef}>
                     <BouncyArrow />
                 </div>
                 {loaded ? (
-                    <div ref={postRef}>
+                    <div>
                         <BlogPostList mdPosts={blogs} />
                     </div>
                 ) : (
-                    <LoadingGif ref={postRef} />
+                    <LoadingGif/>
                 )}
+
+                <div className="mt-4">
+                    <SquircleBox
+                        appearance="teal"
+                        content={
+                            <div>
+                                <div className="row align-items-center align-content-center">
+                                    <div className="col-md-5 mt-4">
+                                        <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
+                                            <div className="carousel-indicators">
+                                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            </div>
+                                            <div className="carousel-inner">
+                                                <div className="carousel-item active">
+                                                    <Image src={skatepark_image} fluid height="30%" rounded />
+                                                </div>
+                                                <div className="carousel-item">
+                                                    <Image src={streetskate_image} fluid height="30%" rounded />
+                                                </div>
+                                            </div>
+                                            <button className="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span className="visually-hidden">Previous</span>
+                                            </button>
+                                            <button className="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span className="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-7 mt-4">
+                                        <h2>And now that you've rolled to the bottom, you see my rolling with my feet! 🛼</h2>
+                                        <p class="mt-4">
+                                            I started roller blading 2 years ago when I first joined the college Skate society in Autumn 2019.
+                                            Thanks to the coronavirus pandemic, I've actually spent more time street-skating and aggressive skating in skateparks.
+                                            Today, I skate several times a month, and I cannot imagine my life without rolling on skates!
+                                        </p>
+                                        <p>
+                                            Maybe a blog or two about this in the future?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    />
+                </div>
             </div>
         </main>
     );

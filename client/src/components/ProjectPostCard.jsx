@@ -1,9 +1,7 @@
 import Card from 'react-bootstrap/Card';
 // import { Image } from 'react-image-and-background-image-fade';
-import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import scrollToTop from './ScrollToTop';
 import FadeIn from "react-lazyload-fadein";
 
 function ProjectPostCard({ post }) {

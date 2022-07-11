@@ -2,7 +2,8 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import ListGroup from 'react-bootstrap/ListGroup';
 import Image from 'react-bootstrap/Image';
-import {Row, Col} from 'react-bootstrap';
+// import { CloseButton } from "react-bootstrap";
+import { Row, Col } from 'react-bootstrap';
 
 import ListGroupItem from './ListGpItem';
 
@@ -18,6 +19,7 @@ function CentreModal(props) {
         <Modal.Title id="contained-modal-title-vcenter">
           {props.title}
         </Modal.Title>
+        <Button onClick={props.onHide}>Close</Button>
       </Modal.Header>
       <Modal.Body>
         {props.content === null ?
@@ -50,9 +52,6 @@ function CentreModal(props) {
           </ListGroup>
         }
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
     </Modal>
   );
 }

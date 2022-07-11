@@ -60,8 +60,8 @@ function App() {
               <Nav className="mr-auto">
                 <Link onClick={scrollToTop} to="/" className="nav-link text-decoration-none fw-bold" style={{ color: 'teal' }} >Yan To Chau</Link>
                 {/* <Link onClick={scrollToTop} to="/about" class=" nav-link text-decoration-none text-dark"> About</Link> */}
+                <Link onClick={scrollToTop} to="/cv" className="nav-link text-decoration-none text-dark" style={{ marginLeft: "10px" }}> 💼 CV </Link>
                 <Link onClick={scrollToTop} to="/projects" className="nav-link text-decoration-none text-dark" style={{ marginLeft: "10px" }}> 🔌 Projects</Link>
-                <Link onClick={scrollToTop} to="/life" className="nav-link text-decoration-none text-dark" style={{ marginLeft: "10px" }}> 🛼 Passions </Link>
                 <Link onClick={scrollToTop} to="/blogs" className="nav-link text-decoration-none text-dark" style={{ marginLeft: "10px" }}> 📷 Blogs</Link>
                 <Link onClick={scrollToTop} to="/covid" className="nav-link text-decoration-none text-dark" style={{ marginLeft: "10px" }}> 😷 Covid Tracker</Link>
                 <Link onClick={scrollToTop} to="/travel" className="nav-link text-decoration-none text-dark" style={{ marginLeft: "10px" }}> 🚂 Woodstock Travels</Link>
