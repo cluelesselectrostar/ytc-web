@@ -1,4 +1,4 @@
-import { HashRouter, Link} from 'react-router-dom';
+import { HashRouter, Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import axios from "axios";
@@ -9,6 +9,14 @@ import LinkModules from './components/Links_Module';
 import scrollToTop from './components/ScrollToTop';
 import AnimatedRoutes from './components/AnimatedRoutes';
 
+import Login from './components/Login';
+import jwt_decode from 'jwt-decode';
+import Logout from './components/Logout';
+
+//import {gapi} from 'gapi-script';
+//import GoogleLogin from 'react-google-login';
+
+const clientId = '935692908995-9rljb05alk8n28ppgg2jg3dvb03eh2v0.apps.googleusercontent.com';
 
 function App() {
 
@@ -17,6 +25,22 @@ function App() {
   const [blogdata, setBlogData] = useState(null);
   const [projectdata, setProjectData] = useState(null);
   const [stationdata, setStationData] = useState(null);
+  const [user, setUser] = useState(null);
+
+  const googleAuth = () => {
+    window.open(
+      'http://localhost:5000/auth/google/callback',
+      'self'
+    );
+  }
+
+  function handleSignOut(event) {
+    setUser(null);
+    window.open(
+      'http://localhost:5000/auth/logout',
+      'self'
+    );
+  }
 
   useEffect(() => {
     fetch('https://covid.ourworldindata.org/data/owid-covid-data.json')
@@ -46,9 +70,29 @@ function App() {
     }
     fetchStations();
 
+    function handleCallbackResponse(res) {
+      console.log("Encoded JWT ID token: " + res.credential);
+
+      var userObject = jwt_decode(res.credential);
+      console.log(userObject);
+      setUser(userObject);
+    }
+
+    /* global google */
+    google.accounts.id.initialize({
+      client_id: clientId,
+      callback: handleCallbackResponse
+    })
+
+    google.accounts.id.renderButton(
+      document.getElementById("signInDiv"),
+      { theme: "outline", size: "large" }
+    )
+
   }, []);
 
   // style={{ color: 'rgb(153,230,179)', }} (teal colour)
+  // var accessToken = gapi.auth.getToken().accessToken;
 
   return (
     <HashRouter>
@@ -71,11 +115,21 @@ function App() {
         </div>
       </div>
 
-      <AnimatedRoutes blogdata={blogdata} coviddata={coviddata} projectdata={projectdata} stationdata={stationdata}/>
+      <AnimatedRoutes blogdata={blogdata} coviddata={coviddata} projectdata={projectdata} stationdata={stationdata} />
       <div class="mt-4">
         <LinkModules />
-      </div>
 
+        {user ? (
+          <div>
+            <button onClick={(e) => handleSignOut(e)}>Sign Out</button>
+            <img src={user.picture}></img>
+            <h3>{user.name}</h3>
+          </div>
+        ) : (
+          <Login onClick={googleAuth} />
+        )}
+
+      </div>
     </HashRouter>
   );
 }

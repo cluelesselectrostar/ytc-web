@@ -1,21 +1,35 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
-const multer = require("multer");
+// const multer = require("multer");
 const path = require("path");
 const cors =  require('cors');
+const passport = require('passport');
+const cookieSession = require('cookie-session');
 
 // const authRoute = require("./routes/auth");
 // const userRoute = require("./routes/users");
 const projectPostRoute = require("./routes/projectPosts");
 const blogPostRoute = require("./routes/blogPosts");
 const stationPostRoute = require("./routes/stationPosts");
+const authRoute = require("./routes/auth");
+
+const passportSetup = require('./passport');
 
 const app = express();
 
 dotenv.config();
 app.use(express.json());
 app.use(cors());
+app.use(
+  cookieSession({
+    name:"session",
+    keys:["ytc"],
+    maxAge: 24*60*60*100,
+  })
+);
+app.use(passport.initialize());
+app.use(passport.session());
 
 // const mongodbUri = process.env.MONGODB_URI || 'https://localhost:5000/';
 // const PORT  = 3000;
@@ -52,9 +66,13 @@ app.use('/api/covid', createProxyMiddleware({
 app.use("/api/projectposts", projectPostRoute);
 app.use("/api/blogposts", blogPostRoute);
 app.use("/api/stationposts", stationPostRoute);
+app.use("/auth", authRoute);
 
-app.listen(process.env.PORT || 5000, () => {
-  console.log(`Backend is running, ${process.env.PORT}.`);
+const port = process.env.PORT || 5000;
+
+app.listen(port, () => {
+  console.log(`Backend is running, ${port}.`);
+  // console.log(`Backend is running, ${process.env.PORT}.`);
 });
 
 app.get('/', (req, res) => {
