@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import { Image } from 'react-image-and-background-image-fade';
+import Image from 'react-bootstrap/Image';
 import shuffle from "../components/Shuffle";
 import FadeIn from "react-lazyload-fadein";
 
@@ -32,9 +32,9 @@ function WoodstockMasonry({ postdata }) {
                 >
                     <Masonry gutter={16}>
                         {images.map(url => (
-                            <FadeIn preset={250} height={350}>
+                            <FadeIn preset={200} height={350}>
                                 {onload => (
-                                    <Image src={url} rounded onLoad={onload} />
+                                    <Image src={url} rounded fluid onLoad={onload} />
                                 )}
                             </FadeIn>
                         ))}
