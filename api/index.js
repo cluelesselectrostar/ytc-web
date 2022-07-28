@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 // const multer = require("multer");
 const path = require("path");
-const cors =  require('cors');
+const cors = require('cors');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
 
@@ -20,12 +20,22 @@ const app = express();
 
 dotenv.config();
 app.use(express.json());
-app.use(cors());
+
+//TODO: need to fix to github front end url
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    methods: "GET,POST, PUT,DELTE",
+    credentials: true,
+  })
+);
+
+
 app.use(
   cookieSession({
-    name:"session",
-    keys:["ytc"],
-    maxAge: 24*60*60*100,
+    name: "session",
+    keys: ["ytc"],
+    maxAge: 24 * 60 * 60 * 100,
   })
 );
 app.use(passport.initialize());
@@ -53,13 +63,13 @@ app.use("/api/categories", categoryRoute);
 
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
-app.use('/api/covid', createProxyMiddleware({ 
-    target: 'https://covid.ourworldindata.org/data/owid-covid-data.json', //original url
-    changeOrigin: true, 
-    //secure: false,
-    onProxyRes: function (proxyRes, req, res) {
-       proxyRes.headers['Access-Control-Allow-Origin'] = '*';
-    }
+app.use('/api/covid', createProxyMiddleware({
+  target: 'https://covid.ourworldindata.org/data/owid-covid-data.json', //original url
+  changeOrigin: true,
+  //secure: false,
+  onProxyRes: function (proxyRes, req, res) {
+    proxyRes.headers['Access-Control-Allow-Origin'] = '*';
+  }
 }));
 
 

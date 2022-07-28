@@ -28,10 +28,24 @@ function App() {
   const [user, setUser] = useState(null);
 
   const googleAuth = () => {
+    /*
     window.open(
-      'http://localhost:5000/auth/google/callback',
-      'self'
+      'http://localhost:5000/auth/google/callback'
     );
+    */
+  }
+
+  //TODO: this is a security hazard
+  const getUser = async () => {
+    try {
+      const url = "https://localhost:5000/auth/login/success";
+      const { data } = await axios.get(url, { withCredentials: true });
+      console.log("initial get");
+      console.log(data.user._json);
+      setUser(data.user._json);
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   function handleSignOut(event) {
@@ -89,6 +103,8 @@ function App() {
       { theme: "outline", size: "large" }
     )
 
+    getUser();
+
   }, []);
 
   // style={{ color: 'rgb(153,230,179)', }} (teal colour)
@@ -129,6 +145,7 @@ function App() {
           <Login onClick={googleAuth} />
         )}
 
+        <blockquote class="imgur-embed-pub" lang="en" data-id="a/wuGTpHH"  ><a href="//imgur.com/a/wuGTpHH">Woodstock in London</a></blockquote>
       </div>
     </HashRouter>
   );
