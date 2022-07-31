@@ -30,6 +30,8 @@ https://betterprogramming.pub/react-d3-plotting-a-line-chart-with-tooltips-ed41a
 
 https://bestofreactjs.com/repo/CherryProjects-react-facebook-react-miscellaneous
 
+https://auth0.com/blog/complete-guide-to-react-user-authentication/
+
 
 # Unused packages
 

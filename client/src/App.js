@@ -10,9 +10,6 @@ import scrollToTop from './components/ScrollToTop';
 import AnimatedRoutes from './components/AnimatedRoutes';
 import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
 
-import AuthenticationButton from './components/Authentication';
-
-
 function App() {
 
   const [expanded, setExpanded] = useState(false);
@@ -78,7 +75,6 @@ function App() {
         <AnimatedRoutes blogdata={blogdata} coviddata={coviddata} projectdata={projectdata} stationdata={stationdata} />
         <div class="mt-4">
           <LinkModules />
-          <AuthenticationButton />
         </div>
       </Auth0ProviderWithHistory>
     </HashRouter>

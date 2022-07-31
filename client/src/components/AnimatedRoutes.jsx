@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion/dist/framer-motion';
+// import ProtectedRoute from '../auth/protected-routes';
 
 import HomePage from '../pages/Home';
 import CVPage from '../pages/CV';
@@ -13,6 +14,7 @@ import HTMLImportWrapper from '../blogs/HTMLImportWrapper';
 // import TestMDImport from './blogs/markdown-test/MDImport'; // Static Markdown (Test)
 import MDImportWrapper from './MDImportWrapper'; // Markdown from MongoDB
 import AnimatePage from './AnimatePage';
+import SuperUserPage from '../pages/SuperUser';
 
 function AnimatedRoutes({ projectdata, blogdata, coviddata, stationdata }) {
 
@@ -31,6 +33,7 @@ function AnimatedRoutes({ projectdata, blogdata, coviddata, stationdata }) {
                 <Route path="/covid" element={<AnimatePage page={<CovidPage coviddata={coviddata} />} />} />
                 <Route path="/travel" element={<AnimatePage page={<TubePage stationdata={stationdata} />} />} />
                 <Route path="/landing" element={<AnimatePage page={<LandingPage />} />} />
+                <Route path="/superyanni" element={<AnimatePage page={<SuperUserPage />} />} />
 
                 {/* Home page goes last */}
                 <Route path="/" element={<AnimatePage page={<HomePage />} />} />
