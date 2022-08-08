@@ -73,7 +73,7 @@ function App() {
         </div>
 
         <AnimatedRoutes blogdata={blogdata} coviddata={coviddata} projectdata={projectdata} stationdata={stationdata} />
-        <div class="mt-4">
+        <div className="mt-4">
           <LinkModules />
         </div>
       </Auth0ProviderWithHistory>

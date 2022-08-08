@@ -33,7 +33,7 @@ function AnimatedRoutes({ projectdata, blogdata, coviddata, stationdata }) {
                 <Route path="/covid" element={<AnimatePage page={<CovidPage coviddata={coviddata} />} />} />
                 <Route path="/travel" element={<AnimatePage page={<TubePage stationdata={stationdata} />} />} />
                 <Route path="/landing" element={<AnimatePage page={<LandingPage />} />} />
-                <Route path="/superyanni" element={<AnimatePage page={<SuperUserPage />} />} />
+                <Route path="/superyanni" element={<AnimatePage page={<SuperUserPage blogdata={blogdata}/>} />} />
 
                 {/* Home page goes last */}
                 <Route path="/" element={<AnimatePage page={<HomePage />} />} />

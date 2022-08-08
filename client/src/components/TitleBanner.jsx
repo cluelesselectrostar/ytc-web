@@ -28,10 +28,10 @@ class TitleBanner extends Component {
                             )
                         }
                         <Card.ImgOverlay>
-                            <div class="card-img-overlay p-5 row align-items-center">
+                            <div className="card-img-overlay p-5 row align-items-center">
                                 <div>
-                                    <h5 class="display-4 fw-bold">{this.props.title}</h5>
-                                    <p class="lead mt-4 fw-bold">{this.props.description}</p>
+                                    <h5 className="display-4 fw-bold">{this.props.title}</h5>
+                                    <p className="lead mt-4 fw-bold">{this.props.description}</p>
                                 </div>
                             </div>
                         </Card.ImgOverlay>
@@ -50,10 +50,10 @@ class TitleBanner extends Component {
                             )
                         }
                         <Card.ImgOverlay>
-                            <div class="card-img-overlay p-5 row align-items-center">
+                            <div className="card-img-overlay p-5 row align-items-center">
                                 <div>
-                                    <h5 class="display-4 fw-bold">{this.props.title}</h5>
-                                    <p class="lead mt-4">{this.props.description}</p>
+                                    <h5 className="display-4 fw-bold">{this.props.title}</h5>
+                                    <p className="lead mt-4">{this.props.description}</p>
                                 </div>
                             </div>
                         </Card.ImgOverlay>

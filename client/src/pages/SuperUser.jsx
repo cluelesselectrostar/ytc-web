@@ -1,10 +1,24 @@
 import TitleBanner from '../components/TitleBanner';
 import PageTitle from '../components/PageTitle';
 import image_3 from "../images/jaywalking/edited-1054311.webp";
-import AuthenticationButton from '../components/Authentication';
-import Profile from '../components/Profile';
+import BlogAmend from '../components/BlogAmend';
+// import ExternalApi from '../auth/externalapi';
+import { useState, useEffect } from 'react';
+import { useLocation } from "react-router";
+import LoadingGif from "../components/LoadingGIF";
 
-function SuperUserPage() {
+function SuperUserPage({ blogdata }) {
+
+    const [loaded, setLoaded] = useState(false);
+    const [blogs, setBlogs] = useState([]);
+    const { search } = useLocation();
+
+    useEffect(() => {
+        if (blogdata) {
+            setLoaded(true);
+            setBlogs(blogdata);
+        }
+    }, [search, setBlogs, blogdata]);
 
     return (<main>
 
@@ -14,9 +28,12 @@ function SuperUserPage() {
             description="Content only available upon logging in. Why are you here?"
             image={image_3}
         />
-        <div className="container mt-4">
-            <AuthenticationButton />
-            <Profile/>
+        <div className="container col-md-10 mt-4">
+            {loaded ? (
+                <BlogAmend blogdata={blogs} />
+            ) : (
+                <LoadingGif />
+            )}
         </div>
     </main >);
 }

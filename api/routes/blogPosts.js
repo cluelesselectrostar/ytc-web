@@ -17,7 +17,7 @@ router.put("/:id", async (req, res) => {
     try {
         const post = await BlogPost.findById(req.params.id);
         try {
-            const updatedPost = await Post.findByIdAndUpdate(
+            const updatedPost = await BlogPost.findByIdAndUpdate(
                 req.params.id,
                 {
                     $set: req.body,

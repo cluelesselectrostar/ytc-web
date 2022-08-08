@@ -10,11 +10,13 @@ const projectPostRoute = require("./routes/projectPosts");
 const blogPostRoute = require("./routes/blogPosts");
 const stationPostRoute = require("./routes/stationPosts");
 
+const { checkJwt } = require("./authz/check-jwt");
+
 const app = express();
 
 dotenv.config();
 app.use(express.json());
-app.use(cors());
+app.use(cors({origin: process.env.CLIENT_ORIGIN_URL}));
 
 // const mongodbUri = process.env.MONGODB_URI || 'https://localhost:5000/';
 // const PORT  = 3000;
@@ -59,4 +61,14 @@ app.listen(process.env.PORT || 5000, () => {
 app.get('/', (req, res) => {
   res.status(200).send('hello world. go ahead and add /api/projectposts or /api/blogposts or /api/stationposts to view database content.')
 });
+
+// testing protected api calls
+/*
+app.get("/api/message", checkJwt, (req, res) => {
+  const message = {
+    message: "Protected messages obtained.",
+  };
+  res.status(200).send(message);
+});
+*/
 
