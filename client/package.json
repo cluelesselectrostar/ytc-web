@@ -107,10 +107,10 @@
   },
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
-    "start": "node scripts/start.js && webpack-dev-server --config ./webpack.config.js --mode development",
+    "start": "node scripts/start.js --openssl-legacy-provider && webpack-dev-server --config ./webpack.config.js --mode development",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "node scripts/build.js",
+    "build": "node scripts/build.js --openssl-legacy-provider",
     "test": "node scripts/test.js",
     "dev": "webpack --mode development"
   },

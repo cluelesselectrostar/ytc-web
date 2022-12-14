@@ -23,12 +23,13 @@ function App() {
       .then(response => response.json())
       .then(data => {
         setCovidData(data);
-        console.log("data grabbed at top level");
       })
 
     const fetchBlogs = async () => {
       const res = await axios.get("https://ytc-web.herokuapp.com/api/blogposts");
       setBlogData(res.data);
+      console.log("blogdata");
+      console.log(res.data);
     }
     fetchBlogs();
 
@@ -37,12 +38,16 @@ function App() {
       const res = await axios.get("https://ytc-web.herokuapp.com/api/projectposts");
       setProjectData(res.data);
       //setLoading(false);
+      console.log("projectdata");
+      console.log(res.data);
     }
     fetchPosts();
 
     const fetchStations = async () => {
       const res = await axios.get("https://ytc-web.herokuapp.com/api/stationposts");
       setStationData(res.data);
+      console.log("stationdata");
+      console.log(res.data);
     }
     fetchStations();
 
