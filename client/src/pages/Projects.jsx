@@ -8,7 +8,7 @@ import { Row, Col } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 //import Image from 'react-bootstrap/Image';
 
-// import GetLocalProjects from '../projects/GetProjects';
+import GetLocalProjects from '../projects/GetProjects';
 import SquircleBox from '../components/SquircleBox';
 import ProjectPostList from '../components/ProjectPostList';
 import TitleBanner from '../components/TitleBanner';
@@ -44,7 +44,7 @@ function ProjectsPage({ projectdata }) {
         behavior: 'smooth'
     })
 
-    const [loaded, setLoaded] = useState(false);
+/*     const [loaded, setLoaded] = useState(false);
     const [posts, setPosts] = useState([]);
     const { search } = useLocation();
     //const [loading, setLoading] = useState(false);
@@ -54,7 +54,7 @@ function ProjectsPage({ projectdata }) {
             setLoaded(true);
             setPosts(projectdata);
         }
-    }, [search, projectdata]);
+    }, [search, projectdata]); */
 
     return (
         <main>
@@ -182,16 +182,21 @@ function ProjectsPage({ projectdata }) {
                 <BouncyArrow />
             </div>
 
-            {loaded ? (
+{/*             {loaded ? (
                 <div className="album mt-4">
                     <div className="container">
                         <ProjectPostList posts={posts} />
                     </div>
                 </div>
             ) : (
-                <LoadingGif/>
+                <LoadingGif />
             )
-            }
+            } */}
+            <div className="album mt-4">
+                <div className="container">
+                    <GetLocalProjects />
+                </div>
+            </div>
 
         </main>
     );

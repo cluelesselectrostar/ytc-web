@@ -33,9 +33,9 @@ function HomePage() {
         <div className="px-10">
             <PageTitle title="Home" />
 
-            <Container className="mt-3" >
+            <div className="container col-md-10 mt-3" >
                 <img src={my_cover} className="rounded img-fluid" alt="North-Point" />
-            </Container>
+            </div>
 
 
             <div className="container col-md-10 mt-3">
